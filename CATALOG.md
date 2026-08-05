@@ -131,13 +131,13 @@ A complete, curated catalog of **300 DRM-free classic ebooks** in French and Eng
 | 108 | **Le Misanthrope** | Molière | Philosophy, Satire & Drama | Classic | `EPUB / MOBI` | ⏳ Online |
 | 109 | **Tartuffe** | Molière | Philosophy, Satire & Drama | Classic | `EPUB / MOBI` | ✅ Verified DRM-Free |
 | 110 | **L'Avare** | Molière | Philosophy, Satire & Drama | Classic | `EPUB / MOBI` | ✅ Verified DRM-Free |
-| 111 | **Le Bourgeois gentilhomme** | Molière | Philosophy, Satire & Drama | Classic | `EPUB / MOBI` | ✅ Verified DRM-Free |
-| 112 | **Dom Juan** | Molière | Philosophy, Satire & Drama | Classic | `EPUB / MOBI` | ✅ Verified DRM-Free |
-| 113 | **Les Femmes savantes** | Molière | Philosophy, Satire & Drama | Classic | `EPUB / MOBI` | ✅ Verified DRM-Free |
+| 111 | **Le Bourgeois gentilhomme** | Molière | Philosophy, Satire & Drama | Classic | `EPUB / MOBI` | ⏳ Online |
+| 112 | **Dom Juan** | Molière | Philosophy, Satire & Drama | Classic | `EPUB / MOBI` | ⏳ Online |
+| 113 | **Les Femmes savantes** | Molière | Philosophy, Satire & Drama | Classic | `EPUB / MOBI` | ⏳ Online |
 | 114 | **Le Malade imaginaire** | Molière | Philosophy, Satire & Drama | Classic | `EPUB / MOBI` | ⏳ Online |
 | 115 | **Phèdre** | Jean Racine | Philosophy, Satire & Drama | Classic | `EPUB / MOBI` | ⏳ Online |
-| 116 | **Andromaque** | Jean Racine | Philosophy, Satire & Drama | Classic | `EPUB / MOBI` | ✅ Verified DRM-Free |
-| 117 | **Le Cid** | Pierre Corneille | Philosophy, Satire & Drama | Classic | `EPUB / MOBI` | ✅ Verified DRM-Free |
+| 116 | **Andromaque** | Jean Racine | Philosophy, Satire & Drama | Classic | `EPUB / MOBI` | ⏳ Online |
+| 117 | **Le Cid** | Pierre Corneille | Philosophy, Satire & Drama | Classic | `EPUB / MOBI` | ⏳ Online |
 | 118 | **Horace** | Pierre Corneille | Philosophy, Satire & Drama | Classic | `EPUB / MOBI` | ⏳ Online |
 | 119 | **Le Barbier de Séville** | Beaumarchais | Philosophy, Satire & Drama | Classic | `EPUB / MOBI` | ⏳ Online |
 | 120 | **Le Mariage de Figaro** | Beaumarchais | Philosophy, Satire & Drama | Classic | `EPUB / MOBI` | ✅ Verified DRM-Free |
@@ -196,7 +196,7 @@ A complete, curated catalog of **300 DRM-free classic ebooks** in French and Eng
 | 173 | **L'Annonce faite à Marie** | Paul Claudel | Poetry, Gothic & Early 20th Century | Classic | `EPUB / MOBI` | ⏳ Online |
 | 174 | **Les Nourritures terrestres** | André Gide | Poetry, Gothic & Early 20th Century | Classic | `EPUB / MOBI` | ⏳ Online |
 | 175 | **La Porte étroite** | André Gide | Poetry, Gothic & Early 20th Century | Classic | `EPUB / MOBI` | ⏳ Online |
-| 176 | **L'Immoraliste** | André Gide | Poetry, Gothic & Early 20th Century | Classic | `EPUB / MOBI` | ⏳ Online |
+| 176 | **L'Immoraliste** | André Gide | Poetry, Gothic & Early 20th Century | Classic | `EPUB / MOBI` | ✅ Verified DRM-Free |
 | 177 | **Les Lèvres closes** | Guillaume Apollinaire | Poetry, Gothic & Early 20th Century | Classic | `EPUB / MOBI` | ⏳ Online |
 | 178 | **L'Habit vert** | Gaston de Caillavet & Robert de Flers | Poetry, Gothic & Early 20th Century | Classic | `EPUB / MOBI` | ⏳ Online |
 | 179 | **Pelléas et Mélisande** | Maurice Maeterlinck | Poetry, Gothic & Early 20th Century | Classic | `EPUB / MOBI` | ⏳ Online |

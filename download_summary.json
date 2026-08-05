@@ -1,7 +1,7 @@
 {
   "total": 300,
-  "success": 221,
-  "failed": 79,
+  "success": 219,
+  "failed": 81,
   "details": [
     {
       "id": 1,
@@ -921,28 +921,22 @@
       "id": 111,
       "title": "Le Bourgeois gentilhomme",
       "author": "Molière",
-      "status": "SUCCESS",
-      "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\111_Moliere_Le Bourgeois gentilhomme.epub",
-      "bytes": 125962,
-      "source_url": "https://www.gutenberg.org/ebooks/16036"
+      "status": "FAILED",
+      "error": "File missing or unverified"
     },
     {
       "id": 112,
       "title": "Dom Juan",
       "author": "Molière",
-      "status": "SUCCESS",
-      "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\112_Moliere_Dom Juan.epub",
-      "bytes": 119541,
-      "source_url": "https://www.gutenberg.org/ebooks/16035"
+      "status": "FAILED",
+      "error": "File missing or unverified"
     },
     {
       "id": 113,
       "title": "Les Femmes savantes",
       "author": "Molière",
-      "status": "SUCCESS",
-      "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\113_Moliere_Les Femmes savantes.epub",
-      "bytes": 211079,
-      "source_url": "https://www.gutenberg.org/ebooks/16037"
+      "status": "FAILED",
+      "error": "File missing or unverified"
     },
     {
       "id": 114,
@@ -1438,8 +1432,10 @@
       "id": 176,
       "title": "L'Immoraliste",
       "author": "André Gide",
-      "status": "FAILED",
-      "error": "File missing or unverified"
+      "status": "SUCCESS",
+      "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\176_Andre Gide_L'Immoraliste.epub",
+      "bytes": 213237,
+      "source_url": "https://www.gutenberg.org/ebooks/73058"
     },
     {
       "id": 177,
