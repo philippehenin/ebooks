@@ -3,7 +3,15 @@ import csv
 import json
 import zipfile
 import re
+import glob
+import unicodedata
 import xml.etree.ElementTree as ET
+
+def remove_accents(input_str):
+    if not input_str:
+        return ""
+    nfkd_form = unicodedata.normalize('NFKD', input_str)
+    return "".join([c for c in nfkd_form if not unicodedata.combining(c)])
 
 DOWNLOAD_DIR = os.path.join(os.getcwd(), 'downloads')
 COVERS_DIR = os.path.join(DOWNLOAD_DIR, 'covers')
@@ -111,13 +119,18 @@ def build_catalog():
         is_downloaded = False
         
         # Verify file existence on disk
-        clean_author = re.sub(r'[\\/*?:"<>|]', "", author).strip()
-        clean_title = re.sub(r'[\\/*?:"<>|]', "", title).strip()
+        clean_author = re.sub(r'[\\/*?:"<>|]', "", remove_accents(author)).strip()
+        clean_title = re.sub(r'[\\/*?:"<>|]', "", remove_accents(title)).strip()
         
         possible_files = [
             filepath,
             os.path.join(DOWNLOAD_DIR, f"{b_id:03d}_{clean_author}_{clean_title}.epub"),
         ]
+        
+        # Also check glob for matching ID prefix
+        id_matches = glob.glob(os.path.join(DOWNLOAD_DIR, f"{b_id:03d}_*.epub"))
+        if id_matches:
+            possible_files.extend(id_matches)
         
         valid_path = None
         for pf in possible_files:
