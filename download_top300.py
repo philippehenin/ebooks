@@ -2,6 +2,8 @@ import os
 import csv
 import json
 import re
+import io
+import zipfile
 import urllib.request
 import urllib.parse
 import unicodedata
@@ -30,6 +32,43 @@ def sanitize_filename(filename):
     filename = re.sub(r'[\\/*?:"<>|]', "", filename)
     filename = filename.strip()
     return filename
+
+def normalize_text(text):
+    if not text:
+        return set()
+    unaccented = remove_accents(text).lower()
+    clean = re.sub(r'[^\w\s]', ' ', unaccented)
+    stop_words = {'le', 'la', 'les', 'l', 'un', 'une', 'des', 'de', 'du', 'd', 'et', 'en', 'the', 'a', 'an', 'of', 'and', 'in', 'to', 'tome', 'vol', 'volume', 'part'}
+    words = set(clean.split()) - stop_words
+    return words
+
+def is_title_match(target_title, candidate_title):
+    t_sig = normalize_text(target_title)
+    c_sig = normalize_text(candidate_title)
+    if not t_sig or not c_sig:
+        return True
+    overlap = t_sig.intersection(c_sig)
+    return len(overlap) / float(len(t_sig)) >= 0.4
+
+def verify_epub_internal_title(epub_data, target_title):
+    """Parses internal OPF <dc:title> from downloaded bytes. Returns False if title mismatch."""
+    try:
+        with zipfile.ZipFile(io.BytesIO(epub_data), 'r') as z:
+            for name in z.namelist():
+                if name.endswith('.opf'):
+                    opf_text = z.read(name).decode('utf-8', errors='ignore')
+                    m = re.search(r'<dc:title[^>]*>(.*?)</dc:title>', opf_text, re.DOTALL | re.I)
+                    if m:
+                        internal_title = m.group(1).strip()
+                        # Reject if internal title is Rocambole or completely different
+                        if 'rocambole' in internal_title.lower() and 'rocambole' not in target_title.lower():
+                            return False
+                        if not is_title_match(target_title, internal_title):
+                            return False
+                    break
+    except Exception:
+        pass
+    return True
 
 def fetch_url(url, timeout=15):
     parsed = urllib.parse.urlparse(url)
@@ -86,14 +125,24 @@ def search_gutenberg(author, title):
             html = content.decode('utf-8', errors='ignore')
             matches = re.findall(r'/ebooks/(\d+)', html)
             if matches:
-                # Deduplicate while preserving order
                 unique_gids = []
                 for m in matches:
                     if m not in unique_gids and m != '0':
                         unique_gids.append(m)
                 
                 for g_id in unique_gids[:3]:
-                    # Return direct Gutenberg cache URL
+                    # Verify page title on Gutenberg before selecting g_id
+                    g_info_url = f"https://www.gutenberg.org/ebooks/{g_id}"
+                    try:
+                        g_info_content, _, _, _ = fetch_url(g_info_url, timeout=5)
+                        g_html = g_info_content.decode('utf-8', errors='ignore')
+                        h1_match = re.search(r'<h1>(.*?)</h1>', g_html, re.DOTALL | re.I)
+                        if h1_match:
+                            page_title = h1_match.group(1)
+                            if not is_title_match(title, page_title):
+                                continue
+                    except Exception:
+                        pass
                     direct_url = f"https://www.gutenberg.org/cache/epub/{g_id}/pg{g_id}.epub"
                     return direct_url, '.epub'
         except Exception:
@@ -155,12 +204,15 @@ def resolve_download_link(row):
 
     # 2. NosLivres (French books)
     elif 'noslivres.net' in url:
-        q1 = f"{author} {title}"
-        q1_clean = re.sub(r'\(.*?\)', '', q1).strip()
-        q2 = remove_accents(q1_clean)
-        q3 = remove_accents(title)
+        clean_target_title = re.sub(r'\(.*?\)', '', title).strip()
+        author_surname = author.split()[-1] if author else ""
         
-        queries = [q1_clean, q2, q3]
+        queries = [
+            clean_target_title,
+            remove_accents(clean_target_title),
+            f"{author_surname} {clean_target_title}",
+            f"{author} {clean_target_title}"
+        ]
         
         for q in queries:
             params = {
@@ -175,7 +227,10 @@ def resolve_download_link(row):
                 
                 # Check for ELG (use ebooksgratuits.org mirror to avoid IP ban)
                 for r in rows_data:
-                    link_html = r[4]
+                    entry_title = r[0] if len(r) > 0 else ""
+                    if not is_title_match(clean_target_title, entry_title):
+                        continue
+                    link_html = r[4] if len(r) > 4 else ""
                     elg_match = re.search(r'href=[\'"]([^\'"]*ebooksgratuits\.(?:com|org)/details\.php\?book=\d+)[\'"]', link_html)
                     if elg_match:
                         elg_url = elg_match.group(1)
@@ -184,7 +239,10 @@ def resolve_download_link(row):
                         
                 # Check for Gutenberg
                 for r in rows_data:
-                    link_html = r[4]
+                    entry_title = r[0] if len(r) > 0 else ""
+                    if not is_title_match(clean_target_title, entry_title):
+                        continue
+                    link_html = r[4] if len(r) > 4 else ""
                     gut_match = re.search(r'href=[\'"]([^\'"]*gutenberg\.org/ebooks/(\d+))[\'"]', link_html)
                     if gut_match:
                         g_id = gut_match.group(2)
@@ -192,7 +250,10 @@ def resolve_download_link(row):
                         
                 # Check for BNR / BEQ / Efele
                 for r in rows_data:
-                    link_html = r[4]
+                    entry_title = r[0] if len(r) > 0 else ""
+                    if not is_title_match(clean_target_title, entry_title):
+                        continue
+                    link_html = r[4] if len(r) > 4 else ""
                     bnr_match = re.search(r'href=[\'"]([^\'"]*ebooks-bnr\.com/[^\'"]+)[\'"]', link_html)
                     if bnr_match:
                         bnr_page = bnr_match.group(1)
@@ -224,21 +285,21 @@ def process_book(row):
     clean_title = sanitize_filename(remove_accents(title))
     base_filename = f"{book_id:03d}_{clean_author}_{clean_title}"
     
-    # Check if already downloaded valid file (> 10 KB and valid EPUB header)
+    # Check if already downloaded valid file (> 10 KB, valid EPUB header, and matching title)
     for existing_ext in ['.epub', '.mobi', '.azw3', '.pdf']:
         existing_file = os.path.join(DOWNLOAD_DIR, f"{base_filename}{existing_ext}")
         if os.path.exists(existing_file):
             try:
                 with open(existing_file, 'rb') as f:
-                    head = f.read(50000)
-                    if is_valid_epub(head):
+                    data = f.read()
+                    if is_valid_epub(data) and verify_epub_internal_title(data, title):
                         return {
                             'id': book_id,
                             'title': title,
                             'author': author,
                             'status': 'SUCCESS',
                             'filepath': existing_file,
-                            'bytes': os.path.getsize(existing_file),
+                            'bytes': len(data),
                             'source_url': 'cached'
                         }
             except Exception:
@@ -282,6 +343,8 @@ def process_book(row):
                 
                 if not is_valid_epub(data):
                     raise ValueError(f"Downloaded file invalid or size too small ({len(data)} bytes)")
+                if not verify_epub_internal_title(data, title):
+                    raise ValueError(f"Downloaded file internal title mismatch")
                     
                 with open(target_path, 'wb') as f:
                     f.write(data)
@@ -304,7 +367,7 @@ def process_book(row):
     if g_link and g_link not in urls_to_try:
         try:
             data, headers, status, final_url = fetch_url(g_link, timeout=25)
-            if is_valid_epub(data):
+            if is_valid_epub(data) and verify_epub_internal_title(data, title):
                 with open(target_path, 'wb') as f:
                     f.write(data)
                 return {

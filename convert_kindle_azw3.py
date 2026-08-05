@@ -36,7 +36,7 @@ def convert_book(book):
         
     cmd = [CONVERTER, src_path, target_azw3]
     try:
-        res = subprocess.run(cmd, capture_output=True, text=True, timeout=120)
+        res = subprocess.run(cmd, capture_output=True, encoding='utf-8', errors='ignore', timeout=120)
         if res.returncode == 0 and os.path.exists(target_azw3):
             return b_id, title, 'SUCCESS', target_azw3
         else:
