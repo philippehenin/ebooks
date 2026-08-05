@@ -1,7 +1,8 @@
 {
   "total": 300,
-  "success": 219,
-  "failed": 81,
+  "success": 266,
+  "failed": 34,
+  "elapsed_seconds": 212.49,
   "details": [
     {
       "id": 1,
@@ -10,7 +11,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\001_Alexandre Dumas_Le Comte de Monte-Cristo (Tomes I-III).epub",
       "bytes": 875097,
-      "source_url": "https://www.gutenberg.org/ebooks/17989"
+      "source_url": "cached"
     },
     {
       "id": 2,
@@ -19,7 +20,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\002_Alexandre Dumas_Les Trois Mousquetaires.epub",
       "bytes": 628243,
-      "source_url": "https://www.gutenberg.org/ebooks/13951"
+      "source_url": "cached"
     },
     {
       "id": 3,
@@ -28,7 +29,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\003_Alexandre Dumas_Vingt ans apres.epub",
       "bytes": 798253,
-      "source_url": "https://www.gutenberg.org/ebooks/13952"
+      "source_url": "cached"
     },
     {
       "id": 4,
@@ -37,7 +38,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\004_Alexandre Dumas_Le Vicomte de Bragelonne.epub",
       "bytes": 521184,
-      "source_url": "https://www.gutenberg.org/ebooks/13948"
+      "source_url": "cached"
     },
     {
       "id": 5,
@@ -46,7 +47,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\005_Alexandre Dumas_La Reine Margot.epub",
       "bytes": 340116,
-      "source_url": "https://www.gutenberg.org/ebooks/13857"
+      "source_url": "cached"
     },
     {
       "id": 6,
@@ -55,7 +56,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\006_Alexandre Dumas_La Dame de Monsoreau.epub",
       "bytes": 273204,
-      "source_url": "https://www.gutenberg.org/ebooks/9637"
+      "source_url": "cached"
     },
     {
       "id": 7,
@@ -64,7 +65,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\007_Alexandre Dumas_Le Collier de la reine.epub",
       "bytes": 813281,
-      "source_url": "https://www.gutenberg.org/ebooks/18199"
+      "source_url": "cached"
     },
     {
       "id": 8,
@@ -73,21 +74,25 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\008_Maurice Leblanc_Arsene Lupin, gentleman-cambrioleur.epub",
       "bytes": 220716,
-      "source_url": "https://www.gutenberg.org/ebooks/32854"
+      "source_url": "cached"
     },
     {
       "id": 9,
-      "title": "Arsène Lupin contre Herlock Sholmes",
+      "title": "Arsène Lupin, gentleman-cambrioleur",
       "author": "Maurice Leblanc",
-      "status": "FAILED",
-      "error": "File missing or unverified"
+      "status": "SUCCESS",
+      "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\009_Maurice Leblanc_Arsene Lupin, gentleman-cambrioleur.epub",
+      "bytes": 220716,
+      "source_url": "https://www.gutenberg.org/cache/epub/32854/pg32854.epub"
     },
     {
       "id": 10,
-      "title": "L'Aiguille creuse",
+      "title": "813",
       "author": "Maurice Leblanc",
-      "status": "FAILED",
-      "error": "File missing or unverified"
+      "status": "SUCCESS",
+      "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\010_Maurice Leblanc_813.epub",
+      "bytes": 344856,
+      "source_url": "https://www.gutenberg.org/cache/epub/34758/pg34758.epub"
     },
     {
       "id": 11,
@@ -96,21 +101,21 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\011_Maurice Leblanc_813.epub",
       "bytes": 344856,
-      "source_url": "https://www.gutenberg.org/ebooks/34758"
+      "source_url": "cached"
     },
     {
       "id": 12,
-      "title": "Le Bouchon de cristal",
+      "title": "L'Aiguille creuse",
       "author": "Maurice Leblanc",
       "status": "FAILED",
-      "error": "File missing or unverified"
+      "error": "Download failed after retries: Downloaded file internal title mismatch"
     },
     {
       "id": 13,
-      "title": "La Comtesse de Cagliostro",
+      "title": "Le Bouchon de cristal",
       "author": "Maurice Leblanc",
       "status": "FAILED",
-      "error": "File missing or unverified"
+      "error": "Download failed after retries: Downloaded file internal title mismatch"
     },
     {
       "id": 14,
@@ -119,7 +124,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\014_Jules Verne_Vingt Mille Lieues sous les mers.epub",
       "bytes": 236830,
-      "source_url": "https://www.gutenberg.org/ebooks/5097"
+      "source_url": "cached"
     },
     {
       "id": 15,
@@ -128,7 +133,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\015_Jules Verne_Le Tour du monde en quatre-vingts jours.epub",
       "bytes": 263739,
-      "source_url": "https://www.gutenberg.org/ebooks/800"
+      "source_url": "cached"
     },
     {
       "id": 16,
@@ -137,14 +142,14 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\016_Jules Verne_Voyage au centre de la Terre.epub",
       "bytes": 258117,
-      "source_url": "https://www.gutenberg.org/ebooks/18857"
+      "source_url": "cached"
     },
     {
       "id": 17,
-      "title": "L'Île mystérieuse",
-      "author": "Jules Verne",
+      "title": "Les Confidences d'Arsène Lupin",
+      "author": "Maurice Leblanc",
       "status": "FAILED",
-      "error": "File missing or unverified"
+      "error": "Download failed after retries: Downloaded file internal title mismatch"
     },
     {
       "id": 18,
@@ -153,7 +158,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\018_Jules Verne_De la Terre a la Lune.epub",
       "bytes": 228811,
-      "source_url": "https://www.gutenberg.org/ebooks/38674"
+      "source_url": "cached"
     },
     {
       "id": 19,
@@ -162,7 +167,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\019_Jules Verne_Autour de la Lune.epub",
       "bytes": 216969,
-      "source_url": "https://www.gutenberg.org/ebooks/4717"
+      "source_url": "cached"
     },
     {
       "id": 20,
@@ -171,16 +176,14 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\020_Jules Verne_Michel Strogoff.epub",
       "bytes": 332593,
-      "source_url": "https://www.gutenberg.org/ebooks/7442"
+      "source_url": "cached"
     },
     {
       "id": 21,
       "title": "Les Enfants du capitaine Grant",
       "author": "Jules Verne",
-      "status": "SUCCESS",
-      "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\021_Jules Verne_Les Enfants du capitaine Grant.epub",
-      "bytes": 467569,
-      "source_url": "https://www.gutenberg.org/ebooks/2083"
+      "status": "FAILED",
+      "error": "Download failed after retries: Downloaded file internal title mismatch"
     },
     {
       "id": 22,
@@ -189,7 +192,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\022_Gaston Leroux_Le Fantome de l'Opera.epub",
       "bytes": 271263,
-      "source_url": "https://www.noslivres.net/recherche.php?q=Gaston+Leroux+Le+Fantôme+de+l'Opéra"
+      "source_url": "cached"
     },
     {
       "id": 23,
@@ -198,7 +201,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\023_Gaston Leroux_Le Mystere de la chambre jaune.epub",
       "bytes": 270920,
-      "source_url": "https://www.gutenberg.org/ebooks/13765"
+      "source_url": "cached"
     },
     {
       "id": 24,
@@ -207,14 +210,16 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\024_Gaston Leroux_Le Parfum de la dame en noir.epub",
       "bytes": 354276,
-      "source_url": "https://www.gutenberg.org/ebooks/15554"
+      "source_url": "cached"
     },
     {
       "id": 25,
-      "title": "Chéri-Bibi",
-      "author": "Gaston Leroux",
-      "status": "FAILED",
-      "error": "File missing or unverified"
+      "title": "Le Triangle d'or",
+      "author": "Maurice Leblanc",
+      "status": "SUCCESS",
+      "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\025_Maurice Leblanc_Le Triangle d'or.epub",
+      "bytes": 282075,
+      "source_url": "https://www.gutenberg.org/cache/epub/34795/pg34795.epub"
     },
     {
       "id": 26,
@@ -223,7 +228,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\026_Eugene Sue_Les Mysteres de Paris.epub",
       "bytes": 372784,
-      "source_url": "https://www.gutenberg.org/ebooks/18921"
+      "source_url": "cached"
     },
     {
       "id": 27,
@@ -232,7 +237,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\027_Eugene Sue_Le Juif errant.epub",
       "bytes": 825530,
-      "source_url": "https://www.gutenberg.org/ebooks/15296"
+      "source_url": "cached"
     },
     {
       "id": 28,
@@ -241,7 +246,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\028_Paul Feval_Le Bossu.epub",
       "bytes": 192111,
-      "source_url": "https://www.noslivres.net/recherche.php?q=Paul+Féval+Le+Bossu"
+      "source_url": "cached"
     },
     {
       "id": 29,
@@ -250,7 +255,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\029_Paul Feval_Les Habits Noirs.epub",
       "bytes": 296895,
-      "source_url": "https://www.gutenberg.org/ebooks/19919"
+      "source_url": "cached"
     },
     {
       "id": 30,
@@ -259,51 +264,53 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\030_J.-H. Rosny aine_La Guerre du feu.epub",
       "bytes": 233375,
-      "source_url": "https://www.gutenberg.org/ebooks/61274"
+      "source_url": "cached"
     },
     {
       "id": 31,
-      "title": "Le Capitaine Casse-Cou",
-      "author": "Louis Boussenard",
+      "title": "L'Éclat d'obus",
+      "author": "Maurice Leblanc",
       "status": "FAILED",
-      "error": "File missing or unverified"
+      "error": "Download failed after retries: Downloaded file internal title mismatch"
     },
     {
       "id": 32,
-      "title": "Fantômas",
-      "author": "Pierre Souvestre & Marcel Allain",
+      "title": "L'Île aux trente cercueils",
+      "author": "Maurice Leblanc",
       "status": "FAILED",
-      "error": "File missing or unverified"
+      "error": "Download failed after retries: Downloaded file internal title mismatch"
     },
     {
       "id": 33,
-      "title": "Juve contre Fantômas",
-      "author": "Pierre Souvestre & Marcel Allain",
+      "title": "Les Dents du tigre",
+      "author": "Maurice Leblanc",
       "status": "FAILED",
-      "error": "File missing or unverified"
+      "error": "Download failed after retries: Downloaded file internal title mismatch"
     },
     {
       "id": 34,
-      "title": "Voyage à la Vénus",
-      "author": "Achille Eyraud",
-      "status": "FAILED",
-      "error": "File missing or unverified"
+      "title": "Le Fantôme de l'Opéra",
+      "author": "Gaston Leroux",
+      "status": "SUCCESS",
+      "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\034_Gaston Leroux_Le Fantome de l'Opera.epub",
+      "bytes": 271263,
+      "source_url": "https://www.gutenberg.org/cache/epub/175/pg175.epub"
     },
     {
       "id": 35,
-      "title": "Star ou Csiromah",
-      "author": "Charlemagne Ischir Defontenay",
-      "status": "FAILED",
-      "error": "File missing or unverified"
+      "title": "Le Mystère de la chambre jaune",
+      "author": "Gaston Leroux",
+      "status": "SUCCESS",
+      "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\035_Gaston Leroux_Le Mystere de la chambre jaune.epub",
+      "bytes": 270920,
+      "source_url": "https://www.gutenberg.org/cache/epub/13765/pg13765.epub"
     },
     {
       "id": 36,
       "title": "Les Misérables (Tomes I-V)",
       "author": "Victor Hugo",
-      "status": "SUCCESS",
-      "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\036_Victor Hugo_Les Miserables (Tomes I-V).epub",
-      "bytes": 1832621,
-      "source_url": "https://www.gutenberg.org/ebooks/135"
+      "status": "FAILED",
+      "error": "Download failed after retries: Downloaded file internal title mismatch"
     },
     {
       "id": 37,
@@ -312,7 +319,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\037_Victor Hugo_Notre-Dame de Paris.epub",
       "bytes": 518418,
-      "source_url": "https://www.gutenberg.org/ebooks/2610"
+      "source_url": "cached"
     },
     {
       "id": 38,
@@ -321,7 +328,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\038_Victor Hugo_Quatrevingt-treize.epub",
       "bytes": 377393,
-      "source_url": "https://www.gutenberg.org/ebooks/9645"
+      "source_url": "cached"
     },
     {
       "id": 39,
@@ -330,14 +337,16 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\039_Victor Hugo_L'Homme qui rit.epub",
       "bytes": 579805,
-      "source_url": "https://www.gutenberg.org/ebooks/5423"
+      "source_url": "cached"
     },
     {
       "id": 40,
-      "title": "Les Travailleurs de la mer",
-      "author": "Victor Hugo",
-      "status": "FAILED",
-      "error": "File missing or unverified"
+      "title": "Le Parfum de la dame en noir",
+      "author": "Gaston Leroux",
+      "status": "SUCCESS",
+      "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\040_Gaston Leroux_Le Parfum de la dame en noir.epub",
+      "bytes": 354276,
+      "source_url": "cached"
     },
     {
       "id": 41,
@@ -346,7 +355,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\041_Victor Hugo_Le Dernier Jour d'un condamne.epub",
       "bytes": 167692,
-      "source_url": "https://www.gutenberg.org/ebooks/6838"
+      "source_url": "cached"
     },
     {
       "id": 42,
@@ -355,7 +364,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\042_Gustave Flaubert_Madame Bovary.epub",
       "bytes": 372773,
-      "source_url": "https://www.gutenberg.org/ebooks/2413"
+      "source_url": "cached"
     },
     {
       "id": 43,
@@ -364,7 +373,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\043_Gustave Flaubert_L'Education sentimentale.epub",
       "bytes": 310468,
-      "source_url": "https://www.noslivres.net/recherche.php?q=Gustave+Flaubert+L'Éducation+sentimentale"
+      "source_url": "cached"
     },
     {
       "id": 44,
@@ -373,14 +382,14 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\044_Gustave Flaubert_Salammbo.epub",
       "bytes": 337261,
-      "source_url": "https://www.gutenberg.org/ebooks/1290"
+      "source_url": "cached"
     },
     {
       "id": 45,
-      "title": "Bouvard et Pécuchet",
-      "author": "Gustave Flaubert",
+      "title": "Un homme dans la nuit",
+      "author": "Gaston Leroux",
       "status": "FAILED",
-      "error": "File missing or unverified"
+      "error": "Download failed after retries: Downloaded file internal title mismatch"
     },
     {
       "id": 46,
@@ -389,14 +398,14 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\046_Emile Zola_Germinal.epub",
       "bytes": 485541,
-      "source_url": "https://www.gutenberg.org/ebooks/56528"
+      "source_url": "cached"
     },
     {
       "id": 47,
-      "title": "Au Bonheur des Dames",
-      "author": "Émile Zola",
+      "title": "La Poupée sanglante",
+      "author": "Gaston Leroux",
       "status": "FAILED",
-      "error": "File missing or unverified"
+      "error": "Download failed after retries: Downloaded file internal title mismatch"
     },
     {
       "id": 48,
@@ -405,14 +414,16 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\048_Emile Zola_L'Assommoir.epub",
       "bytes": 426795,
-      "source_url": "https://www.gutenberg.org/ebooks/8600"
+      "source_url": "cached"
     },
     {
       "id": 49,
-      "title": "La Bête humaine",
-      "author": "Émile Zola",
-      "status": "FAILED",
-      "error": "File missing or unverified"
+      "title": "Le Fauteuil hanté",
+      "author": "Gaston Leroux",
+      "status": "SUCCESS",
+      "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\049_Gaston Leroux_Le Fauteuil hante.epub",
+      "bytes": 185834,
+      "source_url": "https://www.gutenberg.org/cache/epub/19035/pg19035.epub"
     },
     {
       "id": 50,
@@ -421,14 +432,16 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\050_Emile Zola_Nana.epub",
       "bytes": 442259,
-      "source_url": "https://www.gutenberg.org/ebooks/5250"
+      "source_url": "cached"
     },
     {
       "id": 51,
-      "title": "Le Ventre de Paris",
-      "author": "Émile Zola",
-      "status": "FAILED",
-      "error": "File missing or unverified"
+      "title": "La Guerre du feu",
+      "author": "J-H Rosny aîné",
+      "status": "SUCCESS",
+      "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\051_J-H Rosny aine_La Guerre du feu.epub",
+      "bytes": 233375,
+      "source_url": "cached"
     },
     {
       "id": 52,
@@ -437,7 +450,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\052_Emile Zola_Therese Raquin.epub",
       "bytes": 261518,
-      "source_url": "https://www.gutenberg.org/ebooks/6626"
+      "source_url": "cached"
     },
     {
       "id": 53,
@@ -446,21 +459,23 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\053_Emile Zola_L'Œuvre.epub",
       "bytes": 401094,
-      "source_url": "https://www.gutenberg.org/ebooks/17517"
+      "source_url": "cached"
     },
     {
       "id": 54,
-      "title": "La Terre",
-      "author": "Émile Zola",
+      "title": "Le Félin géant",
+      "author": "J-H Rosny aîné",
       "status": "FAILED",
-      "error": "File missing or unverified"
+      "error": "Download failed after retries: Downloaded file internal title mismatch"
     },
     {
       "id": 55,
-      "title": "Le Père Goriot",
-      "author": "Honoré de Balzac",
-      "status": "FAILED",
-      "error": "File missing or unverified"
+      "title": "Le Grand Meaulnes",
+      "author": "Alain-Fournier",
+      "status": "SUCCESS",
+      "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\055_Alain-Fournier_Le Grand Meaulnes.epub",
+      "bytes": 285780,
+      "source_url": "cached"
     },
     {
       "id": 56,
@@ -469,7 +484,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\056_Honore de Balzac_Eugenie Grandet.epub",
       "bytes": 236206,
-      "source_url": "https://www.gutenberg.org/ebooks/1715"
+      "source_url": "cached"
     },
     {
       "id": 57,
@@ -478,35 +493,39 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\057_Honore de Balzac_Illusions perdues.epub",
       "bytes": 683350,
-      "source_url": "https://www.gutenberg.org/ebooks/13159"
+      "source_url": "cached"
     },
     {
       "id": 58,
-      "title": "Splendeurs et misères des courtisanes",
-      "author": "Honoré de Balzac",
+      "title": "Le Feu",
+      "author": "Henri Barbusse",
       "status": "FAILED",
-      "error": "File missing or unverified"
+      "error": "Download failed after retries: Downloaded file internal title mismatch"
     },
     {
       "id": 59,
-      "title": "La Peau de chagrin",
-      "author": "Honoré de Balzac",
-      "status": "FAILED",
-      "error": "File missing or unverified"
+      "title": "Les Dieux ont soif",
+      "author": "Anatole France",
+      "status": "SUCCESS",
+      "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\059_Anatole France_Les Dieux ont soif.epub",
+      "bytes": 252082,
+      "source_url": "cached"
     },
     {
       "id": 60,
-      "title": "Le Cousin Pons",
-      "author": "Honoré de Balzac",
+      "title": "L'Île des Pingouins",
+      "author": "Anatole France",
       "status": "FAILED",
-      "error": "File missing or unverified"
+      "error": "Download failed after retries: Downloaded file internal title mismatch"
     },
     {
       "id": 61,
-      "title": "La Cousine Bette",
-      "author": "Honoré de Balzac",
-      "status": "FAILED",
-      "error": "File missing or unverified"
+      "title": "Le Crime de Sylvestre Bonnard",
+      "author": "Anatole France",
+      "status": "SUCCESS",
+      "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\061_Anatole France_Le Crime de Sylvestre Bonnard.epub",
+      "bytes": 241388,
+      "source_url": "cached"
     },
     {
       "id": 62,
@@ -515,7 +534,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\062_Guy de Maupassant_Bel-Ami.epub",
       "bytes": 187839,
-      "source_url": "https://www.noslivres.net/recherche.php?q=Guy+de+Maupassant+Bel-Ami"
+      "source_url": "cached"
     },
     {
       "id": 63,
@@ -524,7 +543,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\063_Guy de Maupassant_Une vie.epub",
       "bytes": 332526,
-      "source_url": "https://www.gutenberg.org/ebooks/21655"
+      "source_url": "cached"
     },
     {
       "id": 64,
@@ -533,14 +552,14 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\064_Guy de Maupassant_Pierre et Jean.epub",
       "bytes": 181524,
-      "source_url": "https://www.gutenberg.org/ebooks/3804"
+      "source_url": "cached"
     },
     {
       "id": 65,
-      "title": "Le Horla et autres contes",
-      "author": "Guy de Maupassant",
+      "title": "La Révolte des anges",
+      "author": "Anatole France",
       "status": "FAILED",
-      "error": "File missing or unverified"
+      "error": "Download failed after retries: Downloaded file internal title mismatch"
     },
     {
       "id": 66,
@@ -549,14 +568,16 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\066_Guy de Maupassant_Boule de Suif.epub",
       "bytes": 232340,
-      "source_url": "https://www.gutenberg.org/ebooks/21327"
+      "source_url": "cached"
     },
     {
       "id": 67,
-      "title": "Le Rouge et le Noir",
-      "author": "Stendhal",
-      "status": "FAILED",
-      "error": "File missing or unverified"
+      "title": "Thaïs",
+      "author": "Anatole France",
+      "status": "SUCCESS",
+      "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\067_Anatole France_Thais.epub",
+      "bytes": 189509,
+      "source_url": "https://www.gutenberg.org/cache/epub/2078/pg2078.epub"
     },
     {
       "id": 68,
@@ -565,7 +586,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\068_Stendhal_La Chartreuse de Parme.epub",
       "bytes": 691392,
-      "source_url": "https://www.gutenberg.org/ebooks/57638"
+      "source_url": "cached"
     },
     {
       "id": 69,
@@ -574,7 +595,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\069_Prosper Merimee_Carmen.epub",
       "bytes": 126630,
-      "source_url": "https://www.gutenberg.org/ebooks/2465"
+      "source_url": "cached"
     },
     {
       "id": 70,
@@ -583,7 +604,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\070_Prosper Merimee_Colomba.epub",
       "bytes": 187558,
-      "source_url": "https://www.gutenberg.org/ebooks/2708"
+      "source_url": "cached"
     },
     {
       "id": 71,
@@ -592,7 +613,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\071_George Sand_La Mare au diable.epub",
       "bytes": 166106,
-      "source_url": "https://www.gutenberg.org/ebooks/23582"
+      "source_url": "cached"
     },
     {
       "id": 72,
@@ -601,14 +622,14 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\072_George Sand_La Petite Fadette.epub",
       "bytes": 211546,
-      "source_url": "https://www.gutenberg.org/ebooks/34204"
+      "source_url": "cached"
     },
     {
       "id": 73,
-      "title": "Consuelo",
-      "author": "George Sand",
+      "title": "Le Mannequin d'osier",
+      "author": "Anatole France",
       "status": "FAILED",
-      "error": "File missing or unverified"
+      "error": "Download failed after retries: Downloaded file internal title mismatch"
     },
     {
       "id": 74,
@@ -617,7 +638,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\074_George Sand_Indiana.epub",
       "bytes": 554783,
-      "source_url": "https://www.gutenberg.org/ebooks/63445"
+      "source_url": "cached"
     },
     {
       "id": 75,
@@ -626,28 +647,28 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\075_Alphonse Daudet_Lettres de mon moulin.epub",
       "bytes": 193648,
-      "source_url": "https://www.gutenberg.org/ebooks/36780"
+      "source_url": "cached"
     },
     {
       "id": 76,
-      "title": "Tartarin de Tarascon",
-      "author": "Alphonse Daudet",
+      "title": "Claudine à l'école",
+      "author": "Colette",
       "status": "FAILED",
-      "error": "File missing or unverified"
+      "error": "Download failed after retries: Downloaded file internal title mismatch"
     },
     {
       "id": 77,
-      "title": "À rebours",
-      "author": "Joris-Karl Huysmans",
+      "title": "Claudine à Paris",
+      "author": "Colette",
       "status": "FAILED",
-      "error": "File missing or unverified"
+      "error": "Download failed after retries: Downloaded file internal title mismatch"
     },
     {
       "id": 78,
-      "title": "Là-bas",
-      "author": "Joris-Karl Huysmans",
+      "title": "La Vagabonde",
+      "author": "Colette",
       "status": "FAILED",
-      "error": "File missing or unverified"
+      "error": "Download failed after retries: Downloaded file internal title mismatch"
     },
     {
       "id": 79,
@@ -656,7 +677,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\079_Jules Barbey d'Aurevilly_Les Diaboliques.epub",
       "bytes": 322253,
-      "source_url": "https://www.gutenberg.org/ebooks/13848"
+      "source_url": "cached"
     },
     {
       "id": 80,
@@ -665,7 +686,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\080_Edmond et Jules de Goncourt_Germinie Lacerteux.epub",
       "bytes": 236387,
-      "source_url": "https://www.gutenberg.org/ebooks/27711"
+      "source_url": "cached"
     },
     {
       "id": 81,
@@ -674,23 +695,21 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\081_Voltaire_Candide ou l'Optimisme.epub",
       "bytes": 1534603,
-      "source_url": "https://www.gutenberg.org/ebooks/4650"
+      "source_url": "cached"
     },
     {
       "id": 82,
       "title": "Zadig ou la Destinée",
       "author": "Voltaire",
-      "status": "SUCCESS",
-      "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\082_Voltaire_Zadig ou la Destinee.epub",
-      "bytes": 194737,
-      "source_url": "https://www.gutenberg.org/ebooks/4650"
+      "status": "FAILED",
+      "error": "Download failed after retries: Downloaded file internal title mismatch"
     },
     {
       "id": 83,
-      "title": "L'Ingénu",
-      "author": "Voltaire",
+      "title": "Pêcheur d'Islande",
+      "author": "Pierre Loti",
       "status": "FAILED",
-      "error": "File missing or unverified"
+      "error": "Download failed after retries: Downloaded file internal title mismatch"
     },
     {
       "id": 84,
@@ -699,14 +718,16 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\084_Voltaire_Micromegas.epub",
       "bytes": 94024,
-      "source_url": "https://www.gutenberg.org/ebooks/30123"
+      "source_url": "cached"
     },
     {
       "id": 85,
-      "title": "Jacques le Fataliste et son maître",
-      "author": "Denis Diderot",
-      "status": "FAILED",
-      "error": "File missing or unverified"
+      "title": "Ramuntcho",
+      "author": "Pierre Loti",
+      "status": "SUCCESS",
+      "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\085_Pierre Loti_Ramuntcho.epub",
+      "bytes": 201473,
+      "source_url": "https://www.gutenberg.org/cache/epub/9616/pg9616.epub"
     },
     {
       "id": 86,
@@ -715,7 +736,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\086_Denis Diderot_La Religieuse.epub",
       "bytes": 252986,
-      "source_url": "https://www.gutenberg.org/ebooks/28827"
+      "source_url": "cached"
     },
     {
       "id": 87,
@@ -724,7 +745,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\087_Denis Diderot_Le Neveu de Rameau.epub",
       "bytes": 147701,
-      "source_url": "https://www.gutenberg.org/ebooks/13862"
+      "source_url": "cached"
     },
     {
       "id": 88,
@@ -733,7 +754,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\088_Choderlos de Laclos_Les Liaisons dangereuses.epub",
       "bytes": 463026,
-      "source_url": "https://www.gutenberg.org/ebooks/52006"
+      "source_url": "cached"
     },
     {
       "id": 89,
@@ -742,7 +763,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\089_Abbe Prevost_Manon Lescaut.epub",
       "bytes": 215104,
-      "source_url": "https://www.gutenberg.org/ebooks/468"
+      "source_url": "cached"
     },
     {
       "id": 90,
@@ -751,7 +772,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\090_Madame de La Fayette_La Princesse de Cleves.epub",
       "bytes": 191767,
-      "source_url": "https://www.gutenberg.org/ebooks/467"
+      "source_url": "cached"
     },
     {
       "id": 91,
@@ -760,7 +781,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\091_Jean-Jacques Rousseau_Les Confessions.epub",
       "bytes": 151123,
-      "source_url": "https://www.gutenberg.org/ebooks/65434"
+      "source_url": "cached"
     },
     {
       "id": 92,
@@ -769,14 +790,16 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\092_Jean-Jacques Rousseau_Du contrat social.epub",
       "bytes": 259263,
-      "source_url": "https://www.noslivres.net/recherche.php?q=Jean-Jacques+Rousseau+Du+contrat+social"
+      "source_url": "cached"
     },
     {
       "id": 93,
-      "title": "Émile, ou De l'éducation",
-      "author": "Jean-Jacques Rousseau",
-      "status": "FAILED",
-      "error": "File missing or unverified"
+      "title": "Madame Chrysanthème",
+      "author": "Pierre Loti",
+      "status": "SUCCESS",
+      "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\093_Pierre Loti_Madame Chrysantheme.epub",
+      "bytes": 205341,
+      "source_url": "https://www.gutenberg.org/cache/epub/3995/pg3995.epub"
     },
     {
       "id": 94,
@@ -785,7 +808,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\094_Montesquieu_Lettres persanes.epub",
       "bytes": 224318,
-      "source_url": "https://www.gutenberg.org/ebooks/30268"
+      "source_url": "cached"
     },
     {
       "id": 95,
@@ -794,7 +817,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\095_Montesquieu_De l'esprit des lois.epub",
       "bytes": 386021,
-      "source_url": "https://www.gutenberg.org/ebooks/27573"
+      "source_url": "cached"
     },
     {
       "id": 96,
@@ -803,14 +826,14 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\096_Rene Descartes_Discours de la methode.epub",
       "bytes": 335264,
-      "source_url": "https://www.gutenberg.org/ebooks/13846"
+      "source_url": "cached"
     },
     {
       "id": 97,
-      "title": "Pensées",
-      "author": "Blaise Pascal",
+      "title": "Fantôme d'Orient",
+      "author": "Pierre Loti",
       "status": "FAILED",
-      "error": "File missing or unverified"
+      "error": "Download failed after retries: Downloaded file internal title mismatch"
     },
     {
       "id": 98,
@@ -819,7 +842,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\098_Michel de Montaigne_Essais (Livres I-III).epub",
       "bytes": 935821,
-      "source_url": "https://www.gutenberg.org/ebooks/48529"
+      "source_url": "cached"
     },
     {
       "id": 99,
@@ -828,7 +851,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\099_Francois Rabelais_Gargantua.epub",
       "bytes": 919836,
-      "source_url": "https://www.gutenberg.org/ebooks/15105"
+      "source_url": "cached"
     },
     {
       "id": 100,
@@ -837,28 +860,34 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\100_Francois Rabelais_Pantagruel.epub",
       "bytes": 919836,
-      "source_url": "https://www.gutenberg.org/ebooks/15106"
+      "source_url": "cached"
     },
     {
       "id": 101,
-      "title": "Les Caractères",
-      "author": "Jean de La Bruyère",
-      "status": "FAILED",
-      "error": "File missing or unverified"
+      "title": "Jean-Christophe (Tome I)",
+      "author": "Romain Rolland",
+      "status": "SUCCESS",
+      "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\101_Romain Rolland_Jean-Christophe (Tome I).epub",
+      "bytes": 532428,
+      "source_url": "https://www.gutenberg.org/cache/epub/7967/pg7967.epub"
     },
     {
       "id": 102,
-      "title": "Maximes",
-      "author": "François de La Rochefoucauld",
-      "status": "FAILED",
-      "error": "File missing or unverified"
+      "title": "Ubu Roi",
+      "author": "Alfred Jarry",
+      "status": "SUCCESS",
+      "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\102_Alfred Jarry_Ubu Roi.epub",
+      "bytes": 108284,
+      "source_url": "cached"
     },
     {
       "id": 103,
-      "title": "Justine ou les Malheurs de la vertu",
-      "author": "Marquis de Sade",
-      "status": "FAILED",
-      "error": "File missing or unverified"
+      "title": "Le Diable au corps",
+      "author": "Raymond Radiguet",
+      "status": "SUCCESS",
+      "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\103_Raymond Radiguet_Le Diable au corps.epub",
+      "bytes": 146717,
+      "source_url": "cached"
     },
     {
       "id": 104,
@@ -867,7 +896,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\104_Bernardin de Saint-Pierre_Paul et Virginie.epub",
       "bytes": 186161,
-      "source_url": "https://www.gutenberg.org/ebooks/2127"
+      "source_url": "cached"
     },
     {
       "id": 105,
@@ -876,28 +905,34 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\105_Xavier de Maistre_Voyage autour de ma chambre.epub",
       "bytes": 129835,
-      "source_url": "https://www.gutenberg.org/ebooks/40248"
+      "source_url": "cached"
     },
     {
       "id": 106,
-      "title": "Réflexions et Maximes",
-      "author": "Vauvenargues",
-      "status": "FAILED",
-      "error": "File missing or unverified"
+      "title": "Bubu de Montparnasse",
+      "author": "Charles-Louis Philippe",
+      "status": "SUCCESS",
+      "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\106_Charles-Louis Philippe_Bubu de Montparnasse.epub",
+      "bytes": 141329,
+      "source_url": "https://www.gutenberg.org/cache/epub/47710/pg47710.epub"
     },
     {
       "id": 107,
-      "title": "Maximes et Pensées",
-      "author": "Nicolas Chamfort",
-      "status": "FAILED",
-      "error": "File missing or unverified"
+      "title": "Alcools",
+      "author": "Guillaume Apollinaire",
+      "status": "SUCCESS",
+      "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\107_Guillaume Apollinaire_Alcools.epub",
+      "bytes": 111769,
+      "source_url": "cached"
     },
     {
       "id": 108,
-      "title": "Le Misanthrope",
-      "author": "Molière",
-      "status": "FAILED",
-      "error": "File missing or unverified"
+      "title": "Calligrammes",
+      "author": "Guillaume Apollinaire",
+      "status": "SUCCESS",
+      "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\108_Guillaume Apollinaire_Calligrammes.epub",
+      "bytes": 116082,
+      "source_url": "https://www.gutenberg.org/cache/epub/55569/pg55569.epub"
     },
     {
       "id": 109,
@@ -906,7 +941,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\109_Moliere_Tartuffe.epub",
       "bytes": 112191,
-      "source_url": "https://www.noslivres.net/recherche.php?q=Molière+Tartuffe"
+      "source_url": "cached"
     },
     {
       "id": 110,
@@ -915,70 +950,86 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\110_Moliere_L'Avare.epub",
       "bytes": 127550,
-      "source_url": "https://www.gutenberg.org/ebooks/6318"
+      "source_url": "cached"
     },
     {
       "id": 111,
-      "title": "Le Bourgeois gentilhomme",
-      "author": "Molière",
+      "title": "Notre Jeunesse",
+      "author": "Charles Péguy",
       "status": "FAILED",
-      "error": "File missing or unverified"
+      "error": "Download failed after retries: Downloaded file internal title mismatch"
     },
     {
       "id": 112,
-      "title": "Dom Juan",
-      "author": "Molière",
-      "status": "FAILED",
-      "error": "File missing or unverified"
+      "title": "Cyrano de Bergerac",
+      "author": "Edmond Rostand",
+      "status": "SUCCESS",
+      "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\112_Edmond Rostand_Cyrano de Bergerac.epub",
+      "bytes": 168551,
+      "source_url": "cached"
     },
     {
       "id": 113,
-      "title": "Les Femmes savantes",
-      "author": "Molière",
-      "status": "FAILED",
-      "error": "File missing or unverified"
+      "title": "Poil de Carotte",
+      "author": "Jules Renard",
+      "status": "SUCCESS",
+      "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\113_Jules Renard_Poil de Carotte.epub",
+      "bytes": 148623,
+      "source_url": "https://www.gutenberg.org/cache/epub/4559/pg4559.epub"
     },
     {
       "id": 114,
-      "title": "Le Malade imaginaire",
-      "author": "Molière",
-      "status": "FAILED",
-      "error": "File missing or unverified"
+      "title": "Le Journal d'une femme de chambre",
+      "author": "Octave Mirbeau",
+      "status": "SUCCESS",
+      "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\114_Octave Mirbeau_Le Journal d'une femme de chambre.epub",
+      "bytes": 360399,
+      "source_url": "cached"
     },
     {
       "id": 115,
-      "title": "Phèdre",
-      "author": "Jean Racine",
-      "status": "FAILED",
-      "error": "File missing or unverified"
+      "title": "Le Jardin des supplices",
+      "author": "Octave Mirbeau",
+      "status": "SUCCESS",
+      "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\115_Octave Mirbeau_Le Jardin des supplices.epub",
+      "bytes": 241821,
+      "source_url": "https://www.gutenberg.org/cache/epub/57775/pg57775.epub"
     },
     {
       "id": 116,
-      "title": "Andromaque",
-      "author": "Jean Racine",
-      "status": "FAILED",
-      "error": "File missing or unverified"
+      "title": "L'Ève future",
+      "author": "Villiers de l'Isle-Adam",
+      "status": "SUCCESS",
+      "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\116_Villiers de l'Isle-Adam_L'Eve future.epub",
+      "bytes": 301485,
+      "source_url": "https://www.gutenberg.org/cache/epub/60045/pg60045.epub"
     },
     {
       "id": 117,
-      "title": "Le Cid",
-      "author": "Pierre Corneille",
-      "status": "FAILED",
-      "error": "File missing or unverified"
+      "title": "Contes cruels",
+      "author": "Villiers de l'Isle-Adam",
+      "status": "SUCCESS",
+      "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\117_Villiers de l'Isle-Adam_Contes cruels.epub",
+      "bytes": 325654,
+      "source_url": "cached"
     },
     {
       "id": 118,
-      "title": "Horace",
-      "author": "Pierre Corneille",
-      "status": "FAILED",
-      "error": "File missing or unverified"
+      "title": "Le Capitaine Fracasse",
+      "author": "Théophile Gautier",
+      "status": "SUCCESS",
+      "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\118_Theophile Gautier_Le Capitaine Fracasse.epub",
+      "bytes": 590435,
+      "source_url": "https://www.gutenberg.org/cache/epub/60746/pg60746.epub"
     },
     {
       "id": 119,
-      "title": "Le Barbier de Séville",
-      "author": "Beaumarchais",
-      "status": "FAILED",
-      "error": "File missing or unverified"
+      "title": "Les Filles du feu",
+      "author": "Gérard de Nerval",
+      "status": "SUCCESS",
+      "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\119_Gerard de Nerval_Les Filles du feu.epub",
+      "bytes": 520364,
+      "source_url": "cached"
     },
     {
       "id": 120,
@@ -987,35 +1038,41 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\120_Beaumarchais_Le Mariage de Figaro.epub",
       "bytes": 194896,
-      "source_url": "https://www.gutenberg.org/ebooks/64953"
+      "source_url": "cached"
     },
     {
       "id": 121,
-      "title": "Le Jeu de l'amour et du hasard",
-      "author": "Pierre de Marivaux",
-      "status": "FAILED",
-      "error": "File missing or unverified"
+      "title": "Aurélia",
+      "author": "Gérard de Nerval",
+      "status": "SUCCESS",
+      "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\121_Gerard de Nerval_Aurelia.epub",
+      "bytes": 141908,
+      "source_url": "https://www.gutenberg.org/cache/epub/39575/pg39575.epub"
     },
     {
       "id": 122,
-      "title": "La Vie de Marianne",
-      "author": "Pierre de Marivaux",
-      "status": "FAILED",
-      "error": "File missing or unverified"
+      "title": "Gaspard de la Nuit",
+      "author": "Aloysius Bertrand",
+      "status": "SUCCESS",
+      "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\122_Aloysius Bertrand_Gaspard de la Nuit.epub",
+      "bytes": 123101,
+      "source_url": "cached"
     },
     {
       "id": 123,
-      "title": "On ne badine pas avec l'amour",
-      "author": "Alfred de Musset",
-      "status": "FAILED",
-      "error": "File missing or unverified"
+      "title": "Les Chants de Maldoror",
+      "author": "Comte de Lautréamont",
+      "status": "SUCCESS",
+      "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\123_Comte de Lautreamont_Les Chants de Maldoror.epub",
+      "bytes": 274286,
+      "source_url": "https://www.gutenberg.org/cache/epub/12005/pg12005.epub"
     },
     {
       "id": 124,
-      "title": "Lorenzaccio",
-      "author": "Alfred de Musset",
+      "title": "Poésies",
+      "author": "Stéphane Mallarmé",
       "status": "FAILED",
-      "error": "File missing or unverified"
+      "error": "Download failed after retries: Downloaded file internal title mismatch"
     },
     {
       "id": 125,
@@ -1023,8 +1080,8 @@
       "author": "Edmond Rostand",
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\125_Edmond Rostand_Cyrano de Bergerac.epub",
-      "bytes": 173891,
-      "source_url": "https://www.gutenberg.org/ebooks/1254"
+      "bytes": 168551,
+      "source_url": "https://www.gutenberg.org/cache/epub/1254/pg1254.epub"
     },
     {
       "id": 126,
@@ -1033,23 +1090,21 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\126_Charles Baudelaire_Les Fleurs du Mal.epub",
       "bytes": 448462,
-      "source_url": "https://www.gutenberg.org/ebooks/6099"
+      "source_url": "cached"
     },
     {
       "id": 127,
-      "title": "Le Spleen de Paris",
-      "author": "Charles Baudelaire",
+      "title": "Poèmes saturniens",
+      "author": "Paul Verlaine",
       "status": "FAILED",
-      "error": "File missing or unverified"
+      "error": "Download failed after retries: Downloaded file internal title mismatch"
     },
     {
       "id": 128,
       "title": "Les Paradis artificiels",
       "author": "Charles Baudelaire",
-      "status": "SUCCESS",
-      "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\128_Charles Baudelaire_Les Paradis artificiels.epub",
-      "bytes": 225326,
-      "source_url": "https://www.noslivres.net/recherche.php?q=Charles+Baudelaire+Les+Paradis+artificiels"
+      "status": "FAILED",
+      "error": "Download URL could not be resolved"
     },
     {
       "id": 129,
@@ -1057,22 +1112,26 @@
       "author": "Arthur Rimbaud",
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\129_Arthur Rimbaud_Une saison en enfer.epub",
-      "bytes": 99227,
-      "source_url": "https://www.gutenberg.org/ebooks/56668"
+      "bytes": 97828,
+      "source_url": "https://www.gutenberg.org/cache/epub/56668/pg56668.epub"
     },
     {
       "id": 130,
-      "title": "Illuminations",
-      "author": "Arthur Rimbaud",
-      "status": "FAILED",
-      "error": "File missing or unverified"
+      "title": "Romances sans paroles",
+      "author": "Paul Verlaine",
+      "status": "SUCCESS",
+      "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\130_Paul Verlaine_Romances sans paroles.epub",
+      "bytes": 208882,
+      "source_url": "https://www.gutenberg.org/cache/epub/15112/pg15112.epub"
     },
     {
       "id": 131,
-      "title": "Poèmes saturniens",
+      "title": "Sagesse",
       "author": "Paul Verlaine",
-      "status": "FAILED",
-      "error": "File missing or unverified"
+      "status": "SUCCESS",
+      "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\131_Paul Verlaine_Sagesse.epub",
+      "bytes": 208882,
+      "source_url": "https://www.gutenberg.org/cache/epub/15112/pg15112.epub"
     },
     {
       "id": 132,
@@ -1081,7 +1140,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\132_Paul Verlaine_Romances sans paroles.epub",
       "bytes": 208882,
-      "source_url": "https://www.gutenberg.org/ebooks/15100"
+      "source_url": "https://www.gutenberg.org/cache/epub/15112/pg15112.epub"
     },
     {
       "id": 133,
@@ -1090,14 +1149,14 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\133_Paul Verlaine_Sagesse.epub",
       "bytes": 208882,
-      "source_url": "https://www.gutenberg.org/ebooks/15101"
+      "source_url": "https://www.gutenberg.org/cache/epub/15112/pg15112.epub"
     },
     {
       "id": 134,
-      "title": "Poésies",
-      "author": "Stéphane Mallarmé",
+      "title": "Illuminations",
+      "author": "Arthur Rimbaud",
       "status": "FAILED",
-      "error": "File missing or unverified"
+      "error": "Download failed after retries: Downloaded file internal title mismatch"
     },
     {
       "id": 135,
@@ -1105,8 +1164,8 @@
       "author": "Guillaume Apollinaire",
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\135_Guillaume Apollinaire_Alcools.epub",
-      "bytes": 111851,
-      "source_url": "https://www.gutenberg.org/ebooks/15462"
+      "bytes": 111769,
+      "source_url": "https://www.gutenberg.org/cache/epub/15462/pg15462.epub"
     },
     {
       "id": 136,
@@ -1114,15 +1173,17 @@
       "author": "Guillaume Apollinaire",
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\136_Guillaume Apollinaire_Calligrammes.epub",
-      "bytes": 2502771,
-      "source_url": "https://www.noslivres.net/recherche.php?q=Guillaume+Apollinaire+Calligrammes"
+      "bytes": 116082,
+      "source_url": "https://www.gutenberg.org/cache/epub/55569/pg55569.epub"
     },
     {
       "id": 137,
-      "title": "Fables",
-      "author": "Jean de La Fontaine",
-      "status": "FAILED",
-      "error": "File missing or unverified"
+      "title": "Une saison en enfer",
+      "author": "Arthur Rimbaud",
+      "status": "SUCCESS",
+      "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\137_Arthur Rimbaud_Une saison en enfer.epub",
+      "bytes": 97828,
+      "source_url": "https://www.gutenberg.org/cache/epub/56668/pg56668.epub"
     },
     {
       "id": 138,
@@ -1131,7 +1192,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\138_Gerard de Nerval_Les Filles du feu.epub",
       "bytes": 520364,
-      "source_url": "https://www.gutenberg.org/ebooks/55554"
+      "source_url": "https://www.gutenberg.org/cache/epub/55554/pg55554.epub"
     },
     {
       "id": 139,
@@ -1140,28 +1201,32 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\139_Gerard de Nerval_Aurelia.epub",
       "bytes": 141908,
-      "source_url": "https://www.gutenberg.org/ebooks/16036"
+      "source_url": "https://www.gutenberg.org/cache/epub/39575/pg39575.epub"
     },
     {
       "id": 140,
-      "title": "Les Destinées",
-      "author": "Alfred de Vigny",
-      "status": "FAILED",
-      "error": "File missing or unverified"
+      "title": "Les Fleurs du Mal",
+      "author": "Charles Baudelaire",
+      "status": "SUCCESS",
+      "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\140_Charles Baudelaire_Les Fleurs du Mal.epub",
+      "bytes": 144685,
+      "source_url": "https://www.gutenberg.org/cache/epub/6099/pg6099.epub"
     },
     {
       "id": 141,
-      "title": "Émaux et Camées",
-      "author": "Théophile Gautier",
+      "title": "Le Spleen de Paris",
+      "author": "Charles Baudelaire",
       "status": "FAILED",
-      "error": "File missing or unverified"
+      "error": "Download failed after retries: Downloaded file internal title mismatch"
     },
     {
       "id": 142,
-      "title": "Le Roman de la momie",
-      "author": "Théophile Gautier",
-      "status": "FAILED",
-      "error": "File missing or unverified"
+      "title": "Germinal",
+      "author": "Émile Zola",
+      "status": "SUCCESS",
+      "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\142_Emile Zola_Germinal.epub",
+      "bytes": 485541,
+      "source_url": "https://www.gutenberg.org/cache/epub/56528/pg56528.epub"
     },
     {
       "id": 143,
@@ -1170,7 +1235,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\143_Theophile Gautier_Capitaine Fracasse.epub",
       "bytes": 590435,
-      "source_url": "https://www.gutenberg.org/ebooks/15097"
+      "source_url": "https://www.gutenberg.org/cache/epub/60746/pg60746.epub"
     },
     {
       "id": 144,
@@ -1178,8 +1243,8 @@
       "author": "Villiers de l'Isle-Adam",
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\144_Villiers de l'Isle-Adam_Contes cruels.epub",
-      "bytes": 359721,
-      "source_url": "https://www.gutenberg.org/ebooks/62874"
+      "bytes": 325654,
+      "source_url": "https://www.gutenberg.org/cache/epub/62874/pg62874.epub"
     },
     {
       "id": 145,
@@ -1188,7 +1253,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\145_Villiers de l'Isle-Adam_L'Eve future.epub",
       "bytes": 301485,
-      "source_url": "https://www.gutenberg.org/ebooks/60045"
+      "source_url": "https://www.gutenberg.org/cache/epub/60045/pg60045.epub"
     },
     {
       "id": 146,
@@ -1196,8 +1261,8 @@
       "author": "Aloysius Bertrand",
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\146_Aloysius Bertrand_Gaspard de la Nuit.epub",
-      "bytes": 157794,
-      "source_url": "https://www.gutenberg.org/ebooks/17708"
+      "bytes": 123101,
+      "source_url": "https://www.gutenberg.org/cache/epub/17708/pg17708.epub"
     },
     {
       "id": 147,
@@ -1206,7 +1271,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\147_Comte de Lautreamont_Les Chants de Maldoror.epub",
       "bytes": 274286,
-      "source_url": "https://www.gutenberg.org/ebooks/16034"
+      "source_url": "https://www.gutenberg.org/cache/epub/12005/pg12005.epub"
     },
     {
       "id": 148,
@@ -1214,8 +1279,8 @@
       "author": "Octave Mirbeau",
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\148_Octave Mirbeau_Le Journal d'une femme de chambre.epub",
-      "bytes": 357324,
-      "source_url": "https://www.gutenberg.org/ebooks/16820"
+      "bytes": 360399,
+      "source_url": "https://www.gutenberg.org/cache/epub/16820/pg16820.epub"
     },
     {
       "id": 149,
@@ -1224,35 +1289,43 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\149_Octave Mirbeau_Le Jardin des supplices.epub",
       "bytes": 241821,
-      "source_url": "https://www.gutenberg.org/ebooks/16211"
+      "source_url": "https://www.gutenberg.org/cache/epub/57775/pg57775.epub"
     },
     {
       "id": 150,
-      "title": "Du côté de chez Swann",
-      "author": "Marcel Proust",
-      "status": "FAILED",
-      "error": "File missing or unverified"
+      "title": "L'Assommoir",
+      "author": "Émile Zola",
+      "status": "SUCCESS",
+      "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\150_Emile Zola_L'Assommoir.epub",
+      "bytes": 426795,
+      "source_url": "https://www.gutenberg.org/cache/epub/8600/pg8600.epub"
     },
     {
       "id": 151,
-      "title": "À l'ombre des jeunes filles en fleurs",
-      "author": "Marcel Proust",
-      "status": "FAILED",
-      "error": "File missing or unverified"
+      "title": "Nana",
+      "author": "Émile Zola",
+      "status": "SUCCESS",
+      "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\151_Emile Zola_Nana.epub",
+      "bytes": 442259,
+      "source_url": "https://www.gutenberg.org/cache/epub/5250/pg5250.epub"
     },
     {
       "id": 152,
-      "title": "Le Côté de Guermantes",
-      "author": "Marcel Proust",
-      "status": "FAILED",
-      "error": "File missing or unverified"
+      "title": "Thérèse Raquin",
+      "author": "Émile Zola",
+      "status": "SUCCESS",
+      "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\152_Emile Zola_Therese Raquin.epub",
+      "bytes": 261518,
+      "source_url": "https://www.gutenberg.org/cache/epub/6626/pg6626.epub"
     },
     {
       "id": 153,
-      "title": "Sodome et Gomorrhe",
-      "author": "Marcel Proust",
-      "status": "FAILED",
-      "error": "File missing or unverified"
+      "title": "L'Œuvre",
+      "author": "Émile Zola",
+      "status": "SUCCESS",
+      "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\153_Emile Zola_L'Œuvre.epub",
+      "bytes": 401094,
+      "source_url": "https://www.gutenberg.org/cache/epub/17517/pg17517.epub"
     },
     {
       "id": 154,
@@ -1260,8 +1333,8 @@
       "author": "Alain-Fournier",
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\154_Alain-Fournier_Le Grand Meaulnes.epub",
-      "bytes": 352074,
-      "source_url": "https://www.gutenberg.org/ebooks/5781"
+      "bytes": 285780,
+      "source_url": "cached"
     },
     {
       "id": 155,
@@ -1269,15 +1342,17 @@
       "author": "Louis Pergaud",
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\155_Louis Pergaud_La Guerre des boutons.epub",
-      "bytes": 234377,
-      "source_url": "https://www.gutenberg.org/ebooks/56646"
+      "bytes": 308935,
+      "source_url": "cached"
     },
     {
       "id": 156,
-      "title": "Le Feu",
-      "author": "Henri Barbusse",
-      "status": "FAILED",
-      "error": "File missing or unverified"
+      "title": "Madame Bovary",
+      "author": "Gustave Flaubert",
+      "status": "SUCCESS",
+      "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\156_Gustave Flaubert_Madame Bovary.epub",
+      "bytes": 420098,
+      "source_url": "https://www.gutenberg.org/cache/epub/2413/pg2413.epub"
     },
     {
       "id": 157,
@@ -1285,8 +1360,8 @@
       "author": "Anatole France",
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\157_Anatole France_Les dieux ont soif.epub",
-      "bytes": 266070,
-      "source_url": "https://www.gutenberg.org/ebooks/36477"
+      "bytes": 252082,
+      "source_url": "cached"
     },
     {
       "id": 158,
@@ -1294,45 +1369,51 @@
       "author": "Anatole France",
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\158_Anatole France_Le Crime de Sylvestre Bonnard.epub",
-      "bytes": 490080,
-      "source_url": "https://www.gutenberg.org/ebooks/2123"
+      "bytes": 241388,
+      "source_url": "https://www.gutenberg.org/cache/epub/2123/pg2123.epub"
     },
     {
       "id": 159,
-      "title": "L'Île des Pingouins",
-      "author": "Anatole France",
-      "status": "FAILED",
-      "error": "File missing or unverified"
+      "title": "Salammbô",
+      "author": "Gustave Flaubert",
+      "status": "SUCCESS",
+      "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\159_Gustave Flaubert_Salammbo.epub",
+      "bytes": 337261,
+      "source_url": "https://www.gutenberg.org/cache/epub/1290/pg1290.epub"
     },
     {
       "id": 160,
-      "title": "Claudine à l'école",
-      "author": "Colette",
-      "status": "FAILED",
-      "error": "File missing or unverified"
+      "title": "Les Misérables",
+      "author": "Victor Hugo",
+      "status": "SUCCESS",
+      "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\160_Victor Hugo_Les Miserables.epub",
+      "bytes": 1832621,
+      "source_url": "https://www.gutenberg.org/cache/epub/135/pg135.epub"
     },
     {
       "id": 161,
-      "title": "Claudine à Paris",
-      "author": "Colette",
-      "status": "FAILED",
-      "error": "File missing or unverified"
+      "title": "Notre-Dame de Paris",
+      "author": "Victor Hugo",
+      "status": "SUCCESS",
+      "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\161_Victor Hugo_Notre-Dame de Paris.epub",
+      "bytes": 581934,
+      "source_url": "https://www.gutenberg.org/cache/epub/2610/pg2610.epub"
     },
     {
       "id": 162,
-      "title": "Chéri",
-      "author": "Colette",
-      "status": "FAILED",
-      "error": "File missing or unverified"
+      "title": "Quatrevingt-treize",
+      "author": "Victor Hugo",
+      "status": "SUCCESS",
+      "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\162_Victor Hugo_Quatrevingt-treize.epub",
+      "bytes": 390124,
+      "source_url": "https://www.gutenberg.org/cache/epub/9645/pg9645.epub"
     },
     {
       "id": 163,
       "title": "La Vagabonde",
       "author": "Colette",
-      "status": "SUCCESS",
-      "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\163_Colette_La Vagabonde.epub",
-      "bytes": 373167,
-      "source_url": "https://www.noslivres.net/recherche.php?q=Colette+La+Vagabonde"
+      "status": "FAILED",
+      "error": "Download failed after retries: Downloaded file internal title mismatch"
     },
     {
       "id": 164,
@@ -1341,14 +1422,16 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\164_Romain Rolland_Jean-Christophe (Tome I).epub",
       "bytes": 532428,
-      "source_url": "https://www.gutenberg.org/ebooks/16213"
+      "source_url": "https://www.gutenberg.org/cache/epub/7967/pg7967.epub"
     },
     {
       "id": 165,
-      "title": "Pêcheur d'Islande",
-      "author": "Pierre Loti",
-      "status": "FAILED",
-      "error": "File missing or unverified"
+      "title": "L'Homme qui rit",
+      "author": "Victor Hugo",
+      "status": "SUCCESS",
+      "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\165_Victor Hugo_L'Homme qui rit.epub",
+      "bytes": 597907,
+      "source_url": "https://www.gutenberg.org/cache/epub/5423/pg5423.epub"
     },
     {
       "id": 166,
@@ -1357,7 +1440,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\166_Pierre Loti_Ramuntcho.epub",
       "bytes": 201473,
-      "source_url": "https://www.gutenberg.org/ebooks/16214"
+      "source_url": "https://www.gutenberg.org/cache/epub/9616/pg9616.epub"
     },
     {
       "id": 167,
@@ -1365,8 +1448,8 @@
       "author": "Alfred Jarry",
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\167_Alfred Jarry_Ubu Roi.epub",
-      "bytes": 101498,
-      "source_url": "https://www.gutenberg.org/ebooks/16884"
+      "bytes": 108284,
+      "source_url": "https://www.gutenberg.org/cache/epub/16884/pg16884.epub"
     },
     {
       "id": 168,
@@ -1374,15 +1457,17 @@
       "author": "Raymond Radiguet",
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\168_Raymond Radiguet_Le Diable au corps.epub",
-      "bytes": 143999,
-      "source_url": "https://www.gutenberg.org/ebooks/60383"
+      "bytes": 146717,
+      "source_url": "https://www.gutenberg.org/cache/epub/60383/pg60383.epub"
     },
     {
       "id": 169,
-      "title": "Le Bal du comte d'Orgel",
-      "author": "Raymond Radiguet",
-      "status": "FAILED",
-      "error": "File missing or unverified"
+      "title": "Le Dernier Jour d'un condamné",
+      "author": "Victor Hugo",
+      "status": "SUCCESS",
+      "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\169_Victor Hugo_Le Dernier Jour d'un condamne.epub",
+      "bytes": 167692,
+      "source_url": "https://www.gutenberg.org/cache/epub/6838/pg6838.epub"
     },
     {
       "id": 170,
@@ -1391,42 +1476,52 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\170_Charles-Louis Philippe_Bubu de Montparnasse.epub",
       "bytes": 141329,
-      "source_url": "https://www.gutenberg.org/ebooks/16216"
+      "source_url": "https://www.gutenberg.org/cache/epub/47710/pg47710.epub"
     },
     {
       "id": 171,
-      "title": "Propos sur le bonheur",
-      "author": "Émile Chartier (Alain)",
-      "status": "FAILED",
-      "error": "File missing or unverified"
+      "title": "Le Comte de Monte-Cristo",
+      "author": "Alexandre Dumas",
+      "status": "SUCCESS",
+      "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\171_Alexandre Dumas_Le Comte de Monte-Cristo.epub",
+      "bytes": 404623,
+      "source_url": "cached"
     },
     {
       "id": 172,
-      "title": "La Jeune Parque",
-      "author": "Paul Valéry",
-      "status": "FAILED",
-      "error": "File missing or unverified"
+      "title": "Les Trois Mousquetaires",
+      "author": "Alexandre Dumas",
+      "status": "SUCCESS",
+      "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\172_Alexandre Dumas_Les Trois Mousquetaires.epub",
+      "bytes": 691956,
+      "source_url": "cached"
     },
     {
       "id": 173,
-      "title": "L'Annonce faite à Marie",
-      "author": "Paul Claudel",
-      "status": "FAILED",
-      "error": "File missing or unverified"
+      "title": "Vingt ans après",
+      "author": "Alexandre Dumas",
+      "status": "SUCCESS",
+      "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\173_Alexandre Dumas_Vingt ans apres.epub",
+      "bytes": 798253,
+      "source_url": "cached"
     },
     {
       "id": 174,
-      "title": "Les Nourritures terrestres",
-      "author": "André Gide",
-      "status": "FAILED",
-      "error": "File missing or unverified"
+      "title": "Le Vicomte de Bragelonne",
+      "author": "Alexandre Dumas",
+      "status": "SUCCESS",
+      "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\174_Alexandre Dumas_Le Vicomte de Bragelonne.epub",
+      "bytes": 521184,
+      "source_url": "cached"
     },
     {
       "id": 175,
-      "title": "La Porte étroite",
-      "author": "André Gide",
-      "status": "FAILED",
-      "error": "File missing or unverified"
+      "title": "La Reine Margot",
+      "author": "Alexandre Dumas",
+      "status": "SUCCESS",
+      "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\175_Alexandre Dumas_La Reine Margot.epub",
+      "bytes": 326461,
+      "source_url": "cached"
     },
     {
       "id": 176,
@@ -1435,37 +1530,37 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\176_Andre Gide_L'Immoraliste.epub",
       "bytes": 213237,
-      "source_url": "https://www.gutenberg.org/ebooks/73058"
+      "source_url": "cached"
     },
     {
       "id": 177,
-      "title": "Les Lèvres closes",
-      "author": "Guillaume Apollinaire",
-      "status": "FAILED",
-      "error": "File missing or unverified"
+      "title": "La Dame de Monsoreau",
+      "author": "Alexandre Dumas",
+      "status": "SUCCESS",
+      "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\177_Alexandre Dumas_La Dame de Monsoreau.epub",
+      "bytes": 325315,
+      "source_url": "cached"
     },
     {
       "id": 178,
       "title": "L'Habit vert",
       "author": "Gaston de Caillavet & Robert de Flers",
       "status": "FAILED",
-      "error": "File missing or unverified"
+      "error": "Download failed after retries: Downloaded file internal title mismatch"
     },
     {
       "id": 179,
       "title": "Pelléas et Mélisande",
       "author": "Maurice Maeterlinck",
       "status": "FAILED",
-      "error": "File missing or unverified"
+      "error": "Download failed after retries: Downloaded file internal title mismatch"
     },
     {
       "id": 180,
       "title": "Notre Jeunesse",
       "author": "Charles Péguy",
-      "status": "SUCCESS",
-      "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\180_Charles Peguy_Notre Jeunesse.epub",
-      "bytes": 398829,
-      "source_url": "https://www.gutenberg.org/ebooks/16222"
+      "status": "FAILED",
+      "error": "Download failed after retries: Downloaded file internal title mismatch"
     },
     {
       "id": 181,
@@ -1474,7 +1569,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\181_Arthur Conan Doyle_The Adventures of Sherlock Holmes.epub",
       "bytes": 311604,
-      "source_url": "https://standardebooks.org/ebooks/arthur-conan-doyle/the-adventures-of-sherlock-holmes"
+      "source_url": "cached"
     },
     {
       "id": 182,
@@ -1483,7 +1578,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\182_Arthur Conan Doyle_The Memoirs of Sherlock Holmes.epub",
       "bytes": 291329,
-      "source_url": "https://standardebooks.org/ebooks/arthur-conan-doyle/the-memoirs-of-sherlock-holmes"
+      "source_url": "cached"
     },
     {
       "id": 183,
@@ -1492,7 +1587,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\183_Arthur Conan Doyle_The Return of Sherlock Holmes.epub",
       "bytes": 340245,
-      "source_url": "https://standardebooks.org/ebooks/arthur-conan-doyle/the-return-of-sherlock-holmes"
+      "source_url": "cached"
     },
     {
       "id": 184,
@@ -1501,7 +1596,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\184_Arthur Conan Doyle_The Hound of the Baskervilles.epub",
       "bytes": 228105,
-      "source_url": "https://standardebooks.org/ebooks/arthur-conan-doyle/the-hound-of-the-baskervilles"
+      "source_url": "cached"
     },
     {
       "id": 185,
@@ -1510,7 +1605,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\185_Arthur Conan Doyle_A Study in Scarlet.epub",
       "bytes": 194519,
-      "source_url": "https://standardebooks.org/ebooks/arthur-conan-doyle/a-study-in-scarlet"
+      "source_url": "cached"
     },
     {
       "id": 186,
@@ -1519,7 +1614,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\186_Arthur Conan Doyle_The Sign of the Four.epub",
       "bytes": 187515,
-      "source_url": "https://standardebooks.org/ebooks/arthur-conan-doyle/the-sign-of-the-four"
+      "source_url": "cached"
     },
     {
       "id": 187,
@@ -1528,7 +1623,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\187_Bram Stoker_Dracula.epub",
       "bytes": 433229,
-      "source_url": "https://standardebooks.org/ebooks/bram-stoker/dracula"
+      "source_url": "cached"
     },
     {
       "id": 188,
@@ -1537,7 +1632,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\188_Mary Shelley_Frankenstein.epub",
       "bytes": 356351,
-      "source_url": "https://standardebooks.org/ebooks/mary-shelley/frankenstein"
+      "source_url": "https://www.gutenberg.org/cache/epub/84/pg84.epub"
     },
     {
       "id": 189,
@@ -1546,7 +1641,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\189_Robert Louis Stevenson_Treasure Island.epub",
       "bytes": 273936,
-      "source_url": "https://standardebooks.org/ebooks/robert-louis-stevenson/treasure-island"
+      "source_url": "cached"
     },
     {
       "id": 190,
@@ -1555,7 +1650,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\190_Robert Louis Stevenson_Strange Case of Dr Jekyll and Mr Hyde.epub",
       "bytes": 142480,
-      "source_url": "https://standardebooks.org/ebooks/robert-louis-stevenson/strange-case-of-dr-jekyll-and-mr-hyde"
+      "source_url": "cached"
     },
     {
       "id": 191,
@@ -1564,7 +1659,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\191_Robert Louis Stevenson_Kidnapped.epub",
       "bytes": 261833,
-      "source_url": "https://standardebooks.org/ebooks/robert-louis-stevenson/kidnapped"
+      "source_url": "cached"
     },
     {
       "id": 192,
@@ -1573,7 +1668,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\192_Herman Melville_Moby-Dick.epub",
       "bytes": 727453,
-      "source_url": "https://standardebooks.org/ebooks/herman-melville/moby-dick"
+      "source_url": "https://www.gutenberg.org/cache/epub/2701/pg2701.epub"
     },
     {
       "id": 193,
@@ -1582,7 +1677,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\193_Herman Melville_Bartleby, the Scrivener.epub",
       "bytes": 107992,
-      "source_url": "https://standardebooks.org/ebooks/herman-melville/bartleby-the-scrivener"
+      "source_url": "cached"
     },
     {
       "id": 194,
@@ -1591,7 +1686,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\194_H.G. Wells_The Time Machine.epub",
       "bytes": 162555,
-      "source_url": "https://standardebooks.org/ebooks/hg-wells/the-time-machine"
+      "source_url": "cached"
     },
     {
       "id": 195,
@@ -1600,7 +1695,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\195_H.G. Wells_The War of the Worlds.epub",
       "bytes": 242069,
-      "source_url": "https://standardebooks.org/ebooks/hg-wells/the-war-of-the-worlds"
+      "source_url": "https://www.gutenberg.org/cache/epub/36/pg36.epub"
     },
     {
       "id": 196,
@@ -1609,7 +1704,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\196_H.G. Wells_The Invisible Man.epub",
       "bytes": 215306,
-      "source_url": "https://standardebooks.org/ebooks/hg-wells/the-invisible-man"
+      "source_url": "https://www.gutenberg.org/cache/epub/5230/pg5230.epub"
     },
     {
       "id": 197,
@@ -1618,7 +1713,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\197_H.G. Wells_The Island of Doctor Moreau.epub",
       "bytes": 200608,
-      "source_url": "https://standardebooks.org/ebooks/hg-wells/the-island-of-doctor-moreau"
+      "source_url": "cached"
     },
     {
       "id": 198,
@@ -1627,7 +1722,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\198_Daniel Defoe_Robinson Crusoe.epub",
       "bytes": 326761,
-      "source_url": "https://standardebooks.org/ebooks/daniel-defoe/robinson-crusoe"
+      "source_url": "cached"
     },
     {
       "id": 199,
@@ -1636,7 +1731,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\199_Daniel Defoe_Moll Flanders.epub",
       "bytes": 11669,
-      "source_url": "https://standardebooks.org/ebooks/daniel-defoe/moll-flanders"
+      "source_url": "cached"
     },
     {
       "id": 200,
@@ -1645,7 +1740,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\200_Jack London_The Call of the Wild.epub",
       "bytes": 156189,
-      "source_url": "https://standardebooks.org/ebooks/jack-london/the-call-of-the-wild"
+      "source_url": "cached"
     },
     {
       "id": 201,
@@ -1654,7 +1749,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\201_Jack London_White Fang.epub",
       "bytes": 241566,
-      "source_url": "https://standardebooks.org/ebooks/jack-london/white-fang"
+      "source_url": "cached"
     },
     {
       "id": 202,
@@ -1663,7 +1758,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\202_Jack London_The Sea-Wolf.epub",
       "bytes": 366034,
-      "source_url": "https://standardebooks.org/ebooks/jack-london/the-sea-wolf"
+      "source_url": "cached"
     },
     {
       "id": 203,
@@ -1672,14 +1767,14 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\203_Jack London_Martin Eden.epub",
       "bytes": 448284,
-      "source_url": "https://standardebooks.org/ebooks/jack-london/martin-eden"
+      "source_url": "cached"
     },
     {
       "id": 204,
       "title": "Tales of the Grotesque and Arabesque",
       "author": "Edgar Allan Poe",
       "status": "FAILED",
-      "error": "File missing or unverified"
+      "error": "Download failed after retries: Downloaded file internal title mismatch"
     },
     {
       "id": 205,
@@ -1688,7 +1783,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\205_Wilkie Collins_The Woman in White.epub",
       "bytes": 715866,
-      "source_url": "https://standardebooks.org/ebooks/wilkie-collins/the-woman-in-white"
+      "source_url": "cached"
     },
     {
       "id": 206,
@@ -1697,7 +1792,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\206_Wilkie Collins_The Moonstone.epub",
       "bytes": 553949,
-      "source_url": "https://standardebooks.org/ebooks/wilkie-collins/the-moonstone"
+      "source_url": "cached"
     },
     {
       "id": 207,
@@ -1706,7 +1801,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\207_G.K. Chesterton_The Innocence of Father Brown.epub",
       "bytes": 257604,
-      "source_url": "https://standardebooks.org/ebooks/gk-chesterton/the-innocence-of-father-brown"
+      "source_url": "cached"
     },
     {
       "id": 208,
@@ -1715,7 +1810,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\208_G.K. Chesterton_The Man Who Was Thursday.epub",
       "bytes": 196433,
-      "source_url": "https://standardebooks.org/ebooks/gk-chesterton/the-man-who-was-thursday"
+      "source_url": "cached"
     },
     {
       "id": 209,
@@ -1724,16 +1819,14 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\209_Rider Haggard_King Solomon's Mines.epub",
       "bytes": 288938,
-      "source_url": "https://www.gutenberg.org/ebooks/2166"
+      "source_url": "cached"
     },
     {
       "id": 210,
       "title": "She: A History of Adventure",
       "author": "Rider Haggard",
-      "status": "SUCCESS",
-      "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\210_Rider Haggard_She A History of Adventure.epub",
-      "bytes": 354153,
-      "source_url": "https://www.gutenberg.org/ebooks/3155"
+      "status": "FAILED",
+      "error": "Download failed after retries: Downloaded file internal title mismatch"
     },
     {
       "id": 211,
@@ -1742,7 +1835,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\211_Joseph Sheridan Le Fanu_Carmilla.epub",
       "bytes": 150018,
-      "source_url": "https://standardebooks.org/ebooks/joseph-sheridan-le-fanu/carmilla"
+      "source_url": "cached"
     },
     {
       "id": 212,
@@ -1751,7 +1844,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\212_Horace Walpole_The Castle of Otranto.epub",
       "bytes": 167963,
-      "source_url": "https://standardebooks.org/ebooks/horace-walpole/the-castle-of-otranto"
+      "source_url": "cached"
     },
     {
       "id": 213,
@@ -1760,7 +1853,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\213_Ann Radcliffe_The Mysteries of Udolpho.epub",
       "bytes": 789505,
-      "source_url": "https://standardebooks.org/ebooks/ann-radcliffe/the-mysteries-of-udolpho"
+      "source_url": "cached"
     },
     {
       "id": 214,
@@ -1769,7 +1862,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\214_Edgar Rice Burroughs_Tarzan of the Apes.epub",
       "bytes": 293039,
-      "source_url": "https://www.gutenberg.org/ebooks/78"
+      "source_url": "cached"
     },
     {
       "id": 215,
@@ -1778,7 +1871,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\215_Edgar Rice Burroughs_A Princess of Mars.epub",
       "bytes": 249878,
-      "source_url": "https://standardebooks.org/ebooks/edgar-rice-burroughs/a-princess-of-mars"
+      "source_url": "cached"
     },
     {
       "id": 216,
@@ -1787,7 +1880,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\216_Jane Austen_Pride and Prejudice.epub",
       "bytes": 558547,
-      "source_url": "https://standardebooks.org/ebooks/jane-austen/pride-and-prejudice"
+      "source_url": "cached"
     },
     {
       "id": 217,
@@ -1796,7 +1889,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\217_Jane Austen_Sense and Sensibility.epub",
       "bytes": 421055,
-      "source_url": "https://standardebooks.org/ebooks/jane-austen/sense-and-sensibility"
+      "source_url": "cached"
     },
     {
       "id": 218,
@@ -1805,7 +1898,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\218_Jane Austen_Emma.epub",
       "bytes": 475737,
-      "source_url": "https://www.gutenberg.org/ebooks/158"
+      "source_url": "cached"
     },
     {
       "id": 219,
@@ -1814,7 +1907,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\219_Jane Austen_Mansfield Park.epub",
       "bytes": 477450,
-      "source_url": "https://www.gutenberg.org/ebooks/141"
+      "source_url": "cached"
     },
     {
       "id": 220,
@@ -1823,7 +1916,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\220_Jane Austen_Persuasion.epub",
       "bytes": 330269,
-      "source_url": "https://www.gutenberg.org/ebooks/105"
+      "source_url": "cached"
     },
     {
       "id": 221,
@@ -1832,7 +1925,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\221_Jane Austen_Northanger Abbey.epub",
       "bytes": 286512,
-      "source_url": "https://www.gutenberg.org/ebooks/121"
+      "source_url": "cached"
     },
     {
       "id": 222,
@@ -1841,7 +1934,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\222_Charlotte Bronte_Jane Eyre.epub",
       "bytes": 607556,
-      "source_url": "https://standardebooks.org/ebooks/charlotte-brontë/jane-eyre"
+      "source_url": "cached"
     },
     {
       "id": 223,
@@ -1850,7 +1943,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\223_Charlotte Bronte_Villette.epub",
       "bytes": 593148,
-      "source_url": "https://www.gutenberg.org/ebooks/9182"
+      "source_url": "cached"
     },
     {
       "id": 224,
@@ -1859,7 +1952,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\224_Emily Bronte_Wuthering Heights.epub",
       "bytes": 435016,
-      "source_url": "https://standardebooks.org/ebooks/emily-brontë/wuthering-heights"
+      "source_url": "cached"
     },
     {
       "id": 225,
@@ -1868,7 +1961,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\225_Anne Bronte_The Tenant of Wildfell Hall.epub",
       "bytes": 532224,
-      "source_url": "https://standardebooks.org/ebooks/anne-brontë/the-tenant-of-wildfell-hall"
+      "source_url": "cached"
     },
     {
       "id": 226,
@@ -1877,7 +1970,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\226_Charles Dickens_Great Expectations.epub",
       "bytes": 554463,
-      "source_url": "https://standardebooks.org/ebooks/charles-dickens/great-expectations"
+      "source_url": "cached"
     },
     {
       "id": 227,
@@ -1886,7 +1979,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\227_Charles Dickens_A Tale of Two Cities.epub",
       "bytes": 487514,
-      "source_url": "https://standardebooks.org/ebooks/charles-dickens/a-tale-of-two-cities"
+      "source_url": "cached"
     },
     {
       "id": 228,
@@ -1895,7 +1988,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\228_Charles Dickens_David Copperfield.epub",
       "bytes": 972742,
-      "source_url": "https://standardebooks.org/ebooks/charles-dickens/david-copperfield"
+      "source_url": "cached"
     },
     {
       "id": 229,
@@ -1904,7 +1997,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\229_Charles Dickens_Oliver Twist.epub",
       "bytes": 200562,
-      "source_url": "https://standardebooks.org/ebooks/charles-dickens/oliver-twist"
+      "source_url": "cached"
     },
     {
       "id": 230,
@@ -1913,7 +2006,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\230_Charles Dickens_Bleak House.epub",
       "bytes": 1002236,
-      "source_url": "https://standardebooks.org/ebooks/charles-dickens/bleak-house"
+      "source_url": "cached"
     },
     {
       "id": 231,
@@ -1922,7 +2015,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\231_Charles Dickens_A Christmas Carol.epub",
       "bytes": 148010,
-      "source_url": "https://standardebooks.org/ebooks/charles-dickens/a-christmas-carol"
+      "source_url": "cached"
     },
     {
       "id": 232,
@@ -1931,7 +2024,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\232_Charles Dickens_Nicholas Nickleby.epub",
       "bytes": 885627,
-      "source_url": "https://standardebooks.org/ebooks/charles-dickens/nicholas-nickleby"
+      "source_url": "cached"
     },
     {
       "id": 233,
@@ -1940,7 +2033,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\233_George Eliot_Middlemarch.epub",
       "bytes": 906007,
-      "source_url": "https://standardebooks.org/ebooks/george-eliot/middlemarch"
+      "source_url": "cached"
     },
     {
       "id": 234,
@@ -1949,7 +2042,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\234_George Eliot_Silas Marner.epub",
       "bytes": 262712,
-      "source_url": "https://www.gutenberg.org/ebooks/550"
+      "source_url": "cached"
     },
     {
       "id": 235,
@@ -1958,7 +2051,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\235_George Eliot_The Mill on the Floss.epub",
       "bytes": 681064,
-      "source_url": "https://standardebooks.org/ebooks/george-eliot/the-mill-on-the-floss"
+      "source_url": "cached"
     },
     {
       "id": 236,
@@ -1967,7 +2060,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\236_Thomas Hardy_Tess of the d'Urbervilles.epub",
       "bytes": 490460,
-      "source_url": "https://standardebooks.org/ebooks/thomas-hardy/tess-of-the-durbervilles"
+      "source_url": "cached"
     },
     {
       "id": 237,
@@ -1976,7 +2069,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\237_Thomas Hardy_Far from the Madding Crowd.epub",
       "bytes": 474854,
-      "source_url": "https://standardebooks.org/ebooks/thomas-hardy/far-from-the-madding-crowd"
+      "source_url": "cached"
     },
     {
       "id": 238,
@@ -1985,7 +2078,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\238_Thomas Hardy_Jude the Obscure.epub",
       "bytes": 477166,
-      "source_url": "https://standardebooks.org/ebooks/thomas-hardy/jude-the-obscure"
+      "source_url": "cached"
     },
     {
       "id": 239,
@@ -1994,7 +2087,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\239_William Makepeace Thackeray_Vanity Fair.epub",
       "bytes": 832789,
-      "source_url": "https://standardebooks.org/ebooks/william-makepeace-thackeray/vanity-fair"
+      "source_url": "cached"
     },
     {
       "id": 240,
@@ -2003,7 +2096,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\240_Elizabeth Gaskell_North and South.epub",
       "bytes": 522032,
-      "source_url": "https://standardebooks.org/ebooks/elizabeth-gaskell/north-and-south"
+      "source_url": "cached"
     },
     {
       "id": 241,
@@ -2012,7 +2105,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\241_Elizabeth Gaskell_Cranford.epub",
       "bytes": 246567,
-      "source_url": "https://standardebooks.org/ebooks/elizabeth-gaskell/cranford"
+      "source_url": "cached"
     },
     {
       "id": 242,
@@ -2021,7 +2114,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\242_Louisa May Alcott_Little Women.epub",
       "bytes": 558523,
-      "source_url": "https://standardebooks.org/ebooks/louisa-may-alcott/little-women"
+      "source_url": "cached"
     },
     {
       "id": 243,
@@ -2030,7 +2123,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\243_L.M. Montgomery_Anne of Green Gables.epub",
       "bytes": 330718,
-      "source_url": "https://standardebooks.org/ebooks/lm-montgomery/anne-of-green-gables"
+      "source_url": "cached"
     },
     {
       "id": 244,
@@ -2039,7 +2132,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\244_Frances Hodgson Burnett_The Secret Garden.epub",
       "bytes": 271465,
-      "source_url": "https://standardebooks.org/ebooks/frances-hodgson-burnett/the-secret-garden"
+      "source_url": "cached"
     },
     {
       "id": 245,
@@ -2048,7 +2141,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\245_Frances Hodgson Burnett_A Little Princess.epub",
       "bytes": 223199,
-      "source_url": "https://standardebooks.org/ebooks/frances-hodgson-burnett/a-little-princess"
+      "source_url": "cached"
     },
     {
       "id": 246,
@@ -2057,7 +2150,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\246_Edith Wharton_The Age of Innocence.epub",
       "bytes": 11382,
-      "source_url": "https://standardebooks.org/ebooks/edith-wharton/the-age-of-innocence"
+      "source_url": "cached"
     },
     {
       "id": 247,
@@ -2066,7 +2159,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\247_Edith Wharton_The House of Mirth.epub",
       "bytes": 439615,
-      "source_url": "https://standardebooks.org/ebooks/edith-wharton/the-house-of-mirth"
+      "source_url": "cached"
     },
     {
       "id": 248,
@@ -2075,7 +2168,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\248_Edith Wharton_Ethan Frome.epub",
       "bytes": 260524,
-      "source_url": "https://standardebooks.org/ebooks/edith-wharton/ethan-frome"
+      "source_url": "cached"
     },
     {
       "id": 249,
@@ -2084,7 +2177,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\249_Henry James_The Portrait of a Lady.epub",
       "bytes": 359101,
-      "source_url": "https://standardebooks.org/ebooks/henry-james/the-portrait-of-a-lady"
+      "source_url": "cached"
     },
     {
       "id": 250,
@@ -2093,7 +2186,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\250_Henry James_The Turn of the Screw.epub",
       "bytes": 183995,
-      "source_url": "https://standardebooks.org/ebooks/henry-james/the-turn-of-the-screw"
+      "source_url": "cached"
     },
     {
       "id": 251,
@@ -2102,7 +2195,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\251_Henry James_Daisy Miller.epub",
       "bytes": 126402,
-      "source_url": "https://standardebooks.org/ebooks/henry-james/daisy-miller"
+      "source_url": "cached"
     },
     {
       "id": 252,
@@ -2111,7 +2204,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\252_Anthony Trollope_Barchester Towers.epub",
       "bytes": 12752,
-      "source_url": "https://standardebooks.org/ebooks/anthony-trollope/barchester-towers"
+      "source_url": "cached"
     },
     {
       "id": 253,
@@ -2120,7 +2213,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\253_E.M. Forster_A Room with a View.epub",
       "bytes": 254476,
-      "source_url": "https://standardebooks.org/ebooks/em-forster/a-room-with-a-view"
+      "source_url": "cached"
     },
     {
       "id": 254,
@@ -2129,7 +2222,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\254_E.M. Forster_Howards End.epub",
       "bytes": 373178,
-      "source_url": "https://www.gutenberg.org/ebooks/2891"
+      "source_url": "cached"
     },
     {
       "id": 255,
@@ -2138,7 +2231,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\255_Kate Chopin_The Awakening.epub",
       "bytes": 234912,
-      "source_url": "https://standardebooks.org/ebooks/kate-chopin/the-awakening"
+      "source_url": "cached"
     },
     {
       "id": 256,
@@ -2147,7 +2240,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\256_Willa Cather_My Antonia.epub",
       "bytes": 301339,
-      "source_url": "https://www.gutenberg.org/ebooks/242"
+      "source_url": "cached"
     },
     {
       "id": 257,
@@ -2156,7 +2249,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\257_W. Somerset Maugham_Of Human Bondage.epub",
       "bytes": 761834,
-      "source_url": "https://standardebooks.org/ebooks/w-somerset-maugham/of-human-bondage"
+      "source_url": "cached"
     },
     {
       "id": 258,
@@ -2165,7 +2258,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\258_W. Somerset Maugham_The Moon and Sixpence.epub",
       "bytes": 303949,
-      "source_url": "https://standardebooks.org/ebooks/w-somerset-maugham/the-moon-and-sixpence"
+      "source_url": "cached"
     },
     {
       "id": 259,
@@ -2174,7 +2267,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\259_Sinclair Lewis_Main Street.epub",
       "bytes": 515570,
-      "source_url": "https://standardebooks.org/ebooks/sinclair-lewis/main-street"
+      "source_url": "cached"
     },
     {
       "id": 260,
@@ -2183,7 +2276,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\260_Sinclair Lewis_Babbitt.epub",
       "bytes": 413726,
-      "source_url": "https://standardebooks.org/ebooks/sinclair-lewis/babbitt"
+      "source_url": "cached"
     },
     {
       "id": 261,
@@ -2192,7 +2285,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\261_Oscar Wilde_The Picture of Dorian Gray.epub",
       "bytes": 460225,
-      "source_url": "https://standardebooks.org/ebooks/oscar-wilde/the-picture-of-dorian-gray"
+      "source_url": "cached"
     },
     {
       "id": 262,
@@ -2201,7 +2294,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\262_Oscar Wilde_The Importance of Being Earnest.epub",
       "bytes": 104247,
-      "source_url": "https://standardebooks.org/ebooks/oscar-wilde/the-importance-of-being-earnest"
+      "source_url": "cached"
     },
     {
       "id": 263,
@@ -2210,7 +2303,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\263_Oscar Wilde_De Profundis.epub",
       "bytes": 110776,
-      "source_url": "https://standardebooks.org/ebooks/oscar-wilde/de-profundis"
+      "source_url": "cached"
     },
     {
       "id": 264,
@@ -2219,7 +2312,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\264_F. Scott Fitzgerald_The Great Gatsby.epub",
       "bytes": 181429,
-      "source_url": "https://standardebooks.org/ebooks/f-scott-fitzgerald/the-great-gatsby"
+      "source_url": "cached"
     },
     {
       "id": 265,
@@ -2228,7 +2321,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\265_F. Scott Fitzgerald_This Side of Paradise.epub",
       "bytes": 292840,
-      "source_url": "https://standardebooks.org/ebooks/f-scott-fitzgerald/this-side-of-paradise"
+      "source_url": "cached"
     },
     {
       "id": 266,
@@ -2237,7 +2330,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\266_Mark Twain_Adventures of Huckleberry Finn.epub",
       "bytes": 347378,
-      "source_url": "https://standardebooks.org/ebooks/mark-twain/adventures-of-huckleberry-finn"
+      "source_url": "cached"
     },
     {
       "id": 267,
@@ -2246,7 +2339,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\267_Mark Twain_The Adventures of Tom Sawyer.epub",
       "bytes": 288751,
-      "source_url": "https://standardebooks.org/ebooks/mark-twain/the-adventures-of-tom-sawyer"
+      "source_url": "cached"
     },
     {
       "id": 268,
@@ -2255,7 +2348,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\268_Mark Twain_A Connecticut Yankee in King Arthur's Court.epub",
       "bytes": 414197,
-      "source_url": "https://standardebooks.org/ebooks/mark-twain/a-connecticut-yankee-in-king-arthurs-court"
+      "source_url": "cached"
     },
     {
       "id": 269,
@@ -2264,7 +2357,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\269_Nathaniel Hawthorne_The Scarlet Letter.epub",
       "bytes": 473447,
-      "source_url": "https://standardebooks.org/ebooks/nathaniel-hawthorne/the-scarlet-letter"
+      "source_url": "cached"
     },
     {
       "id": 270,
@@ -2273,7 +2366,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\270_Nathaniel Hawthorne_The House of the Seven Gables.epub",
       "bytes": 350190,
-      "source_url": "https://standardebooks.org/ebooks/nathaniel-hawthorne/the-house-of-the-seven-gables"
+      "source_url": "cached"
     },
     {
       "id": 271,
@@ -2282,7 +2375,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\271_Jonathan Swift_Gulliver's Travels.epub",
       "bytes": 188161,
-      "source_url": "https://standardebooks.org/ebooks/jonathan-swift/gullivers-travels"
+      "source_url": "cached"
     },
     {
       "id": 272,
@@ -2291,7 +2384,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\272_Laurence Sterne_The Life and Opinions of Tristram Shandy, Gentleman.epub",
       "bytes": 539559,
-      "source_url": "https://standardebooks.org/ebooks/laurence-sterne/the-life-and-opinions-of-tristram-shandy-gentleman"
+      "source_url": "cached"
     },
     {
       "id": 273,
@@ -2300,7 +2393,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\273_Joseph Conrad_Heart of Darkness.epub",
       "bytes": 163331,
-      "source_url": "https://standardebooks.org/ebooks/joseph-conrad/heart-of-darkness"
+      "source_url": "cached"
     },
     {
       "id": 274,
@@ -2309,7 +2402,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\274_Joseph Conrad_Lord Jim.epub",
       "bytes": 380778,
-      "source_url": "https://www.gutenberg.org/ebooks/5658"
+      "source_url": "cached"
     },
     {
       "id": 275,
@@ -2318,7 +2411,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\275_Joseph Conrad_The Secret Agent.epub",
       "bytes": 282743,
-      "source_url": "https://standardebooks.org/ebooks/joseph-conrad/the-secret-agent"
+      "source_url": "cached"
     },
     {
       "id": 276,
@@ -2327,21 +2420,23 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\276_Virginia Woolf_Mrs Dalloway.epub",
       "bytes": 260199,
-      "source_url": "https://standardebooks.org/ebooks/virginia-woolf/mrs-dalloway"
+      "source_url": "cached"
     },
     {
       "id": 277,
       "title": "To the Lighthouse",
       "author": "Virginia Woolf",
       "status": "FAILED",
-      "error": "File missing or unverified"
+      "error": "Download failed after retries: Downloaded file internal title mismatch"
     },
     {
       "id": 278,
       "title": "Orlando",
       "author": "Virginia Woolf",
-      "status": "FAILED",
-      "error": "File missing or unverified"
+      "status": "SUCCESS",
+      "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\278_Virginia Woolf_Orlando.epub",
+      "bytes": 880375,
+      "source_url": "cached"
     },
     {
       "id": 279,
@@ -2350,7 +2445,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\279_James Joyce_Dubliners.epub",
       "bytes": 234758,
-      "source_url": "https://www.gutenberg.org/ebooks/2814"
+      "source_url": "cached"
     },
     {
       "id": 280,
@@ -2359,7 +2454,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\280_James Joyce_A Portrait of the Artist as a Young Man.epub",
       "bytes": 313456,
-      "source_url": "https://standardebooks.org/ebooks/james-joyce/a-portrait-of-the-artist-as-a-young-man"
+      "source_url": "cached"
     },
     {
       "id": 281,
@@ -2368,7 +2463,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\281_Lewis Carroll_Alice's Adventures in Wonderland.epub",
       "bytes": 136761,
-      "source_url": "https://standardebooks.org/ebooks/lewis-carroll/alices-adventures-in-wonderland"
+      "source_url": "cached"
     },
     {
       "id": 282,
@@ -2377,7 +2472,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\282_Lewis Carroll_Through the Looking-Glass.epub",
       "bytes": 143786,
-      "source_url": "https://standardebooks.org/ebooks/lewis-carroll/through-the-looking-glass"
+      "source_url": "cached"
     },
     {
       "id": 283,
@@ -2386,7 +2481,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\283_George Bernard Shaw_Pygmalion.epub",
       "bytes": 155302,
-      "source_url": "https://standardebooks.org/ebooks/george-bernard-shaw/pygmalion"
+      "source_url": "cached"
     },
     {
       "id": 284,
@@ -2395,7 +2490,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\284_George Bernard Shaw_Arms and the Man.epub",
       "bytes": 139102,
-      "source_url": "https://standardebooks.org/ebooks/george-bernard-shaw/arms-and-the-man"
+      "source_url": "cached"
     },
     {
       "id": 285,
@@ -2404,7 +2499,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\285_William Shakespeare_Hamlet.epub",
       "bytes": 209934,
-      "source_url": "https://standardebooks.org/ebooks/william-shakespeare/hamlet"
+      "source_url": "cached"
     },
     {
       "id": 286,
@@ -2413,7 +2508,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\286_William Shakespeare_Macbeth.epub",
       "bytes": 183113,
-      "source_url": "https://www.gutenberg.org/ebooks/1533"
+      "source_url": "cached"
     },
     {
       "id": 287,
@@ -2422,7 +2517,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\287_William Shakespeare_Romeo and Juliet.epub",
       "bytes": 199219,
-      "source_url": "https://standardebooks.org/ebooks/william-shakespeare/romeo-and-juliet"
+      "source_url": "cached"
     },
     {
       "id": 288,
@@ -2431,7 +2526,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\288_William Shakespeare_Othello.epub",
       "bytes": 202271,
-      "source_url": "https://www.gutenberg.org/ebooks/1531"
+      "source_url": "cached"
     },
     {
       "id": 289,
@@ -2440,7 +2535,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\289_William Shakespeare_The Tempest.epub",
       "bytes": 181506,
-      "source_url": "https://www.gutenberg.org/ebooks/1540"
+      "source_url": "cached"
     },
     {
       "id": 290,
@@ -2449,7 +2544,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\290_John Milton_Paradise Lost.epub",
       "bytes": 397904,
-      "source_url": "https://standardebooks.org/ebooks/john-milton/paradise-lost"
+      "source_url": "cached"
     },
     {
       "id": 291,
@@ -2458,7 +2553,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\291_Geoffrey Chaucer_The Canterbury Tales.epub",
       "bytes": 694078,
-      "source_url": "https://standardebooks.org/ebooks/geoffrey-chaucer/the-canterbury-tales"
+      "source_url": "cached"
     },
     {
       "id": 292,
@@ -2467,7 +2562,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\292_Marcus Aurelius_Meditations.epub",
       "bytes": 306086,
-      "source_url": "https://standardebooks.org/ebooks/marcus-aurelius/meditations"
+      "source_url": "cached"
     },
     {
       "id": 293,
@@ -2476,7 +2571,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\293_Epictetus_Enchiridion.epub",
       "bytes": 85534,
-      "source_url": "https://standardebooks.org/ebooks/epictetus/enchiridion"
+      "source_url": "cached"
     },
     {
       "id": 294,
@@ -2485,7 +2580,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\294_Plato_The Republic.epub",
       "bytes": 713047,
-      "source_url": "https://standardebooks.org/ebooks/plato/the-republic"
+      "source_url": "cached"
     },
     {
       "id": 295,
@@ -2494,7 +2589,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\295_Sun Tzu_The Art of War.epub",
       "bytes": 225632,
-      "source_url": "https://standardebooks.org/ebooks/sun-tzu/the-art-of-war"
+      "source_url": "cached"
     },
     {
       "id": 296,
@@ -2503,7 +2598,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\296_Niccolo Machiavelli_The Prince.epub",
       "bytes": 217198,
-      "source_url": "https://standardebooks.org/ebooks/niccolò-machiavelli/the-prince"
+      "source_url": "cached"
     },
     {
       "id": 297,
@@ -2512,7 +2607,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\297_Thomas More_Utopia.epub",
       "bytes": 170083,
-      "source_url": "https://standardebooks.org/ebooks/thomas-more/utopia"
+      "source_url": "cached"
     },
     {
       "id": 298,
@@ -2521,7 +2616,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\298_John Locke_Second Treatise of Government.epub",
       "bytes": 202406,
-      "source_url": "https://standardebooks.org/ebooks/john-locke/second-treatise-of-government"
+      "source_url": "cached"
     },
     {
       "id": 299,
@@ -2530,7 +2625,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\299_Adam Smith_The Wealth of Nations.epub",
       "bytes": 969964,
-      "source_url": "https://standardebooks.org/ebooks/adam-smith/the-wealth-of-nations"
+      "source_url": "cached"
     },
     {
       "id": 300,
@@ -2539,7 +2634,7 @@
       "status": "SUCCESS",
       "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\300_Charles Darwin_On the Origin of Species.epub",
       "bytes": 425044,
-      "source_url": "https://standardebooks.org/ebooks/charles-darwin/on-the-origin-of-species"
+      "source_url": "cached"
     }
   ]
 }

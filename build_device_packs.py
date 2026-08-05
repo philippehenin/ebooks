@@ -77,8 +77,8 @@ def build_packs():
         src_path = b['filepath']
         ext = os.path.splitext(src_path)[1]
 
-        clean_t = sanitize(title)
-        clean_a = sanitize(author)
+        clean_t = sanitize(title)[:40]
+        clean_a = sanitize(author)[:30]
 
         # 1. X3 & X4 Eink Reader Pack
         subfolder = categorize_folder(lang, cat)

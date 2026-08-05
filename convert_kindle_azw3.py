@@ -15,17 +15,22 @@ os.makedirs(KINDLE_USB_DIR, exist_ok=True)
 def sanitize(s):
     return re.sub(r'[\\/*?:"<>|]', "", s).strip()
 
+def categorize_folder(lang, cat):
+    # Helper to maintain compatibility with the requested edit structure
+    return f"{lang}_Classics"
+
 def convert_book(book):
     src_path = book['filepath']
     b_id = book['id']
     title = book['title']
     author = book['author']
     lang = book['language']
+    cat = book.get('category', 'General')
     
-    clean_t = sanitize(title)
-    clean_a = sanitize(author)
+    clean_t = sanitize(title)[:40]
+    clean_a = sanitize(author)[:30]
     
-    target_subfolder = os.path.join(KINDLE_USB_DIR, f"{lang}_Classics")
+    target_subfolder = os.path.join(KINDLE_USB_DIR, categorize_folder(lang, cat))
     os.makedirs(target_subfolder, exist_ok=True)
     
     target_azw3 = os.path.join(target_subfolder, f"{clean_a} - {clean_t}.azw3")
