@@ -1,0 +1,24 @@
+========================================================================
+KINDLE 10TH GEN EBOOK TRANSFER GUIDE
+========================================================================
+
+You have two easy options to load these ebooks onto your Kindle 10th Gen:
+
+OPTION 1: SEND TO KINDLE (Recommended - Syncs progress across devices)
+------------------------------------------------------------------------
+1. Go to https://www.amazon.com/sendtokindle in your web browser.
+2. Drag and drop any .epub file from the "Send_To_Kindle_EPUBs" folder.
+3. Click "Send". Amazon will wirelessly deliver the book to your Kindle!
+OR
+Email the .epub files as attachments to your personal Kindle email address
+(e.g., yourname@kindle.com).
+
+OPTION 2: USB DIRECT CABLE TRANSFER
+------------------------------------------------------------------------
+1. Connect your Kindle 10th Gen to your computer using a USB cable.
+2. Open the Kindle drive on your computer.
+3. Open the "documents" folder on your Kindle drive.
+4. Drag and drop the folders or files from "USB_Direct_Transfer_documents"
+   directly into the Kindle "documents" folder.
+5. Safely eject your Kindle and start reading!
+========================================================================

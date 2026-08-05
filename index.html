@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic Ebook Library | Top 300 DRM-Free Masterpieces</title>
+    <meta name="description" content="A curated, beautiful digital library of top 300 DRM-free French and English literary classics.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Cinzel:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-theme">
+    <div class="app-container">
+        <!-- Header Section -->
+        <header class="app-header">
+            <div class="header-content">
+                <div class="brand">
+                    <div class="logo-icon">📚</div>
+                    <div>
+                        <h1>Athena Classic Library</h1>
+                        <p class="subtitle">Curated Collection of Top 300 DRM-Free French & English Masterpieces</p>
+                    </div>
+                </div>
+                <div class="stats-pills">
+                    <div class="stat-card">
+                        <span class="stat-value" id="stat-total">300</span>
+                        <span class="stat-label">Total Classics</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-value" id="stat-french">180</span>
+                        <span class="stat-label">French 🇫🇷</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-value" id="stat-english">120</span>
+                        <span class="stat-label">English 🇬🇧</span>
+                    </div>
+                    <div class="stat-card highlight">
+                        <span class="stat-value" id="stat-downloaded">0</span>
+                        <span class="stat-label">Ready EPUBs 📥</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Filter & Search Toolbar -->
+            <section class="toolbar">
+                <div class="search-box">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" id="search-input" placeholder="Search by title, author, or genre..." autocomplete="off">
+                    <button id="clear-search" class="clear-btn" style="display: none;">✕</button>
+                </div>
+
+                <div class="filter-group">
+                    <div class="lang-selector">
+                        <button class="lang-btn active" data-lang="all">All</button>
+                        <button class="lang-btn" data-lang="French">🇫🇷 French</button>
+                        <button class="lang-btn" data-lang="English">🇬🇧 English</button>
+                    </div>
+
+                    <select id="category-filter" class="custom-select">
+                        <option value="all">All Categories</option>
+                    </select>
+
+                    <select id="status-filter" class="custom-select">
+                        <option value="all">All Availability</option>
+                        <option value="downloaded">Downloaded Only 📥</option>
+                        <option value="online">Online Source 🌐</option>
+                    </select>
+
+                    <select id="sort-filter" class="custom-select">
+                        <option value="id">Sort by ID</option>
+                        <option value="title">Title (A-Z)</option>
+                        <option value="author">Author (A-Z)</option>
+                    </select>
+
+                    <div class="view-toggle">
+                        <button id="view-grid" class="view-btn active" title="Grid View">📱</button>
+                        <button id="view-list" class="view-btn" title="List View">📋</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Results Summary Bar -->
+            <div class="results-bar">
+                <span id="results-count">Showing 300 books</span>
+                <span id="active-filters-tag" class="active-tag" style="display: none;"></span>
+            </div>
+
+            <!-- Book Cards Container -->
+            <section id="books-container" class="grid-view">
+                <!-- Book Cards will be rendered dynamically by app.js -->
+            </section>
+        </main>
+
+        <!-- Book Details Modal -->
+        <div id="book-modal" class="modal-overlay" style="display: none;">
+            <div class="modal-card">
+                <button id="modal-close" class="modal-close-btn">&times;</button>
+                <div class="modal-body">
+                    <div class="modal-cover-column" id="modal-cover-container">
+                        <!-- Cover rendering -->
+                    </div>
+                    <div class="modal-info-column">
+                        <div class="modal-badges">
+                            <span id="modal-lang-badge" class="badge"></span>
+                            <span id="modal-cat-badge" class="badge secondary"></span>
+                        </div>
+                        <h2 id="modal-title"></h2>
+                        <h3 id="modal-author"></h3>
+                        <p id="modal-meta" class="modal-meta-line"></p>
+
+                        <div class="modal-section">
+                            <h4>Synopsis & Context</h4>
+                            <p id="modal-synopsis" class="synopsis-text"></p>
+                        </div>
+
+                        <div class="modal-section">
+                            <h4>Details & Format</h4>
+                            <div class="details-grid">
+                                <div class="detail-item">
+                                    <span class="detail-label">Primary Source</span>
+                                    <span id="modal-source" class="detail-value"></span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Format</span>
+                                    <span id="modal-format" class="detail-value"></span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Local File</span>
+                                    <span id="modal-filesize" class="detail-value"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal-actions">
+                            <a id="modal-download-btn" href="#" target="_blank" class="action-btn primary">
+                                <span>📥 Open / Download EPUB</span>
+                            </a>
+                            <a id="modal-source-btn" href="#" target="_blank" class="action-btn secondary">
+                                <span>🌐 View Source Catalog</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="app-footer">
+            <p>Athena Ebook Library &bull; Curated DRM-Free Classics &bull; Built with HTML, CSS & Vanilla JS</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

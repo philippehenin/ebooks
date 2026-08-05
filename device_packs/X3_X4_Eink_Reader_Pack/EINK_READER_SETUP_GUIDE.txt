@@ -1,0 +1,16 @@
+========================================================================
+X3 & X4 E-INK READER PACK SETUP GUIDE (Onyx Boox / Kobo / Meebook / PocketBook)
+========================================================================
+
+The ebooks in this pack are structured into clean, categorized directories:
+- 01_French_Classics (Aventure, Realisme, Poesie)
+- 02_English_Classics (Gothic, Victorian, Philosophy)
+
+HOW TO TRANSFER TO YOUR X3 / X4 E-INK READER:
+------------------------------------------------------------------------
+1. Connect your X3 or X4 E-ink Reader to your computer via USB.
+2. Copy the "01_French_Classics" and "02_English_Classics" folders into
+   your reader's "Books" or "Documents" storage directory.
+3. Safely disconnect your reader and open your device's library app
+   (e.g., NeoReader, KOReader, PocketBook Reader, or Kobo Library).
+========================================================================
