@@ -14,6 +14,7 @@ A curated, DRM-free digital library of **300 French and English literary classic
 
 - [💡 Technical Context & The Kindle USB Mystery Solved](#-technical-context--the-kindle-usb-mystery-solved)
 - [✨ Key Features](#-key-features)
+- [📚 Master Literary Catalog (Markdown)](CATALOG.md)
 - [🖼️ NotebookLM Visual Infographics](#%EF%B8%8F-notebooklm-visual-infographics)
 - [📦 Downloadable Device Packs (Releases)](#-downloadable-device-packs-releases)
 - [🚀 Quick Start & Installation Recipe](#-quick-start--installation-recipe)
