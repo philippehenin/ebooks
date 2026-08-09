@@ -85,6 +85,8 @@ def main():
         run_step("Build Device Packs", "build_device_packs.py")
     elif arg == 'docs':
         run_step("Generate Markdown Documentation", "generate_markdown_catalog.py")
+    elif arg == 'status':
+        print_status()
     elif arg == 'test':
         print(f"\n==================================================")
         print(f" ▶ RUNNING: Master Unit Test Suite (tests/test_athena_library.py)")
