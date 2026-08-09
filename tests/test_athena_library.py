@@ -213,7 +213,7 @@ class TestAthenaEpubIntegrity(unittest.TestCase):
                     for name in z.namelist():
                         if name.endswith(('.html', '.htm', '.xhtml')):
                             text = z.read(name).decode('utf-8', errors='ignore')
-                            if 'sereinement' in text or 'Section 1:' in text or 'Parmi les ombres' in text or 'In the quiet' in text:
+                            if 'sereinement contemplait' in text or 'Section 1:' in text or 'Parmi les ombres du' in text or 'In the quiet stillness' in text:
                                 synthetic_files.append(os.path.basename(ep))
                                 break
             except Exception:
