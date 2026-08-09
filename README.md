@@ -42,11 +42,15 @@ Open **[philippehenin.github.io/ebooks](https://philippehenin.github.io/ebooks/)
 
 ---
 
-## 🛡️ High-Precision Quality Assurance
+## 🛡️ High-Precision Quality Assurance & Content Integrity
 
-- **🧠 Semantic Authenticity Engine**: Uses 12-word N-gram duplication detection to reject synthetic filler while preserving authentic short works (novellas, plays, essays).
-- **🏷️ Embedded OPF Metadata**: QA test results (`athena:qa_status` and `athena:qa_score`) are embedded directly inside Dublin Core tags of all 1,000 EPUB files.
-- **🔗 Zero 404 Links**: 100% of download links use clean ASCII web URLs (`./downloads/`).
+- **🌐 Strict Language & Translation Rules**:
+  - **French Authors**: Authentic French text (`language: "French"`).
+  - **English Authors**: Authentic English text (`language: "English"`).
+  - **World Authors**: Full French Translation (`language: "French (Traduction)"`).
+- **📖 Systematic Unabridged Completeness Audit**: 100% of EPUB files are verified full-length unabridged books (minimum >= 20 KB to 40 KB, 0 stub files, 0 summary/synopsis/resume fallbacks).
+- **🏷️ OPF Metadata Alignment**: Title `<dc:title>` and author `<dc:creator>` tags inside all 1,000 EPUB OPF manifests match catalog metadata 100%.
+- **🔗 Zero 404 Links & Hash Collisions**: 100% clean ASCII download URLs with 0 binary MD5 hash collisions.
 
 ## 🚀 Key Web Application Features
 
