@@ -32,19 +32,19 @@ function runDomTest() {
             console.log(`[Browser DOM Test] Results Text: "${resultsCount ? resultsCount.textContent : ''}"`);
             console.log(`[Browser DOM Test] Default Golden 100 Cards Count: ${cards.length}`);
 
-            if (!grid || cards.length < 100 || cards.length > 120) {
-                console.error(`❌ BROWSER DOM TEST FAILED: Expected ~100 default Golden 100 cards, found ${cards.length}.`);
+            if (!grid || cards.length !== 100) {
+                console.error(`❌ BROWSER DOM TEST FAILED: Expected exactly 100 default Golden 100 cards, found ${cards.length}.`);
                 cleanupAndExit(1);
             }
 
-            // Test switching to All Books (1,000 cards)
-            const pillAll = document.querySelector('.vibe-pill[data-vibe="all"]');
-            if (pillAll) pillAll.click();
+            // Test switching to Master Vault (1,000 cards)
+            const btnMasterVault = document.querySelector('.tier-btn[data-tier="all"]');
+            if (btnMasterVault) btnMasterVault.click();
             const allCards = document.querySelectorAll('.book-card');
-            console.log(`[Browser DOM Test] All Books Cards Count: ${allCards.length}`);
+            console.log(`[Browser DOM Test] Master Vault Cards Count: ${allCards.length}`);
 
             if (allCards.length !== 1000) {
-                console.error(`❌ BROWSER DOM TEST FAILED: Expected 1,000 cards when switching to All Books, found ${allCards.length}.`);
+                console.error(`❌ BROWSER DOM TEST FAILED: Expected 1,000 cards when switching to Master Vault, found ${allCards.length}.`);
                 cleanupAndExit(1);
             }
 

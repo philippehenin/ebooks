@@ -33,13 +33,13 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentTheme = safeGetStorage('athena_theme', 'dark');
 
     let currentFilters = {
-        tier: 'all',
+        tier: 'golden',        // Golden 100 is default on load!
         search: '',
         language: 'all',
         category: 'all',
         length: 'all',
         status: 'all',
-        vibe: 'curator',        // Default to Golden 100 Essentials on load!
+        vibe: 'all',
         sort: 'curator',
         view: 'grid'
     };

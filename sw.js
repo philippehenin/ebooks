@@ -1,10 +1,10 @@
-const CACHE_NAME = 'athena-library-v1.0.3';
+const CACHE_NAME = 'athena-library-v1.0.5';
 const STATIC_ASSETS = [
     './',
     './index.html',
-    './styles.css?v=1.0.3',
-    './app.js?v=1.0.3',
-    './catalog-data.js?v=1.0.3',
+    './styles.css?v=1.0.5',
+    './app.js?v=1.0.5',
+    './catalog-data.js?v=1.0.5',
     './catalog.json',
     './manifest.json'
 ];
