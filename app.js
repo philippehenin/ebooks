@@ -1,55 +1,63 @@
 /**
- * Athena Classic Library - Enhanced Master Application Logic
+ * Athena Classic Ebook Library - Master Application Logic
+ * Supports 1,000 DRM-Free Masterpieces across 3 Core Categories (FR, EN, World in FR)
+ * Features 2-Tier Architecture, Dark/Light Themes, Keyboard Hotkeys, and Virtualized Card Batching.
  */
 
 document.addEventListener('DOMContentLoaded', () => {
+    // State Management
     let booksData = [];
     let savedBookIds = JSON.parse(localStorage.getItem('athena_saved_ids') || '[]');
+    let currentTheme = localStorage.getItem('athena_theme') || 'dark';
 
     let currentFilters = {
-        tier: 'golden',
+        tier: 'golden',        // 'golden' (100) or 'all' (1000)
         search: '',
         language: 'all',
         category: 'all',
         length: 'all',
         status: 'all',
+        vibe: 'all',
         sort: 'curator',
-        view: 'grid',
-        vibe: 'all'
+        view: 'grid'
     };
 
-    let wizardAnswers = {
-        mood: null,
-        time: null,
-        lang: null
-    };
+    let renderLimit = 40;      // Batch pagination limit for performance
 
-    // Essential Curator Picks IDs
-    const curatorPickIds = new Set([1, 2, 3, 6, 8, 10, 12, 15, 181, 183, 184, 186, 188, 203, 204]);
+    // Apply saved theme
+    document.documentElement.setAttribute('data-theme', currentTheme);
 
-    // DOM Elements - Navigation & Views
+    // DOM Elements - Header & Nav
     const navTabBtns = document.querySelectorAll('.tab-btn');
     const tabViews = document.querySelectorAll('.tab-view');
     const savedCountBadge = document.getElementById('saved-count-badge');
+    const btnThemeToggle = document.getElementById('btn-theme-toggle');
+    const themeIcon = document.getElementById('theme-icon');
+    const themeLabel = document.getElementById('theme-label');
+    const btnShortcuts = document.getElementById('btn-shortcuts');
     const btnSurpriseMe = document.getElementById('btn-surprise-me');
 
-    // DOM Elements - Catalog Controls
-    const booksContainer = document.getElementById('books-container');
+    // DOM Elements - Toolbar
     const searchInput = document.getElementById('search-input');
     const clearSearchBtn = document.getElementById('clear-search');
-    const langBtns = document.querySelectorAll('.lang-btn');
     const categorySelect = document.getElementById('category-filter');
     const lengthSelect = document.getElementById('length-filter');
     const statusSelect = document.getElementById('status-filter');
     const sortSelect = document.getElementById('sort-filter');
-    const vibePills = document.querySelectorAll('.vibe-pill');
+
+    // DOM Elements - Views
     const viewGridBtn = document.getElementById('view-grid');
     const viewListBtn = document.getElementById('view-list');
     const viewTableBtn = document.getElementById('view-table');
     const viewGroupedBtn = document.getElementById('view-grouped');
-    const resultsCount = document.getElementById('results-count');
+    const vibePills = document.querySelectorAll('.vibe-pill');
 
-    // DOM Elements - Modal
+    const booksContainer = document.getElementById('books-grid');
+    const resultsCount = document.getElementById('results-count');
+    const loadMoreContainer = document.getElementById('load-more-container');
+    const btnLoadMore = document.getElementById('btn-load-more');
+
+    // DOM Elements - Modals
     const modal = document.getElementById('book-modal');
     const modalClose = document.getElementById('modal-close');
     const modalTitle = document.getElementById('modal-title');
@@ -80,6 +88,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const btnRandomOpen = document.getElementById('btn-random-open');
     let currentRandomBook = null;
 
+    // DOM Elements - Shortcuts Modal
+    const shortcutsModal = document.getElementById('shortcuts-modal');
+    const shortcutsModalClose = document.getElementById('shortcuts-modal-close');
+
     // DOM Elements - Stat Counters
     const statTotal = document.getElementById('stat-total');
     const statFrench = document.getElementById('stat-french');
@@ -87,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const statWorld = document.getElementById('stat-world');
     const statDownloaded = document.getElementById('stat-downloaded');
 
-    // Global cover image error handler to prevent HTML inline attribute corruption
+    // Global cover image error handler
     window.handleCoverError = function(imgElement, bookId) {
         const book = booksData.find(b => b.id === bookId);
         if (book && imgElement && imgElement.parentElement) {
@@ -98,59 +110,50 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
+    // Update theme UI state
+    function updateThemeUI() {
+        if (currentTheme === 'light') {
+            document.documentElement.setAttribute('data-theme', 'light');
+            if (themeIcon) themeIcon.textContent = '☀️';
+            if (themeLabel) themeLabel.textContent = 'Light Mode';
+        } else {
+            document.documentElement.removeAttribute('data-theme');
+            if (themeIcon) themeIcon.textContent = '🌙';
+            if (themeLabel) themeLabel.textContent = 'Dark Mode';
+        }
+    }
+
     // Fetch Catalog Data
     fetch('catalog.json')
-        .then(res => res.json())
+        .then(response => response.json())
         .then(data => {
-            booksData = data.map(b => enrichBookData(b));
+            booksData = data.map(enrichBookData);
             initCatalog();
         })
         .catch(err => {
             console.error('Failed to load catalog.json:', err);
-            booksContainer.innerHTML = `<div class="empty-state">Error loading ebook catalog dataset.</div>`;
+            if (booksContainer) {
+                booksContainer.innerHTML = '<div class="empty-state">❌ Failed to load catalog. Please refresh.</div>';
+            }
         });
 
     function enrichBookData(book) {
-        const size = book.filesize_kb || 250;
-        const pages = Math.max(40, Math.round(size * 0.75 + 30));
-        const readMins = Math.max(15, Math.round(size / 1.4));
-        const readTimeStr = readMins > 60
-            ? `~${Math.floor(readMins / 60)}h ${readMins % 60}m read`
-            : `~${readMins} mins read`;
+        const isGolden = !!book.is_golden_100;
+        const sizeKb = book.filesize_kb || 280;
+        const pages = Math.round(sizeKb * 1.05);
+        const readMins = Math.round(pages * 1.5);
+        const readHrs = (readMins / 60).toFixed(1);
+        const readTimeStr = readMins < 60 ? `${readMins} mins` : `${readHrs} hrs`;
 
-        const isCurator = curatorPickIds.has(book.id);
-        const cat = book.category || '';
+        const isCurator = isGolden || (book.id <= 50);
 
-        // Determine Theme & Emblem
-        let theme = 'theme-royal';
-        let emblem = '👑';
-        let vibeTags = [book.language];
+        let theme = book.vibe_theme || 'theme-royal';
+        let emblem = book.emblem || '👑';
+        let vibeTags = book.vibe_tags || [book.language, book.category];
 
-        if (cat.includes('Gothic') || cat.includes('Decadent') || book.title.includes('Dracula')) {
-            theme = 'theme-crimson';
-            emblem = '🍷';
-            vibeTags.push('Gothic', 'Atmospheric');
-        } else if (cat.includes('Philosophy') || cat.includes('Stoic') || cat.includes('Satire')) {
-            theme = 'theme-sapphire';
-            emblem = '📜';
-            vibeTags.push('Philosophy', 'Deep Thought');
-        } else if (cat.includes('Adventure') || cat.includes('Detective') || cat.includes('Swashbuckler') || cat.includes('Sci-Fi')) {
-            theme = 'theme-emerald';
-            emblem = '⚔️';
-            vibeTags.push('Action', 'Adventure');
-        } else if (cat.includes('Romance') || cat.includes('Society') || cat.includes('Epistolary')) {
-            theme = 'theme-rose';
-            emblem = '🌹';
-            vibeTags.push('Romance', 'Wit');
-        } else if (cat.includes('Historical') || cat.includes('Essays') || cat.includes('Poetry')) {
-            theme = 'theme-sepia';
-            emblem = '📜';
-            vibeTags.push('History', 'Classic');
-        } else {
-            emblem = book.language === 'French' ? '🇫🇷' : '🇬🇧';
+        if (isCurator && !vibeTags.includes('⭐ Essential Classic')) {
+            vibeTags.unshift('⭐ Essential Classic');
         }
-
-        if (isCurator) vibeTags.unshift('⭐ Essential Classic');
 
         return {
             ...book,
@@ -165,11 +168,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function initCatalog() {
+        updateThemeUI();
         updateStats();
         populateCategories();
         updateSavedBadge();
         setupNavigation();
         setupEventListeners();
+        setupKeyboardShortcuts();
         setupRoadmapClicks();
         setupWizardListeners();
         renderBooks();
@@ -187,10 +192,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function updateSavedBadge() {
-        savedCountBadge.textContent = savedBookIds.length;
+        if (savedCountBadge) savedCountBadge.textContent = savedBookIds.length;
     }
 
     function populateCategories() {
+        if (!categorySelect) return;
         const categories = new Set();
         booksData.forEach(b => { if (b.category) categories.add(b.category); });
 
@@ -218,14 +224,33 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
                 });
 
-                if (targetTab === 'saved') {
-                    renderSavedQueue();
-                }
+                if (targetTab === 'saved') renderSavedQueue();
             });
         });
     }
 
     function setupEventListeners() {
+        // Theme Switcher Button
+        if (btnThemeToggle) {
+            btnThemeToggle.addEventListener('click', () => {
+                currentTheme = currentTheme === 'dark' ? 'light' : 'dark';
+                localStorage.setItem('athena_theme', currentTheme);
+                updateThemeUI();
+            });
+        }
+
+        // Shortcuts Button
+        if (btnShortcuts) {
+            btnShortcuts.addEventListener('click', () => {
+                if (shortcutsModal) shortcutsModal.style.display = 'flex';
+            });
+        }
+        if (shortcutsModalClose) {
+            shortcutsModalClose.addEventListener('click', () => {
+                if (shortcutsModal) shortcutsModal.style.display = 'none';
+            });
+        }
+
         // Tier Buttons
         const tierBtns = document.querySelectorAll('.tier-btn');
         tierBtns.forEach(btn => {
@@ -233,31 +258,40 @@ document.addEventListener('DOMContentLoaded', () => {
                 tierBtns.forEach(b => b.classList.remove('active'));
                 btn.classList.add('active');
                 currentFilters.tier = btn.getAttribute('data-tier');
+                renderLimit = 40;
                 updateStats();
                 renderBooks();
             });
         });
 
         // Search Input
-        searchInput.addEventListener('input', (e) => {
-            currentFilters.search = e.target.value.toLowerCase().trim();
-            clearSearchBtn.style.display = currentFilters.search ? 'block' : 'none';
-            renderBooks();
-        });
+        if (searchInput) {
+            searchInput.addEventListener('input', (e) => {
+                currentFilters.search = e.target.value.toLowerCase().trim();
+                if (clearSearchBtn) clearSearchBtn.style.display = currentFilters.search ? 'block' : 'none';
+                renderLimit = 40;
+                renderBooks();
+            });
+        }
 
-        clearSearchBtn.addEventListener('click', () => {
-            searchInput.value = '';
-            currentFilters.search = '';
-            clearSearchBtn.style.display = 'none';
-            renderBooks();
-        });
+        if (clearSearchBtn) {
+            clearSearchBtn.addEventListener('click', () => {
+                if (searchInput) searchInput.value = '';
+                currentFilters.search = '';
+                clearSearchBtn.style.display = 'none';
+                renderLimit = 40;
+                renderBooks();
+            });
+        }
 
         // Language Buttons
+        const langBtns = document.querySelectorAll('.lang-btn');
         langBtns.forEach(btn => {
             btn.addEventListener('click', () => {
                 langBtns.forEach(b => b.classList.remove('active'));
                 btn.classList.add('active');
                 currentFilters.language = btn.getAttribute('data-lang');
+                renderLimit = 40;
                 renderBooks();
             });
         });
@@ -268,47 +302,60 @@ document.addEventListener('DOMContentLoaded', () => {
                 vibePills.forEach(p => p.classList.remove('active'));
                 pill.classList.add('active');
                 currentFilters.vibe = pill.getAttribute('data-vibe');
+                renderLimit = 40;
                 renderBooks();
             });
         });
 
         // Select Filters
-        categorySelect.addEventListener('change', (e) => { currentFilters.category = e.target.value; renderBooks(); });
-        lengthSelect.addEventListener('change', (e) => { currentFilters.length = e.target.value; renderBooks(); });
-        statusSelect.addEventListener('change', (e) => { currentFilters.status = e.target.value; renderBooks(); });
-        sortSelect.addEventListener('change', (e) => { currentFilters.sort = e.target.value; renderBooks(); });
+        if (categorySelect) categorySelect.addEventListener('change', (e) => { currentFilters.category = e.target.value; renderLimit = 40; renderBooks(); });
+        if (lengthSelect) lengthSelect.addEventListener('change', (e) => { currentFilters.length = e.target.value; renderLimit = 40; renderBooks(); });
+        if (statusSelect) statusSelect.addEventListener('change', (e) => { currentFilters.status = e.target.value; renderLimit = 40; renderBooks(); });
+        if (sortSelect) sortSelect.addEventListener('change', (e) => { currentFilters.sort = e.target.value; renderLimit = 40; renderBooks(); });
 
-        // View Toggles
-        viewGridBtn.addEventListener('click', () => setViewMode('grid'));
-        viewListBtn.addEventListener('click', () => setViewMode('list'));
-        viewTableBtn.addEventListener('click', () => setViewMode('table'));
-        viewGroupedBtn.addEventListener('click', () => setViewMode('grouped'));
+        // Load More Button
+        if (btnLoadMore) {
+            btnLoadMore.addEventListener('click', () => {
+                renderLimit += 40;
+                renderBooks();
+            });
+        }
 
         // Surprise Me Button
-        btnSurpriseMe.addEventListener('click', openRandomizer);
-        btnRollAgain.addEventListener('click', openRandomizer);
-        randomModalClose.addEventListener('click', () => randomModal.style.display = 'none');
-        btnRandomOpen.addEventListener('click', () => {
-            randomModal.style.display = 'none';
-            if (currentRandomBook) openModal(currentRandomBook);
-        });
+        if (btnSurpriseMe) btnSurpriseMe.addEventListener('click', openRandomizer);
+        if (btnRollAgain) btnRollAgain.addEventListener('click', openRandomizer);
+        if (randomModalClose) randomModalClose.addEventListener('click', () => randomModal.style.display = 'none');
+        if (btnRandomOpen) {
+            btnRandomOpen.addEventListener('click', () => {
+                randomModal.style.display = 'none';
+                if (currentRandomBook) openModal(currentRandomBook);
+            });
+        }
 
         // Modal Close
-        modalClose.addEventListener('click', closeModal);
-        modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
+        if (modalClose) modalClose.addEventListener('click', closeModal);
+        if (modal) modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
 
         // Bookmark Toggle in Modal
-        modalBookmarkBtn.addEventListener('click', () => {
-            const bId = parseInt(modalBookmarkBtn.getAttribute('data-id'));
-            toggleBookmark(bId);
-            updateModalBookmarkState(bId);
-        });
+        if (modalBookmarkBtn) {
+            modalBookmarkBtn.addEventListener('click', () => {
+                const bId = parseInt(modalBookmarkBtn.getAttribute('data-id'));
+                toggleBookmark(bId);
+                updateModalBookmarkState(bId);
+            });
+        }
+
+        // Export Queue Button
+        const btnExportQueue = document.getElementById('btn-export-queue');
+        if (btnExportQueue) {
+            btnExportQueue.addEventListener('click', exportQueueJSON);
+        }
 
         // Clear Saved List Button
-        const btnClearSaved = document.getElementById('btn-clear-saved');
-        if (btnClearSaved) {
-            btnClearSaved.addEventListener('click', () => {
-                if (confirm('Clear all saved books from your queue?')) {
+        const btnClearQueue = document.getElementById('btn-clear-queue');
+        if (btnClearQueue) {
+            btnClearQueue.addEventListener('click', () => {
+                if (confirm('Clear all saved books from your reading queue?')) {
                     savedBookIds = [];
                     localStorage.setItem('athena_saved_ids', JSON.stringify(savedBookIds));
                     updateSavedBadge();
@@ -319,14 +366,56 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    function setViewMode(mode) {
-        currentFilters.view = mode;
-        [viewGridBtn, viewListBtn, viewTableBtn, viewGroupedBtn].forEach(b => b.classList.remove('active'));
-        if (mode === 'grid') viewGridBtn.classList.add('active');
-        if (mode === 'list') viewListBtn.classList.add('active');
-        if (mode === 'table') viewTableBtn.classList.add('active');
-        if (mode === 'grouped') viewGroupedBtn.classList.add('active');
-        renderBooks();
+    // Keyboard Hotkeys
+    function setupKeyboardShortcuts() {
+        window.addEventListener('keydown', (e) => {
+            // Ignore if typing in input box
+            if (['INPUT', 'TEXTAREA', 'SELECT'].includes(document.activeElement.tagName)) {
+                if (e.key === 'Escape') {
+                    document.activeElement.blur();
+                    if (searchInput) searchInput.value = '';
+                    currentFilters.search = '';
+                    renderBooks();
+                }
+                return;
+            }
+
+            if (e.key === '/' || (e.ctrlKey && e.key.toLowerCase() === 'k')) {
+                e.preventDefault();
+                if (searchInput) searchInput.focus();
+            } else if (e.key === 'Escape') {
+                closeModal();
+                if (randomModal) randomModal.style.display = 'none';
+                if (shortcutsModal) shortcutsModal.style.display = 'none';
+            } else if (e.key.toLowerCase() === 'r') {
+                openRandomizer();
+            } else if (e.key.toLowerCase() === 'g') {
+                const goldenBtn = document.querySelector('.tier-btn[data-tier="golden"]');
+                const allBtn = document.querySelector('.tier-btn[data-tier="all"]');
+                if (currentFilters.tier === 'golden') {
+                    if (allBtn) allBtn.click();
+                } else {
+                    if (goldenBtn) goldenBtn.click();
+                }
+            } else if (e.shiftKey && e.key.toLowerCase() === 'd') {
+                currentTheme = currentTheme === 'dark' ? 'light' : 'dark';
+                localStorage.setItem('athena_theme', currentTheme);
+                updateThemeUI();
+            } else if (e.key === '?') {
+                if (shortcutsModal) shortcutsModal.style.display = 'flex';
+            }
+        });
+    }
+
+    function exportQueueJSON() {
+        const savedBooks = booksData.filter(b => savedBookIds.includes(b.id));
+        const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(savedBooks, null, 2));
+        const dlAnchor = document.createElement('a');
+        dlAnchor.setAttribute("href", dataStr);
+        dlAnchor.setAttribute("download", `athena_reading_queue_${new Date().toISOString().slice(0,10)}.json`);
+        document.body.appendChild(dlAnchor);
+        dlAnchor.click();
+        dlAnchor.remove();
     }
 
     function getFilteredBooks() {
@@ -388,8 +477,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function renderBooks() {
+        if (!booksContainer) return;
         const filtered = getFilteredBooks();
-        resultsCount.textContent = `Showing ${filtered.length} of ${booksData.length} books`;
+        if (resultsCount) resultsCount.textContent = `Showing ${Math.min(renderLimit, filtered.length)} of ${filtered.length} matching books (${booksData.length} total catalog)`;
 
         if (filtered.length === 0) {
             booksContainer.className = 'grid-view';
@@ -400,294 +490,207 @@ document.addEventListener('DOMContentLoaded', () => {
                     <p>Try adjusting your search query or reset filters.</p>
                 </div>
             `;
+            if (loadMoreContainer) loadMoreContainer.style.display = 'none';
             return;
         }
 
+        const visibleBatch = filtered.slice(0, renderLimit);
+
         if (currentFilters.view === 'grid') {
             booksContainer.className = 'grid-view';
-            booksContainer.innerHTML = filtered.map(b => createBookCardHTML(b)).join('');
+            booksContainer.innerHTML = visibleBatch.map(b => createBookCardHTML(b)).join('');
         } else if (currentFilters.view === 'list') {
             booksContainer.className = 'list-view';
-            booksContainer.innerHTML = filtered.map(b => createBookCardHTML(b)).join('');
-        } else if (currentFilters.view === 'table') {
-            booksContainer.className = '';
-            booksContainer.innerHTML = renderTableHTML(filtered);
-        } else if (currentFilters.view === 'grouped') {
-            booksContainer.className = '';
-            booksContainer.innerHTML = renderGroupedHTML(filtered);
+            booksContainer.innerHTML = visibleBatch.map(b => createBookCardHTML(b)).join('');
+        }
+
+        if (loadMoreContainer) {
+            loadMoreContainer.style.display = (filtered.length > renderLimit) ? 'block' : 'none';
         }
 
         attachCardClickHandlers();
     }
 
-    function renderTableHTML(books) {
+    function createBookCardHTML(book) {
+        const isSaved = savedBookIds.includes(book.id);
+        const starIcon = isSaved ? '⭐' : '☆';
+        const coverArt = book.cover_url ? `<img src="${book.cover_url}" alt="${escapeHTML(book.title)}" class="cover-img" onerror="handleCoverError(this, ${book.id})" loading="lazy">` : generateVintageCoverHTML(book);
+
+        const langBadge = book.language === 'French' ? '🇫🇷 French' : (book.language === 'English' ? '🇬🇧 English' : '🌐 World in FR');
+
         return `
-            <div class="table-view-container">
-                <table class="catalog-table">
-                    <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>Title</th>
-                            <th>Author</th>
-                            <th>Category</th>
-                            <th>Language</th>
-                            <th>Est. Pages</th>
-                            <th>File Size</th>
-                            <th>Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        ${books.map(b => `
-                            <tr data-id="${b.id}" class="book-row">
-                                <td>${b.id}</td>
-                                <td><strong>${escapeHTML(b.title)}</strong> ${b.is_curator_pick ? '⭐' : ''}</td>
-                                <td>${escapeHTML(b.author)}</td>
-                                <td>${escapeHTML(b.category)}</td>
-                                <td>${b.language === 'French' ? '🇫🇷 French' : '🇬🇧 English'}</td>
-                                <td>~${b.estimated_pages} p.</td>
-                                <td>${b.filesize_kb} KB</td>
-                                <td><button class="btn-card" style="padding:4px 8px;">Preview</button></td>
-                            </tr>
-                        `).join('')}
-                    </tbody>
-                </table>
+            <div class="book-card ${book.vibe_theme}" data-id="${book.id}">
+                <div class="card-cover-wrapper">
+                    ${coverArt}
+                    <div class="card-badge-top-left">${langBadge}</div>
+                    ${book.is_golden_100 ? '<div class="card-badge-gold">🌟 Golden 100</div>' : ''}
+                    <button class="card-bookmark-btn ${isSaved ? 'saved' : ''}" data-id="${book.id}" title="Bookmark book">${starIcon}</button>
+                </div>
+                <div class="card-content">
+                    <h3 class="book-title" title="${escapeHTML(book.title)}">${escapeHTML(book.title)}</h3>
+                    <p class="book-author">${escapeHTML(book.author)} (${book.year || 'Classic'})</p>
+                    <div class="card-meta">
+                        <span>📖 ~${book.estimated_pages} p.</span>
+                        <span>⏱️ ${book.reading_time_str}</span>
+                    </div>
+                </div>
             </div>
         `;
-    }
-
-    function renderGroupedHTML(books) {
-        const groups = {};
-        books.forEach(b => {
-            const cat = b.category || 'Uncategorized';
-            if (!groups[cat]) groups[cat] = [];
-            groups[cat].push(b);
-        });
-
-        return Object.keys(groups).sort().map(cat => `
-            <div class="grouped-section">
-                <div class="grouped-header">
-                    <span>📁 ${escapeHTML(cat)}</span>
-                    <span style="font-size:0.85rem; color:var(--text-muted);">${groups[cat].length} titles</span>
-                </div>
-                <div class="grid-view">
-                    ${groups[cat].map(b => createBookCardHTML(b)).join('')}
-                </div>
-            </div>
-        `).join('');
     }
 
     function generateVintageCoverHTML(book) {
         return `
-            <div class="vintage-cover ${book.vibe_theme}">
-                <div class="v-cover-top">Athena Classic</div>
-                <div class="v-cover-body">
-                    <div class="v-cover-emblem">${book.emblem}</div>
-                    <div class="v-cover-title">${escapeHTML(book.title)}</div>
-                    <div class="v-cover-author">${escapeHTML(book.author)}</div>
-                </div>
-                <div class="v-cover-footer">${book.language} Edition</div>
-            </div>
-        `;
-    }
-
-    function createBookCardHTML(book) {
-        const langFlag = book.language === 'French' ? '🇫🇷' : '🇬🇧';
-        const isSaved = savedBookIds.includes(book.id);
-        const curatorStar = book.is_curator_pick ? `<span class="card-curator-star">⭐ Essential</span>` : '';
-
-        // Safe image rendering with clean error callback to avoid inline HTML injection bugs
-        const coverHTML = `
-            <img src="${book.cover_url}" alt="${escapeHTML(book.title)}" class="cover-img" loading="lazy" onerror="handleCoverError(this, ${book.id})"/>
-        `;
-
-        const downloadHref = book.is_downloaded ? book.filepath : book.download_url;
-
-        return `
-            <div class="book-card" data-id="${book.id}">
-                <div class="cover-wrapper">
-                    ${coverHTML}
-                    <span class="card-badge">${langFlag} ${book.language}</span>
-                    ${curatorStar}
-                    <button class="card-bookmark-toggle ${isSaved ? 'saved' : ''}" data-id="${book.id}" title="Save to Queue">
-                        ${isSaved ? '★' : '☆'}
-                    </button>
-                </div>
-                <div class="card-body">
-                    <div class="card-title" title="${escapeHTML(book.title)}">${escapeHTML(book.title)}</div>
-                    <div class="card-author">${escapeHTML(book.author)}</div>
-                    <div class="card-meta-row">
-                        <span>~${book.estimated_pages} pages</span>
-                        <span>${book.filesize_kb} KB</span>
-                    </div>
-                    <div class="card-footer">
-                        <button class="btn-card btn-preview">Preview</button>
-                        <a href="${downloadHref}" target="_blank" class="btn-card" style="background: var(--accent-indigo); color: white;" onclick="event.stopPropagation();">
-                            ${book.is_downloaded ? '📥 Open' : '🌐 Source'}
-                        </a>
-                    </div>
+            <div class="vintage-cover-canvas ${book.vibe_theme}">
+                <div class="spine-3d-edge"></div>
+                <div class="border-frame">
+                    <div class="emblem-icon">${book.emblem || '👑'}</div>
+                    <div class="vintage-title">${escapeHTML(book.title)}</div>
+                    <div class="vintage-author">${escapeHTML(book.author)}</div>
                 </div>
             </div>
         `;
     }
 
     function attachCardClickHandlers() {
-        document.querySelectorAll('.book-card, .book-row').forEach(el => {
-            el.addEventListener('click', (e) => {
-                if (e.target.closest('.card-bookmark-toggle')) {
-                    const bId = parseInt(e.target.closest('.card-bookmark-toggle').getAttribute('data-id'));
-                    toggleBookmark(bId);
+        const cards = document.querySelectorAll('.book-card');
+        cards.forEach(card => {
+            card.addEventListener('click', (e) => {
+                if (e.target.classList.contains('card-bookmark-btn')) {
                     e.stopPropagation();
+                    const bId = parseInt(e.target.getAttribute('data-id'));
+                    toggleBookmark(bId);
+                    e.target.textContent = savedBookIds.includes(bId) ? '⭐' : '☆';
+                    e.target.classList.toggle('saved', savedBookIds.includes(bId));
+                    updateSavedBadge();
                     return;
                 }
-
-                if (e.target.tagName === 'A' || e.target.closest('a')) return;
-
-                const bId = parseInt(el.getAttribute('data-id'));
-                const targetBook = booksData.find(b => b.id === bId);
-                if (targetBook) openModal(targetBook);
-            });
-        });
-    }
-
-    function toggleBookmark(bookId) {
-        const index = savedBookIds.indexOf(bookId);
-        if (index > -1) {
-            savedBookIds.splice(index, 1);
-        } else {
-            savedBookIds.push(bookId);
-        }
-        localStorage.setItem('athena_saved_ids', JSON.stringify(savedBookIds));
-        updateSavedBadge();
-        renderBooks();
-
-        // Update active bookmark button in cards
-        document.querySelectorAll(`.card-bookmark-toggle[data-id="${bookId}"]`).forEach(btn => {
-            const isSaved = savedBookIds.includes(bookId);
-            btn.classList.toggle('saved', isSaved);
-            btn.innerHTML = isSaved ? '★' : '☆';
-        });
-    }
-
-    function updateModalBookmarkState(bookId) {
-        const isSaved = savedBookIds.includes(bookId);
-        modalBookmarkBtn.classList.toggle('saved', isSaved);
-        modalBookmarkBtn.querySelector('span').textContent = isSaved ? '★ Saved in Queue' : '⭐ Save to Queue';
-    }
-
-    function renderSavedQueue() {
-        const savedContainer = document.getElementById('saved-books-container');
-        const savedBooks = booksData.filter(b => savedBookIds.includes(b.id));
-
-        if (savedBooks.length === 0) {
-            savedContainer.innerHTML = `
-                <div class="empty-state" style="grid-column: 1 / -1; text-align: center; padding: 60px 20px; color: var(--text-muted);">
-                    <div style="font-size: 3rem; margin-bottom: 12px;">⭐</div>
-                    <h3>Your saved queue is empty</h3>
-                    <p>Click the star icon (☆) on any book card to add it to your personal reading list.</p>
-                </div>
-            `;
-            return;
-        }
-
-        savedContainer.innerHTML = savedBooks.map(b => createBookCardHTML(b)).join('');
-        attachCardClickHandlers();
-    }
-
-    function openModal(book) {
-        modalTitle.textContent = book.title;
-        modalAuthor.textContent = `by ${book.author}`;
-        modalMeta.textContent = book.year ? `Published ${book.year} &bull; ${book.language} Classic` : `${book.language} Classic`;
-        modalSynopsis.textContent = book.synopsis;
-        modalSource.textContent = book.primary_source;
-        modalFilesize.textContent = `${book.filesize_kb} KB`;
-        modalPages.textContent = `~${book.estimated_pages} pages`;
-        modalReadtime.textContent = book.reading_time_str;
-
-        modalLangBadge.textContent = `${book.language === 'French' ? '🇫🇷' : '🇬🇧'} ${book.language}`;
-        modalCatBadge.textContent = book.category;
-        modalCuratorBadge.style.display = book.is_curator_pick ? 'inline-block' : 'none';
-
-        modalVibeTags.innerHTML = book.vibe_tags.map(t => `<span class="modal-vibe-pill">${escapeHTML(t)}</span>`).join('');
-
-        modalBookmarkBtn.setAttribute('data-id', book.id);
-        updateModalBookmarkState(book.id);
-
-        modalCoverContainer.innerHTML = `
-            <img src="${book.cover_url}" style="width:100%; height:100%; object-fit:cover;" onerror="handleCoverError(this, ${book.id})"/>
-        `;
-
-        modalDownloadBtn.href = book.is_downloaded ? book.filepath : book.download_url;
-        modalDownloadBtn.querySelector('span').textContent = book.is_downloaded ? '📥 Open EPUB' : '📥 Download EPUB';
-        modalSourceBtn.href = book.download_url;
-
-        modal.style.display = 'flex';
-    }
-
-    function closeModal() {
-        modal.style.display = 'none';
-    }
-
-    // Surprise Me Randomizer Modal
-    function openRandomizer() {
-        const pool = getFilteredBooks();
-        if (pool.length === 0) return;
-
-        currentRandomBook = pool[Math.floor(Math.random() * pool.length)];
-
-        randomTitle.textContent = currentRandomBook.title;
-        randomAuthor.textContent = `by ${currentRandomBook.author}`;
-        randomSynopsis.textContent = currentRandomBook.synopsis;
-
-        randomCoverContainer.innerHTML = `
-            <img src="${currentRandomBook.cover_url}" style="width:100%; height:100%; object-fit:cover;" onerror="handleCoverError(this, ${currentRandomBook.id})"/>
-        `;
-
-        randomModal.style.display = 'flex';
-    }
-
-    // Setup Roadmaps Click Handler
-    function setupRoadmapClicks() {
-        document.querySelectorAll('.roadmap-timeline .timeline-item').forEach(item => {
-            item.addEventListener('click', () => {
-                const bId = parseInt(item.getAttribute('data-id'));
-                const book = booksData.find(b => b.id === bId);
+                const bookId = parseInt(card.getAttribute('data-id'));
+                const book = booksData.find(b => b.id === bookId);
                 if (book) openModal(book);
             });
         });
     }
 
-    // Recommendation Wizard Setup
+    function toggleBookmark(bookId) {
+        const idx = savedBookIds.indexOf(bookId);
+        if (idx >= 0) savedBookIds.splice(idx, 1);
+        else savedBookIds.push(bookId);
+        localStorage.setItem('athena_saved_ids', JSON.stringify(savedBookIds));
+        updateSavedBadge();
+    }
+
+    function openModal(book) {
+        if (!modal) return;
+        modalTitle.textContent = book.title;
+        modalAuthor.textContent = `${book.author} (${book.year || 'Classic'})`;
+        modalMeta.textContent = `${book.category} • ${book.language}`;
+        modalSynopsis.textContent = book.synopsis;
+
+        modalReadtime.textContent = book.reading_time_str;
+        modalPages.textContent = `~${book.estimated_pages} pages`;
+        modalFilesize.textContent = `${book.filesize_kb} KB`;
+        modalSource.textContent = book.primary_source;
+
+        modalLangBadge.textContent = book.language;
+        modalCatBadge.textContent = book.category;
+        modalCuratorBadge.style.display = book.is_curator_pick ? 'inline-block' : 'none';
+
+        modalDownloadBtn.href = book.filepath;
+        modalSourceBtn.href = book.download_url;
+
+        modalBookmarkBtn.setAttribute('data-id', book.id);
+        updateModalBookmarkState(book.id);
+
+        modalCoverContainer.innerHTML = generateVintageCoverHTML(book);
+        modalVibeTags.innerHTML = book.vibe_tags.map(t => `<span class="vibe-tag-pill">${escapeHTML(t)}</span>`).join('');
+
+        modal.style.display = 'flex';
+    }
+
+    function updateModalBookmarkState(bookId) {
+        const isSaved = savedBookIds.includes(bookId);
+        modalBookmarkBtn.innerHTML = isSaved ? '<span>⭐ Remove from Queue</span>' : '<span>⭐ Save to Queue</span>';
+        modalBookmarkBtn.classList.toggle('saved', isSaved);
+    }
+
+    function closeModal() {
+        if (modal) modal.style.display = 'none';
+    }
+
+    function openRandomizer() {
+        const filtered = getFilteredBooks();
+        if (filtered.length === 0) return;
+        currentRandomBook = filtered[Math.floor(Math.random() * filtered.length)];
+
+        if (randomCoverContainer) randomCoverContainer.innerHTML = generateVintageCoverHTML(currentRandomBook);
+        if (randomTitle) randomTitle.textContent = currentRandomBook.title;
+        if (randomAuthor) randomAuthor.textContent = `${currentRandomBook.author} (${currentRandomBook.year || 'Classic'})`;
+        if (randomSynopsis) randomSynopsis.textContent = currentRandomBook.synopsis;
+
+        if (randomModal) randomModal.style.display = 'flex';
+    }
+
+    function renderSavedQueue() {
+        const savedGrid = document.getElementById('saved-books-grid');
+        const emptyState = document.getElementById('saved-empty-state');
+
+        if (!savedGrid) return;
+        const savedBooks = booksData.filter(b => savedBookIds.includes(b.id));
+
+        if (savedBooks.length === 0) {
+            savedGrid.innerHTML = '';
+            if (emptyState) emptyState.style.display = 'block';
+            return;
+        }
+
+        if (emptyState) emptyState.style.display = 'none';
+        savedGrid.className = 'grid-view';
+        savedGrid.innerHTML = savedBooks.map(b => createBookCardHTML(b)).join('');
+        attachCardClickHandlers();
+    }
+
+    function setupRoadmapClicks() {
+        const roadmapCards = document.querySelectorAll('.roadmap-card');
+        roadmapCards.forEach(card => {
+            card.addEventListener('click', () => {
+                const path = card.getAttribute('data-path');
+                const catalogTab = document.getElementById('tab-nav-catalog');
+                if (catalogTab) catalogTab.click();
+
+                if (path === 'french-monuments') {
+                    if (searchInput) searchInput.value = 'Hugo Balzac Zola Flaubert';
+                    currentFilters.search = 'hugo';
+                } else if (path === 'victorian-gothic') {
+                    if (searchInput) searchInput.value = 'Dracula Frankenstein Eyre Baskervilles';
+                    currentFilters.search = 'dracula';
+                } else if (path === 'swashbuckler') {
+                    if (searchInput) searchInput.value = 'Mousquetaires Monte-Cristo Lupin';
+                    currentFilters.search = 'mousquetaires';
+                }
+                renderBooks();
+            });
+        });
+    }
+
     function setupWizardListeners() {
-        const step1 = document.getElementById('wiz-step-1');
-        const step2 = document.getElementById('wiz-step-2');
-        const step3 = document.getElementById('wiz-step-3');
-        const stepResults = document.getElementById('wiz-step-results');
+        const wizardOpts = document.querySelectorAll('.wizard-opt-btn');
+        let wizardAnswers = {};
 
-        const pill1 = document.getElementById('wiz-step-pill-1');
-        const pill2 = document.getElementById('wiz-step-pill-2');
-        const pill3 = document.getElementById('wiz-step-pill-3');
-
-        document.querySelectorAll('.wiz-opt-btn').forEach(btn => {
+        wizardOpts.forEach(btn => {
             btn.addEventListener('click', () => {
-                const field = btn.getAttribute('data-field');
-                const val = btn.getAttribute('data-value');
-                wizardAnswers[field] = val;
+                const key = btn.getAttribute('data-key');
+                const val = btn.getAttribute('data-val');
+                wizardAnswers[key] = val;
 
-                if (field === 'mood') {
-                    step1.style.display = 'none';
-                    step2.style.display = 'block';
-                    pill1.classList.remove('active');
-                    pill2.classList.add('active');
-                } else if (field === 'time') {
-                    step2.style.display = 'none';
-                    step3.style.display = 'block';
-                    pill2.classList.remove('active');
-                    pill3.classList.add('active');
-                } else if (field === 'lang') {
-                    step3.style.display = 'none';
-                    stepResults.style.display = 'block';
-                    pill3.classList.remove('active');
-                    renderWizardResults();
+                if (key === 'vibe') {
+                    document.getElementById('wizard-step-1').style.display = 'none';
+                    document.getElementById('wizard-step-2').style.display = 'block';
+                } else if (key === 'length') {
+                    document.getElementById('wizard-step-2').style.display = 'none';
+                    document.getElementById('wizard-step-3').style.display = 'block';
+                } else if (key === 'lang') {
+                    document.getElementById('wizard-step-3').style.display = 'none';
+                    showWizardResults(wizardAnswers);
                 }
             });
         });
@@ -695,91 +698,39 @@ document.addEventListener('DOMContentLoaded', () => {
         const btnRestart = document.getElementById('btn-restart-wizard');
         if (btnRestart) {
             btnRestart.addEventListener('click', () => {
-                wizardAnswers = { mood: null, time: null, lang: null };
-                stepResults.style.display = 'none';
-                step3.style.display = 'none';
-                step2.style.display = 'none';
-                step1.style.display = 'block';
-
-                pill1.classList.add('active');
-                pill2.classList.remove('active');
-                pill3.classList.remove('active');
+                wizardAnswers = {};
+                document.getElementById('wizard-results').style.display = 'none';
+                document.getElementById('wizard-step-1').style.display = 'block';
             });
         }
     }
 
-    function renderWizardResults() {
-        const container = document.getElementById('wizard-results-grid');
+    function showWizardResults(answers) {
+        const resultsContainer = document.getElementById('wizard-results');
+        const grid = document.getElementById('wizard-recommendations-grid');
+        if (!grid) return;
 
-        // Score books based on wizard answers
-        const scoredBooks = booksData.map(book => {
-            let score = 50; // base score
+        let recs = booksData.filter(b => {
+            if (answers.lang && answers.lang !== 'any' && b.language !== answers.lang) return false;
 
-            // Language match
-            if (wizardAnswers.lang !== 'any') {
-                if (book.language === wizardAnswers.lang) score += 30;
-                else score -= 40;
-            } else {
-                score += 15;
-            }
+            if (answers.length === 'quick' && b.filesize_kb > 250) return false;
+            if (answers.length === 'medium' && (b.filesize_kb < 200 || b.filesize_kb > 480)) return false;
+            if (answers.length === 'epic' && b.filesize_kb <= 480) return false;
 
-            // Length match
-            if (wizardAnswers.time === 'short' && book.filesize_kb < 200) score += 25;
-            if (wizardAnswers.time === 'medium' && book.filesize_kb >= 200 && book.filesize_kb <= 500) score += 25;
-            if (wizardAnswers.time === 'epic' && book.filesize_kb > 500) score += 25;
-
-            // Mood match
-            const cat = book.category || '';
-            if (wizardAnswers.mood === 'thrill' && (cat.includes('Adventure') || cat.includes('Mystery') || cat.includes('Detective') || cat.includes('Swashbuckler'))) score += 35;
-            if (wizardAnswers.mood === 'romance' && (cat.includes('Romance') || cat.includes('Society') || cat.includes('Realism') || cat.includes('Satire'))) score += 35;
-            if (wizardAnswers.mood === 'philosophy' && (cat.includes('Philosophy') || cat.includes('Stoic') || cat.includes('Satire'))) score += 35;
-            if (wizardAnswers.mood === 'gothic' && (cat.includes('Gothic') || cat.includes('Decadent') || cat.includes('Sci-Fi'))) score += 35;
-
-            // Curator pick boost
-            if (book.is_curator_pick) score += 15;
-
-            return { book, score: Math.min(99, Math.max(60, score)) };
+            return true;
         });
 
-        scoredBooks.sort((a, b) => b.score - a.score);
-        const top3 = scoredBooks.slice(0, 3);
+        if (recs.length < 3) recs = booksData.slice(0, 6);
+        else recs = recs.slice(0, 6);
 
-        container.innerHTML = top3.map(item => {
-            const b = item.book;
-            const downloadHref = b.is_downloaded ? b.filepath : b.download_url;
-            return `
-                <div class="book-card" data-id="${b.id}" style="box-shadow: 0 10px 25px rgba(99,102,241,0.2);">
-                    <div class="cover-wrapper">
-                        ${generateVintageCoverHTML(b)}
-                        <span class="card-curator-star">${item.score}% Match</span>
-                    </div>
-                    <div class="card-body">
-                        <div class="card-title">${escapeHTML(b.title)}</div>
-                        <div class="card-author">${escapeHTML(b.author)}</div>
-                        <div style="font-size:0.75rem; color:var(--accent-gold); margin-bottom:8px;">${b.reading_time_str}</div>
-                        <div class="card-footer">
-                            <button class="btn-card btn-wiz-preview" data-id="${b.id}">Preview</button>
-                            <a href="${downloadHref}" target="_blank" class="btn-card" style="background:var(--accent-indigo); color:white;">Download</a>
-                        </div>
-                    </div>
-                </div>
-            `;
-        }).join('');
-
-        // Attach click listener to top 3 cards
-        container.querySelectorAll('.book-card, .btn-wiz-preview').forEach(el => {
-            el.addEventListener('click', (e) => {
-                if (e.target.tagName === 'A') return;
-                const bId = parseInt(el.getAttribute('data-id'));
-                const b = booksData.find(x => x.id === bId);
-                if (b) openModal(b);
-            });
-        });
+        grid.className = 'grid-view';
+        grid.innerHTML = recs.map(b => createBookCardHTML(b)).join('');
+        resultsContainer.style.display = 'block';
+        attachCardClickHandlers();
     }
 
     function escapeHTML(str) {
         if (!str) return '';
-        return str.replace(/[&<>'"]/g,
-            tag => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[tag] || tag));
+        return str.replace(/[&<>"']/g, m => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;' }[m]));
     }
 });

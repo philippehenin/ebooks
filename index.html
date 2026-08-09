@@ -35,6 +35,9 @@
                     <button class="tab-btn" id="tab-nav-wizard" data-tab="wizard">
                         <span>🔮 Book Finder</span>
                     </button>
+                    <button class="tab-btn" id="tab-nav-analytics" data-tab="analytics">
+                        <span>📊 Analytics</span>
+                    </button>
                     <button class="tab-btn" id="tab-nav-saved" data-tab="saved">
                         <span>⭐ Saved Queue</span>
                         <span id="saved-count-badge" class="tab-badge">0</span>
@@ -42,8 +45,14 @@
                 </nav>
 
                 <div class="header-actions">
-                    <button id="btn-surprise-me" class="action-btn-pill surprise">
+                    <button id="btn-theme-toggle" class="action-btn-pill theme" title="Toggle Dark/Light Mode (Hotkey: Shift+D)">
+                        <span id="theme-icon">🌙</span> <span id="theme-label">Dark Mode</span>
+                    </button>
+                    <button id="btn-surprise-me" class="action-btn-pill surprise" title="Random Book Selector (Hotkey: R)">
                         <span>🎲 Surprise Me!</span>
+                    </button>
+                    <button id="btn-shortcuts" class="action-btn-icon" title="Keyboard Shortcuts (?)">
+                        <span>⌨️</span>
                     </button>
                 </div>
             </div>
@@ -96,7 +105,7 @@
                 <section class="toolbar">
                     <div class="search-box">
                         <span class="search-icon">🔍</span>
-                        <input type="text" id="search-input" placeholder="Search by title, author, category, or vibe tag..." autocomplete="off">
+                        <input type="text" id="search-input" placeholder="Search by title, author, category (Press '/' to focus)..." autocomplete="off">
                         <button id="clear-search" class="clear-btn" style="display: none;">✕</button>
                     </div>
 
