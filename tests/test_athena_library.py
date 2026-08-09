@@ -206,5 +206,21 @@ class TestAthenaDevicePacks(unittest.TestCase):
             self.assertGreater(os.path.getsize(p_path), 1000000, f"Device pack {pack} file size too small.")
 
 
+class TestAthenaBrowserDOM(unittest.TestCase):
+    """Test 5: Live Headless Browser DOM Card Rendering Integrity"""
+
+    @classmethod
+    def setUpClass(cls):
+        self_dir = os.path.dirname(os.path.abspath(__file__))
+        cls.root_dir = os.path.dirname(self_dir) if os.path.basename(self_dir) == 'tests' else self_dir
+
+    def test_01_live_browser_dom_rendering(self):
+        """Execute headless browser DOM test script to verify 1,000 cards in DOM."""
+        js_test = os.path.join(self.root_dir, 'tests', 'test_browser_dom.js')
+        import subprocess
+        res = subprocess.run(['node', js_test], capture_output=True, text=True)
+        self.assertEqual(res.returncode, 0, f"Browser DOM Test failed:\n{res.stdout}\n{res.stderr}")
+
+
 if __name__ == '__main__':
     unittest.main(verbosity=2)

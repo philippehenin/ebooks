@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const viewGroupedBtn = document.getElementById('view-grouped');
     const vibePills = document.querySelectorAll('.vibe-pill');
 
-    const booksContainer = document.getElementById('books-grid');
+    const booksContainer = document.getElementById('books-container');
     const resultsCount = document.getElementById('results-count');
     const loadMoreContainer = document.getElementById('load-more-container');
     const btnLoadMore = document.getElementById('btn-load-more');
@@ -254,7 +254,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 tierBtns.forEach(b => b.classList.remove('active'));
                 btn.classList.add('active');
                 currentFilters.tier = btn.getAttribute('data-tier');
-                renderLimit = 40;
                 updateStats();
                 renderBooks();
             });
@@ -265,7 +264,6 @@ document.addEventListener('DOMContentLoaded', () => {
             searchInput.addEventListener('input', (e) => {
                 currentFilters.search = e.target.value.toLowerCase().trim();
                 if (clearSearchBtn) clearSearchBtn.style.display = currentFilters.search ? 'block' : 'none';
-                renderLimit = 40;
                 renderBooks();
             });
         }
@@ -275,7 +273,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (searchInput) searchInput.value = '';
                 currentFilters.search = '';
                 clearSearchBtn.style.display = 'none';
-                renderLimit = 40;
                 renderBooks();
             });
         }
@@ -287,7 +284,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 langBtns.forEach(b => b.classList.remove('active'));
                 btn.classList.add('active');
                 currentFilters.language = btn.getAttribute('data-lang');
-                renderLimit = 40;
                 renderBooks();
             });
         });
@@ -298,16 +294,21 @@ document.addEventListener('DOMContentLoaded', () => {
                 vibePills.forEach(p => p.classList.remove('active'));
                 pill.classList.add('active');
                 currentFilters.vibe = pill.getAttribute('data-vibe');
-                renderLimit = 40;
                 renderBooks();
             });
         });
 
         // Select Filters
-        if (categorySelect) categorySelect.addEventListener('change', (e) => { currentFilters.category = e.target.value; renderLimit = 40; renderBooks(); });
-        if (lengthSelect) lengthSelect.addEventListener('change', (e) => { currentFilters.length = e.target.value; renderLimit = 40; renderBooks(); });
-        if (statusSelect) statusSelect.addEventListener('change', (e) => { currentFilters.status = e.target.value; renderLimit = 40; renderBooks(); });
-        if (sortSelect) sortSelect.addEventListener('change', (e) => { currentFilters.sort = e.target.value; renderLimit = 40; renderBooks(); });
+        if (categorySelect) categorySelect.addEventListener('change', (e) => { currentFilters.category = e.target.value; renderBooks(); });
+        if (lengthSelect) lengthSelect.addEventListener('change', (e) => { currentFilters.length = e.target.value; renderBooks(); });
+        if (statusSelect) statusSelect.addEventListener('change', (e) => { currentFilters.status = e.target.value; renderBooks(); });
+        if (sortSelect) sortSelect.addEventListener('change', (e) => { currentFilters.sort = e.target.value; renderBooks(); });
+
+        // View Mode Toggle Buttons
+        if (viewGridBtn) viewGridBtn.addEventListener('click', () => { setViewMode('grid'); });
+        if (viewListBtn) viewListBtn.addEventListener('click', () => { setViewMode('list'); });
+        if (viewTableBtn) viewTableBtn.addEventListener('click', () => { setViewMode('table'); });
+        if (viewGroupedBtn) viewGroupedBtn.addEventListener('click', () => { setViewMode('grouped'); });
 
         // Load More Button
         if (btnLoadMore) {
@@ -348,9 +349,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         // Clear Saved List Button
-        const btnClearQueue = document.getElementById('btn-clear-queue');
-        if (btnClearQueue) {
-            btnClearQueue.addEventListener('click', () => {
+        const btnClearSaved = document.getElementById('btn-clear-saved');
+        if (btnClearSaved) {
+            btnClearSaved.addEventListener('click', () => {
                 if (confirm('Clear all saved books from your reading queue?')) {
                     savedBookIds = [];
                     localStorage.setItem('athena_saved_ids', JSON.stringify(savedBookIds));
@@ -360,6 +361,18 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
         }
+    }
+
+    function setViewMode(mode) {
+        currentFilters.view = mode;
+        [viewGridBtn, viewListBtn, viewTableBtn, viewGroupedBtn].forEach(btn => {
+            if (btn) btn.classList.remove('active');
+        });
+        if (mode === 'grid' && viewGridBtn) viewGridBtn.classList.add('active');
+        if (mode === 'list' && viewListBtn) viewListBtn.classList.add('active');
+        if (mode === 'table' && viewTableBtn) viewTableBtn.classList.add('active');
+        if (mode === 'grouped' && viewGroupedBtn) viewGroupedBtn.classList.add('active');
+        renderBooks();
     }
 
     // Keyboard Hotkeys
@@ -497,6 +510,12 @@ document.addEventListener('DOMContentLoaded', () => {
         } else if (currentFilters.view === 'list') {
             booksContainer.className = 'list-view';
             booksContainer.innerHTML = visibleBatch.map(b => createBookCardHTML(b)).join('');
+        } else if (currentFilters.view === 'table') {
+            booksContainer.className = 'table-view-container';
+            booksContainer.innerHTML = renderTableHTML(visibleBatch);
+        } else if (currentFilters.view === 'grouped') {
+            booksContainer.className = 'grouped-container';
+            booksContainer.innerHTML = renderGroupedHTML(visibleBatch);
         }
 
         if (loadMoreContainer) {
@@ -504,6 +523,58 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         attachCardClickHandlers();
+    }
+
+    function renderTableHTML(books) {
+        return `
+            <table class="catalog-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Category</th>
+                        <th>Language</th>
+                        <th>Pages</th>
+                        <th>Format</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    ${books.map(b => `
+                        <tr class="book-row" data-id="${b.id}">
+                            <td>#${b.id}</td>
+                            <td><strong>${escapeHTML(b.title)}</strong></td>
+                            <td>${escapeHTML(b.author)}</td>
+                            <td>${escapeHTML(b.category)}</td>
+                            <td>${b.language}</td>
+                            <td>~${b.estimated_pages} p.</td>
+                            <td>${b.format}</td>
+                        </tr>
+                    `).join('')}
+                </tbody>
+            </table>
+        `;
+    }
+
+    function renderGroupedHTML(books) {
+        const groups = {};
+        books.forEach(b => {
+            const cat = b.category || 'General Classics';
+            if (!groups[cat]) groups[cat] = [];
+            groups[cat].push(b);
+        });
+
+        return Object.keys(groups).sort().map(cat => `
+            <div class="grouped-section">
+                <div class="grouped-header">
+                    <span>📁 ${escapeHTML(cat)}</span>
+                    <span style="font-size: 0.85rem; color: var(--text-muted);">${groups[cat].length} titles</span>
+                </div>
+                <div class="grid-view">
+                    ${groups[cat].map(b => createBookCardHTML(b)).join('')}
+                </div>
+            </div>
+        `).join('');
     }
 
     function createBookCardHTML(book) {
@@ -550,7 +621,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function attachCardClickHandlers() {
-        const cards = document.querySelectorAll('.book-card');
+        const cards = document.querySelectorAll('.book-card, .book-row');
         cards.forEach(card => {
             card.addEventListener('click', (e) => {
                 if (e.target.classList.contains('card-bookmark-toggle')) {
@@ -630,7 +701,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function renderSavedQueue() {
-        const savedGrid = document.getElementById('saved-books-grid');
+        const savedGrid = document.getElementById('saved-books-container');
         const emptyState = document.getElementById('saved-empty-state');
 
         if (!savedGrid) return;
@@ -681,14 +752,18 @@ document.addEventListener('DOMContentLoaded', () => {
                 const val = btn.getAttribute('data-val');
                 wizardAnswers[key] = val;
 
+                const step1 = document.getElementById('wiz-step-1');
+                const step2 = document.getElementById('wiz-step-2');
+                const step3 = document.getElementById('wiz-step-3');
+
                 if (key === 'vibe') {
-                    document.getElementById('wizard-step-1').style.display = 'none';
-                    document.getElementById('wizard-step-2').style.display = 'block';
+                    if (step1) step1.style.display = 'none';
+                    if (step2) step2.style.display = 'block';
                 } else if (key === 'length') {
-                    document.getElementById('wizard-step-2').style.display = 'none';
-                    document.getElementById('wizard-step-3').style.display = 'block';
+                    if (step2) step2.style.display = 'none';
+                    if (step3) step3.style.display = 'block';
                 } else if (key === 'lang') {
-                    document.getElementById('wizard-step-3').style.display = 'none';
+                    if (step3) step3.style.display = 'none';
                     showWizardResults(wizardAnswers);
                 }
             });
@@ -698,15 +773,17 @@ document.addEventListener('DOMContentLoaded', () => {
         if (btnRestart) {
             btnRestart.addEventListener('click', () => {
                 wizardAnswers = {};
-                document.getElementById('wizard-results').style.display = 'none';
-                document.getElementById('wizard-step-1').style.display = 'block';
+                const results = document.getElementById('wiz-step-results');
+                const step1 = document.getElementById('wiz-step-1');
+                if (results) results.style.display = 'none';
+                if (step1) step1.style.display = 'block';
             });
         }
     }
 
     function showWizardResults(answers) {
-        const resultsContainer = document.getElementById('wizard-results');
-        const grid = document.getElementById('wizard-recommendations-grid');
+        const resultsContainer = document.getElementById('wiz-step-results');
+        const grid = document.getElementById('wizard-results-grid');
         if (!grid) return;
 
         let recs = booksData.filter(b => {
@@ -724,7 +801,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         grid.className = 'grid-view';
         grid.innerHTML = recs.map(b => createBookCardHTML(b)).join('');
-        resultsContainer.style.display = 'block';
+        if (resultsContainer) resultsContainer.style.display = 'block';
         attachCardClickHandlers();
     }
 

@@ -17,3 +17,5 @@ Thumbs.db
 scratch/
 tmp/
 download_summary.json
+node_modules/
+package-lock.json
