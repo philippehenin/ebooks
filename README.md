@@ -51,6 +51,7 @@ Open **[philippehenin.github.io/ebooks](https://philippehenin.github.io/ebooks/)
 - **📖 Systematic Unabridged Completeness Audit**: 100% of EPUB files are verified full-length unabridged books (minimum >= 20 KB to 40 KB, 0 stub files, 0 summary/synopsis/resume fallbacks).
 - **🏷️ OPF Metadata Alignment**: Title `<dc:title>` and author `<dc:creator>` tags inside all 1,000 EPUB OPF manifests match catalog metadata 100%.
 - **🔗 Zero 404 Links & Hash Collisions**: 100% clean ASCII download URLs with 0 binary MD5 hash collisions.
+- **📱 Dual Kindle Bundles (EPUB & MOBI)**: Complete Kindle 10th Gen pack containing `Send_To_Kindle_EPUBs/` for Amazon cloud delivery and `USB_Direct_Transfer_documents/` for direct cable transfer.
 
 ## 🚀 Key Web Application Features
 
