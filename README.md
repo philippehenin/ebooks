@@ -48,13 +48,21 @@ Open **[philippehenin.github.io/ebooks](https://philippehenin.github.io/ebooks/)
 - **🏷️ Embedded OPF Metadata**: QA test results (`athena:qa_status` and `athena:qa_score`) are embedded directly inside Dublin Core tags of all 1,000 EPUB files.
 - **🔗 Zero 404 Links**: 100% of download links use clean ASCII web URLs (`./downloads/`).
 
+## 🚀 Key Web Application Features
+
+- **📖 In-Browser EPUB Reader**: Embedded web reader with JSZip chapter extraction, font size scaling, font family picker (*Inter*, *Playfair Display*, *Cinzel*), and custom reader themes (*Dark*, *Parchment Light*, *Sepia Warm*).
+- **📱 PWA & Offline Support**: Progressive Web App with `manifest.json` and a cache-first Service Worker (`sw.js`) for installing on mobile/desktop and reading offline.
+- **📊 Analytics & Annual Reading Challenge**: Interactive library analytics breakdown and a customizable annual reading goal tracker stored in local storage.
+- **🔮 Find My Next Read (Recommendation Wizard)**: 3-step decision engine matching readers by Mood & Vibe, Reading Time, and Language preference.
+- **🤖 Automated GitHub Actions CI/CD**: Workflow (`.github/workflows/ci.yml`) running the 16-point unit and DOM test suite on every push.
+
 ---
 
 ## 🛠️ CLI Management Commands
 
 ```bash
 python3 cli.py status     # Display catalog & device pack metrics
-python3 cli.py test       # Execute 15-point master unit test suite
+python3 cli.py test       # Execute 16-point master unit test suite
 python3 cli.py verify     # Run 100% pre-release quality gating audit
 python3 cli.py packs      # Generate X4 & Kindle device ZIP packs
 python3 cli.py all        # Run complete pipeline
@@ -68,7 +76,9 @@ python3 cli.py all        # Run complete pipeline
 .
 ├── index.html                 # Live Web Application
 ├── styles.css                 # Master Design System (Obsidian Dark / Parchment Light)
-├── app.js                     # Application Logic, Hotkeys & Filtering
+├── app.js                     # Application Logic, In-Browser Reader & Filtering
+├── sw.js                      # Cache-First PWA Offline Service Worker
+├── manifest.json              # PWA Installation Manifest
 ├── catalog.json               # Master 1,000-book curated dataset
 ├── catalog-data.js            # Offline JS dataset
 ├── sitemap.xml                # SEO Google Search Sitemap (1,001 URLs)
@@ -76,6 +86,7 @@ python3 cli.py all        # Run complete pipeline
 ├── CATALOG.md                 # Full Catalog Table
 ├── INSTALL.md                 # Device Setup Guide
 ├── cli.py                     # Unified CLI Entrypoint
+├── .github/workflows/ci.yml   # GitHub Actions Automated CI/CD Pipeline
 ├── scripts/                   # Modular Python Scripts
 │   ├── download_catalog_epubs.py
 │   ├── convert_epub_to_mobi.py
