@@ -49,8 +49,8 @@ def process_single_epub_metadata(book):
                 if item.filename.endswith('.opf'):
                     opf_text = content.decode('utf-8', errors='ignore')
                     
-                    # Replace or insert <dc:description>
-                    desc_tag = f'<dc:description>{qa_desc}</dc:description>'
+                    # Replace or insert <dc:description> & unique book identifier
+                    desc_tag = f'<dc:description>{qa_desc}</dc:description>\n  <meta property="athena:book_uuid">urn:uuid:athena-book-{b_id:04d}</meta>'
                     if '<dc:description>' in opf_text:
                         opf_text = re.sub(r'<dc:description[^>]*>.*?</dc:description>', desc_tag, opf_text, flags=re.DOTALL | re.I)
                     else:
