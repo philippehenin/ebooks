@@ -1,4 +1,4 @@
-[
+window.CATALOG_DATA = [
   {
     "id": 1,
     "title": "Le comte de Monte-Cristo, Tome I",
@@ -22399,4 +22399,4 @@
       "Classic Novel"
     ]
   }
-]
+];

@@ -408,7 +408,10 @@ def build_1000_library():
     with open('catalog.json', 'w', encoding='utf-8') as f:
         json.dump(books, f, ensure_ascii=False, indent=2)
 
-    print("Updated catalog.json written successfully.")
+    with open('catalog-data.js', 'w', encoding='utf-8') as f:
+        f.write('window.CATALOG_DATA = ' + json.dumps(books, ensure_ascii=False, indent=2) + ';')
+
+    print("Updated catalog.json and catalog-data.js written successfully.")
 
 if __name__ == '__main__':
     build_1000_library()

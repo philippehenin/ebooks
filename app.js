@@ -114,19 +114,24 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Fetch Catalog Data
-    fetch('catalog.json')
-        .then(response => response.json())
-        .then(data => {
-            booksData = data.map(enrichBookData);
-            initCatalog();
-        })
-        .catch(err => {
-            console.error('Failed to load catalog.json:', err);
-            if (booksContainer) {
-                booksContainer.innerHTML = '<div class="empty-state">❌ Failed to load catalog. Please refresh.</div>';
-            }
-        });
+    // Fetch Catalog Data with window.CATALOG_DATA fallback for offline/local file protocol support
+    if (window.CATALOG_DATA && Array.isArray(window.CATALOG_DATA) && window.CATALOG_DATA.length > 0) {
+        booksData = window.CATALOG_DATA.map(enrichBookData);
+        initCatalog();
+    } else {
+        fetch('catalog.json')
+            .then(response => response.json())
+            .then(data => {
+                booksData = data.map(enrichBookData);
+                initCatalog();
+            })
+            .catch(err => {
+                console.error('Failed to load catalog:', err);
+                if (booksContainer) {
+                    booksContainer.innerHTML = '<div class="empty-state">❌ Failed to load catalog data.</div>';
+                }
+            });
+    }
 
     function enrichBookData(book) {
         const isGolden = !!book.is_golden_100;
