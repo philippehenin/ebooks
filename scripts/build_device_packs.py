@@ -4,6 +4,7 @@ import json
 import shutil
 import zipfile
 import re
+import glob
 
 BASE_DIR = os.getcwd()
 DOWNLOAD_DIR = os.path.join(BASE_DIR, 'downloads')
@@ -175,12 +176,32 @@ HOW TO TRANSFER TO YOUR X3 / X4 E-INK READER:
     print(f"X3/X4 Eink Reader Pack: {copied_x3_x4} books packaged.")
     print(f"Kindle 10th Gen Pack: {copied_kindle} books packaged.")
 
-    # Create ZIP archives
-    zip_folder(X3_X4_DIR, os.path.join(PACKS_DIR, 'X3_X4_Eink_Reader_Pack.zip'))
-    zip_folder(KINDLE_DIR, os.path.join(PACKS_DIR, 'Kindle_10th_Gen_Pack.zip'))
+    # Create sub-70MB GitHub-compatible ZIP archives
+    zip_folder(os.path.join(X3_X4_DIR, '01_Golden_100_Essentials'), os.path.join(PACKS_DIR, 'X3_X4_Golden_100_Pack.zip'))
+    zip_folder(os.path.join(X3_X4_DIR, '02_Extended_Master_Vault'), os.path.join(PACKS_DIR, 'X3_X4_Master_Vault_Pack.zip'))
+    
+    zip_folder(os.path.join(KINDLE_DIR, 'Send_To_Kindle_EPUBs'), os.path.join(PACKS_DIR, 'Kindle_SendToKindle_EPUBs_Pack.zip'))
+    
+    # Split Kindle MOBIs into Part 1 and Part 2 for strict GitHub 100MB per-file upload limit
+    mobi_files = sorted(glob.glob(os.path.join(KINDLE_DIR, 'USB_Direct_Transfer_documents', '*.mobi')))
+    mid = len(mobi_files) // 2
+    
+    part1_dir = os.path.join(KINDLE_DIR, 'USB_MOBIs_Part1')
+    part2_dir = os.path.join(KINDLE_DIR, 'USB_MOBIs_Part2')
+    os.makedirs(part1_dir, exist_ok=True)
+    os.makedirs(part2_dir, exist_ok=True)
+
+    for f in mobi_files[:mid]:
+        shutil.copy2(f, part1_dir)
+    for f in mobi_files[mid:]:
+        shutil.copy2(f, part2_dir)
+
+    zip_folder(part1_dir, os.path.join(PACKS_DIR, 'Kindle_USB_MOBIs_Part1_Pack.zip'))
+    zip_folder(part2_dir, os.path.join(PACKS_DIR, 'Kindle_USB_MOBIs_Part2_Pack.zip'))
+    
     zip_folder(MASTER_DIR, os.path.join(PACKS_DIR, 'Top_300_Ebook_Master_Pack.zip'))
 
-    print("\nAll device packs successfully generated in 'device_packs/' directory!")
+    print("\nAll device packs successfully generated into sub-100MB GitHub-compatible archives in 'device_packs/'!")
 
 if __name__ == '__main__':
     build_packs()
