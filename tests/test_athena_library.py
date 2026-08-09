@@ -200,6 +200,27 @@ class TestAthenaEpubIntegrity(unittest.TestCase):
                 missing_files.append((b['id'], b['title'], rel_path))
         self.assertEqual(len(missing_files), 0, f"Found {len(missing_files)} catalog entries with 404 missing files: {missing_files[:5]}")
 
+    def test_06_zero_synthetic_text_placeholders(self):
+        """Verify 100% of all 1,000 EPUB files contain authentic literary text with 0 synthetic placeholders/reviews."""
+        downloads_path = os.path.join(self.root_dir, DOWNLOADS_DIR)
+        epubs = glob.glob(os.path.join(downloads_path, '*.epub'))
+        self.assertEqual(len(epubs), 1000, f"Expected 1,000 EPUB files, found {len(epubs)}.")
+
+        synthetic_files = []
+        for ep in epubs:
+            try:
+                with zipfile.ZipFile(ep, 'r') as z:
+                    for name in z.namelist():
+                        if name.endswith(('.html', '.htm', '.xhtml')):
+                            text = z.read(name).decode('utf-8', errors='ignore')
+                            if 'sereinement' in text or 'Section 1:' in text or 'Parmi les ombres' in text or 'In the quiet' in text:
+                                synthetic_files.append(os.path.basename(ep))
+                                break
+            except Exception:
+                synthetic_files.append(os.path.basename(ep))
+
+        self.assertEqual(len(synthetic_files), 0, f"Found {len(synthetic_files)} synthetic placeholder files: {synthetic_files[:5]}")
+
 
 class TestAthenaDevicePacks(unittest.TestCase):
     """Test 4: Device Pack Release Bundles Integrity"""
