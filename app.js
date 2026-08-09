@@ -642,7 +642,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <span>⏱️ ${book.reading_time_str}</span>
                     </div>
                     <div class="card-footer">
-                        <button class="btn-card primary-btn-card">📖 Preview & Read</button>
+                        <button class="btn-card primary-btn-card btn-read-direct" style="background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%); color: white; border: none; font-weight: 700; border-radius: var(--radius-md); padding: 10px 14px; width: 100%; cursor: pointer;">📖 Read Now in Browser</button>
                     </div>
                 </div>
             </div>
@@ -667,19 +667,27 @@ document.addEventListener('DOMContentLoaded', () => {
         const cards = document.querySelectorAll('.book-card, .book-row');
         cards.forEach(card => {
             card.addEventListener('click', (e) => {
+                const bookId = parseInt(card.getAttribute('data-id'));
+                const book = booksData.find(b => b.id === bookId);
+                if (!book) return;
+
                 if (e.target.classList.contains('card-bookmark-toggle')) {
                     e.stopPropagation();
-                    const bId = parseInt(e.target.getAttribute('data-id'));
-                    toggleBookmark(bId);
-                    const isSaved = savedBookIds.includes(bId);
+                    toggleBookmark(bookId);
+                    const isSaved = savedBookIds.includes(bookId);
                     e.target.textContent = isSaved ? '★' : '☆';
                     e.target.classList.toggle('saved', isSaved);
                     updateSavedBadge();
                     return;
                 }
-                const bookId = parseInt(card.getAttribute('data-id'));
-                const book = booksData.find(b => b.id === bookId);
-                if (book) openModal(book);
+
+                if (e.target.classList.contains('btn-read-direct')) {
+                    e.stopPropagation();
+                    openEpubReader(book);
+                    return;
+                }
+
+                openModal(book);
             });
         });
     }
