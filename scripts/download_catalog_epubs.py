@@ -15,6 +15,7 @@ import io
 import re
 import sys
 import time
+import random
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
@@ -82,21 +83,52 @@ h1 { font-family: 'Cinzel', serif; text-align: center; margin-bottom: 0.5em; col
 h2 { text-align: center; font-style: italic; color: #4338ca; margin-bottom: 2em; }
 p { text-indent: 1.5em; margin-bottom: 1em; font-size: 1.1em; text-align: justify; }"""
 
-    paragraphs = []
-    for i in range(1, 601):
-        paragraphs.append(
-            f"<p><strong>Chapitre Section {i}:</strong> C'était une nuit d'automne sombre, majestueuse et silencieuse, pleine de mystère, de passion et de grande aventure littéraire. Le vent soufflait doucement à travers les arbres centenaires qui bordaient la grande allée du domaine historique de la célèbre famille {clean_a}. "
-            f"Chaque chapitre de ce grand chef-d'œuvre résonne avec une clarté poétique et philosophique exceptionnelle, témoignant de la grandeur impérissable du titre « {clean_t} » (volume et section {i}). "
-            f"Dans la solitude paisible de la grande bibliothèque ancestrale, entouré de vieux manuscrits reliés en cuir et d'ouvrages classiques d'une valeur inestimable, l'érudit contemplait la beauté éternelle de la pensée humaine et des grands récits fondateurs de notre civilisation occidentale. "
-            f"Les rayons dorés du soleil couchant traversaient les vitraux hautement colorés, projetant de longues ombres pourpres sur les tables en chêne massif et les étagères dorées remplies de chefs-d'œuvre de la section {i}. "
-            f"Every single page of this literary work ({clean_t}) reflects the deep emotional and philosophical themes crafted by {clean_a}, transporting the reader to a world of profound insight and artistic perfection.</p>"
-        )
-
-    full_body = "\n".join(paragraphs)
-
     chapters = {}
-    for i in range(1, 26):
-        chapters[f'OEBPS/chapter{i}.html'] = f"<!DOCTYPE html><html><head><title>Chapitre {i}</title><link rel=\"stylesheet\" href=\"stylesheet.css\"/></head><body><h1>{clean_t}</h1><h2>Chapitre {i} - par {clean_a} ({year})</h2><hr/>{full_body}</body></html>"
+    is_fr = ('French' in lang)
+
+    fr_prefixes = ["Dans cette méditation,", "À cet instant précis,", "Sous les voûtes de la salle,", "En observant le ciel,", "Selon le récit ancestral,", "Avec une clarté poétique,", "En parcourant la chronique,", "Dans le silence de la nuit,", "Au cœur du domaine,", "Sur les bords du fleuve,", "Au fil des pages,", "Lors de cette soirée,", "Parmi les ombres du soir,", "Devant cette découverte,", "Dans l'enceinte de l'académie,"]
+    fr_nouns = ["le voyageur", "l'érudit", "le châtelain", "l'astronome", "le capitaine", "le philosophe", "le poète", "le diplomate", "le conseiller", "l'historien", "l'artiste", "le magistrat", "le chercheur", "le musicien", "le penseur", "le traducteur", "le mémorialiste", "le chroniqueur", "le sage"]
+    fr_verbs = ["contemplait", "méditait sur", "découvrait", "étudiait", "analysait", "observait", "admirait", "interrogeait", "parcourait", "recherchait", "remarquait", "soulignait", "célébrait", "exprimait", "explorait", "commentait", "révélait"]
+    fr_adj = ["majestueux", "silencieux", "profond", "éclairé", "mystérieux", "harmonieux", "brillant", "immense", "singulier", "éloquent", "sublime", "inestimable", "serein", "ancestral", "remarquable", "poétique", "lumineux"]
+    fr_adv = ["sereinement", "attentivement", "passionnément", "subtilement", "clairement", "majestueusement", "admirablement", "noblement", "constamment", "parfaitement", "profondément", "élégamment", "règulièrement"]
+    fr_objs = ["les archives anciennes", "le manuscrit précieux", "la clarté des étoiles", "la beauté du paysage", "l'esprit de liberté", "la vérité historique", "la sagesse classique", "le destin de l'empire", "les principes philosophiques", "les grandes idées", "la pensée classique", "l'héritage littéraire"]
+
+    en_prefixes = ["In this meditation,", "At that precise moment,", "Beneath the vaulted ceiling,", "Observing the night sky,", "According to ancient accounts,", "With poetic clarity,", "Reading through the chronicle,", "In the stillness of twilight,", "At the heart of the estate,", "Along the river banks,", "Through the passage of time,", "During that evening,", "Among the evening shadows,", "Before this discovery,", "Within the academic hall,"]
+    en_nouns = ["the wanderer", "the scholar", "the nobleman", "the astronomer", "the captain", "the philosopher", "the poet", "the diplomat", "the advisor", "the historian", "the artist", "the magistrate", "the thinker", "the musician", "the author", "the translator", "the chronicler", "the sage"]
+    en_verbs = ["contemplated", "meditated upon", "discovered", "studied", "analyzed", "observed", "admired", "questioned", "surveyed", "searched", "noticed", "emphasized", "celebrated", "expressed", "explored", "commented upon", "revealed"]
+    en_adj = ["majestic", "silent", "profound", "enlightened", "mysterious", "harmonious", "brilliant", "immense", "singular", "eloquent", "sublime", "priceless", "serene", "ancestral", "remarkable", "poetic", "luminous"]
+    en_adv = ["serenely", "attentively", "passionately", "subtly", "clearly", "majestically", "admirably", "nobly", "constantly", "perfectly", "profoundly", "elegantly", "regularly"]
+    en_objs = ["the ancient archives", "the precious manuscript", "the clarity of stars", "the beauty of nature", "the spirit of liberty", "the historical truth", "the classical wisdom", "the fate of empires", "philosophical principles", "great ideals", "classical thought", "literary heritage"]
+
+    rnd = random.Random(book_id * 1000 + 42)
+
+    for c in range(1, 13):
+        ch_paragraphs = []
+        for p in range(1, 13):
+            sentences = []
+            for _ in range(5):
+                if is_fr:
+                    pref = rnd.choice(fr_prefixes)
+                    n = rnd.choice(fr_nouns)
+                    v = rnd.choice(fr_verbs)
+                    adv = rnd.choice(fr_adv)
+                    obj = rnd.choice(fr_objs)
+                    adj = rnd.choice(fr_adj)
+                    sentences.append(f"{pref} {n} {adv} {v} {obj} {adj}.")
+                else:
+                    pref = rnd.choice(en_prefixes)
+                    n = rnd.choice(en_nouns)
+                    v = rnd.choice(en_verbs)
+                    adv = rnd.choice(en_adv)
+                    obj = rnd.choice(en_objs)
+                    adj = rnd.choice(en_adj)
+                    sentences.append(f"{pref} {n} {adv} {v} {obj} {adj}.")
+            
+            p_text = " ".join(sentences)
+            ch_paragraphs.append(f"<p><strong>Section {p}:</strong> {p_text}</p>")
+
+        body_html = "\n".join(ch_paragraphs)
+        chapters[f'OEBPS/chapter{c}.html'] = f"<!DOCTYPE html><html><head><title>Chapitre {c}</title><link rel=\"stylesheet\" href=\"stylesheet.css\"/></head><body><h1>{clean_t}</h1><h2>Chapitre {c} — par {clean_a} ({year})</h2><hr/>{body_html}</body></html>"
 
     with zipfile.ZipFile(buf, 'w', zipfile.ZIP_DEFLATED) as z:
         z.writestr('mimetype', 'application/epub+zip', compress_type=zipfile.ZIP_STORED)

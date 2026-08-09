@@ -53,7 +53,7 @@ def inspect_single_epub(book_entry):
                 ngrams.append(phrase)
 
             counts = Counter(ngrams)
-            repeated_phrases = [phrase for phrase, count in counts.items() if count > 3]
+            repeated_phrases = [phrase for phrase, count in counts.items() if count > 5]
 
             if len(repeated_phrases) > 0:
                 sample_rep = repeated_phrases[0][:50]
