@@ -33,13 +33,13 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentTheme = safeGetStorage('athena_theme', 'dark');
 
     let currentFilters = {
-        tier: 'all',           // Default to 'all' so 1,000 books load on initial screen!
+        tier: 'all',
         search: '',
         language: 'all',
         category: 'all',
         length: 'all',
         status: 'all',
-        vibe: 'all',
+        vibe: 'curator',        // Default to Golden 100 Essentials on load!
         sort: 'curator',
         view: 'grid'
     };
