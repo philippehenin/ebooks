@@ -5,10 +5,32 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
+    // Storage Safety Helpers for restricted origins / GitHub Pages iframe environments
+    function safeGetStorage(key, fallback) {
+        try {
+            if (typeof window !== 'undefined' && window.localStorage) {
+                return window.localStorage.getItem(key) || fallback;
+            }
+        } catch (e) {
+            // Return fallback if access is restricted
+        }
+        return fallback;
+    }
+
+    function safeSetStorage(key, value) {
+        try {
+            if (typeof window !== 'undefined' && window.localStorage) {
+                window.localStorage.setItem(key, value);
+            }
+        } catch (e) {
+            // Fail gracefully if write is blocked
+        }
+    }
+
     // State Management
     let booksData = [];
-    let savedBookIds = JSON.parse(localStorage.getItem('athena_saved_ids') || '[]');
-    let currentTheme = localStorage.getItem('athena_theme') || 'dark';
+    let savedBookIds = JSON.parse(safeGetStorage('athena_saved_ids', '[]'));
+    let currentTheme = safeGetStorage('athena_theme', 'dark');
 
     let currentFilters = {
         tier: 'all',           // Default to 'all' so 1,000 books load on initial screen!
@@ -240,7 +262,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (btnThemeToggle) {
             btnThemeToggle.addEventListener('click', () => {
                 currentTheme = currentTheme === 'dark' ? 'light' : 'dark';
-                localStorage.setItem('athena_theme', currentTheme);
+                safeSetStorage('athena_theme', currentTheme);
                 updateThemeUI();
             });
         }
@@ -364,7 +386,7 @@ document.addEventListener('DOMContentLoaded', () => {
             btnClearSaved.addEventListener('click', () => {
                 if (confirm('Clear all saved books from your reading queue?')) {
                     savedBookIds = [];
-                    localStorage.setItem('athena_saved_ids', JSON.stringify(savedBookIds));
+                    safeSetStorage('athena_saved_ids', JSON.stringify(savedBookIds));
                     updateSavedBadge();
                     renderSavedQueue();
                     renderBooks();
@@ -417,7 +439,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             } else if (e.shiftKey && e.key.toLowerCase() === 'd') {
                 currentTheme = currentTheme === 'dark' ? 'light' : 'dark';
-                localStorage.setItem('athena_theme', currentTheme);
+                safeSetStorage('athena_theme', currentTheme);
                 updateThemeUI();
             } else if (e.key === '?') {
                 if (shortcutsModal) shortcutsModal.style.display = 'flex';
@@ -655,7 +677,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const idx = savedBookIds.indexOf(bookId);
         if (idx >= 0) savedBookIds.splice(idx, 1);
         else savedBookIds.push(bookId);
-        localStorage.setItem('athena_saved_ids', JSON.stringify(savedBookIds));
+        safeSetStorage('athena_saved_ids', JSON.stringify(savedBookIds));
         updateSavedBadge();
     }
 
@@ -757,27 +779,43 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function setupWizardListeners() {
-        const wizardOpts = document.querySelectorAll('.wizard-opt-btn');
+        const wizardOpts = document.querySelectorAll('.wiz-opt-btn');
         let wizardAnswers = {};
+
+        function setWizardStep(stepNum) {
+            const step1 = document.getElementById('wiz-step-1');
+            const step2 = document.getElementById('wiz-step-2');
+            const step3 = document.getElementById('wiz-step-3');
+            const results = document.getElementById('wiz-step-results');
+
+            const pill1 = document.getElementById('wiz-step-pill-1');
+            const pill2 = document.getElementById('wiz-step-pill-2');
+            const pill3 = document.getElementById('wiz-step-pill-3');
+
+            if (step1) step1.style.display = stepNum === 1 ? 'block' : 'none';
+            if (step2) step2.style.display = stepNum === 2 ? 'block' : 'none';
+            if (step3) step3.style.display = stepNum === 3 ? 'block' : 'none';
+            if (results) results.style.display = stepNum === 4 ? 'block' : 'none';
+
+            if (pill1) pill1.classList.toggle('active', stepNum === 1);
+            if (pill2) pill2.classList.toggle('active', stepNum === 2);
+            if (pill3) pill3.classList.toggle('active', stepNum === 3);
+        }
 
         wizardOpts.forEach(btn => {
             btn.addEventListener('click', () => {
-                const key = btn.getAttribute('data-key');
-                const val = btn.getAttribute('data-val');
-                wizardAnswers[key] = val;
+                const field = btn.getAttribute('data-field');
+                const val = btn.getAttribute('data-value');
+                if (field) {
+                    wizardAnswers[field] = val;
+                }
 
-                const step1 = document.getElementById('wiz-step-1');
-                const step2 = document.getElementById('wiz-step-2');
-                const step3 = document.getElementById('wiz-step-3');
-
-                if (key === 'vibe') {
-                    if (step1) step1.style.display = 'none';
-                    if (step2) step2.style.display = 'block';
-                } else if (key === 'length') {
-                    if (step2) step2.style.display = 'none';
-                    if (step3) step3.style.display = 'block';
-                } else if (key === 'lang') {
-                    if (step3) step3.style.display = 'none';
+                if (field === 'mood') {
+                    setWizardStep(2);
+                } else if (field === 'time') {
+                    setWizardStep(3);
+                } else if (field === 'lang') {
+                    setWizardStep(4);
                     showWizardResults(wizardAnswers);
                 }
             });
@@ -787,10 +825,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (btnRestart) {
             btnRestart.addEventListener('click', () => {
                 wizardAnswers = {};
-                const results = document.getElementById('wiz-step-results');
-                const step1 = document.getElementById('wiz-step-1');
-                if (results) results.style.display = 'none';
-                if (step1) step1.style.display = 'block';
+                setWizardStep(1);
             });
         }
     }
@@ -801,17 +836,60 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!grid) return;
 
         let recs = booksData.filter(b => {
-            if (answers.lang && answers.lang !== 'any' && b.language !== answers.lang) return false;
+            // Language filter
+            if (answers.lang && answers.lang !== 'any' && b.language !== answers.lang) {
+                return false;
+            }
 
-            if (answers.length === 'quick' && b.filesize_kb > 250) return false;
-            if (answers.length === 'medium' && (b.filesize_kb < 200 || b.filesize_kb > 480)) return false;
-            if (answers.length === 'epic' && b.filesize_kb <= 480) return false;
+            // Time / Length filter
+            if (answers.time === 'short' && b.filesize_kb > 250) return false;
+            if (answers.time === 'medium' && (b.filesize_kb < 180 || b.filesize_kb > 500)) return false;
+            if (answers.time === 'epic' && b.filesize_kb <= 480) return false;
+
+            // Mood / Vibe filter
+            if (answers.mood) {
+                const searchStr = (b.category + ' ' + (b.vibe_tags ? b.vibe_tags.join(' ') : '') + ' ' + b.title + ' ' + b.synopsis).toLowerCase();
+                if (answers.mood === 'thrill') {
+                    const keywords = ['adventure', 'mystery', 'detective', 'sci-fi', 'swashbuckler', 'thriller', 'intrigue', 'action', 'revenge'];
+                    if (!keywords.some(kw => searchStr.includes(kw))) return false;
+                } else if (answers.mood === 'romance') {
+                    const keywords = ['romance', 'society', 'realism', 'satire', 'comedy', 'victorian', 'drama', 'romantic', 'passion', 'elegance'];
+                    if (!keywords.some(kw => searchStr.includes(kw))) return false;
+                } else if (answers.mood === 'philosophy') {
+                    const keywords = ['philosophy', 'philosophical', 'stoic', 'essay', 'political', 'history', 'reflections', 'enlightenment', 'thought', 'moral'];
+                    if (!keywords.some(kw => searchStr.includes(kw))) return false;
+                } else if (answers.mood === 'gothic') {
+                    const keywords = ['gothic', 'dark', 'sci-fi', 'decadent', 'horror', 'symbolist', 'fantastique', 'haunting'];
+                    if (!keywords.some(kw => searchStr.includes(kw))) return false;
+                }
+            }
 
             return true;
         });
 
-        if (recs.length < 3) recs = booksData.slice(0, 6);
-        else recs = recs.slice(0, 6);
+        // Sort: Curator Picks (Golden 100) first
+        recs.sort((a, b) => {
+            if (a.is_curator_pick && !b.is_curator_pick) return -1;
+            if (!a.is_curator_pick && b.is_curator_pick) return 1;
+            return a.id - b.id;
+        });
+
+        // Fallback gracefully if fewer than 3 books match strict criteria
+        if (recs.length < 3) {
+            let fallback = booksData.filter(b => {
+                if (answers.lang && answers.lang !== 'any' && b.language !== answers.lang) return false;
+                return true;
+            }).sort((a, b) => (a.is_curator_pick ? -1 : 1));
+            recs = [...recs, ...fallback];
+            const seen = new Set();
+            recs = recs.filter(b => {
+                if (seen.has(b.id)) return false;
+                seen.add(b.id);
+                return true;
+            });
+        }
+
+        recs = recs.slice(0, 6);
 
         grid.className = 'grid-view';
         grid.innerHTML = recs.map(b => createBookCardHTML(b)).join('');

@@ -59,6 +59,40 @@ function runDomTest() {
                 cleanupAndExit(1);
             }
 
+            // Test Recommendation Wizard (Find My Next Read)
+            const wizardTabBtn = document.getElementById('tab-nav-wizard');
+            if (wizardTabBtn) wizardTabBtn.click();
+
+            const wizStep1 = document.getElementById('wiz-step-1');
+            const wizOptStep1 = document.querySelector('#wiz-step-1 .wiz-opt-btn');
+            if (wizOptStep1) wizOptStep1.click();
+
+            const wizStep2 = document.getElementById('wiz-step-2');
+            const wizOptStep2 = document.querySelector('#wiz-step-2 .wiz-opt-btn');
+            if (wizOptStep2) wizOptStep2.click();
+
+            const wizStep3 = document.getElementById('wiz-step-3');
+            const wizOptStep3 = document.querySelector('#wiz-step-3 .wiz-opt-btn');
+            if (wizOptStep3) wizOptStep3.click();
+
+            const wizResults = document.getElementById('wiz-step-results');
+            const wizCards = document.querySelectorAll('#wizard-results-grid .book-card');
+            console.log(`[Browser DOM Test] Wizard Results Rendered: ${wizCards.length} cards`);
+
+            if (!wizResults || wizResults.style.display === 'none' || wizCards.length === 0) {
+                console.error(`❌ BROWSER DOM TEST FAILED: Recommendation Wizard failed to produce results.`);
+                cleanupAndExit(1);
+            }
+
+            const btnRestart = document.getElementById('btn-restart-wizard');
+            if (btnRestart) btnRestart.click();
+            const pill1 = document.getElementById('wiz-step-pill-1');
+            if (!wizStep1 || wizStep1.style.display === 'none' || !pill1 || !pill1.classList.contains('active')) {
+                console.error(`❌ BROWSER DOM TEST FAILED: Recommendation Wizard restart failed.`);
+                cleanupAndExit(1);
+            }
+            console.log(`✅ BROWSER DOM TEST PASSED: Recommendation Wizard step navigation & recommendation matches verified.`);
+
             console.log(`✅ BROWSER DOM TEST PASSED: 1,000 book cards rendered and Download Link verified on disk (${relativePath}).`);
             cleanupAndExit(0);
         }, 1500);
