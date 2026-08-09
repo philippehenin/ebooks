@@ -25,7 +25,7 @@
     "primary_source": "Ebooksgratuits / NosLivres",
     "download_url": "https://www.gutenberg.org/ebooks/13951",
     "is_downloaded": true,
-    "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\002_Alexandre Dumas_Les Trois Mousquetaires.epub",
+    "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\002_Alexandre Dumas_Les trois mousquetaires.epub",
     "filesize_kb": 675.7,
     "cover_url": "downloads/covers/cover_002.jpg",
     "year": null,
@@ -147,7 +147,7 @@
     "id": 10,
     "title": "813",
     "author": "Maurice Leblanc",
-    "language": "English",
+    "language": "French",
     "category": "Mystery",
     "format": "EPUB / MOBI",
     "primary_source": "Ebooksgratuits / NosLivres",
@@ -157,7 +157,7 @@
     "filesize_kb": 336.8,
     "cover_url": "downloads/covers/cover_010.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in mystery by Maurice Leblanc."
+    "synopsis": "Un chef-d'œuvre classique de la littérature française par Maurice Leblanc."
   },
   {
     "id": 11,
@@ -233,7 +233,7 @@
     "primary_source": "Ebooksgratuits / NosLivres",
     "download_url": "https://www.gutenberg.org/ebooks/800",
     "is_downloaded": true,
-    "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\015_Jules Verne_Le Tour du monde en quatre-vingts jours.epub",
+    "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\015_Jules Verne_Le tour du monde en quatre-vingts jours.epub",
     "filesize_kb": 257.6,
     "cover_url": "downloads/covers/cover_015.jpg",
     "year": null,
@@ -241,9 +241,9 @@
   },
   {
     "id": 16,
-    "title": "A Journey to the Centre of the Earth",
+    "title": "Voyage au centre de la Terre",
     "author": "Jules Verne",
-    "language": "English",
+    "language": "French",
     "category": "Adventure, Mystery & Sci-Fi",
     "format": "EPUB / MOBI",
     "primary_source": "Ebooksgratuits / NosLivres",
@@ -253,7 +253,7 @@
     "filesize_kb": 275.1,
     "cover_url": "downloads/covers/cover_016.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in adventure, mystery & sci-fi by Jules Verne."
+    "synopsis": "Un chef-d'œuvre classique de la littérature française par Jules Verne."
   },
   {
     "id": 17,
@@ -321,9 +321,9 @@
   },
   {
     "id": 21,
-    "title": "In Search of the Castaways; Or, The Children of Captain Grant",
+    "title": "Les Enfants du capitaine Grant",
     "author": "Jules Verne",
-    "language": "English",
+    "language": "French",
     "category": "Adventure, Mystery & Sci-Fi",
     "format": "EPUB / MOBI",
     "primary_source": "Ebooksgratuits / NosLivres",
@@ -333,7 +333,7 @@
     "filesize_kb": 456.6,
     "cover_url": "downloads/covers/cover_021.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in adventure, mystery & sci-fi by Jules Verne."
+    "synopsis": "Un chef-d'œuvre classique de la littérature française par Jules Verne."
   },
   {
     "id": 22,
@@ -361,7 +361,7 @@
     "primary_source": "Ebooksgratuits / NosLivres",
     "download_url": "https://www.gutenberg.org/ebooks/13765",
     "is_downloaded": true,
-    "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\023_Gaston Leroux_Le Mystere de la chambre jaune.epub",
+    "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\023_Gaston Leroux_Le mystere de la chambre jaune.epub",
     "filesize_kb": 264.6,
     "cover_url": "downloads/covers/cover_023.jpg",
     "year": null,
@@ -377,7 +377,7 @@
     "primary_source": "Ebooksgratuits / NosLivres",
     "download_url": "https://www.gutenberg.org/ebooks/15554",
     "is_downloaded": true,
-    "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\024_Gaston Leroux_Le Parfum de la dame en noir.epub",
+    "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\024_Gaston Leroux_Le parfum de la dame en noir.epub",
     "filesize_kb": 346.0,
     "cover_url": "downloads/covers/cover_024.jpg",
     "year": null,
@@ -531,7 +531,7 @@
     "id": 34,
     "title": "Indiana",
     "author": "George Sand",
-    "language": "English",
+    "language": "French",
     "category": "Romanticism",
     "format": "EPUB / MOBI",
     "primary_source": "Ebooksgratuits / NosLivres",
@@ -541,7 +541,7 @@
     "filesize_kb": 541.8,
     "cover_url": "downloads/covers/cover_034.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in romanticism by George Sand."
+    "synopsis": "Un chef-d'œuvre classique de la littérature française par George Sand."
   },
   {
     "id": 35,
@@ -563,7 +563,7 @@
     "id": 36,
     "title": "Les Misérables",
     "author": "Victor Hugo",
-    "language": "English",
+    "language": "French",
     "category": "Realism, Naturalism & Social Drama",
     "format": "EPUB / MOBI",
     "primary_source": "Ebooksgratuits / NosLivres",
@@ -573,13 +573,13 @@
     "filesize_kb": 1789.7,
     "cover_url": "downloads/covers/cover_036.jpg",
     "year": 1862,
-    "synopsis": "Victor Hugo's monumental story of Jean Valjean, Cosette, Javert, and the relentless quest for justice."
+    "synopsis": "Un chef-d'œuvre classique de la littérature française par Victor Hugo."
   },
   {
     "id": 37,
     "title": "Notre-Dame de Paris",
     "author": "Victor Hugo",
-    "language": "English",
+    "language": "French",
     "category": "Realism, Naturalism & Social Drama",
     "format": "EPUB / MOBI",
     "primary_source": "Ebooksgratuits / NosLivres",
@@ -589,7 +589,7 @@
     "filesize_kb": 568.3,
     "cover_url": "downloads/covers/cover_037.jpg",
     "year": 1831,
-    "synopsis": "The tragic gothic romance of the hunchback Quasimodo, the dancer Esmeralda, and the cathedral of Notre-Dame."
+    "synopsis": "Un chef-d'œuvre classique de la littérature française par Victor Hugo."
   },
   {
     "id": 38,
@@ -601,7 +601,7 @@
     "primary_source": "Ebooksgratuits / NosLivres",
     "download_url": "https://www.gutenberg.org/ebooks/9645",
     "is_downloaded": true,
-    "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\038_Victor Hugo_Quatrevingt-treize.epub",
+    "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\038_Victor Hugo_Quatrevingt-Treize.epub",
     "filesize_kb": 381.0,
     "cover_url": "downloads/covers/cover_038.jpg",
     "year": null,
@@ -617,7 +617,7 @@
     "primary_source": "Ebooksgratuits / NosLivres",
     "download_url": "https://www.gutenberg.org/ebooks/5423",
     "is_downloaded": true,
-    "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\039_Victor Hugo_L'Homme qui rit.epub",
+    "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\039_Victor Hugo_L'homme Qui Rit.epub",
     "filesize_kb": 583.9,
     "cover_url": "downloads/covers/cover_039.jpg",
     "year": null,
@@ -649,7 +649,7 @@
     "primary_source": "Ebooksgratuits / NosLivres",
     "download_url": "https://www.gutenberg.org/ebooks/6838",
     "is_downloaded": true,
-    "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\041_Victor Hugo_Le Dernier Jour d'un condamne.epub",
+    "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\041_Victor Hugo_Le Dernier Jour d'un Condamne.epub",
     "filesize_kb": 163.8,
     "cover_url": "downloads/covers/cover_041.jpg",
     "year": null,
@@ -659,7 +659,7 @@
     "id": 42,
     "title": "Madame Bovary",
     "author": "Gustave Flaubert",
-    "language": "English",
+    "language": "French",
     "category": "Realism, Naturalism & Social Drama",
     "format": "EPUB / MOBI",
     "primary_source": "Ebooksgratuits / NosLivres",
@@ -669,7 +669,7 @@
     "filesize_kb": 410.3,
     "cover_url": "downloads/covers/cover_042.jpg",
     "year": 1857,
-    "synopsis": "Flaubert's ground-breaking realistic portrait of Emma Bovary and her tragic search for romantic idealization."
+    "synopsis": "Un chef-d'œuvre classique de la littérature française par Gustave Flaubert."
   },
   {
     "id": 43,
@@ -689,9 +689,9 @@
   },
   {
     "id": 44,
-    "title": "Salammbo",
+    "title": "Salammbô",
     "author": "Gustave Flaubert",
-    "language": "English",
+    "language": "French",
     "category": "Realism, Naturalism & Social Drama",
     "format": "EPUB / MOBI",
     "primary_source": "Ebooksgratuits / NosLivres",
@@ -701,7 +701,7 @@
     "filesize_kb": 329.4,
     "cover_url": "downloads/covers/cover_044.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in realism, naturalism & social drama by Gustave Flaubert."
+    "synopsis": "Un chef-d'œuvre classique de la littérature française par Gustave Flaubert."
   },
   {
     "id": 45,
@@ -723,7 +723,7 @@
     "id": 46,
     "title": "Germinal",
     "author": "Émile Zola",
-    "language": "English",
+    "language": "French",
     "category": "Realism, Naturalism & Social Drama",
     "format": "EPUB / MOBI",
     "primary_source": "Ebooksgratuits / NosLivres",
@@ -733,7 +733,7 @@
     "filesize_kb": 474.2,
     "cover_url": "downloads/covers/cover_046.jpg",
     "year": 1885,
-    "synopsis": "Émile Zola's powerful social masterpiece depicting the brutal lives and fierce strike of French coal miners."
+    "synopsis": "Un chef-d'œuvre classique de la littérature française par Émile Zola."
   },
   {
     "id": 47,
@@ -755,7 +755,7 @@
     "id": 48,
     "title": "L'Assommoir",
     "author": "Émile Zola",
-    "language": "English",
+    "language": "French",
     "category": "Realism, Naturalism & Social Drama",
     "format": "EPUB / MOBI",
     "primary_source": "Ebooksgratuits / NosLivres",
@@ -765,7 +765,7 @@
     "filesize_kb": 416.8,
     "cover_url": "downloads/covers/cover_048.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in realism, naturalism & social drama by Émile Zola."
+    "synopsis": "Un chef-d'œuvre classique de la littérature française par Émile Zola."
   },
   {
     "id": 49,
@@ -777,7 +777,7 @@
     "primary_source": "Ebooksgratuits / NosLivres",
     "download_url": "https://www.gutenberg.org/ebooks/19035",
     "is_downloaded": true,
-    "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\049_Gaston Leroux_Le Fauteuil hante.epub",
+    "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\049_Gaston Leroux_Le fauteuil hante.epub",
     "filesize_kb": 181.5,
     "cover_url": "downloads/covers/cover_049.jpg",
     "year": null,
@@ -801,9 +801,9 @@
   },
   {
     "id": 51,
-    "title": "Micromegas",
+    "title": "Micromégas",
     "author": "Voltaire",
-    "language": "English",
+    "language": "French",
     "category": "Philosophical Fiction",
     "format": "EPUB / MOBI",
     "primary_source": "Ebooksgratuits / NosLivres",
@@ -813,13 +813,13 @@
     "filesize_kb": 91.8,
     "cover_url": "downloads/covers/cover_051.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in philosophical fiction by Voltaire."
+    "synopsis": "Un chef-d'œuvre classique de la littérature française par Voltaire."
   },
   {
     "id": 52,
-    "title": "Theresa Raquin",
+    "title": "Thérèse Raquin",
     "author": "Émile Zola",
-    "language": "English",
+    "language": "French",
     "category": "Realism, Naturalism & Social Drama",
     "format": "EPUB / MOBI",
     "primary_source": "Ebooksgratuits / NosLivres",
@@ -829,7 +829,7 @@
     "filesize_kb": 255.4,
     "cover_url": "downloads/covers/cover_052.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in realism, naturalism & social drama by Émile Zola."
+    "synopsis": "Un chef-d'œuvre classique de la littérature française par Émile Zola."
   },
   {
     "id": 53,
@@ -881,9 +881,9 @@
   },
   {
     "id": 56,
-    "title": "Eugenie Grandet",
+    "title": "Eugénie Grandet",
     "author": "Honoré de Balzac",
-    "language": "English",
+    "language": "French",
     "category": "Realism, Naturalism & Social Drama",
     "format": "EPUB / MOBI",
     "primary_source": "Ebooksgratuits / NosLivres",
@@ -893,13 +893,13 @@
     "filesize_kb": 230.7,
     "cover_url": "downloads/covers/cover_056.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in realism, naturalism & social drama by Honoré de Balzac."
+    "synopsis": "Un chef-d'œuvre classique de la littérature française par Honoré de Balzac."
   },
   {
     "id": 57,
-    "title": "Lost Illusions",
+    "title": "Illusions perdues",
     "author": "Honoré de Balzac",
-    "language": "English",
+    "language": "French",
     "category": "Realism, Naturalism & Social Drama",
     "format": "EPUB / MOBI",
     "primary_source": "Ebooksgratuits / NosLivres",
@@ -909,7 +909,7 @@
     "filesize_kb": 667.3,
     "cover_url": "downloads/covers/cover_057.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in realism, naturalism & social drama by Honoré de Balzac."
+    "synopsis": "Un chef-d'œuvre classique de la littérature française par Honoré de Balzac."
   },
   {
     "id": 58,
@@ -961,9 +961,9 @@
   },
   {
     "id": 61,
-    "title": "The Crime of Sylvestre Bonnard",
+    "title": "Le Crime de Sylvestre Bonnard",
     "author": "Anatole France",
-    "language": "English",
+    "language": "French",
     "category": "Realism",
     "format": "EPUB / MOBI",
     "primary_source": "Ebooksgratuits / NosLivres",
@@ -973,7 +973,7 @@
     "filesize_kb": 235.7,
     "cover_url": "downloads/covers/cover_061.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in realism by Anatole France."
+    "synopsis": "Un chef-d'œuvre classique de la littérature française par Anatole France."
   },
   {
     "id": 62,
@@ -993,9 +993,9 @@
   },
   {
     "id": 63,
-    "title": "The works of Guy de Maupassant, Vol. 5 / Une Vie and Other Stories",
+    "title": "Une vie",
     "author": "Guy de Maupassant",
-    "language": "English",
+    "language": "French",
     "category": "Realism, Naturalism & Social Drama",
     "format": "EPUB / MOBI",
     "primary_source": "Ebooksgratuits / NosLivres",
@@ -1005,13 +1005,13 @@
     "filesize_kb": 324.7,
     "cover_url": "downloads/covers/cover_063.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in realism, naturalism & social drama by Guy de Maupassant."
+    "synopsis": "Un chef-d'œuvre classique de la littérature française par Guy de Maupassant."
   },
   {
     "id": 64,
-    "title": "Pierre and Jean",
+    "title": "Pierre et Jean",
     "author": "Guy de Maupassant",
-    "language": "English",
+    "language": "French",
     "category": "Realism, Naturalism & Social Drama",
     "format": "EPUB / MOBI",
     "primary_source": "Ebooksgratuits / NosLivres",
@@ -1021,7 +1021,7 @@
     "filesize_kb": 173.1,
     "cover_url": "downloads/covers/cover_064.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in realism, naturalism & social drama by Guy de Maupassant."
+    "synopsis": "Un chef-d'œuvre classique de la littérature française par Guy de Maupassant."
   },
   {
     "id": 65,
@@ -1041,9 +1041,9 @@
   },
   {
     "id": 66,
-    "title": "The Works of Guy de Maupassant, Vol. 1 / Boule de Suif and Other Stories",
+    "title": "Boule de suif et autres contes",
     "author": "Guy de Maupassant",
-    "language": "English",
+    "language": "French",
     "category": "Realism, Naturalism & Social Drama",
     "format": "EPUB / MOBI",
     "primary_source": "Ebooksgratuits / NosLivres",
@@ -1053,13 +1053,13 @@
     "filesize_kb": 325.9,
     "cover_url": "downloads/covers/cover_066.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in realism, naturalism & social drama by Guy de Maupassant."
+    "synopsis": "Un chef-d'œuvre classique de la littérature française par Guy de Maupassant."
   },
   {
     "id": 67,
-    "title": "Thais",
+    "title": "Thaïs",
     "author": "Anatole France",
-    "language": "English",
+    "language": "French",
     "category": "Historical Novel",
     "format": "EPUB / MOBI",
     "primary_source": "Ebooksgratuits / NosLivres",
@@ -1069,13 +1069,13 @@
     "filesize_kb": 185.1,
     "cover_url": "downloads/covers/cover_067.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in historical novel by Anatole France."
+    "synopsis": "Un chef-d'œuvre classique de la littérature française par Anatole France."
   },
   {
     "id": 68,
-    "title": "The Chartreuse of Parma / Translated from the French of Stendhal (Henri Beyle)",
+    "title": "La Chartreuse de Parme",
     "author": "Stendhal",
-    "language": "English",
+    "language": "French",
     "category": "Realism, Naturalism & Social Drama",
     "format": "EPUB / MOBI",
     "primary_source": "Ebooksgratuits / NosLivres",
@@ -1085,13 +1085,13 @@
     "filesize_kb": 543.0,
     "cover_url": "downloads/covers/cover_068.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in realism, naturalism & social drama by Stendhal."
+    "synopsis": "Un chef-d'œuvre classique de la littérature française par Stendhal."
   },
   {
     "id": 69,
     "title": "Carmen",
     "author": "Prosper Mérimée",
-    "language": "English",
+    "language": "French",
     "category": "Realism, Naturalism & Social Drama",
     "format": "EPUB / MOBI",
     "primary_source": "Ebooksgratuits / NosLivres",
@@ -1101,13 +1101,13 @@
     "filesize_kb": 123.7,
     "cover_url": "downloads/covers/cover_069.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in realism, naturalism & social drama by Prosper Mérimée."
+    "synopsis": "Un chef-d'œuvre classique de la littérature française par Prosper Mérimée."
   },
   {
     "id": 70,
     "title": "Colomba",
     "author": "Prosper Mérimée",
-    "language": "English",
+    "language": "French",
     "category": "Realism, Naturalism & Social Drama",
     "format": "EPUB / MOBI",
     "primary_source": "Ebooksgratuits / NosLivres",
@@ -1117,7 +1117,7 @@
     "filesize_kb": 183.2,
     "cover_url": "downloads/covers/cover_070.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in realism, naturalism & social drama by Prosper Mérimée."
+    "synopsis": "Un chef-d'œuvre classique de la littérature française par Prosper Mérimée."
   },
   {
     "id": 71,
@@ -1347,7 +1347,7 @@
     "id": 85,
     "title": "Ramuntcho",
     "author": "Pierre Loti",
-    "language": "English",
+    "language": "French",
     "category": "Regional Fiction",
     "format": "EPUB / MOBI",
     "primary_source": "Ebooksgratuits / NosLivres",
@@ -1357,7 +1357,7 @@
     "filesize_kb": 196.8,
     "cover_url": "downloads/covers/cover_085.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in regional fiction by Pierre Loti."
+    "synopsis": "Un chef-d'œuvre classique de la littérature française par Pierre Loti."
   },
   {
     "id": 86,
@@ -1369,7 +1369,7 @@
     "primary_source": "Ebooksgratuits / NosLivres",
     "download_url": "https://www.gutenberg.org/ebooks/28827",
     "is_downloaded": true,
-    "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\086_Denis Diderot_La Religieuse.epub",
+    "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\086_Denis Diderot_La religieuse.epub",
     "filesize_kb": 254.0,
     "cover_url": "downloads/covers/cover_086.jpg",
     "year": null,
@@ -1385,7 +1385,7 @@
     "primary_source": "Ebooksgratuits / NosLivres",
     "download_url": "https://www.gutenberg.org/ebooks/13862",
     "is_downloaded": true,
-    "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\087_Denis Diderot_Le Neveu de Rameau.epub",
+    "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\087_Denis Diderot_Le neveu de Rameau.epub",
     "filesize_kb": 144.2,
     "cover_url": "downloads/covers/cover_087.jpg",
     "year": null,
@@ -1417,7 +1417,7 @@
     "primary_source": "Ebooksgratuits / NosLivres",
     "download_url": "https://www.gutenberg.org/ebooks/468",
     "is_downloaded": true,
-    "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\089_Abbe Prevost_Manon Lescaut.epub",
+    "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\089_abbe Prevost_Manon Lescaut.epub",
     "filesize_kb": 210.1,
     "cover_url": "downloads/covers/cover_089.jpg",
     "year": null,
@@ -1473,9 +1473,9 @@
   },
   {
     "id": 93,
-    "title": "Madame Chrysantheme — Complete",
+    "title": "Madame Chrysanthème",
     "author": "Pierre Loti",
-    "language": "English",
+    "language": "French",
     "category": "Exotic Travel Fiction",
     "format": "EPUB / MOBI",
     "primary_source": "Ebooksgratuits / NosLivres",
@@ -1485,7 +1485,7 @@
     "filesize_kb": 200.5,
     "cover_url": "downloads/covers/cover_093.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in exotic travel fiction by Pierre Loti."
+    "synopsis": "Un chef-d'œuvre classique de la littérature française par Pierre Loti."
   },
   {
     "id": 94,
@@ -1779,7 +1779,7 @@
     "id": 112,
     "title": "Cyrano de Bergerac",
     "author": "Edmond Rostand",
-    "language": "English",
+    "language": "French",
     "category": "Heroic Comedy",
     "format": "EPUB / MOBI",
     "primary_source": "Ebooksgratuits / NosLivres",
@@ -1789,7 +1789,7 @@
     "filesize_kb": 164.6,
     "cover_url": "downloads/covers/cover_112.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in heroic comedy by Edmond Rostand."
+    "synopsis": "Un chef-d'œuvre classique de la littérature française par Edmond Rostand."
   },
   {
     "id": 113,
@@ -1817,7 +1817,7 @@
     "primary_source": "Ebooksgratuits / NosLivres",
     "download_url": "https://www.gutenberg.org/ebooks/16820",
     "is_downloaded": true,
-    "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\114_Octave Mirbeau_Le Journal d'une femme de chambre.epub",
+    "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\114_Octave Mirbeau_Le Journal d'une Femme de Chambre.epub",
     "filesize_kb": 352.0,
     "cover_url": "downloads/covers/cover_114.jpg",
     "year": null,
@@ -1833,7 +1833,7 @@
     "primary_source": "Ebooksgratuits / NosLivres",
     "download_url": "https://www.gutenberg.org/ebooks/57775",
     "is_downloaded": true,
-    "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\115_Octave Mirbeau_Le Jardin des supplices.epub",
+    "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\115_Octave Mirbeau_Le jardin des supplices.epub",
     "filesize_kb": 236.2,
     "cover_url": "downloads/covers/cover_115.jpg",
     "year": null,
@@ -1881,7 +1881,7 @@
     "primary_source": "Ebooksgratuits / NosLivres",
     "download_url": "https://www.gutenberg.org/ebooks/60746",
     "is_downloaded": true,
-    "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\118_Theophile Gautier_Le Capitaine Fracasse.epub",
+    "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\118_Theophile Gautier_Le capitaine Fracasse.epub",
     "filesize_kb": 576.6,
     "cover_url": "downloads/covers/cover_118.jpg",
     "year": null,
@@ -1961,7 +1961,7 @@
     "primary_source": "Ebooksgratuits / NosLivres",
     "download_url": "https://www.gutenberg.org/ebooks/12005",
     "is_downloaded": true,
-    "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\123_Comte de Lautreamont_Les Chants de Maldoror.epub",
+    "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\123_comte de Lautreamont_Les Chants de Maldoror.epub",
     "filesize_kb": 267.9,
     "cover_url": "downloads/covers/cover_123.jpg",
     "year": null,
@@ -3193,7 +3193,7 @@
     "primary_source": "Standard Ebooks / Project Gutenberg",
     "download_url": "https://www.gutenberg.org/ebooks/215",
     "is_downloaded": true,
-    "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\200_Jack London_The Call of the Wild.epub",
+    "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\200_Jack London_The call of the wild.epub",
     "filesize_kb": 152.5,
     "cover_url": "downloads/covers/cover_200.jpg",
     "year": null,
@@ -3433,7 +3433,7 @@
     "primary_source": "Standard Ebooks / Project Gutenberg",
     "download_url": "https://www.gutenberg.org/ebooks/62",
     "is_downloaded": true,
-    "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\215_Edgar Rice Burroughs_A Princess of Mars.epub",
+    "filepath": "C:\\Users\\phili\\Git\\ebooks\\downloads\\215_Edgar Rice Burroughs_A princess of Mars.epub",
     "filesize_kb": 244.0,
     "cover_url": "downloads/covers/cover_215.jpg",
     "year": null,

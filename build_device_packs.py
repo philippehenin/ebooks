@@ -23,19 +23,23 @@ def sanitize(s):
 def categorize_folder(lang, cat):
     cat_lower = cat.lower()
     if lang == 'French':
-        if 'adventure' in cat_lower or 'mystery' in cat_lower or 'sci-fi' in cat_lower:
-            return '01_French_Classics/01_Aventure_et_Mystere'
-        elif 'realism' in cat_lower or 'naturalism' in cat_lower or 'drama' in cat_lower:
-            return '01_French_Classics/02_Realisme_et_Drame'
+        if 'adventure' in cat_lower or 'mystery' in cat_lower or 'sci-fi' in cat_lower or 'policier' in cat_lower:
+            return '01_French_Classics/01_Aventure_Mystere_et_Roman_Policier'
+        elif 'realism' in cat_lower or 'naturalism' in cat_lower or 'drama' in cat_lower or 'roman' in cat_lower:
+            return '01_French_Classics/02_Realisme_et_Grands_Romans'
+        elif 'philosophy' in cat_lower or 'satire' in cat_lower or 'essais' in cat_lower:
+            return '01_French_Classics/03_Philosophie_et_Satire'
         else:
-            return '01_French_Classics/03_Poesie_et_Romans'
+            return '01_French_Classics/04_Poesie_Theatre_et_Contes'
     else:
-        if 'gothic' in cat_lower or 'mystery' in cat_lower or 'adventure' in cat_lower:
+        if 'gothic' in cat_lower or 'mystery' in cat_lower or 'adventure' in cat_lower or 'detective' in cat_lower:
             return '02_English_Classics/01_Gothic_and_Adventure'
-        elif 'romance' in cat_lower or 'victorian' in cat_lower or 'society' in cat_lower:
-            return '02_English_Classics/02_Victorian_Realism'
+        elif 'romance' in cat_lower or 'victorian' in cat_lower or 'society' in cat_lower or 'realism' in cat_lower:
+            return '02_English_Classics/02_Victorian_Realism_and_Romance'
+        elif 'philosophy' in cat_lower or 'thought' in cat_lower or 'essay' in cat_lower:
+            return '02_English_Classics/03_Philosophy_and_Thought'
         else:
-            return '02_English_Classics/03_Philosophy_and_History'
+            return '02_English_Classics/04_Modernism_and_Drama'
 
 def zip_folder(folder_path, output_zip_path):
     print(f"Creating zip archive: {os.path.basename(output_zip_path)}...")

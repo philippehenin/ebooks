@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Classic Ebook Library | Top 300 DRM-Free Masterpieces</title>
+    <title>Athena Classic Library | Top 300 DRM-Free Masterpieces</title>
     <meta name="description" content="A curated, beautiful digital library of top 300 DRM-free French and English literary classics.">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Cinzel:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="dark-theme">
@@ -17,83 +17,467 @@
         <header class="app-header">
             <div class="header-content">
                 <div class="brand">
-                    <div class="logo-icon">📚</div>
+                    <div class="logo-icon">🏛️</div>
                     <div>
                         <h1>Athena Classic Library</h1>
-                        <p class="subtitle">Curated Collection of Top 300 DRM-Free French & English Masterpieces</p>
+                        <p class="subtitle">300 Curated DRM-Free French & English Masterpieces</p>
                     </div>
                 </div>
-                <div class="stats-pills">
-                    <div class="stat-card">
-                        <span class="stat-value" id="stat-total">300</span>
-                        <span class="stat-label">Total Classics</span>
-                    </div>
-                    <div class="stat-card">
-                        <span class="stat-value" id="stat-french">180</span>
-                        <span class="stat-label">French 🇫🇷</span>
-                    </div>
-                    <div class="stat-card">
-                        <span class="stat-value" id="stat-english">120</span>
-                        <span class="stat-label">English 🇬🇧</span>
-                    </div>
-                    <div class="stat-card highlight">
-                        <span class="stat-value" id="stat-downloaded">0</span>
-                        <span class="stat-label">Ready EPUBs 📥</span>
-                    </div>
+
+                <!-- Navigation Tabs -->
+                <nav class="nav-tabs" role="tablist">
+                    <button class="tab-btn active" id="tab-nav-catalog" data-tab="catalog">
+                        <span>📚 Browse Catalog</span>
+                    </button>
+                    <button class="tab-btn" id="tab-nav-roadmaps" data-tab="roadmaps">
+                        <span>🧭 Reading Roadmaps</span>
+                    </button>
+                    <button class="tab-btn" id="tab-nav-wizard" data-tab="wizard">
+                        <span>🔮 Book Finder</span>
+                    </button>
+                    <button class="tab-btn" id="tab-nav-saved" data-tab="saved">
+                        <span>⭐ Saved Queue</span>
+                        <span id="saved-count-badge" class="tab-badge">0</span>
+                    </button>
+                </nav>
+
+                <div class="header-actions">
+                    <button id="btn-surprise-me" class="action-btn-pill surprise">
+                        <span>🎲 Surprise Me!</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Stats Bar -->
+            <div class="stats-pills">
+                <div class="stat-card">
+                    <span class="stat-value" id="stat-total">300</span>
+                    <span class="stat-label">Total Classics</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-value" id="stat-french">180</span>
+                    <span class="stat-label">French 🇫🇷</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-value" id="stat-english">120</span>
+                    <span class="stat-label">English 🇬🇧</span>
+                </div>
+                <div class="stat-card highlight">
+                    <span class="stat-value" id="stat-downloaded">0</span>
+                    <span class="stat-label">Verified EPUBs 📥</span>
                 </div>
             </div>
         </header>
 
         <!-- Main Content Area -->
         <main class="main-content">
-            <!-- Filter & Search Toolbar -->
-            <section class="toolbar">
-                <div class="search-box">
-                    <span class="search-icon">🔍</span>
-                    <input type="text" id="search-input" placeholder="Search by title, author, or genre..." autocomplete="off">
-                    <button id="clear-search" class="clear-btn" style="display: none;">✕</button>
+
+            <!-- TAB 1: CATALOG VIEW -->
+            <section id="view-catalog" class="tab-view active">
+
+                <!-- Quick Vibe Pills -->
+                <div class="vibe-pills-bar">
+                    <span class="vibe-label">Quick Vibe:</span>
+                    <button class="vibe-pill active" data-vibe="all">✨ All Books</button>
+                    <button class="vibe-pill" data-vibe="curator">⭐ Essential Starters</button>
+                    <button class="vibe-pill" data-vibe="quick">⚡ Quick Reads (<200p)</button>
+                    <button class="vibe-pill" data-vibe="epic">📖 Epic Sagas (>500p)</button>
+                    <button class="vibe-pill" data-vibe="mystery">🕵️ Mystery & Adventure</button>
+                    <button class="vibe-pill" data-vibe="philosophy">📜 Philosophy & Thought</button>
+                    <button class="vibe-pill" data-vibe="romance">🎭 Wit & Romance</button>
+                    <button class="vibe-pill" data-vibe="gothic">🍷 Gothic & Dark</button>
                 </div>
 
-                <div class="filter-group">
-                    <div class="lang-selector">
-                        <button class="lang-btn active" data-lang="all">All</button>
-                        <button class="lang-btn" data-lang="French">🇫🇷 French</button>
-                        <button class="lang-btn" data-lang="English">🇬🇧 English</button>
+                <!-- Filter & Search Toolbar -->
+                <section class="toolbar">
+                    <div class="search-box">
+                        <span class="search-icon">🔍</span>
+                        <input type="text" id="search-input" placeholder="Search by title, author, category, or vibe tag..." autocomplete="off">
+                        <button id="clear-search" class="clear-btn" style="display: none;">✕</button>
                     </div>
 
-                    <select id="category-filter" class="custom-select">
-                        <option value="all">All Categories</option>
-                    </select>
+                    <div class="filter-group">
+                        <div class="lang-selector">
+                            <button class="lang-btn active" data-lang="all">All</button>
+                            <button class="lang-btn" data-lang="French">🇫🇷 French</button>
+                            <button class="lang-btn" data-lang="English">🇬🇧 English</button>
+                        </div>
 
-                    <select id="status-filter" class="custom-select">
-                        <option value="all">All Availability</option>
-                        <option value="downloaded">Downloaded Only 📥</option>
-                        <option value="online">Online Source 🌐</option>
-                    </select>
+                        <select id="category-filter" class="custom-select">
+                            <option value="all">All Categories</option>
+                        </select>
 
-                    <select id="sort-filter" class="custom-select">
-                        <option value="id">Sort by ID</option>
-                        <option value="title">Title (A-Z)</option>
-                        <option value="author">Author (A-Z)</option>
-                    </select>
+                        <select id="length-filter" class="custom-select">
+                            <option value="all">All Book Lengths</option>
+                            <option value="short">Short (< 200 KB / ~150p)</option>
+                            <option value="medium">Medium (200-500 KB / ~300p)</option>
+                            <option value="epic">Epic (> 500 KB / ~500p+)</option>
+                        </select>
 
-                    <div class="view-toggle">
-                        <button id="view-grid" class="view-btn active" title="Grid View">📱</button>
-                        <button id="view-list" class="view-btn" title="List View">📋</button>
+                        <select id="status-filter" class="custom-select">
+                            <option value="all">All Availability</option>
+                            <option value="downloaded">Downloaded Only 📥</option>
+                            <option value="online">Online Source 🌐</option>
+                        </select>
+
+                        <select id="sort-filter" class="custom-select">
+                            <option value="curator">Curator Recommended</option>
+                            <option value="id">Sort by Catalog ID</option>
+                            <option value="title">Title (A-Z)</option>
+                            <option value="author">Author (A-Z)</option>
+                            <option value="year">Publication Year (Oldest)</option>
+                            <option value="length">Length (Shortest First)</option>
+                        </select>
+
+                        <div class="view-toggle">
+                            <button id="view-grid" class="view-btn active" title="Grid Covers View">📱 Grid</button>
+                            <button id="view-list" class="view-btn" title="Detailed List View">📋 List</button>
+                            <button id="view-table" class="view-btn" title="Compact Table View">📊 Table</button>
+                            <button id="view-grouped" class="view-btn" title="Grouped by Category View">📁 Grouped</button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Results Summary Bar -->
+                <div class="results-bar">
+                    <span id="results-count">Showing 300 books</span>
+                    <span id="active-filters-tag" class="active-tag" style="display: none;"></span>
+                </div>
+
+                <!-- Book Cards Container -->
+                <section id="books-container" class="grid-view">
+                    <!-- Book Cards will be rendered dynamically by app.js -->
+                </section>
+            </section>
+
+            <!-- TAB 2: READING ROADMAPS -->
+            <section id="view-roadmaps" class="tab-view" style="display: none;">
+                <div class="section-intro">
+                    <h2>🧭 Curated Reading Roadmaps</h2>
+                    <p>Overwhelmed by choice? Follow these hand-picked, thematic reading journeys designed by literary lovers.</p>
+                </div>
+
+                <div class="roadmaps-grid">
+                    <!-- Roadmap 1 -->
+                    <div class="roadmap-card">
+                        <div class="roadmap-header theme-crimson">
+                            <span class="roadmap-badge">Path 1</span>
+                            <h3>⚡ High-Octane Thrillers & Mystery</h3>
+                            <p>Fast-paced suspense, mastermind sleuths, and thrilling revenge plots.</p>
+                        </div>
+                        <div class="roadmap-timeline">
+                            <div class="timeline-item" data-id="15">
+                                <span class="step-num">1</span>
+                                <div class="step-info">
+                                    <span class="step-title">Gentleman-Cambrioleur</span>
+                                    <span class="step-author">Maurice Leblanc</span>
+                                    <span class="step-vibe">🇫🇷 Witty Heist Tales</span>
+                                </div>
+                            </div>
+                            <div class="timeline-item" data-id="181">
+                                <span class="step-num">2</span>
+                                <div class="step-info">
+                                    <span class="step-title">A Study in Scarlet</span>
+                                    <span class="step-author">Arthur Conan Doyle</span>
+                                    <span class="step-vibe">🇬🇧 The First Sherlock Holmes</span>
+                                </div>
+                            </div>
+                            <div class="timeline-item" data-id="1">
+                                <span class="step-num">3</span>
+                                <div class="step-info">
+                                    <span class="step-title">Le Comte de Monte-Cristo</span>
+                                    <span class="step-author">Alexandre Dumas</span>
+                                    <span class="step-vibe">🇫🇷 Ultimate Revenge Saga</span>
+                                </div>
+                            </div>
+                            <div class="timeline-item" data-id="184">
+                                <span class="step-num">4</span>
+                                <div class="step-info">
+                                    <span class="step-title">Dracula</span>
+                                    <span class="step-author">Bram Stoker</span>
+                                    <span class="step-vibe">🇬🇧 Gothic Horror Classic</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Roadmap 2 -->
+                    <div class="roadmap-card">
+                        <div class="roadmap-header theme-royal">
+                            <span class="roadmap-badge">Path 2</span>
+                            <h3>👑 Epic French Historical Novels</h3>
+                            <p>Grand court intrigue, loyalty, revolution, and unforgettable heroism.</p>
+                        </div>
+                        <div class="roadmap-timeline">
+                            <div class="timeline-item" data-id="2">
+                                <span class="step-num">1</span>
+                                <div class="step-info">
+                                    <span class="step-title">Les trois mousquetaires</span>
+                                    <span class="step-author">Alexandre Dumas</span>
+                                    <span class="step-vibe">Swashbuckling Camaraderie</span>
+                                </div>
+                            </div>
+                            <div class="timeline-item" data-id="3">
+                                <span class="step-num">2</span>
+                                <div class="step-info">
+                                    <span class="step-title">Vingt ans après</span>
+                                    <span class="step-author">Alexandre Dumas</span>
+                                    <span class="step-vibe">Political Fronde Uprising</span>
+                                </div>
+                            </div>
+                            <div class="timeline-item" data-id="6">
+                                <span class="step-num">3</span>
+                                <div class="step-info">
+                                    <span class="step-title">Les Misérables</span>
+                                    <span class="step-author">Victor Hugo</span>
+                                    <span class="step-vibe">Redemption & Parisian Soul</span>
+                                </div>
+                            </div>
+                            <div class="timeline-item" data-id="12">
+                                <span class="step-num">4</span>
+                                <div class="step-info">
+                                    <span class="step-title">Notre-Dame de Paris</span>
+                                    <span class="step-author">Victor Hugo</span>
+                                    <span class="step-vibe">Gothic Parisian Masterpiece</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Roadmap 3 -->
+                    <div class="roadmap-card">
+                        <div class="roadmap-header theme-rose">
+                            <span class="roadmap-badge">Path 3</span>
+                            <h3>🎭 Wit, Romance & Realism</h3>
+                            <p>Scathing social satire, deep romantic tensions, and human observations.</p>
+                        </div>
+                        <div class="roadmap-timeline">
+                            <div class="timeline-item" data-id="186">
+                                <span class="step-num">1</span>
+                                <div class="step-info">
+                                    <span class="step-title">Pride and Prejudice</span>
+                                    <span class="step-author">Jane Austen</span>
+                                    <span class="step-vibe">🇬🇧 Regency Wit & Romance</span>
+                                </div>
+                            </div>
+                            <div class="timeline-item" data-id="8">
+                                <span class="step-num">2</span>
+                                <div class="step-info">
+                                    <span class="step-title">Madame Bovary</span>
+                                    <span class="step-author">Gustave Flaubert</span>
+                                    <span class="step-vibe">🇫🇷 Passion & Realism</span>
+                                </div>
+                            </div>
+                            <div class="timeline-item" data-id="188">
+                                <span class="step-num">3</span>
+                                <div class="step-info">
+                                    <span class="step-title">Great Expectations</span>
+                                    <span class="step-author">Charles Dickens</span>
+                                    <span class="step-vibe">🇬🇧 Ambition & Victorian Drama</span>
+                                </div>
+                            </div>
+                            <div class="timeline-item" data-id="183">
+                                <span class="step-num">4</span>
+                                <div class="step-info">
+                                    <span class="step-title">The Great Gatsby</span>
+                                    <span class="step-author">F. Scott Fitzgerald</span>
+                                    <span class="step-vibe">🇺🇸 Jazz Age Romance</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Roadmap 4 -->
+                    <div class="roadmap-card">
+                        <div class="roadmap-header theme-sapphire">
+                            <span class="roadmap-badge">Path 4</span>
+                            <h3>📜 Philosophical & Stoic Thought</h3>
+                            <p>Timeless wisdom on resilience, human ethics, governance, and satire.</p>
+                        </div>
+                        <div class="roadmap-timeline">
+                            <div class="timeline-item" data-id="203">
+                                <span class="step-num">1</span>
+                                <div class="step-info">
+                                    <span class="step-title">Meditations</span>
+                                    <span class="step-author">Marcus Aurelius</span>
+                                    <span class="step-vibe">Stoic Personal Reflections</span>
+                                </div>
+                            </div>
+                            <div class="timeline-item" data-id="10">
+                                <span class="step-num">2</span>
+                                <div class="step-info">
+                                    <span class="step-title">Candide, ou l'optimisme</span>
+                                    <span class="step-author">Voltaire</span>
+                                    <span class="step-vibe">Satirical Philosophical Tale</span>
+                                </div>
+                            </div>
+                            <div class="timeline-item" data-id="204">
+                                <span class="step-num">3</span>
+                                <div class="step-info">
+                                    <span class="step-title">The Enchiridion</span>
+                                    <span class="step-author">Epictetus</span>
+                                    <span class="step-vibe">Practical Guide to Freedom</span>
+                                </div>
+                            </div>
+                            <div class="timeline-item" data-id="11">
+                                <span class="step-num">4</span>
+                                <div class="step-info">
+                                    <span class="step-title">Du contrat social</span>
+                                    <span class="step-author">Jean-Jacques Rousseau</span>
+                                    <span class="step-vibe">Foundational Political Philosophy</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- TAB 3: RECOMMENDATION WIZARD -->
+            <section id="view-wizard" class="tab-view" style="display: none;">
+                <div class="wizard-container">
+                    <div class="wizard-header">
+                        <h2>🔮 Find My Next Read</h2>
+                        <p>Answer 3 quick questions and let our literary recommendation engine match you with your ideal classic.</p>
+                    </div>
+
+                    <div class="wizard-card">
+                        <!-- Step Indicator -->
+                        <div class="wizard-steps">
+                            <div class="step-pill active" id="wiz-step-pill-1">1. Mood & Vibe</div>
+                            <div class="step-pill" id="wiz-step-pill-2">2. Available Time</div>
+                            <div class="step-pill" id="wiz-step-pill-3">3. Language</div>
+                        </div>
+
+                        <!-- Step 1: Mood -->
+                        <div class="wizard-step-content" id="wiz-step-1">
+                            <h3>What kind of experience are you seeking today?</h3>
+                            <div class="wizard-options">
+                                <button class="wiz-opt-btn" data-field="mood" data-value="thrill">
+                                    <span class="opt-icon">⚔️</span>
+                                    <div class="opt-text">
+                                        <strong>Thrill & High Adventure</strong>
+                                        <span>Swashbucklers, mystery detectives, heist and revenge plots</span>
+                                    </div>
+                                </button>
+                                <button class="wiz-opt-btn" data-field="mood" data-value="romance">
+                                    <span class="opt-icon">🌹</span>
+                                    <div class="opt-text">
+                                        <strong>Wit, Society & Romance</strong>
+                                        <span>High society drama, sharp satire, passion, and elegance</span>
+                                    </div>
+                                </button>
+                                <button class="wiz-opt-btn" data-field="mood" data-value="philosophy">
+                                    <span class="opt-icon">📜</span>
+                                    <div class="opt-text">
+                                        <strong>Deep Thought & Stoic Wisdom</strong>
+                                        <span>Philosophy, moral reflections, political theory, enlightenment</span>
+                                    </div>
+                                </button>
+                                <button class="wiz-opt-btn" data-field="mood" data-value="gothic">
+                                    <span class="opt-icon">🍷</span>
+                                    <div class="opt-text">
+                                        <strong>Gothic, Dark & Sci-Fi Pioneers</strong>
+                                        <span>Haunting tales, mystery, early science fiction, atmosphere</span>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Step 2: Time -->
+                        <div class="wizard-step-content" id="wiz-step-2" style="display: none;">
+                            <h3>How much reading time do you want to invest?</h3>
+                            <div class="wizard-options">
+                                <button class="wiz-opt-btn" data-field="time" data-value="short">
+                                    <span class="opt-icon">⚡</span>
+                                    <div class="opt-text">
+                                        <strong>Quick Bite (< 2 hours / ~150 pages)</strong>
+                                        <span>Fast reads, short story collections, compact novellas</span>
+                                    </div>
+                                </button>
+                                <button class="wiz-opt-btn" data-field="time" data-value="medium">
+                                    <span class="opt-icon">☕</span>
+                                    <div class="opt-text">
+                                        <strong>Moderate Read (3-6 hours / ~300 pages)</strong>
+                                        <span>Standard classic novels, perfect weekend reading</span>
+                                    </div>
+                                </button>
+                                <button class="wiz-opt-btn" data-field="time" data-value="epic">
+                                    <span class="opt-icon">📚</span>
+                                    <div class="opt-text">
+                                        <strong>Epic Journey (8+ hours / 500+ pages)</strong>
+                                        <span>Multi-tome sagas, deeply immersive masterpieces</span>
+                                    </div>
+                                </button>
+                                <button class="wiz-opt-btn" data-field="time" data-value="any">
+                                    <span class="opt-icon">✨</span>
+                                    <div class="opt-text">
+                                        <strong>Any Length</strong>
+                                        <span>Surprise me regardless of page count</span>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Step 3: Language -->
+                        <div class="wizard-step-content" id="wiz-step-3" style="display: none;">
+                            <h3>Which language do you prefer?</h3>
+                            <div class="wizard-options">
+                                <button class="wiz-opt-btn" data-field="lang" data-value="French">
+                                    <span class="opt-icon">🇫🇷</span>
+                                    <div class="opt-text">
+                                        <strong>French Masterpieces</strong>
+                                        <span>Dumas, Hugo, Flaubert, Zola, Leblanc, Voltaire</span>
+                                    </div>
+                                </button>
+                                <button class="wiz-opt-btn" data-field="lang" data-value="English">
+                                    <span class="opt-icon">🇬🇧</span>
+                                    <div class="opt-text">
+                                        <strong>English Classics</strong>
+                                        <span>Austen, Dickens, Conan Doyle, Wilde, Stoker, Fitzgerald</span>
+                                    </div>
+                                </button>
+                                <button class="wiz-opt-btn" data-field="lang" data-value="any">
+                                    <span class="opt-icon">🌐</span>
+                                    <div class="opt-text">
+                                        <strong>Either Language</strong>
+                                        <span>Open to both French and English classics</span>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Step 4: Results -->
+                        <div class="wizard-step-content" id="wiz-step-results" style="display: none;">
+                            <h3>🎯 Your Top 3 Curated Matches</h3>
+                            <div id="wizard-results-grid" class="wizard-results-grid">
+                                <!-- Generated by app.js -->
+                            </div>
+                            <div class="wizard-restart">
+                                <button id="btn-restart-wizard" class="action-btn secondary">🔄 Start Over</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
 
-            <!-- Results Summary Bar -->
-            <div class="results-bar">
-                <span id="results-count">Showing 300 books</span>
-                <span id="active-filters-tag" class="active-tag" style="display: none;"></span>
-            </div>
+            <!-- TAB 4: SAVED QUEUE -->
+            <section id="view-saved" class="tab-view" style="display: none;">
+                <div class="section-intro">
+                    <div class="saved-header-row">
+                        <div>
+                            <h2>⭐ My Saved Reading Queue</h2>
+                            <p>Your bookmarked titles stored locally for quick offline access and export.</p>
+                        </div>
+                        <button id="btn-clear-saved" class="clear-saved-btn">Clear All</button>
+                    </div>
+                </div>
 
-            <!-- Book Cards Container -->
-            <section id="books-container" class="grid-view">
-                <!-- Book Cards will be rendered dynamically by app.js -->
+                <div id="saved-books-container" class="grid-view">
+                    <!-- Populated dynamically by app.js -->
+                </div>
             </section>
+
         </main>
 
         <!-- Book Details Modal -->
@@ -102,16 +486,22 @@
                 <button id="modal-close" class="modal-close-btn">&times;</button>
                 <div class="modal-body">
                     <div class="modal-cover-column" id="modal-cover-container">
-                        <!-- Cover rendering -->
+                        <!-- Dynamic Vintage Cover or Image -->
                     </div>
                     <div class="modal-info-column">
                         <div class="modal-badges">
                             <span id="modal-lang-badge" class="badge"></span>
                             <span id="modal-cat-badge" class="badge secondary"></span>
+                            <span id="modal-curator-badge" class="badge gold" style="display:none;">⭐ Essential Classic</span>
                         </div>
+
                         <h2 id="modal-title"></h2>
                         <h3 id="modal-author"></h3>
                         <p id="modal-meta" class="modal-meta-line"></p>
+
+                        <div class="modal-vibe-tags" id="modal-vibe-tags">
+                            <!-- Vibe Pills -->
+                        </div>
 
                         <div class="modal-section">
                             <h4>Synopsis & Context</h4>
@@ -122,26 +512,33 @@
                             <h4>Details & Format</h4>
                             <div class="details-grid">
                                 <div class="detail-item">
+                                    <span class="detail-label">Reading Time</span>
+                                    <span id="modal-readtime" class="detail-value"></span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Est. Length</span>
+                                    <span id="modal-pages" class="detail-value"></span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">File Size</span>
+                                    <span id="modal-filesize" class="detail-value"></span>
+                                </div>
+                                <div class="detail-item">
                                     <span class="detail-label">Primary Source</span>
                                     <span id="modal-source" class="detail-value"></span>
-                                </div>
-                                <div class="detail-item">
-                                    <span class="detail-label">Format</span>
-                                    <span id="modal-format" class="detail-value"></span>
-                                </div>
-                                <div class="detail-item">
-                                    <span class="detail-label">Local File</span>
-                                    <span id="modal-filesize" class="detail-value"></span>
                                 </div>
                             </div>
                         </div>
 
                         <div class="modal-actions">
+                            <button id="modal-bookmark-btn" class="action-btn bookmark-btn">
+                                <span>⭐ Save to Queue</span>
+                            </button>
                             <a id="modal-download-btn" href="#" target="_blank" class="action-btn primary">
-                                <span>📥 Open / Download EPUB</span>
+                                <span>📥 Open EPUB</span>
                             </a>
                             <a id="modal-source-btn" href="#" target="_blank" class="action-btn secondary">
-                                <span>🌐 View Source Catalog</span>
+                                <span>🌐 Source</span>
                             </a>
                         </div>
                     </div>
@@ -149,8 +546,26 @@
             </div>
         </div>
 
+        <!-- "Surprise Me!" Randomizer Modal -->
+        <div id="random-modal" class="modal-overlay" style="display: none;">
+            <div class="modal-card surprise-modal-card">
+                <button id="random-modal-close" class="modal-close-btn">&times;</button>
+                <div class="surprise-modal-body">
+                    <div class="surprise-badge">🎲 Randomizer Pick</div>
+                    <div id="random-cover-container" class="surprise-cover-container"></div>
+                    <h2 id="random-title"></h2>
+                    <h3 id="random-author"></h3>
+                    <p id="random-synopsis" class="synopsis-text"></p>
+                    <div class="surprise-actions">
+                        <button id="btn-roll-again" class="action-btn secondary">🎲 Roll Again</button>
+                        <button id="btn-random-open" class="action-btn primary">📖 Preview Book</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <footer class="app-footer">
-            <p>Athena Ebook Library &bull; Curated DRM-Free Classics &bull; Built with HTML, CSS & Vanilla JS</p>
+            <p>Athena Ebook Library &bull; 300 Curated DRM-Free Masterpieces &bull; Built with HTML, CSS & Vanilla JS</p>
         </footer>
     </div>
 
