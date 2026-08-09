@@ -84,6 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const statTotal = document.getElementById('stat-total');
     const statFrench = document.getElementById('stat-french');
     const statEnglish = document.getElementById('stat-english');
+    const statWorld = document.getElementById('stat-world');
     const statDownloaded = document.getElementById('stat-downloaded');
 
     // Global cover image error handler to prevent HTML inline attribute corruption
@@ -178,10 +179,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const isGolden = currentFilters.tier === 'golden';
         const activeSet = isGolden ? booksData.filter(b => b.is_golden_100) : booksData;
 
-        statTotal.textContent = activeSet.length;
-        statFrench.textContent = activeSet.filter(b => b.language === 'French').length;
-        statEnglish.textContent = activeSet.filter(b => b.language === 'English').length;
-        statDownloaded.textContent = activeSet.filter(b => b.is_downloaded).length;
+        if (statTotal) statTotal.textContent = activeSet.length;
+        if (statFrench) statFrench.textContent = activeSet.filter(b => b.language === 'French').length;
+        if (statEnglish) statEnglish.textContent = activeSet.filter(b => b.language === 'English').length;
+        if (statWorld) statWorld.textContent = activeSet.filter(b => b.language === 'French (Traduction)').length;
+        if (statDownloaded) statDownloaded.textContent = activeSet.filter(b => b.is_downloaded).length;
     }
 
     function updateSavedBadge() {

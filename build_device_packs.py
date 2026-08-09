@@ -33,6 +33,13 @@ def categorize_folder(lang, cat, is_golden=False):
             return f'{prefix}/01_French_Classics/03_Philosophie_et_Satire'
         else:
             return f'{prefix}/01_French_Classics/04_Poesie_Theatre_et_Contes'
+    elif 'Traduction' in lang:
+        if 'gothic' in cat_lower or 'mystery' in cat_lower or 'adventure' in cat_lower:
+            return f'{prefix}/03_World_Masterpieces_in_French/01_Aventure_et_Conte'
+        elif 'realism' in cat_lower or 'novel' in cat_lower or 'drama' in cat_lower:
+            return f'{prefix}/03_World_Masterpieces_in_French/02_Grands_Romans_et_Drame'
+        else:
+            return f'{prefix}/03_World_Masterpieces_in_French/03_Philosophie_et_Epopees'
     else:
         if 'gothic' in cat_lower or 'mystery' in cat_lower or 'adventure' in cat_lower or 'detective' in cat_lower:
             return f'{prefix}/02_English_Classics/01_Gothic_and_Adventure'
