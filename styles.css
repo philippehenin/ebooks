@@ -991,6 +991,13 @@ h1 {
     color: var(--text-muted);
     border-radius: var(--radius-sm);
     background: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.step-pill:hover {
+    background: rgba(99, 102, 241, 0.2);
+    color: var(--text-primary);
 }
 
 .step-pill.active {
@@ -1030,6 +1037,12 @@ h1 {
     transform: translateY(-2px);
 }
 
+.wiz-opt-btn.selected {
+    background: rgba(99, 102, 241, 0.25) !important;
+    border-color: var(--accent-indigo) !important;
+    box-shadow: 0 0 12px rgba(99, 102, 241, 0.4);
+}
+
 .opt-icon {
     font-size: 1.8rem;
 }
@@ -1043,6 +1056,20 @@ h1 {
 .opt-text span {
     font-size: 0.775rem;
     color: var(--text-secondary);
+}
+
+.wizard-step-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 28px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border-color);
+}
+
+.wiz-nav-btn {
+    font-size: 0.95rem;
+    padding: 10px 22px;
 }
 
 .wizard-results-grid {

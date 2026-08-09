@@ -780,18 +780,31 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function setupWizardListeners() {
         const wizardOpts = document.querySelectorAll('.wiz-opt-btn');
-        let wizardAnswers = {};
+        const pill1 = document.getElementById('wiz-step-pill-1');
+        const pill2 = document.getElementById('wiz-step-pill-2');
+        const pill3 = document.getElementById('wiz-step-pill-3');
+
+        const step1 = document.getElementById('wiz-step-1');
+        const step2 = document.getElementById('wiz-step-2');
+        const step3 = document.getElementById('wiz-step-3');
+        const results = document.getElementById('wiz-step-results');
+
+        const btnNext1 = document.getElementById('wiz-btn-next-1');
+        const btnBack2 = document.getElementById('wiz-btn-back-2');
+        const btnNext2 = document.getElementById('wiz-btn-next-2');
+        const btnBack3 = document.getElementById('wiz-btn-back-3');
+        const btnFinish3 = document.getElementById('wiz-btn-finish-3');
+        const btnRestart = document.getElementById('btn-restart-wizard');
+        const btnHeroWizard = document.getElementById('btn-hero-wizard');
+
+        // Sensible default selections
+        let wizardAnswers = {
+            mood: 'thrill',
+            time: 'medium',
+            lang: 'any'
+        };
 
         function setWizardStep(stepNum) {
-            const step1 = document.getElementById('wiz-step-1');
-            const step2 = document.getElementById('wiz-step-2');
-            const step3 = document.getElementById('wiz-step-3');
-            const results = document.getElementById('wiz-step-results');
-
-            const pill1 = document.getElementById('wiz-step-pill-1');
-            const pill2 = document.getElementById('wiz-step-pill-2');
-            const pill3 = document.getElementById('wiz-step-pill-3');
-
             if (step1) step1.style.display = stepNum === 1 ? 'block' : 'none';
             if (step2) step2.style.display = stepNum === 2 ? 'block' : 'none';
             if (step3) step3.style.display = stepNum === 3 ? 'block' : 'none';
@@ -800,8 +813,26 @@ document.addEventListener('DOMContentLoaded', () => {
             if (pill1) pill1.classList.toggle('active', stepNum === 1);
             if (pill2) pill2.classList.toggle('active', stepNum === 2);
             if (pill3) pill3.classList.toggle('active', stepNum === 3);
+
+            updateSelectedButtonUI();
         }
 
+        function updateSelectedButtonUI() {
+            wizardOpts.forEach(btn => {
+                const field = btn.getAttribute('data-field');
+                const val = btn.getAttribute('data-value');
+                if (field && wizardAnswers[field] === val) {
+                    btn.classList.add('selected');
+                } else {
+                    btn.classList.remove('selected');
+                }
+            });
+        }
+
+        // Initialize UI selection states
+        updateSelectedButtonUI();
+
+        // Option click handlers (selects option & advances step)
         wizardOpts.forEach(btn => {
             btn.addEventListener('click', () => {
                 const field = btn.getAttribute('data-field');
@@ -809,6 +840,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (field) {
                     wizardAnswers[field] = val;
                 }
+                updateSelectedButtonUI();
 
                 if (field === 'mood') {
                     setWizardStep(2);
@@ -821,11 +853,36 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
 
-        const btnRestart = document.getElementById('btn-restart-wizard');
+        // Clickable Step Pills for quick navigation
+        if (pill1) pill1.addEventListener('click', () => setWizardStep(1));
+        if (pill2) pill2.addEventListener('click', () => setWizardStep(2));
+        if (pill3) pill3.addEventListener('click', () => setWizardStep(3));
+
+        // Next & Back Navigation Buttons
+        if (btnNext1) btnNext1.addEventListener('click', () => setWizardStep(2));
+        if (btnBack2) btnBack2.addEventListener('click', () => setWizardStep(1));
+        if (btnNext2) btnNext2.addEventListener('click', () => setWizardStep(3));
+        if (btnBack3) btnBack3.addEventListener('click', () => setWizardStep(2));
+        if (btnFinish3) {
+            btnFinish3.addEventListener('click', () => {
+                setWizardStep(4);
+                showWizardResults(wizardAnswers);
+            });
+        }
+
+        // Restart button
         if (btnRestart) {
             btnRestart.addEventListener('click', () => {
-                wizardAnswers = {};
+                wizardAnswers = { mood: 'thrill', time: 'medium', lang: 'any' };
                 setWizardStep(1);
+            });
+        }
+
+        // Quick shortcut from Catalog tab
+        if (btnHeroWizard) {
+            btnHeroWizard.addEventListener('click', () => {
+                const wizardTab = document.getElementById('tab-nav-wizard');
+                if (wizardTab) wizardTab.click();
             });
         }
     }

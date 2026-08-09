@@ -33,7 +33,7 @@
                         <span>🧭 Reading Roadmaps</span>
                     </button>
                     <button class="tab-btn" id="tab-nav-wizard" data-tab="wizard">
-                        <span>🔮 Book Finder</span>
+                        <span>🔮 Find My Next Read</span>
                     </button>
                     <button class="tab-btn" id="tab-nav-analytics" data-tab="analytics">
                         <span>📊 Analytics</span>
@@ -92,6 +92,7 @@
                 <div class="vibe-pills-bar">
                     <span class="vibe-label">Quick Vibe:</span>
                     <button class="vibe-pill active" data-vibe="all">✨ All Books</button>
+                    <button class="vibe-pill wizard-shortcut" id="btn-hero-wizard" style="background: var(--accent-indigo); color: white;">🔮 Find My Next Read</button>
                     <button class="vibe-pill" data-vibe="curator">⭐ Essential Starters</button>
                     <button class="vibe-pill" data-vibe="quick">⚡ Quick Reads (<200p)</button>
                     <button class="vibe-pill" data-vibe="epic">📖 Epic Sagas (>500p)</button>
@@ -363,9 +364,9 @@
                     <div class="wizard-card">
                         <!-- Step Indicator -->
                         <div class="wizard-steps">
-                            <div class="step-pill active" id="wiz-step-pill-1">1. Mood & Vibe</div>
-                            <div class="step-pill" id="wiz-step-pill-2">2. Available Time</div>
-                            <div class="step-pill" id="wiz-step-pill-3">3. Language</div>
+                            <div class="step-pill active" id="wiz-step-pill-1" role="button" title="Go to Step 1: Mood & Vibe">1. Mood & Vibe</div>
+                            <div class="step-pill" id="wiz-step-pill-2" role="button" title="Go to Step 2: Available Time">2. Available Time</div>
+                            <div class="step-pill" id="wiz-step-pill-3" role="button" title="Go to Step 3: Language">3. Language</div>
                         </div>
 
                         <!-- Step 1: Mood -->
@@ -400,6 +401,9 @@
                                         <span>Haunting tales, mystery, early science fiction, atmosphere</span>
                                     </div>
                                 </button>
+                            </div>
+                            <div class="wizard-step-actions" style="justify-content: flex-end;">
+                                <button id="wiz-btn-next-1" class="action-btn primary wiz-nav-btn">Next Step: Available Time ➔</button>
                             </div>
                         </div>
 
@@ -436,6 +440,10 @@
                                     </div>
                                 </button>
                             </div>
+                            <div class="wizard-step-actions">
+                                <button id="wiz-btn-back-2" class="action-btn secondary wiz-nav-btn">⬅ Back</button>
+                                <button id="wiz-btn-next-2" class="action-btn primary wiz-nav-btn">Next Step: Preferred Language ➔</button>
+                            </div>
                         </div>
 
                         <!-- Step 3: Language -->
@@ -463,6 +471,10 @@
                                         <span>Open to both French and English classics</span>
                                     </div>
                                 </button>
+                            </div>
+                            <div class="wizard-step-actions">
+                                <button id="wiz-btn-back-3" class="action-btn secondary wiz-nav-btn">⬅ Back</button>
+                                <button id="wiz-btn-finish-3" class="action-btn primary wiz-nav-btn">🔮 Show My Matches ➔</button>
                             </div>
                         </div>
 
