@@ -25,7 +25,9 @@ document.addEventListener('DOMContentLoaded', () => {
     let renderLimit = 40;      // Batch pagination limit for performance
 
     // Apply saved theme
-    document.documentElement.setAttribute('data-theme', currentTheme);
+    if (currentTheme === 'light') {
+        document.documentElement.setAttribute('data-theme', 'light');
+    }
 
     // DOM Elements - Header & Nav
     const navTabBtns = document.querySelectorAll('.tab-btn');
@@ -98,17 +100,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const statEnglish = document.getElementById('stat-english');
     const statWorld = document.getElementById('stat-world');
     const statDownloaded = document.getElementById('stat-downloaded');
-
-    // Global cover image error handler
-    window.handleCoverError = function(imgElement, bookId) {
-        const book = booksData.find(b => b.id === bookId);
-        if (book && imgElement && imgElement.parentElement) {
-            const tempDiv = document.createElement('div');
-            tempDiv.innerHTML = generateVintageCoverHTML(book);
-            const coverNode = tempDiv.firstElementChild;
-            imgElement.replaceWith(coverNode);
-        }
-    };
 
     // Update theme UI state
     function updateThemeUI() {
@@ -369,7 +360,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Keyboard Hotkeys
     function setupKeyboardShortcuts() {
         window.addEventListener('keydown', (e) => {
-            // Ignore if typing in input box
             if (['INPUT', 'TEXTAREA', 'SELECT'].includes(document.activeElement.tagName)) {
                 if (e.key === 'Escape') {
                     document.activeElement.blur();
@@ -513,25 +503,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function createBookCardHTML(book) {
         const isSaved = savedBookIds.includes(book.id);
-        const starIcon = isSaved ? '⭐' : '☆';
-        const coverArt = book.cover_url ? `<img src="${book.cover_url}" alt="${escapeHTML(book.title)}" class="cover-img" onerror="handleCoverError(this, ${book.id})" loading="lazy">` : generateVintageCoverHTML(book);
-
+        const starIcon = isSaved ? '★' : '☆';
+        const coverArt = generateVintageCoverHTML(book);
         const langBadge = book.language === 'French' ? '🇫🇷 French' : (book.language === 'English' ? '🇬🇧 English' : '🌐 World in FR');
 
         return `
             <div class="book-card ${book.vibe_theme}" data-id="${book.id}">
-                <div class="card-cover-wrapper">
+                <div class="cover-wrapper">
                     ${coverArt}
-                    <div class="card-badge-top-left">${langBadge}</div>
-                    ${book.is_golden_100 ? '<div class="card-badge-gold">🌟 Golden 100</div>' : ''}
-                    <button class="card-bookmark-btn ${isSaved ? 'saved' : ''}" data-id="${book.id}" title="Bookmark book">${starIcon}</button>
+                    <div class="card-badge">${langBadge}</div>
+                    ${book.is_golden_100 ? '<div class="card-curator-star">🌟 Golden 100</div>' : ''}
+                    <button class="card-bookmark-toggle ${isSaved ? 'saved' : ''}" data-id="${book.id}" title="Bookmark book">${starIcon}</button>
                 </div>
-                <div class="card-content">
-                    <h3 class="book-title" title="${escapeHTML(book.title)}">${escapeHTML(book.title)}</h3>
-                    <p class="book-author">${escapeHTML(book.author)} (${book.year || 'Classic'})</p>
-                    <div class="card-meta">
+                <div class="card-body">
+                    <h3 class="card-title" title="${escapeHTML(book.title)}">${escapeHTML(book.title)}</h3>
+                    <p class="card-author">${escapeHTML(book.author)} (${book.year || 'Classic'})</p>
+                    <div class="card-meta-row">
                         <span>📖 ~${book.estimated_pages} p.</span>
                         <span>⏱️ ${book.reading_time_str}</span>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn-card primary-btn-card">📖 Preview & Read</button>
                     </div>
                 </div>
             </div>
@@ -540,13 +532,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function generateVintageCoverHTML(book) {
         return `
-            <div class="vintage-cover-canvas ${book.vibe_theme}">
-                <div class="spine-3d-edge"></div>
-                <div class="border-frame">
-                    <div class="emblem-icon">${book.emblem || '👑'}</div>
-                    <div class="vintage-title">${escapeHTML(book.title)}</div>
-                    <div class="vintage-author">${escapeHTML(book.author)}</div>
+            <div class="vintage-cover ${book.vibe_theme}">
+                <div class="v-cover-top">ATHENA CLASSIC</div>
+                <div class="v-cover-body">
+                    <div class="v-cover-emblem">${book.emblem || '👑'}</div>
+                    <div class="v-cover-title">${escapeHTML(book.title)}</div>
+                    <div class="v-cover-author">${escapeHTML(book.author)}</div>
                 </div>
+                <div class="v-cover-footer">${book.year || 'CLASSIC'} • PUBLIC DOMAIN</div>
             </div>
         `;
     }
@@ -555,12 +548,13 @@ document.addEventListener('DOMContentLoaded', () => {
         const cards = document.querySelectorAll('.book-card');
         cards.forEach(card => {
             card.addEventListener('click', (e) => {
-                if (e.target.classList.contains('card-bookmark-btn')) {
+                if (e.target.classList.contains('card-bookmark-toggle')) {
                     e.stopPropagation();
                     const bId = parseInt(e.target.getAttribute('data-id'));
                     toggleBookmark(bId);
-                    e.target.textContent = savedBookIds.includes(bId) ? '⭐' : '☆';
-                    e.target.classList.toggle('saved', savedBookIds.includes(bId));
+                    const isSaved = savedBookIds.includes(bId);
+                    e.target.textContent = isSaved ? '★' : '☆';
+                    e.target.classList.toggle('saved', isSaved);
                     updateSavedBadge();
                     return;
                 }
