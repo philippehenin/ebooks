@@ -94,10 +94,10 @@ def verify_all_ebooks():
         else:
             hash_map[h] = [fname]
 
-        # 1. Size Check (> 20 KB)
-        if len(data) < 20000:
+        # 1. Size Check (> 80 KB)
+        if len(data) < 80000:
             stub_count += 1
-            print(f"[FAIL] ID {b_id:04d}: STUB FILE (<20KB) - {fname} ({len(data)} bytes)")
+            print(f"[FAIL] ID {b_id:04d}: SHORT FILE (<80KB) - {fname} ({len(data)} bytes)")
             continue
 
         internal_title = None
@@ -138,7 +138,7 @@ def verify_all_ebooks():
             encoding_error_count += 1
             print(f"[WARN] ID {b_id:04d}: ENCODING MOJIBAKE DETECTED - {fname}")
 
-        if total_words < 1000:
+        if total_words < 5000:
             low_wordcount_count += 1
             print(f"[FAIL] ID {b_id:04d}: LOW WORD COUNT ({total_words} words) - {fname}")
             continue
@@ -157,9 +157,9 @@ def verify_all_ebooks():
     print(f"\n--------------------------------------------------")
     print(f" 📊 AUDIT METRICS & QUALITY GATING REPORT")
     print(f"--------------------------------------------------")
-    print(f"  Valid Verified EPUBs (>20KB): {valid_epub_count} / {total_target}")
-    print(f"  Stub Files (<20KB):           {stub_count}")
-    print(f"  Low Word Count (<1000 w):     {low_wordcount_count}")
+    print(f"  Valid Verified EPUBs (>80KB): {valid_epub_count} / {total_target}")
+    print(f"  Short Files (<80KB):          {stub_count}")
+    print(f"  Low Word Count (<5000 w):     {low_wordcount_count}")
     print(f"  Encoding Mojibake Issues:     {encoding_error_count}")
     print(f"  Title Mismatches:             {mismatch_count}")
     print(f"  Corrupt EPUB Containers:      {invalid_count}")

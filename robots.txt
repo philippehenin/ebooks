@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://philippehenin.github.io/ebooks/sitemap.xml

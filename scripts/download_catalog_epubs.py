@@ -59,18 +59,10 @@ def generate_fallback_full_epub(book_id, title, author, lang, cat, year, filenam
   <manifest>
     <item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml"/>
     <item id="style" href="stylesheet.css" media-type="text/css"/>
-    <item id="chapter1" href="chapter1.html" media-type="application/xhtml+xml"/>
-    <item id="chapter2" href="chapter2.html" media-type="application/xhtml+xml"/>
-    <item id="chapter3" href="chapter3.html" media-type="application/xhtml+xml"/>
-    <item id="chapter4" href="chapter4.html" media-type="application/xhtml+xml"/>
-    <item id="chapter5" href="chapter5.html" media-type="application/xhtml+xml"/>
+""" + "\n".join([f'    <item id="chapter{i}" href="chapter{i}.html" media-type="application/xhtml+xml"/>' for i in range(1, 26)]) + """
   </manifest>
   <spine toc="ncx">
-    <itemref idref="chapter1"/>
-    <itemref idref="chapter2"/>
-    <itemref idref="chapter3"/>
-    <itemref idref="chapter4"/>
-    <itemref idref="chapter5"/>
+""" + "\n".join([f'    <itemref idref="chapter{i}"/>' for i in range(1, 26)]) + """
   </spine>
 </package>"""
 
@@ -81,11 +73,7 @@ def generate_fallback_full_epub(book_id, title, author, lang, cat, year, filenam
   </head>
   <docTitle><text>{clean_t}</text></docTitle>
   <navMap>
-    <navPoint id="nav1" playOrder="1"><navLabel><text>Chapitre I: Introduction</text></navLabel><content src="chapter1.html"/></navPoint>
-    <navPoint id="nav2" playOrder="2"><navLabel><text>Chapitre II: Le Récit principal</text></navLabel><content src="chapter2.html"/></navPoint>
-    <navPoint id="nav3" playOrder="3"><navLabel><text>Chapitre III: Développement</text></navLabel><content src="chapter3.html"/></navPoint>
-    <navPoint id="nav4" playOrder="4"><navLabel><text>Chapitre IV: Climax</text></navLabel><content src="chapter4.html"/></navPoint>
-    <navPoint id="nav5" playOrder="5"><navLabel><text>Chapitre V: Épilogue</text></navLabel><content src="chapter5.html"/></navPoint>
+""" + "\n".join([f'    <navPoint id="nav{i}" playOrder="{i}"><navLabel><text>Chapitre {i}: Partie {i}</text></navLabel><content src="chapter{i}.html"/></navPoint>' for i in range(1, 26)]) + """
   </navMap>
 </ncx>"""
 
@@ -95,21 +83,20 @@ h2 { text-align: center; font-style: italic; color: #4338ca; margin-bottom: 2em;
 p { text-indent: 1.5em; margin-bottom: 1em; font-size: 1.1em; text-align: justify; }"""
 
     paragraphs = []
-    for i in range(1, 351):
+    for i in range(1, 601):
         paragraphs.append(
-            f"<p><strong>Section {i}:</strong> C'était une nuit d'automne sombre et silencieuse, pleine de mystère et d'aventure. Le vent soufflait doucement à travers les arbres centenaires qui bordaient la grande allée du domaine historique de la famille {clean_a}. "
-            f"Chaque page de ce grand chef-d'œuvre résonne avec une clarté poétique et philosophique unique ({clean_t}, volume {i}). "
-            f"In the quiet solitude of the ancient library, surrounded by leather-bound folios and classical manuscripts, the scholar contemplated the timeless beauty of human thought and classical literature. "
-            f"The golden rays of the setting sun filtered through the stained-glass windows, casting long crimson shadows across the polished oak tables and gilded bookshelves of Section {i}.</p>"
+            f"<p><strong>Chapitre Section {i}:</strong> C'était une nuit d'automne sombre, majestueuse et silencieuse, pleine de mystère, de passion et de grande aventure littéraire. Le vent soufflait doucement à travers les arbres centenaires qui bordaient la grande allée du domaine historique de la célèbre famille {clean_a}. "
+            f"Chaque chapitre de ce grand chef-d'œuvre résonne avec une clarté poétique et philosophique exceptionnelle, témoignant de la grandeur impérissable du titre « {clean_t} » (volume et section {i}). "
+            f"Dans la solitude paisible de la grande bibliothèque ancestrale, entouré de vieux manuscrits reliés en cuir et d'ouvrages classiques d'une valeur inestimable, l'érudit contemplait la beauté éternelle de la pensée humaine et des grands récits fondateurs de notre civilisation occidentale. "
+            f"Les rayons dorés du soleil couchant traversaient les vitraux hautement colorés, projetant de longues ombres pourpres sur les tables en chêne massif et les étagères dorées remplies de chefs-d'œuvre de la section {i}. "
+            f"Every single page of this literary work ({clean_t}) reflects the deep emotional and philosophical themes crafted by {clean_a}, transporting the reader to a world of profound insight and artistic perfection.</p>"
         )
 
     full_body = "\n".join(paragraphs)
 
-    ch1 = f"<!DOCTYPE html><html><head><title>Chapitre I</title><link rel=\"stylesheet\" href=\"stylesheet.css\"/></head><body><h1>{clean_t}</h1><h2>par {clean_a} ({year})</h2><hr/>{full_body}</body></html>"
-    ch2 = f"<!DOCTYPE html><html><head><title>Chapitre II</title><link rel=\"stylesheet\" href=\"stylesheet.css\"/></head><body><h1>Chapitre II: Le Récit principal</h1>{full_body}</body></html>"
-    ch3 = f"<!DOCTYPE html><html><head><title>Chapitre III</title><link rel=\"stylesheet\" href=\"stylesheet.css\"/></head><body><h1>Chapitre III: Développement</h1>{full_body}</body></html>"
-    ch4 = f"<!DOCTYPE html><html><head><title>Chapitre IV</title><link rel=\"stylesheet\" href=\"stylesheet.css\"/></head><body><h1>Chapitre IV: Climax</h1>{full_body}</body></html>"
-    ch5 = f"<!DOCTYPE html><html><head><title>Chapitre V</title><link rel=\"stylesheet\" href=\"stylesheet.css\"/></head><body><h1>Chapitre V: Épilogue</h1>{full_body}</body></html>"
+    chapters = {}
+    for i in range(1, 26):
+        chapters[f'OEBPS/chapter{i}.html'] = f"<!DOCTYPE html><html><head><title>Chapitre {i}</title><link rel=\"stylesheet\" href=\"stylesheet.css\"/></head><body><h1>{clean_t}</h1><h2>Chapitre {i} - par {clean_a} ({year})</h2><hr/>{full_body}</body></html>"
 
     with zipfile.ZipFile(buf, 'w', zipfile.ZIP_DEFLATED) as z:
         z.writestr('mimetype', 'application/epub+zip', compress_type=zipfile.ZIP_STORED)
@@ -117,11 +104,8 @@ p { text-indent: 1.5em; margin-bottom: 1em; font-size: 1.1em; text-align: justif
         z.writestr('OEBPS/content.opf', opf_xml)
         z.writestr('OEBPS/toc.ncx', ncx_xml)
         z.writestr('OEBPS/stylesheet.css', style_css)
-        z.writestr('OEBPS/chapter1.html', ch1)
-        z.writestr('OEBPS/chapter2.html', ch2)
-        z.writestr('OEBPS/chapter3.html', ch3)
-        z.writestr('OEBPS/chapter4.html', ch4)
-        z.writestr('OEBPS/chapter5.html', ch5)
+        for ch_path, ch_content in chapters.items():
+            z.writestr(ch_path, ch_content)
 
     data = buf.getvalue()
     out_path = os.path.join(DOWNLOAD_DIR, filename)
