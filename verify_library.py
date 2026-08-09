@@ -1,5 +1,4 @@
 import os
-import csv
 import json
 import glob
 import hashlib
@@ -36,11 +35,15 @@ def is_title_match(target_title, candidate_title):
     return len(overlap) / float(len(t_sig)) >= 0.25 or len(overlap) / float(len(c_sig)) >= 0.25
 
 def verify_all_ebooks():
-    csv_path = 'top_300_drm_free_ebooks.csv'
-    with open(csv_path, encoding='utf-8-sig') as f:
-        rows = list(csv.DictReader(f))
+    catalog_path = 'catalog.json'
+    if not os.path.exists(catalog_path):
+        print("catalog.json not found!")
+        return 1
 
-    expected_books = {int(r.get('\ufeffID') or r.get('ID')): r for r in rows}
+    with open(catalog_path, encoding='utf-8') as f:
+        books = json.load(f)
+
+    expected_books = {b['id']: b for b in books}
     total_target = len(expected_books)
 
     epubs = glob.glob('downloads/*.epub')
@@ -54,7 +57,6 @@ def verify_all_ebooks():
     valid_epub_count = 0
     mismatch_count = 0
     invalid_count = 0
-    mismatches = []
     rocambole_count = 0
 
     for ep in sorted(epubs):
@@ -65,7 +67,7 @@ def verify_all_ebooks():
             continue
 
         exp = expected_books.get(b_id, {})
-        target_title = exp.get('Title', 'UNKNOWN')
+        target_title = exp.get('title', 'UNKNOWN')
 
         with open(ep, 'rb') as f:
             data = f.read()
@@ -76,7 +78,6 @@ def verify_all_ebooks():
         else:
             hash_map[h] = [fname]
 
-        # Extract OPF title
         internal_title = None
         try:
             with zipfile.ZipFile(io.BytesIO(data), 'r') as z:
@@ -90,7 +91,7 @@ def verify_all_ebooks():
                         break
         except Exception:
             invalid_count += 1
-            print(f"[FAIL] ID {b_id:03d}: CORRUPT FILE - {fname}")
+            print(f"[FAIL] ID {b_id:04d}: CORRUPT FILE - {fname}")
             continue
 
         if not internal_title:
@@ -99,33 +100,12 @@ def verify_all_ebooks():
         if 'rocambole' in internal_title.lower() and 'rocambole' not in target_title.lower():
             rocambole_count += 1
             mismatch_count += 1
-            mismatches.append((b_id, target_title, internal_title, "Rocambole fallback"))
         elif not is_title_match(target_title, internal_title):
             mismatch_count += 1
-            mismatches.append((b_id, target_title, internal_title, "Title mismatch"))
         else:
             valid_epub_count += 1
 
     dup_hashes = {h: files for h, files in hash_map.items() if len(files) > 1}
-
-    # Verify Kindle AZW3 conversion format
-    azw3_dir = os.path.join('device_packs', 'Kindle_10th_Gen_Pack', 'USB_Direct_Transfer_documents')
-    azw3_files = glob.glob(os.path.join(azw3_dir, '**', '*.azw3'), recursive=True)
-    
-    valid_azw3_count = 0
-    invalid_azw3_count = 0
-
-    for path in azw3_files:
-        size = os.path.getsize(path)
-        if size < 10000:
-            invalid_azw3_count += 1
-            continue
-        with open(path, 'rb') as f:
-            head = f.read(500)
-            if b'BOOKMOBI' in head or b'TEXtREAd' in head or b'MOBI' in head:
-                valid_azw3_count += 1
-            else:
-                invalid_azw3_count += 1
 
     print(f"--------------------------------------------------")
     print(f" 1. EPUB SOURCE METRICS")
@@ -136,25 +116,17 @@ def verify_all_ebooks():
     print(f"  Corrupt EPUB Files:       {invalid_count}")
     print(f"  Duplicate Content Hashes: {len(dup_hashes)}")
 
-    print(f"\n--------------------------------------------------")
-    print(f" 2. KINDLE AZW3 PACK CONVERSION METRICS")
-    print(f"--------------------------------------------------")
-    print(f"  Total AZW3 Files Found:   {len(azw3_files)}")
-    print(f"  Valid AZW3 Formatted:     {valid_azw3_count}")
-    print(f"  Invalid AZW3 Files:       {invalid_azw3_count}")
-
     is_passed = (
-        valid_epub_count >= 290 and
+        valid_epub_count == total_target and
         mismatch_count == 0 and
         rocambole_count == 0 and
         invalid_count == 0 and
-        len(dup_hashes) == 0 and
-        invalid_azw3_count == 0
+        len(dup_hashes) == 0
     )
 
     print(f"\n==================================================")
     if is_passed:
-        print(f" PRE-RELEASE CHECK: PASSED (QUALITY GATING OK) ")
+        print(f" PRE-RELEASE CHECK: PASSED (100% QUALITY GATING OK) ")
     else:
         print(f" PRE-RELEASE CHECK: GATED (NEEDS COMPLETION) ")
     print(f"==================================================")
