@@ -103,8 +103,16 @@ def build_packs():
         shutil.copy2(src_path, os.path.join(x3_x4_target_dir, x3_filename))
         copied_x3_x4 += 1
 
-        # 2. Kindle 10th Gen Pack (AZW3 natively converted in convert_kindle_azw3.py)
-        pass
+        # 2. Kindle 10th Gen Pack
+        # EPUB for Send to Kindle
+        shutil.copy2(src_path, os.path.join(kindle_send_dir, x3_filename))
+        
+        # Native MOBI for USB Direct Transfer
+        mobi_name = f"{b_id:03d} - {clean_a} - {clean_t}.mobi"
+        mobi_src = os.path.join(KINDLE_DIR, mobi_name)
+        if os.path.exists(mobi_src):
+            shutil.copy2(mobi_src, os.path.join(kindle_usb_dir, mobi_name))
+        copied_kindle += 1
 
         # 3. Master Library Pack
         master_target_dir = os.path.join(MASTER_DIR, 'ebooks')

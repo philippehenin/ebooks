@@ -183,6 +183,13 @@ class TestAthenaEpubIntegrity(unittest.TestCase):
 
         self.assertEqual(collisions, 0, f"Found {collisions} duplicate MD5 hash collisions.")
 
+    def test_04_no_2kb_stub_files(self):
+        """Verify 100% of EPUB files are real full-length books (>= 20 KB) with 0 stub files."""
+        downloads_path = os.path.join(self.root_dir, DOWNLOADS_DIR)
+        epubs = glob.glob(os.path.join(downloads_path, '*.epub'))
+        stubs = [ep for ep in epubs if os.path.getsize(ep) < 20000]
+        self.assertEqual(len(stubs), 0, f"Found {len(stubs)} stub files under 20 KB. Every EPUB must be a full-length book.")
+
 
 class TestAthenaDevicePacks(unittest.TestCase):
     """Test 4: Device Pack Release Bundles Integrity"""

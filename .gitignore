@@ -19,3 +19,7 @@ tmp/
 download_summary.json
 node_modules/
 package-lock.json
+downloads/
+*.epub
+device_packs/
+*.zip
