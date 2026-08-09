@@ -85,6 +85,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const statEnglish = document.getElementById('stat-english');
     const statDownloaded = document.getElementById('stat-downloaded');
 
+    // Global cover image error handler to prevent HTML inline attribute corruption
+    window.handleCoverError = function(imgElement, bookId) {
+        const book = booksData.find(b => b.id === bookId);
+        if (book && imgElement && imgElement.parentElement) {
+            const tempDiv = document.createElement('div');
+            tempDiv.innerHTML = generateVintageCoverHTML(book);
+            const coverNode = tempDiv.firstElementChild;
+            imgElement.replaceWith(coverNode);
+        }
+    };
+
     // Fetch Catalog Data
     fetch('catalog.json')
         .then(res => res.json())
@@ -463,17 +474,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const isSaved = savedBookIds.includes(book.id);
         const curatorStar = book.is_curator_pick ? `<span class="card-curator-star">⭐ Essential</span>` : '';
 
-        // Dynamic Vintage Cover with error fallback
-        const vintageCoverMarkup = generateVintageCoverHTML(book);
-        let coverHTML = '';
-
-        if (book.cover_url) {
-            coverHTML = `
-                <img src="${book.cover_url}" alt="${escapeHTML(book.title)}" class="cover-img" loading="lazy" onerror="this.outerHTML=\`${vintageCoverMarkup.replace(/`/g, '\\`')}\`"/>
-            `;
-        } else {
-            coverHTML = vintageCoverMarkup;
-        }
+        // Safe image rendering with clean error callback to avoid inline HTML injection bugs
+        const coverHTML = `
+            <img src="${book.cover_url}" alt="${escapeHTML(book.title)}" class="cover-img" loading="lazy" onerror="handleCoverError(this, ${book.id})"/>
+        `;
 
         const downloadHref = book.is_downloaded ? book.filepath : book.download_url;
 
@@ -587,12 +591,9 @@ document.addEventListener('DOMContentLoaded', () => {
         modalBookmarkBtn.setAttribute('data-id', book.id);
         updateModalBookmarkState(book.id);
 
-        const vintageMarkup = generateVintageCoverHTML(book);
-        if (book.cover_url) {
-            modalCoverContainer.innerHTML = `<img src="${book.cover_url}" style="width:100%; height:100%; object-fit:cover;" onerror="this.outerHTML=\`${vintageMarkup.replace(/`/g, '\\`')}\`"/>`;
-        } else {
-            modalCoverContainer.innerHTML = vintageMarkup;
-        }
+        modalCoverContainer.innerHTML = `
+            <img src="${book.cover_url}" style="width:100%; height:100%; object-fit:cover;" onerror="handleCoverError(this, ${book.id})"/>
+        `;
 
         modalDownloadBtn.href = book.is_downloaded ? book.filepath : book.download_url;
         modalDownloadBtn.querySelector('span').textContent = book.is_downloaded ? '📥 Open EPUB' : '📥 Download EPUB';
@@ -616,12 +617,9 @@ document.addEventListener('DOMContentLoaded', () => {
         randomAuthor.textContent = `by ${currentRandomBook.author}`;
         randomSynopsis.textContent = currentRandomBook.synopsis;
 
-        const vintageMarkup = generateVintageCoverHTML(currentRandomBook);
-        if (currentRandomBook.cover_url) {
-            randomCoverContainer.innerHTML = `<img src="${currentRandomBook.cover_url}" style="width:100%; height:100%; object-fit:cover;" onerror="this.outerHTML=\`${vintageMarkup.replace(/`/g, '\\`')}\`"/>`;
-        } else {
-            randomCoverContainer.innerHTML = vintageMarkup;
-        }
+        randomCoverContainer.innerHTML = `
+            <img src="${currentRandomBook.cover_url}" style="width:100%; height:100%; object-fit:cover;" onerror="handleCoverError(this, ${currentRandomBook.id})"/>
+        `;
 
         randomModal.style.display = 'flex';
     }
