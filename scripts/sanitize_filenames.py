@@ -21,8 +21,8 @@ def slugify_filename(filename):
     
     # Replace non-alphanumeric characters (except numbers/letters/underscores/dashes) with underscore
     clean = re.sub(r'[^a-zA-Z0-9_-]', '_', ascii_name)
-    # Collapse multiple consecutive underscores
-    clean = re.sub(r'_+', '_', clean).strip('_')
+    # Collapse multiple consecutive underscores and convert to lowercase
+    clean = re.sub(r'_+', '_', clean).strip('_').lower()
     return clean + ext.lower()
 
 def sanitize_all_library_filenames():
