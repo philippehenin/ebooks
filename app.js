@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
         view: 'grid'
     };
 
-    let renderLimit = 40;      // Batch pagination limit for performance
+    let renderLimit = 1000;     // Full catalog rendering limit
 
     // Apply saved theme
     if (currentTheme === 'light') {
@@ -474,7 +474,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function renderBooks() {
         if (!booksContainer) return;
         const filtered = getFilteredBooks();
-        if (resultsCount) resultsCount.textContent = `Showing ${Math.min(renderLimit, filtered.length)} of ${filtered.length} matching books (${booksData.length} total catalog)`;
+        if (resultsCount) resultsCount.textContent = `Showing ${filtered.length} matching books (${booksData.length} total catalog)`;
 
         if (filtered.length === 0) {
             booksContainer.className = 'grid-view';

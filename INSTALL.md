@@ -103,7 +103,7 @@ Kindle USB Drive/
 ```
 
 ### Step 4: Safely Eject Kindle
-Safely eject the Kindle drive from your OS. All 300+ ebooks will immediately appear in your Kindle Library screen!
+Safely eject the Kindle drive from your OS. All 1,000 ebooks will immediately appear in your Kindle Library screen!
 
 ---
 
