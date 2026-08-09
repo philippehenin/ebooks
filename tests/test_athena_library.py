@@ -190,6 +190,16 @@ class TestAthenaEpubIntegrity(unittest.TestCase):
         stubs = [ep for ep in epubs if os.path.getsize(ep) < 20000]
         self.assertEqual(len(stubs), 0, f"Found {len(stubs)} stub files under 20 KB. Every EPUB must be a full-length book.")
 
+    def test_05_zero_404_download_link_errors(self):
+        """Verify 100% of book filepaths in catalog.json resolve to existing files on disk without 404 errors."""
+        missing_files = []
+        for b in self.books:
+            rel_path = b.get('filepath', '')
+            abs_path = os.path.join(self.root_dir, rel_path)
+            if not os.path.exists(abs_path):
+                missing_files.append((b['id'], b['title'], rel_path))
+        self.assertEqual(len(missing_files), 0, f"Found {len(missing_files)} catalog entries with 404 missing files: {missing_files[:5]}")
+
 
 class TestAthenaDevicePacks(unittest.TestCase):
     """Test 4: Device Pack Release Bundles Integrity"""

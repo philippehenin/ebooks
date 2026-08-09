@@ -151,8 +151,18 @@ document.addEventListener('DOMContentLoaded', () => {
             vibeTags.unshift('⭐ Essential Classic');
         }
 
+        // Relative path normalization to prevent 404 errors on download links
+        let rawPath = book.filepath || '';
+        let cleanPath = rawPath;
+        if (rawPath.includes('downloads/')) {
+            cleanPath = 'downloads/' + rawPath.split('downloads/').pop();
+        } else if (rawPath && !rawPath.startsWith('downloads/')) {
+            cleanPath = 'downloads/' + rawPath.split('/').pop();
+        }
+
         return {
             ...book,
+            filepath: cleanPath,
             estimated_pages: pages,
             reading_time_str: readTimeStr,
             reading_time_mins: readMins,
