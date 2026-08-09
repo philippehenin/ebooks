@@ -4,21 +4,39 @@
 [![Golden 100](https://img.shields.io/badge/Golden_100-50_FR_%7C_50_EN-amber.svg?style=for-the-badge)](CATALOG.md)
 [![Catalog Size](https://img.shields.io/badge/Catalog-1,000_DRM--Free_Classics-brightgreen.svg?style=for-the-badge&logo=bookstack)](CATALOG.md)
 [![Categories](https://img.shields.io/badge/Categories-FR_(400)_%7C_EN_(400)_%7C_World_in_FR_(200)-orange.svg?style=for-the-badge)](CATALOG.md)
-[![License](https://img.shields.io/badge/License-Public_Domain-blueviolet.svg?style=for-the-badge)](https://creativecommons.org/publicdomain/mark/1.0/)
+[![Installation Guide](https://img.shields.io/badge/Guide-Installation_%26_Setup-blueviolet.svg?style=for-the-badge)](INSTALL.md)
+[![License](https://img.shields.io/badge/License-Public_Domain-green.svg?style=for-the-badge)](https://creativecommons.org/publicdomain/mark/1.0/)
 
 A premier, open-source collection of **1,000 DRM-free public domain ebooks**, pre-formatted and optimized for **Onyx Boox X3 / X4 E-ink Readers**, **Amazon Kindle 10th Gen** (`.AZW3`), and desktop/web e-readers.
 
 ---
 
-## ⚡ Quickstart
+## 📖 Installation & Hardware Setup Guide
 
-### 1. Launch Web Application
+> 📌 **Full Step-by-Step Instructions**: See [INSTALL.md](INSTALL.md) for detailed hardware setup guides for Onyx Boox X4, Kindle, Kobo, and mobile apps.
+
+### 1. Launch Web Application Locally
 ```bash
 python3 -m http.server 8000
 ```
-Open **`http://localhost:8000`** in your browser to explore vintage hardcovers, recommendation wizard, hotkeys, and dark mode.
+Open **`http://localhost:8000`** in your browser. Features Dark/Light mode (<kbd>Shift</kbd>+<kbd>D</kbd>), instant search (<kbd>/</kbd>), recommendation wizard, and keyboard hotkeys (<kbd>?</kbd>).
 
-### 2. Manage Library via Unified CLI
+### 2. Onyx Boox X3 / X4 E-ink Reader Setup (USB Cable)
+1. Download or extract `device_packs/X3_X4_Eink_Reader_Pack.zip`.
+2. Connect your Onyx Boox X4 to your computer via USB-C cable and select **"Transfer Files (MTP)"**.
+3. Copy `01_Golden_100_Essentials` into `Internal Storage/Books/`.
+4. Open **NeoReader / KOReader**. Books are structured in 10-book folders for zero screen scrolling lag!
+
+### 3. Amazon Kindle 10th Gen Setup (USB Direct)
+1. Download or extract `device_packs/Kindle_10th_Gen_Pack.zip`.
+2. Connect Kindle via USB cable and open the **`documents/`** folder.
+3. Copy all converted `.AZW3` files directly into `documents/`.
+4. Safely eject Kindle. All books will instantly index on your Kindle library screen!
+
+---
+
+## 🛠️ CLI Management Commands
+
 ```bash
 python3 cli.py status     # Display catalog & device pack metrics
 python3 cli.py verify     # Run 100% pre-release quality gating audit
@@ -57,26 +75,6 @@ Designed specifically to eliminate decision fatigue on E-ink screens (Onyx Boox 
 
 ---
 
-## 📱 X3 & X4 E-ink Reader Pack Hierarchy
-
-Tailored specifically for Onyx Boox X3/X4, Kobo, Meebook, and PocketBook file managers:
-
-```text
-X3_X4_Eink_Reader_Pack/
-├── 01_Golden_100_Essentials/          <-- PRIMARY X4 SHELF (50 FR / 50 EN)
-│   ├── 01_French_Classics/            (50 FR books in 4 clean folders)
-│   └── 02_English_Classics/           (50 EN books in 4 clean folders)
-│
-├── 02_Extended_Master_Vault/          <-- EXTENDED VAULT (900 TITLES)
-│   ├── 01_French_Classics/            (400 French books)
-│   ├── 02_English_Classics/           (400 English books)
-│   └── 03_World_Masterpieces_in_French/ (200 World books in FR)
-│
-└── 03_Curated_Reading_Roadmaps/       (Step-by-step reading paths)
-```
-
----
-
 ## 📂 Repository Structure
 
 ```text
@@ -86,6 +84,7 @@ X3_X4_Eink_Reader_Pack/
 ├── app.js                     # Application Logic, Keyboard Hotkeys & Batch Rendering
 ├── catalog.json               # Master 1,000-book curated dataset
 ├── CATALOG.md                 # Markdown Catalog Table
+├── INSTALL.md                 # Detailed Installation & Setup Guide
 ├── cli.py                     # Unified Command Line Entrypoint
 ├── scripts/                   # Modular Python Management Scripts
 │   ├── build_catalog_dataset.py
