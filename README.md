@@ -50,8 +50,9 @@ Open **[philippehenin.github.io/ebooks](https://philippehenin.github.io/ebooks/)
 
 ## 🚀 Key Web Application Features
 
+- **🌟 Golden 100 Default View**: The application opens directly to the 100 curated S-Tier Golden Essentials on initial load for zero decision fatigue, with instant 1-click toggle to the 1,000-book Master Vault.
 - **📖 In-Browser EPUB Reader**: Embedded web reader with JSZip chapter extraction, font size scaling, font family picker (*Inter*, *Playfair Display*, *Cinzel*), and custom reader themes (*Dark*, *Parchment Light*, *Sepia Warm*).
-- **📱 PWA & Offline Support**: Progressive Web App with `manifest.json` and a cache-first Service Worker (`sw.js`) for installing on mobile/desktop and reading offline.
+- **📱 PWA & Network-First Caching**: Progressive Web App (`manifest.json` & `sw.js` v1.0.6) with Network-First caching strategy to guarantee live updates bypass browser caches while preserving full offline functionality.
 - **📊 Analytics & Annual Reading Challenge**: Interactive library analytics breakdown and a customizable annual reading goal tracker stored in local storage.
 - **🔮 Find My Next Read (Recommendation Wizard)**: 3-step decision engine matching readers by Mood & Vibe, Reading Time, and Language preference.
 - **🤖 Automated GitHub Actions CI/CD**: Workflow (`.github/workflows/ci.yml`) running the 16-point unit and DOM test suite on every push.
