@@ -151,13 +151,13 @@ document.addEventListener('DOMContentLoaded', () => {
             vibeTags.unshift('⭐ Essential Classic');
         }
 
-        // Relative path normalization to prevent 404 errors on download links
+        // Relative path normalization with explicit ./ prefix to prevent 404 errors on GitHub Pages
         let rawPath = book.filepath || '';
         let cleanPath = rawPath;
         if (rawPath.includes('downloads/')) {
-            cleanPath = 'downloads/' + rawPath.split('downloads/').pop();
-        } else if (rawPath && !rawPath.startsWith('downloads/')) {
-            cleanPath = 'downloads/' + rawPath.split('/').pop();
+            cleanPath = './downloads/' + rawPath.split('downloads/').pop();
+        } else if (rawPath && !rawPath.startsWith('./downloads/')) {
+            cleanPath = './downloads/' + rawPath.split('/').pop();
         }
 
         return {
@@ -675,7 +675,11 @@ document.addEventListener('DOMContentLoaded', () => {
         modalCatBadge.textContent = book.category;
         modalCuratorBadge.style.display = book.is_curator_pick ? 'inline-block' : 'none';
 
-        modalDownloadBtn.href = book.filepath;
+        let dlPath = book.filepath || '';
+        if (dlPath.includes('downloads/')) {
+            dlPath = './downloads/' + dlPath.split('downloads/').pop();
+        }
+        modalDownloadBtn.href = dlPath;
         modalSourceBtn.href = book.download_url;
 
         modalBookmarkBtn.setAttribute('data-id', book.id);
