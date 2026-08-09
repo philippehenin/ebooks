@@ -1,6 +1,6 @@
 # 📚 Athena 1,000 DRM-Free Classic Ebooks Collection & Device Packs
 
-[![GitHub release](https://img.shields.io/badge/Release-v2.0.0_Golden_1000-blue.svg?style=for-the-badge&logo=github)](https://github.com/philippehenin/ebooks/releases/tag/v2.0.0)
+[![GitHub release](https://img.shields.io/badge/Release-v2.1.0_Clean_Pipeline-blue.svg?style=for-the-badge&logo=github)](https://github.com/philippehenin/ebooks/releases/tag/v2.1.0)
 [![Golden 100](https://img.shields.io/badge/Golden_100_Tier-50_FR_%7C_50_EN-amber.svg?style=for-the-badge)](CATALOG.md)
 [![Catalog](https://img.shields.io/badge/Catalog-1,000_Curated_Masterpieces-brightgreen.svg?style=for-the-badge&logo=bookstack)](CATALOG.md)
 [![Categories](https://img.shields.io/badge/Categories-FR_(400)_%7C_EN_(400)_%7C_World_in_FR_(200)-orange.svg?style=for-the-badge)](CATALOG.md)
@@ -50,9 +50,9 @@ X3_X4_Eink_Reader_Pack/
 │   └── 02_English_Classics/           (50 EN books in 4 clean folders)
 │
 ├── 02_Extended_Master_Vault/          <-- EXTENDED VAULT (900 TITLES)
-│   ├── 01_French_Classics/            (400 French Books)
-│   ├── 02_English_Classics/           (400 English Books)
-│   └── 03_World_Masterpieces_in_French/ (200 World Books in FR)
+│   ├── 01_French_Classics/            (400 French books)
+│   ├── 02_English_Classics/           (400 English books)
+│   └── 03_World_Masterpieces_in_French/ (200 World books in FR)
 │
 └── 03_Curated_Reading_Roadmaps/       (Step-by-step reading paths)
 ```
@@ -71,13 +71,29 @@ Launch locally (`python3 -m http.server 8000`) or open `index.html`:
 
 ---
 
+## 🛠️ Self-Descriptive Python Script Pipeline
+
+The repository features a clean, self-descriptive Python script pipeline matching every tool to its exact action:
+
+| Script Name | Purpose & Action |
+| :--- | :--- |
+| **`build_catalog_dataset.py`** | Builds and curates the master 1,000-book `catalog.json` dataset across 3 categories. |
+| **`download_catalog_epubs.py`** | Fetches and generates verified, standards-compliant EPUB files for all 1,000 books. |
+| **`verify_library.py`** | Pre-release integrity suite verifying OPF title compliance, MD5 hashes, and ZIP file integrity. |
+| **`convert_kindle_azw3.py`** | Parallel multi-threaded converter generating native Kindle `.AZW3` files. |
+| **`build_device_packs.py`** | Categorizes ebooks into device folders (Onyx Boox X4, Kindle) and builds release ZIP archives. |
+| **`generate_markdown_catalog.py`** | Generates formatted [CATALOG.md](CATALOG.md) table from `catalog.json`. |
+| **`enrich_catalog.py`** | Synchronizes CSV metadata with internal OPF tags. |
+
+---
+
 ## 📦 Downloadable Device Packs
 
 | Device Pack Archive | Primary Format | Compatible Hardware | Contents & Size |
 | :--- | :---: | :--- | :---: |
-| **`X3_X4_Eink_Reader_Pack.zip`** | `.EPUB` | Onyx Boox (X3/X4), Kobo, Meebook, PocketBook, Nook | 1,000 Categorized `.EPUB` Files (`84.0 MB`) |
+| **`X3_X4_Eink_Reader_Pack.zip`** | `.EPUB` | Onyx Boox (X3/X4), Kobo, Meebook, PocketBook, Nook | 1,000 Categorized `.EPUB` Files (`86.2 MB`) |
 | **`Kindle_10th_Gen_Pack.zip`** | `.AZW3` | Amazon Kindle (10th Gen, Paperwhite, Oasis, Scribe) | 298 Converted `.AZW3` Files (`111.4 MB`) |
-| **`Top_300_Ebook_Master_Pack.zip`** | `.EPUB` + JSON | Calibre, Apple Books, PC / Mac / Web Apps | 1,000 EPUBs + Catalog (`84.0 MB`) |
+| **`Top_300_Ebook_Master_Pack.zip`** | `.EPUB` + JSON | Calibre, Apple Books, PC / Mac / Web Apps | 1,000 EPUBs + Catalog (`9.8 MB`) |
 
 ---
 
