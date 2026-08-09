@@ -1,12 +1,30 @@
-# 📚 Athena 1,000 DRM-Free Classic Ebooks Collection & Device Packs
+# 🏛️ Athena Classic Ebook Library
 
-[![GitHub release](https://img.shields.io/badge/Release-v2.1.0_Clean_Pipeline-blue.svg?style=for-the-badge&logo=github)](https://github.com/philippehenin/ebooks/releases/tag/v2.1.0)
-[![Golden 100](https://img.shields.io/badge/Golden_100_Tier-50_FR_%7C_50_EN-amber.svg?style=for-the-badge)](CATALOG.md)
-[![Catalog](https://img.shields.io/badge/Catalog-1,000_Curated_Masterpieces-brightgreen.svg?style=for-the-badge&logo=bookstack)](CATALOG.md)
+[![GitHub release](https://img.shields.io/badge/Release-v2.2.0_Clean_Architecture-blue.svg?style=for-the-badge&logo=github)](https://github.com/philippehenin/ebooks/releases/tag/v2.2.0)
+[![Golden 100](https://img.shields.io/badge/Golden_100-50_FR_%7C_50_EN-amber.svg?style=for-the-badge)](CATALOG.md)
+[![Catalog Size](https://img.shields.io/badge/Catalog-1,000_DRM--Free_Classics-brightgreen.svg?style=for-the-badge&logo=bookstack)](CATALOG.md)
 [![Categories](https://img.shields.io/badge/Categories-FR_(400)_%7C_EN_(400)_%7C_World_in_FR_(200)-orange.svg?style=for-the-badge)](CATALOG.md)
 [![License](https://img.shields.io/badge/License-Public_Domain-blueviolet.svg?style=for-the-badge)](https://creativecommons.org/publicdomain/mark/1.0/)
 
-A premier, curated DRM-free library of **1,000 literary masterpieces**, structured into **3 Core Categories** and pre-formatted for **Onyx Boox X3 / X4 E-ink Readers**, **Amazon Kindle 10th Gen** (`.AZW3`), and desktop/web e-readers.
+A premier, open-source collection of **1,000 DRM-free public domain ebooks**, pre-formatted and optimized for **Onyx Boox X3 / X4 E-ink Readers**, **Amazon Kindle 10th Gen** (`.AZW3`), and desktop/web e-readers.
+
+---
+
+## ⚡ Quickstart
+
+### 1. Launch Web Application
+```bash
+python3 -m http.server 8000
+```
+Open **`http://localhost:8000`** in your browser to explore vintage hardcovers, recommendation wizard, hotkeys, and dark mode.
+
+### 2. Manage Library via Unified CLI
+```bash
+python3 cli.py status     # Display catalog & device pack metrics
+python3 cli.py verify     # Run 100% pre-release quality gating audit
+python3 cli.py packs      # Generate X4 & Kindle device ZIP packs
+python3 cli.py all        # Run complete pipeline (build -> download -> verify -> packs)
+```
 
 ---
 
@@ -29,13 +47,13 @@ A premier, curated DRM-free library of **1,000 literary masterpieces**, structur
 
 ## 🌟 Concentric 2-Tier Architecture
 
-To eliminate decision fatigue on E-ink screens (Onyx Boox X4 / Kindle):
+Designed specifically to eliminate decision fatigue on E-ink screens (Onyx Boox X4 / Kindle):
 
 1. **🌟 Tier 1: The Golden 100 Essentials (50 FR / 50 EN)**:
    - The default driver: 100 undisputed, zero-filler S-tier literary masterpieces.
    - Fits on your X4 screen in 5 clean subfolders of 10 books each per language — 0 scrolling lag, 100% reading joy!
 2. **📚 Tier 2: The Master Vault (1,000 Titles)**:
-   - The full extended library containing 400 French Classics, 400 English Classics, and 200 World Masterpieces in French.
+   - The extended archive containing 400 French Classics, 400 English Classics, and 200 World Masterpieces in French.
 
 ---
 
@@ -59,31 +77,26 @@ X3_X4_Eink_Reader_Pack/
 
 ---
 
-## 🌐 Web Library & Recommendation Engine
+## 📂 Repository Structure
 
-Launch locally (`python3 -m http.server 8000`) or open `index.html`:
-- 🌟 **Tier Switcher**: Toggle seamlessly between `[ 🌟 Golden 100 ]` and `[ 📚 Master Vault (1,000) ]`.
-- 🌐 **3-Category Filter**: Filter by `🇫🇷 French`, `🇬🇧 English`, or `🌐 World in FR`.
-- 🔮 **"Find My Next Read" (Recommendation Wizard)**: Interactive 3-step decision engine.
-- 🎲 **"Surprise Me!" (Randomizer)**: 1-click random selector with filter constraints.
-- 🎨 **Gold-Foil Vintage Hardcovers**: 6 custom canvas/SVG cover themes (*Royal Indigo, Emerald Leather, Dark Crimson, Sapphire, Amethyst, Sepia*) with 3D spine depth.
-- ⭐ **Saved Queue**: Bookmark your favorite reads stored locally for offline access.
-
----
-
-## 🛠️ Self-Descriptive Python Script Pipeline
-
-The repository features a clean, self-descriptive Python script pipeline matching every tool to its exact action:
-
-| Script Name | Purpose & Action |
-| :--- | :--- |
-| **`build_catalog_dataset.py`** | Builds and curates the master 1,000-book `catalog.json` dataset across 3 categories. |
-| **`download_catalog_epubs.py`** | Fetches and generates verified, standards-compliant EPUB files for all 1,000 books. |
-| **`verify_library.py`** | Pre-release integrity suite verifying OPF title compliance, MD5 hashes, and ZIP file integrity. |
-| **`convert_kindle_azw3.py`** | Parallel multi-threaded converter generating native Kindle `.AZW3` files. |
-| **`build_device_packs.py`** | Categorizes ebooks into device folders (Onyx Boox X4, Kindle) and builds release ZIP archives. |
-| **`generate_markdown_catalog.py`** | Generates formatted [CATALOG.md](CATALOG.md) table from `catalog.json`. |
-| **`enrich_catalog.py`** | Synchronizes CSV metadata with internal OPF tags. |
+```text
+.
+├── index.html                 # Web Library HTML Application
+├── styles.css                 # Master Design System (Obsidian Dark / Parchment Light)
+├── app.js                     # Application Logic, Keyboard Hotkeys & Batch Rendering
+├── catalog.json               # Master 1,000-book curated dataset
+├── CATALOG.md                 # Markdown Catalog Table
+├── cli.py                     # Unified Command Line Entrypoint
+├── scripts/                   # Modular Python Management Scripts
+│   ├── build_catalog_dataset.py
+│   ├── download_catalog_epubs.py
+│   ├── verify_library.py
+│   ├── build_device_packs.py
+│   ├── convert_kindle_azw3.py
+│   ├── generate_markdown_catalog.py
+│   └── enrich_catalog.py
+└── device_packs/              # Generated ZIP Device Archives
+```
 
 ---
 

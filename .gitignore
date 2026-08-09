@@ -1,6 +1,19 @@
-# Git ignore for ebooks repo
-downloads/
-scratch/
+# Athena Library .gitignore
+
+# Python & Bytecode Caches
 __pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# System & OS Files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Build & Temporary Logs
 *.log
-*.zip
+scratch/
+tmp/
+download_summary.json

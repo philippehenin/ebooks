@@ -23,10 +23,11 @@ import os
 import subprocess
 
 def run_step(title, script_name):
+    script_path = os.path.join('scripts', script_name)
     print(f"\n==================================================")
-    print(f" ▶ RUNNING: {title} ({script_name})")
+    print(f" ▶ RUNNING: {title} ({script_path})")
     print(f"==================================================")
-    cmd = [sys.executable, script_name]
+    cmd = [sys.executable, script_path]
     res = subprocess.run(cmd)
     if res.returncode != 0:
         print(f"❌ Step failed with exit code {res.returncode}")
