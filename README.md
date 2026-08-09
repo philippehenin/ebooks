@@ -39,6 +39,7 @@ Open **`http://localhost:8000`** in your browser. Features Dark/Light mode (<kbd
 
 ```bash
 python3 cli.py status     # Display catalog & device pack metrics
+python3 cli.py test       # Execute master unit & integration test suite
 python3 cli.py verify     # Run 100% pre-release quality gating audit
 python3 cli.py packs      # Generate X4 & Kindle device ZIP packs
 python3 cli.py all        # Run complete pipeline (build -> download -> verify -> packs)

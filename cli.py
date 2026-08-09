@@ -85,8 +85,16 @@ def main():
         run_step("Build Device Packs", "build_device_packs.py")
     elif arg == 'docs':
         run_step("Generate Markdown Documentation", "generate_markdown_catalog.py")
-    elif arg == 'status':
-        print_status()
+    elif arg == 'test':
+        print(f"\n==================================================")
+        print(f" ▶ RUNNING: Master Unit Test Suite (tests/test_athena_library.py)")
+        print(f"==================================================")
+        cmd = [sys.executable, os.path.join('tests', 'test_athena_library.py')]
+        res = subprocess.run(cmd)
+        if res.returncode != 0:
+            print(f"❌ Unit tests failed with exit code {res.returncode}")
+            sys.exit(res.returncode)
+        print(f"✅ Master Unit Test Suite passed cleanly.")
     elif arg == 'all':
         run_step("Build Catalog Dataset", "build_catalog_dataset.py")
         run_step("Download & Format EPUBs", "download_catalog_epubs.py")
