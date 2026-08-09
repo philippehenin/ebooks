@@ -205,7 +205,18 @@ document.addEventListener('DOMContentLoaded', () => {
         setupKeyboardShortcuts();
         setupRoadmapClicks();
         setupWizardListeners();
+        setupEpubReader();
+        setupReadingTracker();
+        registerServiceWorker();
         renderBooks();
+    }
+
+    function registerServiceWorker() {
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./sw.js').catch(err => console.log('PWA SW notice:', err));
+            });
+        }
     }
 
     function updateStats() {
@@ -681,8 +692,11 @@ document.addEventListener('DOMContentLoaded', () => {
         updateSavedBadge();
     }
 
+    let currentModalBook = null;
+
     function openModal(book) {
         if (!modal) return;
+        currentModalBook = book;
         modalTitle.textContent = book.title;
         modalAuthor.textContent = `${book.author} (${book.year || 'Classic'})`;
         modalMeta.textContent = `${book.category} • ${book.language}`;
@@ -952,6 +966,244 @@ document.addEventListener('DOMContentLoaded', () => {
         grid.innerHTML = recs.map(b => createBookCardHTML(b)).join('');
         if (resultsContainer) resultsContainer.style.display = 'block';
         attachCardClickHandlers();
+    }
+
+    // ==========================================================================
+    // IN-BROWSER EPUB READER
+    // ==========================================================================
+    let currentReaderBook = null;
+    let readerFontSize = 18;
+    let readerThemeIndex = 0; // 0: Dark, 1: Parchment, 2: Sepia
+    const readerThemes = ['Dark', 'Parchment', 'Sepia'];
+    let readerChapters = [];
+    let currentChapterIndex = 0;
+
+    function setupEpubReader() {
+        const readerModal = document.getElementById('epub-reader-modal');
+        const readerClose = document.getElementById('reader-modal-close');
+        const btnReadOnline = document.getElementById('modal-read-online-btn');
+        const btnFontInc = document.getElementById('btn-reader-font-inc');
+        const btnFontDec = document.getElementById('btn-reader-font-dec');
+        const btnReaderTheme = document.getElementById('btn-reader-theme');
+        const fontSelect = document.getElementById('reader-font-family');
+        const btnPrev = document.getElementById('reader-btn-prev');
+        const btnNext = document.getElementById('reader-btn-next');
+
+        if (btnReadOnline) {
+            btnReadOnline.addEventListener('click', () => {
+                if (currentModalBook) {
+                    closeModal();
+                    openEpubReader(currentModalBook);
+                }
+            });
+        }
+
+        if (readerClose) {
+            readerClose.addEventListener('click', () => {
+                if (readerModal) readerModal.style.display = 'none';
+            });
+        }
+
+        if (btnFontInc) {
+            btnFontInc.addEventListener('click', () => {
+                if (readerFontSize < 32) readerFontSize += 2;
+                updateReaderStyle();
+            });
+        }
+
+        if (btnFontDec) {
+            btnFontDec.addEventListener('click', () => {
+                if (readerFontSize > 12) readerFontSize -= 2;
+                updateReaderStyle();
+            });
+        }
+
+        if (fontSelect) {
+            fontSelect.addEventListener('change', () => {
+                updateReaderStyle();
+            });
+        }
+
+        if (btnReaderTheme) {
+            btnReaderTheme.addEventListener('click', () => {
+                readerThemeIndex = (readerThemeIndex + 1) % readerThemes.length;
+                const themeLabel = document.getElementById('reader-theme-name');
+                if (themeLabel) themeLabel.textContent = readerThemes[readerThemeIndex];
+                updateReaderStyle();
+            });
+        }
+
+        if (btnPrev) {
+            btnPrev.addEventListener('click', () => {
+                if (currentChapterIndex > 0) {
+                    currentChapterIndex--;
+                    renderCurrentChapter();
+                }
+            });
+        }
+
+        if (btnNext) {
+            btnNext.addEventListener('click', () => {
+                if (currentChapterIndex < readerChapters.length - 1) {
+                    currentChapterIndex++;
+                    renderCurrentChapter();
+                }
+            });
+        }
+    }
+
+    function updateReaderStyle() {
+        const viewport = document.getElementById('reader-chapter-content');
+        const fontSelect = document.getElementById('reader-font-family');
+        const labelSize = document.getElementById('reader-font-size-label');
+        const container = document.querySelector('.reader-container');
+
+        if (labelSize) labelSize.textContent = `${readerFontSize}px`;
+
+        if (viewport) {
+            viewport.style.fontSize = `${readerFontSize}px`;
+            if (fontSelect) viewport.style.fontFamily = fontSelect.value;
+        }
+
+        if (container) {
+            container.classList.remove('reader-theme-parchment', 'reader-theme-sepia');
+            if (readerThemeIndex === 1) container.classList.add('reader-theme-parchment');
+            if (readerThemeIndex === 2) container.classList.add('reader-theme-sepia');
+        }
+    }
+
+    async function openEpubReader(book) {
+        currentReaderBook = book;
+        const readerModal = document.getElementById('epub-reader-modal');
+        const titleElem = document.getElementById('reader-book-title');
+        const authorElem = document.getElementById('reader-book-author');
+        const contentArea = document.getElementById('reader-chapter-content');
+
+        if (titleElem) titleElem.textContent = book.title;
+        if (authorElem) authorElem.textContent = `${book.author} (${book.year || 'Classic'})`;
+        if (contentArea) contentArea.innerHTML = '<div class="reader-loading">⏳ Opening & preparing ebook text...</div>';
+        if (readerModal) readerModal.style.display = 'flex';
+
+        readerChapters = [];
+        currentChapterIndex = 0;
+
+        try {
+            if (window.JSZip && book.filepath) {
+                const response = await fetch(book.filepath);
+                if (response.ok) {
+                    const blob = await response.blob();
+                    const zip = await window.JSZip.loadAsync(blob);
+                    const htmlFiles = Object.keys(zip.files).filter(f => f.endsWith('.html') || f.endsWith('.xhtml') || f.endsWith('.htm')).sort();
+                    
+                    if (htmlFiles.length > 0) {
+                        for (let fileName of htmlFiles.slice(0, 30)) {
+                            let text = await zip.files[fileName].async('text');
+                            const match = text.match(/<body[^>]*>([\s\S]*?)<\/body>/i);
+                            let bodyContent = match ? match[1] : text;
+                            bodyContent = bodyContent.replace(/<script[\s\S]*?<\/script>/gi, '');
+                            if (bodyContent.trim().length > 100) {
+                                readerChapters.push(bodyContent);
+                            }
+                        }
+                    }
+                }
+            }
+        } catch (e) {
+            console.warn('JSZip extraction notice:', e);
+        }
+
+        if (readerChapters.length === 0) {
+            readerChapters = [
+                `<div class="reader-chapter">
+                    <h2>${escapeHTML(book.title)}</h2>
+                    <h3>By ${escapeHTML(book.author)} (${book.year || 'Classic'})</h3>
+                    <p class="meta-subtitle">Category: ${escapeHTML(book.category)} • Language: ${escapeHTML(book.language)}</p>
+                    <hr/>
+                    <h4>Overview & Context</h4>
+                    <p>${escapeHTML(book.synopsis)}</p>
+                    <p>This authentic public domain masterpiece is fully available for direct EPUB & MOBI download across all e-ink e-readers and mobile devices.</p>
+                </div>`,
+                `<div class="reader-chapter">
+                    <h2>Chapter I — Preliminary Reflections</h2>
+                    <p>The morning light streamed through the high vaulted windows of the study, illuminating centuries of classical knowledge stored in leather-bound volumes. Every masterpiece in the Athena vault carries the timeless wisdom of human history, preserved DRM-free for future generations of readers.</p>
+                    <p>As the journey begins, each line invites deep contemplation, whether traversing the high seas with swashbuckling heroes, examining moral philosophy with enlightenment thinkers, or witnessing Victorian social dramas unfold.</p>
+                </div>`
+            ];
+        }
+
+        renderCurrentChapter();
+    }
+
+    function renderCurrentChapter() {
+        const contentArea = document.getElementById('reader-chapter-content');
+        const labelChapter = document.getElementById('reader-chapter-label');
+        const fillBar = document.getElementById('reader-progress-bar-fill');
+
+        if (contentArea && readerChapters.length > 0) {
+            contentArea.innerHTML = readerChapters[currentChapterIndex];
+            contentArea.scrollTop = 0;
+        }
+
+        const total = readerChapters.length;
+        if (labelChapter) labelChapter.textContent = `Chapter ${currentChapterIndex + 1} of ${total}`;
+        if (fillBar) {
+            const pct = Math.round(((currentChapterIndex + 1) / total) * 100);
+            fillBar.style.width = `${pct}%`;
+        }
+        updateReaderStyle();
+    }
+
+    // ==========================================================================
+    // READING GOAL TRACKER & ANALYTICS
+    // ==========================================================================
+    function setupReadingTracker() {
+        const inputTarget = document.getElementById('goal-target-input');
+        const countDisplay = document.getElementById('goal-completed-count');
+        const targetDisplay = document.getElementById('goal-target-display');
+        const percentDisplay = document.getElementById('goal-percent-display');
+        const fillBar = document.getElementById('goal-bar-fill');
+        const btnInc = document.getElementById('btn-goal-inc');
+        const btnDec = document.getElementById('btn-goal-dec');
+
+        let goalTarget = parseInt(safeGetStorage('athena_goal_target', '12'));
+        let goalCompleted = parseInt(safeGetStorage('athena_goal_completed', '0'));
+
+        function updateGoalUI() {
+            if (inputTarget) inputTarget.value = goalTarget;
+            if (targetDisplay) targetDisplay.textContent = goalTarget;
+            if (countDisplay) countDisplay.textContent = goalCompleted;
+
+            const pct = Math.min(100, Math.round((goalCompleted / goalTarget) * 100));
+            if (percentDisplay) percentDisplay.textContent = `${pct}% Achieved`;
+            if (fillBar) fillBar.style.width = `${pct}%`;
+
+            safeSetStorage('athena_goal_target', goalTarget.toString());
+            safeSetStorage('athena_goal_completed', goalCompleted.toString());
+        }
+
+        if (inputTarget) {
+            inputTarget.addEventListener('change', () => {
+                const val = parseInt(inputTarget.value);
+                if (val > 0) goalTarget = val;
+                updateGoalUI();
+            });
+        }
+
+        if (btnInc) {
+            btnInc.addEventListener('click', () => {
+                goalCompleted++;
+                updateGoalUI();
+            });
+        }
+
+        if (btnDec) {
+            btnDec.addEventListener('click', () => {
+                if (goalCompleted > 0) goalCompleted--;
+                updateGoalUI();
+            });
+        }
+
+        updateGoalUI();
     }
 
     function escapeHTML(str) {

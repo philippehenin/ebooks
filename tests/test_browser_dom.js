@@ -119,14 +119,15 @@ const req = http.get('http://localhost:8000/', (res) => {
 req.on('error', () => {
     // Port 8000 is offline; launch transient server
     testServer = http.createServer((req, res) => {
-        let filePath = path.join(rootDir, req.url === '/' ? 'index.html' : req.url);
+        let reqPath = req.url.split('?')[0];
+        let filePath = path.join(rootDir, reqPath === '/' ? 'index.html' : reqPath);
         fs.readFile(filePath, (err, data) => {
             if (err) {
                 res.writeHead(404);
                 res.end('Not Found');
             } else {
                 let ext = path.extname(filePath);
-                let mime = ext === '.html' ? 'text/html' : ext === '.css' ? 'text/css' : ext === '.js' ? 'application/javascript' : 'application/epub+zip';
+                let mime = ext === '.html' ? 'text/html' : ext === '.css' ? 'text/css' : ext === '.js' ? 'application/javascript' : ext === '.json' ? 'application/json' : 'application/epub+zip';
                 res.writeHead(200, { 'Content-Type': mime });
                 res.end(data);
             }

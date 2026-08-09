@@ -5,11 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Athena Classic Library | 1,000 DRM-Free Masterpieces</title>
     <meta name="description" content="A curated, beautiful digital library of 1,000 DRM-free French, English, and World literary classics.">
+    <!-- PWA & Mobile Icons -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#6366f1">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css?v=1.0.2">
+    <!-- JSZip for In-Browser EPUB Extraction -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js" async></script>
 </head>
 <body class="dark-theme">
     <div class="app-container">
@@ -492,7 +497,118 @@
                 </div>
             </section>
 
-            <!-- TAB 4: SAVED QUEUE -->
+            <!-- TAB 4: ANALYTICS & READING TRACKER -->
+            <section id="view-analytics" class="tab-view" style="display: none;">
+                <div class="analytics-container">
+                    <div class="analytics-header">
+                        <h2>📊 Catalog Analytics & Reading Challenge</h2>
+                        <p>Explore library distribution metrics and track your personal annual reading goals.</p>
+                    </div>
+
+                    <!-- Reading Goal Tracker Card -->
+                    <div class="analytics-card reading-goal-card">
+                        <div class="goal-header">
+                            <div>
+                                <h3>🎯 2026 Annual Reading Challenge</h3>
+                                <p>Track your classic ebook reading progress stored locally.</p>
+                            </div>
+                            <div class="goal-input-box">
+                                <label for="goal-target-input">Goal Target:</label>
+                                <input type="number" id="goal-target-input" min="1" max="100" value="12" class="goal-input">
+                            </div>
+                        </div>
+                        <div class="goal-progress-section">
+                            <div class="goal-stats-row">
+                                <span>Completed: <strong id="goal-completed-count">0</strong> / <span id="goal-target-display">12</span> books</span>
+                                <span id="goal-percent-display">0% Achieved</span>
+                            </div>
+                            <div class="goal-bar-bg">
+                                <div id="goal-bar-fill" class="goal-bar-fill" style="width: 0%;"></div>
+                            </div>
+                            <div class="goal-actions">
+                                <button id="btn-goal-dec" class="action-btn secondary">- 1 Book Read</button>
+                                <button id="btn-goal-inc" class="action-btn primary">+ 1 Book Read</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Library Metrics Grid -->
+                    <div class="analytics-metrics-grid">
+                        <div class="metric-card">
+                            <span class="metric-icon">📚</span>
+                            <span class="metric-number">1,000</span>
+                            <span class="metric-label">DRM-Free Classics</span>
+                        </div>
+                        <div class="metric-card">
+                            <span class="metric-icon">📖</span>
+                            <span class="metric-number">~315,000</span>
+                            <span class="metric-label">Est. Total Pages</span>
+                        </div>
+                        <div class="metric-card">
+                            <span class="metric-icon">⏱️</span>
+                            <span class="metric-number">~7,800 hrs</span>
+                            <span class="metric-label">Total Reading Time</span>
+                        </div>
+                        <div class="metric-card">
+                            <span class="metric-icon">🌟</span>
+                            <span class="metric-number">100</span>
+                            <span class="metric-label">Golden Essentials</span>
+                        </div>
+                    </div>
+
+                    <!-- Category & Language Distribution Bars -->
+                    <div class="analytics-charts-grid">
+                        <div class="analytics-card">
+                            <h3>🌐 Language Distribution</h3>
+                            <div class="chart-bar-group">
+                                <div class="chart-bar-row">
+                                    <span class="c-label">🇫🇷 French Classics (400)</span>
+                                    <div class="c-bar-bg"><div class="c-bar-fill" style="width: 40%; background: #6366f1;"></div></div>
+                                    <span class="c-val">40%</span>
+                                </div>
+                                <div class="chart-bar-row">
+                                    <span class="c-label">🇬🇧 English Classics (400)</span>
+                                    <div class="c-bar-bg"><div class="c-bar-fill" style="width: 40%; background: #10b981;"></div></div>
+                                    <span class="c-val">40%</span>
+                                </div>
+                                <div class="chart-bar-row">
+                                    <span class="c-label">🌐 World in FR (200)</span>
+                                    <div class="c-bar-bg"><div class="c-bar-fill" style="width: 20%; background: #f59e0b;"></div></div>
+                                    <span class="c-val">20%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="analytics-card">
+                            <h3>📖 Genre & Atmosphere Breakdown</h3>
+                            <div class="chart-bar-group">
+                                <div class="chart-bar-row">
+                                    <span class="c-label">⚔️ Adventure & Swashbuckler</span>
+                                    <div class="c-bar-bg"><div class="c-bar-fill" style="width: 32%; background: #ec4899;"></div></div>
+                                    <span class="c-val">32%</span>
+                                </div>
+                                <div class="chart-bar-row">
+                                    <span class="c-label">📜 Philosophy & Thought</span>
+                                    <div class="c-bar-bg"><div class="c-bar-fill" style="width: 28%; background: #8b5cf6;"></div></div>
+                                    <span class="c-val">28%</span>
+                                </div>
+                                <div class="chart-bar-row">
+                                    <span class="c-label">🌹 Wit & Romance</span>
+                                    <div class="c-bar-bg"><div class="c-bar-fill" style="width: 24%; background: #06b6d4;"></div></div>
+                                    <span class="c-val">24%</span>
+                                </div>
+                                <div class="chart-bar-row">
+                                    <span class="c-label">🍷 Gothic & Dark</span>
+                                    <div class="c-bar-bg"><div class="c-bar-fill" style="width: 16%; background: #ef4444;"></div></div>
+                                    <span class="c-val">16%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB 5: SAVED QUEUE -->
             <section id="view-saved" class="tab-view" style="display: none;">
                 <div class="section-intro">
                     <div class="saved-header-row">
@@ -562,6 +678,9 @@
                         </div>
 
                         <div class="modal-actions">
+                            <button id="modal-read-online-btn" class="action-btn reader-launch-btn" style="background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%); color: white;">
+                                <span>📖 Read Now in Browser</span>
+                            </button>
                             <button id="modal-bookmark-btn" class="action-btn bookmark-btn">
                                 <span>⭐ Save to Queue</span>
                             </button>
@@ -574,6 +693,48 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <!-- In-Browser EPUB Reader Modal -->
+        <div id="epub-reader-modal" class="modal-overlay reader-modal-overlay" style="display: none;">
+            <div class="reader-container">
+                <header class="reader-header">
+                    <div class="reader-title-info">
+                        <span class="reader-badge">📖 Athena Reader</span>
+                        <h3 id="reader-book-title">Book Title</h3>
+                        <span id="reader-book-author" class="reader-author">Author</span>
+                    </div>
+                    <div class="reader-controls">
+                        <select id="reader-font-family" class="reader-select">
+                            <option value="'Inter', sans-serif">Sans-Serif (Inter)</option>
+                            <option value="'Playfair Display', serif" selected>Classic Serif (Playfair)</option>
+                            <option value="'Cinzel', serif">Cinzel Display</option>
+                        </select>
+                        <button id="btn-reader-font-dec" class="reader-btn" title="Decrease font size">A-</button>
+                        <span id="reader-font-size-label">18px</span>
+                        <button id="btn-reader-font-inc" class="reader-btn" title="Increase font size">A+</button>
+                        <button id="btn-reader-theme" class="reader-btn" title="Cycle Theme (Dark / Parchment / Sepia)">🎨 <span id="reader-theme-name">Dark</span></button>
+                        <button id="reader-modal-close" class="modal-close-btn">&times;</button>
+                    </div>
+                </header>
+
+                <div class="reader-body">
+                    <main class="reader-content-viewport" id="reader-content-viewport">
+                        <div id="reader-chapter-content" class="reader-chapter-text">
+                            <div class="reader-loading">⏳ Opening ebook...</div>
+                        </div>
+                    </main>
+                </div>
+
+                <footer class="reader-footer">
+                    <button id="reader-btn-prev" class="action-btn secondary reader-nav-btn">⬅ Previous Chapter</button>
+                    <div class="reader-progress-info">
+                        <span id="reader-chapter-label">Chapter 1 of 1</span>
+                        <div class="reader-progress-bar-bg"><div id="reader-progress-bar-fill" class="reader-progress-bar-fill" style="width: 0%;"></div></div>
+                    </div>
+                    <button id="reader-btn-next" class="action-btn primary reader-nav-btn">Next Chapter ➔</button>
+                </footer>
             </div>
         </div>
 

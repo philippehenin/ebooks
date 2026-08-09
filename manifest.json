@@ -1,0 +1,18 @@
+{
+  "name": "Athena Classic Ebook Library",
+  "short_name": "Athena Books",
+  "description": "1,000 Curated DRM-Free Literary Masterpieces (French, English, and World Classics)",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#6366f1",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "./downloads/covers/cover_001.jpg",
+      "sizes": "192x192 512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ]
+}
