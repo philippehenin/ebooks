@@ -1,47 +1,52 @@
 # 🏛️ Athena Classic Ebook Library
 
-[![GitHub release](https://img.shields.io/badge/Release-v2.5.0_Production_Ready-blue.svg?style=for-the-badge&logo=github)](https://github.com/philippehenin/ebooks/releases/tag/v2.5.0)
-[![Golden 100](https://img.shields.io/badge/Golden_100-50_FR_%7C_50_EN-amber.svg?style=for-the-badge)](CATALOG.md)
-[![Catalog Size](https://img.shields.io/badge/Catalog-1,000_DRM--Free_Classics-brightgreen.svg?style=for-the-badge&logo=bookstack)](CATALOG.md)
-[![Categories](https://img.shields.io/badge/Categories-FR_(400)_%7C_EN_(400)_%7C_World_in_FR_(200)-orange.svg?style=for-the-badge)](CATALOG.md)
-[![Installation Guide](https://img.shields.io/badge/Guide-Installation_%26_Setup-blueviolet.svg?style=for-the-badge)](INSTALL.md)
-[![License](https://img.shields.io/badge/License-Public_Domain-green.svg?style=for-the-badge)](https://creativecommons.org/publicdomain/mark/1.0/)
+[![Live App](https://img.shields.io/badge/🌐_Live_Web_App-philippehenin.github.io%2Febooks-6366f1.svg?style=for-the-badge&logo=googlechrome)](https://philippehenin.github.io/ebooks/)
+[![Catalog Size](https://img.shields.io/badge/Catalog-1,000_DRM--Free_Classics-10b981.svg?style=for-the-badge&logo=bookstack)](CATALOG.md)
+[![Golden 100](https://img.shields.io/badge/Golden_100-50_FR_%7C_50_EN-f59e0b.svg?style=for-the-badge)](CATALOG.md)
+[![QA Certified](https://img.shields.io/badge/QA_Audit-100%25_Authentic-3b82f6.svg?style=for-the-badge&logo=shield)](scripts/semantic_checker.py)
+[![License](https://img.shields.io/badge/License-Public_Domain-8b5cf6.svg?style=for-the-badge)](LICENSE)
 
-A premier, open-source collection of **1,000 DRM-free public domain ebooks**, pre-formatted and optimized for **Onyx Boox X3 / X4 E-ink Readers**, **Amazon Kindle 10th Gen** (`.MOBI` & `.EPUB`), and desktop/web e-readers.
+A premier open-source collection of **1,000 DRM-free public domain ebooks**, pre-formatted and optimized for **Onyx Boox X3/X4 E-ink Readers**, **Amazon Kindle 10th Gen** (`.MOBI` & `.EPUB`), and web e-readers.
+
+👉 **[🌐 Launch Live Web Application](https://philippehenin.github.io/ebooks/)**
 
 ---
 
-## 📖 Installation & Hardware Setup Guide
+## ⚡ Quick Start
 
-> 📌 **Full Step-by-Step Instructions**: See [INSTALL.md](INSTALL.md) for detailed hardware setup guides for Onyx Boox X4, Kindle, Kobo, and mobile apps.
+### 🌐 1. Web Application (No Install Needed)
+Open **[philippehenin.github.io/ebooks](https://philippehenin.github.io/ebooks/)** in any browser for instant search (<kbd>/</kbd>), reading roadmaps, recommendation wizard, and Dark/Light modes (<kbd>Shift</kbd>+<kbd>D</kbd>).
 
-### 1. Launch Web Application Locally
-```bash
-python3 -m http.server 8000
+### 📱 2. Onyx Boox X3 / X4 E-ink Setup (USB)
+1. Download or extract `device_packs/X3_X4_Eink_Reader_Pack.zip`.
+2. Connect your Onyx Boox X4 via USB-C and select **"Transfer Files (MTP)"**.
+3. Copy book folders into `Internal Storage/Books/`. Structured in 10-book folders for zero screen scrolling lag!
+
+### 📖 3. Amazon Kindle 10th Gen Setup (USB & Send-to-Kindle)
+- **USB Direct Transfer**: Copy `.mobi` files from `device_packs/Kindle_10th_Gen_Pack/USB_Direct_Transfer_documents` into your Kindle's `documents/` folder.
+- **Send to Kindle**: Upload `.epub` files from `device_packs/Kindle_10th_Gen_Pack/Send_To_Kindle_EPUBs` via [amazon.com/sendtokindle](https://www.amazon.com/sendtokindle).
+
+---
+
+## 🏛️ Catalog Breakdown (1,000 Titles)
+
+```text
+📚 ATHENA 1,000 MASTERPIECE CATALOG
+├── 🇫🇷 French Classics (400 Books) — Dumas, Hugo, Verne, Balzac, Zola, Flaubert, Maupassant...
+├── 🇬🇧 English Classics (400 Books) — Austen, Dickens, Conan Doyle, Wilde, Stoker, Fitzgerald...
+└── 🌐 World Masterpieces in French (200 Books) — Tolstoy, Dostoevsky, Goethe, Kafka, Homer, Dante...
 ```
-Open **`http://localhost:8000`** in your browser. Features Dark/Light mode (<kbd>Shift</kbd>+<kbd>D</kbd>), instant search (<kbd>/</kbd>), recommendation wizard, zero-404 link resolution, and keyboard hotkeys (<kbd>?</kbd>).
 
-### 2. Onyx Boox X3 / X4 E-ink Reader Setup (USB Cable)
-1. Generate device packs via `python3 cli.py packs`.
-2. Connect your Onyx Boox X4 to your computer via USB-C cable and select **"Transfer Files (MTP)"**.
-3. Copy `01_Golden_100_Essentials` into `Internal Storage/Books/`.
-4. Open **NeoReader / KOReader**. Books are structured in 10-book folders for zero screen scrolling lag!
-
-### 3. Amazon Kindle 10th Gen Setup (USB Cable & Send-to-Kindle)
-- **Option A (USB Direct Cable Transfer)**: Copy files from `device_packs/Kindle_10th_Gen_Pack/USB_Direct_Transfer_documents` (`.mobi`) directly into your Kindle's `documents/` folder.
-- **Option B (Send to Kindle Cloud)**: Upload `.epub` files from `device_packs/Kindle_10th_Gen_Pack/Send_To_Kindle_EPUBs` via [amazon.com/sendtokindle](https://www.amazon.com/sendtokindle).
+- **🌟 Golden 100 Essentials**: 100 S-tier undisputed masterpieces (50 FR / 50 EN) curated for zero decision fatigue.
+- **📚 Master Vault**: 1,000 complete public domain works available on-demand.
 
 ---
 
-## 🛡️ High-Precision Quality Assurance Pipeline
+## 🛡️ High-Precision Quality Assurance
 
-Athena includes an automated 5-layer quality gating suite (`python3 cli.py verify` & `python3 cli.py test`):
-
-1. **Size Threshold Gating**: Rejects any stub/placeholder file under 20 KB; guarantees full-length book content.
-2. **XHTML Chapter Word Count Audit**: Unpacks EPUB zip containers and verifies `>= 1,000 words` per title.
-3. **UTF-8 Encoding Health**: Scans for broken UTF-8 mojibake patterns (`Ã©`, `Ã¨`, `Ãª`, `Ã§`).
-4. **404 Link Resolution Guarantee**: Verifies 100% of `catalog.json` filepaths map to existing EPUBs on disk.
-5. **Zero MD5 Hash Collisions**: Ensures zero duplicate content across 1,000 catalog items.
+- **🧠 Semantic Authenticity Engine**: Uses 12-word N-gram duplication detection to reject synthetic filler while preserving authentic short works (novellas, plays, essays).
+- **🏷️ Embedded OPF Metadata**: QA test results (`athena:qa_status` and `athena:qa_score`) are embedded directly inside Dublin Core tags of all 1,000 EPUB files.
+- **🔗 Zero 404 Links**: 100% of download links use clean ASCII web URLs (`./downloads/`).
 
 ---
 
@@ -49,40 +54,11 @@ Athena includes an automated 5-layer quality gating suite (`python3 cli.py verif
 
 ```bash
 python3 cli.py status     # Display catalog & device pack metrics
-python3 cli.py test       # Execute 15-point master unit & DOM integration test suite
+python3 cli.py test       # Execute 15-point master unit test suite
 python3 cli.py verify     # Run 100% pre-release quality gating audit
 python3 cli.py packs      # Generate X4 & Kindle device ZIP packs
-python3 cli.py all        # Run complete pipeline (build -> download -> verify -> packs)
+python3 cli.py all        # Run complete pipeline
 ```
-
----
-
-## 🏛️ The 3 Core Categories (1,000 Books)
-
-```text
-📚 ATHENA 1,000 MASTERPIECE CATALOG
-├── 🇫🇷 Category 1: French Classics (400 Books)
-│   └── Original French authors in French (Dumas, Hugo, Verne, Balzac, Zola, Flaubert, Maupassant, Leblanc...)
-│
-├── 🇬🇧 Category 2: English Classics (400 Books)
-│   └── Original English/American authors in English (Austen, Dickens, Conan Doyle, Wilde, Stoker, Fitzgerald, Wells...)
-│
-└── 🌐 Category 3: World Masterpieces in French Translation (200 Books)
-    └── Russian (Tolstoy, Dostoevsky, Chekhov), German (Goethe, Kafka), Italian (Dante, Boccaccio),
-        Spanish (Cervantes), and Ancient Greek/Latin (Homer, Virgil, Plato, Marcus Aurelius) in French!
-```
-
----
-
-## 🌟 Concentric 2-Tier Architecture
-
-Designed specifically to eliminate decision fatigue on E-ink screens (Onyx Boox X4 / Kindle):
-
-1. **🌟 Tier 1: The Golden 100 Essentials (50 FR / 50 EN)**:
-   - The default driver: 100 undisputed, zero-filler S-tier literary masterpieces.
-   - Fits on your X4 screen in 5 clean subfolders of 10 books each per language — 0 scrolling lag, 100% reading joy!
-2. **📚 Tier 2: The Master Vault (1,000 Titles)**:
-   - The extended archive containing 400 French Classics, 400 English Classics, and 200 World Masterpieces in French.
 
 ---
 
@@ -90,22 +66,25 @@ Designed specifically to eliminate decision fatigue on E-ink screens (Onyx Boox 
 
 ```text
 .
-├── index.html                 # Web Library HTML Application
+├── index.html                 # Live Web Application
 ├── styles.css                 # Master Design System (Obsidian Dark / Parchment Light)
-├── app.js                     # Application Logic, Keyboard Hotkeys & Batch Rendering
+├── app.js                     # Application Logic, Hotkeys & Filtering
 ├── catalog.json               # Master 1,000-book curated dataset
-├── catalog-data.js            # Offline JS window.CATALOG_DATA dataset
-├── CATALOG.md                 # Markdown Catalog Table
-├── INSTALL.md                 # Detailed Installation & Setup Guide
-├── cli.py                     # Unified Command Line Entrypoint
-├── scripts/                   # Modular Python Management Scripts
-│   ├── build_catalog_dataset.py
+├── catalog-data.js            # Offline JS dataset
+├── sitemap.xml                # SEO Google Search Sitemap (1,001 URLs)
+├── robots.txt                 # Search Engine Crawler Rules
+├── CATALOG.md                 # Full Catalog Table
+├── INSTALL.md                 # Device Setup Guide
+├── cli.py                     # Unified CLI Entrypoint
+├── scripts/                   # Modular Python Scripts
 │   ├── download_catalog_epubs.py
 │   ├── convert_epub_to_mobi.py
-│   ├── verify_library.py
-│   ├── build_device_packs.py
-│   └── generate_markdown_catalog.py
-└── tests/                    # Automated Test Suite
+│   ├── semantic_checker.py
+│   ├── inject_qa_metadata.py
+│   ├── sanitize_filenames.py
+│   ├── generate_seo_sitemap.py
+│   └── build_device_packs.py
+└── tests/                    # Master Automated Test Suite
     ├── test_athena_library.py
     └── test_browser_dom.js
 ```
@@ -114,4 +93,4 @@ Designed specifically to eliminate decision fatigue on E-ink screens (Onyx Boox 
 
 ## ⚖️ License & Copyright
 
-All literary works in this collection are in the **Public Domain** worldwide. Custom scripts, documentation, and layout formats are licensed under the [MIT License](LICENSE).
+All literary works in this collection are in the **Public Domain** worldwide. Custom scripts and application code are licensed under the [MIT License](LICENSE).
