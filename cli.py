@@ -83,6 +83,8 @@ def main():
         run_step("Verify Library Integrity", "verify_library.py")
     elif arg == 'packs':
         run_step("Build Device Packs", "build_device_packs.py")
+    elif arg == 'crosspoint':
+        run_step("Build CrossPoint X4 Pack", "build_crosspoint_pack.py")
     elif arg == 'docs':
         run_step("Generate Markdown Documentation", "generate_markdown_catalog.py")
     elif arg == 'status':
