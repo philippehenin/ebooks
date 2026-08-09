@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let savedBookIds = JSON.parse(localStorage.getItem('athena_saved_ids') || '[]');
 
     let currentFilters = {
+        tier: 'golden',
         search: '',
         language: 'all',
         category: 'all',
@@ -174,10 +175,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function updateStats() {
-        statTotal.textContent = booksData.length;
-        statFrench.textContent = booksData.filter(b => b.language === 'French').length;
-        statEnglish.textContent = booksData.filter(b => b.language === 'English').length;
-        statDownloaded.textContent = booksData.filter(b => b.is_downloaded).length;
+        const isGolden = currentFilters.tier === 'golden';
+        const activeSet = isGolden ? booksData.filter(b => b.is_golden_100) : booksData;
+
+        statTotal.textContent = activeSet.length;
+        statFrench.textContent = activeSet.filter(b => b.language === 'French').length;
+        statEnglish.textContent = activeSet.filter(b => b.language === 'English').length;
+        statDownloaded.textContent = activeSet.filter(b => b.is_downloaded).length;
     }
 
     function updateSavedBadge() {
@@ -220,6 +224,18 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function setupEventListeners() {
+        // Tier Buttons
+        const tierBtns = document.querySelectorAll('.tier-btn');
+        tierBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                tierBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                currentFilters.tier = btn.getAttribute('data-tier');
+                updateStats();
+                renderBooks();
+            });
+        });
+
         // Search Input
         searchInput.addEventListener('input', (e) => {
             currentFilters.search = e.target.value.toLowerCase().trim();
@@ -313,6 +329,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function getFilteredBooks() {
         return booksData.filter(book => {
+            // Tier filter
+            if (currentFilters.tier === 'golden' && !book.is_golden_100) return false;
+
             // Search match
             if (currentFilters.search) {
                 const q = currentFilters.search;

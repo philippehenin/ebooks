@@ -13,7 +13,8 @@
     "filesize_kb": 395.1,
     "cover_url": "downloads/covers/cover_001.jpg",
     "year": null,
-    "synopsis": "A celebrated French masterpiece in adventure, mystery & sci-fi by Alexandre Dumas."
+    "synopsis": "A celebrated French masterpiece in adventure, mystery & sci-fi by Alexandre Dumas.",
+    "is_golden_100": true
   },
   {
     "id": 2,
@@ -29,7 +30,8 @@
     "filesize_kb": 675.7,
     "cover_url": "downloads/covers/cover_002.jpg",
     "year": null,
-    "synopsis": "A celebrated French masterpiece in adventure, mystery & sci-fi by Alexandre Dumas."
+    "synopsis": "A celebrated French masterpiece in adventure, mystery & sci-fi by Alexandre Dumas.",
+    "is_golden_100": true
   },
   {
     "id": 3,
@@ -45,7 +47,8 @@
     "filesize_kb": 779.5,
     "cover_url": "downloads/covers/cover_003.jpg",
     "year": 1845,
-    "synopsis": "Twenty years after their heroic exploits, d'Artagnan and the musketeers reunite during the turbulent Fronde uprising."
+    "synopsis": "Twenty years after their heroic exploits, d'Artagnan and the musketeers reunite during the turbulent Fronde uprising.",
+    "is_golden_100": true
   },
   {
     "id": 4,
@@ -61,7 +64,8 @@
     "filesize_kb": 509.0,
     "cover_url": "downloads/covers/cover_004.jpg",
     "year": null,
-    "synopsis": "A celebrated French masterpiece in adventure, mystery & sci-fi by Alexandre Dumas."
+    "synopsis": "A celebrated French masterpiece in adventure, mystery & sci-fi by Alexandre Dumas.",
+    "is_golden_100": true
   },
   {
     "id": 5,
@@ -77,7 +81,8 @@
     "filesize_kb": 318.8,
     "cover_url": "downloads/covers/cover_005.jpg",
     "year": null,
-    "synopsis": "A celebrated French masterpiece in adventure, mystery & sci-fi by Alexandre Dumas."
+    "synopsis": "A celebrated French masterpiece in adventure, mystery & sci-fi by Alexandre Dumas.",
+    "is_golden_100": true
   },
   {
     "id": 6,
@@ -93,7 +98,8 @@
     "filesize_kb": 317.7,
     "cover_url": "downloads/covers/cover_006.jpg",
     "year": null,
-    "synopsis": "A celebrated French masterpiece in adventure, mystery & sci-fi by Alexandre Dumas."
+    "synopsis": "A celebrated French masterpiece in adventure, mystery & sci-fi by Alexandre Dumas.",
+    "is_golden_100": true
   },
   {
     "id": 7,
@@ -109,7 +115,8 @@
     "filesize_kb": 407.0,
     "cover_url": "downloads/covers/cover_007.jpg",
     "year": null,
-    "synopsis": "A celebrated French masterpiece in adventure, mystery & sci-fi by Alexandre Dumas."
+    "synopsis": "A celebrated French masterpiece in adventure, mystery & sci-fi by Alexandre Dumas.",
+    "is_golden_100": true
   },
   {
     "id": 8,
@@ -125,7 +132,8 @@
     "filesize_kb": 215.5,
     "cover_url": "downloads/covers/cover_008.jpg",
     "year": 1907,
-    "synopsis": "The charming debut of Maurice Leblanc's famous French master thief, master of disguise and quick wit."
+    "synopsis": "The charming debut of Maurice Leblanc's famous French master thief, master of disguise and quick wit.",
+    "is_golden_100": true
   },
   {
     "id": 9,
@@ -141,7 +149,8 @@
     "filesize_kb": 164.0,
     "cover_url": "downloads/covers/cover_009.jpg",
     "year": null,
-    "synopsis": "A celebrated French masterpiece in regional fiction by George Sand."
+    "synopsis": "A celebrated French masterpiece in regional fiction by George Sand.",
+    "is_golden_100": true
   },
   {
     "id": 10,
@@ -157,7 +166,8 @@
     "filesize_kb": 336.8,
     "cover_url": "downloads/covers/cover_010.jpg",
     "year": null,
-    "synopsis": "Un chef-d'œuvre classique de la littérature française par Maurice Leblanc."
+    "synopsis": "Un chef-d'œuvre classique de la littérature française par Maurice Leblanc.",
+    "is_golden_100": true
   },
   {
     "id": 11,
@@ -173,7 +183,8 @@
     "filesize_kb": 206.6,
     "cover_url": "downloads/covers/cover_011.jpg",
     "year": null,
-    "synopsis": "A celebrated French masterpiece in regional fiction by George Sand."
+    "synopsis": "A celebrated French masterpiece in regional fiction by George Sand.",
+    "is_golden_100": true
   },
   {
     "id": 12,
@@ -189,7 +200,8 @@
     "filesize_kb": 449.4,
     "cover_url": "downloads/covers/cover_012.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in gothic fiction by Oscar Wilde."
+    "synopsis": "A celebrated English masterpiece in gothic fiction by Oscar Wilde.",
+    "is_golden_100": true
   },
   {
     "id": 13,
@@ -205,7 +217,8 @@
     "filesize_kb": 101.8,
     "cover_url": "downloads/covers/cover_013.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in comedy by Oscar Wilde."
+    "synopsis": "A celebrated English masterpiece in comedy by Oscar Wilde.",
+    "is_golden_100": true
   },
   {
     "id": 14,
@@ -221,7 +234,8 @@
     "filesize_kb": 421.5,
     "cover_url": "downloads/covers/cover_014.jpg",
     "year": null,
-    "synopsis": "A celebrated French masterpiece in adventure, mystery & sci-fi by Jules Verne."
+    "synopsis": "A celebrated French masterpiece in adventure, mystery & sci-fi by Jules Verne.",
+    "is_golden_100": true
   },
   {
     "id": 15,
@@ -237,7 +251,8 @@
     "filesize_kb": 257.6,
     "cover_url": "downloads/covers/cover_015.jpg",
     "year": null,
-    "synopsis": "A celebrated French masterpiece in adventure, mystery & sci-fi by Jules Verne."
+    "synopsis": "A celebrated French masterpiece in adventure, mystery & sci-fi by Jules Verne.",
+    "is_golden_100": true
   },
   {
     "id": 16,
@@ -253,7 +268,8 @@
     "filesize_kb": 275.1,
     "cover_url": "downloads/covers/cover_016.jpg",
     "year": null,
-    "synopsis": "Un chef-d'œuvre classique de la littérature française par Jules Verne."
+    "synopsis": "Un chef-d'œuvre classique de la littérature française par Jules Verne.",
+    "is_golden_100": true
   },
   {
     "id": 17,
@@ -269,7 +285,8 @@
     "filesize_kb": 108.2,
     "cover_url": "downloads/covers/cover_017.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in autobiography by Oscar Wilde."
+    "synopsis": "A celebrated English masterpiece in autobiography by Oscar Wilde.",
+    "is_golden_100": true
   },
   {
     "id": 18,
@@ -285,7 +302,8 @@
     "filesize_kb": 223.4,
     "cover_url": "downloads/covers/cover_018.jpg",
     "year": null,
-    "synopsis": "A celebrated French masterpiece in adventure, mystery & sci-fi by Jules Verne."
+    "synopsis": "A celebrated French masterpiece in adventure, mystery & sci-fi by Jules Verne.",
+    "is_golden_100": true
   },
   {
     "id": 19,
@@ -301,7 +319,8 @@
     "filesize_kb": 206.6,
     "cover_url": "downloads/covers/cover_019.jpg",
     "year": null,
-    "synopsis": "A celebrated French masterpiece in adventure, mystery & sci-fi by Jules Verne."
+    "synopsis": "A celebrated French masterpiece in adventure, mystery & sci-fi by Jules Verne.",
+    "is_golden_100": true
   },
   {
     "id": 20,
@@ -317,7 +336,8 @@
     "filesize_kb": 324.8,
     "cover_url": "downloads/covers/cover_020.jpg",
     "year": null,
-    "synopsis": "A celebrated French masterpiece in adventure, mystery & sci-fi by Jules Verne."
+    "synopsis": "A celebrated French masterpiece in adventure, mystery & sci-fi by Jules Verne.",
+    "is_golden_100": true
   },
   {
     "id": 21,
@@ -333,7 +353,8 @@
     "filesize_kb": 456.6,
     "cover_url": "downloads/covers/cover_021.jpg",
     "year": null,
-    "synopsis": "Un chef-d'œuvre classique de la littérature française par Jules Verne."
+    "synopsis": "Un chef-d'œuvre classique de la littérature française par Jules Verne.",
+    "is_golden_100": true
   },
   {
     "id": 22,
@@ -349,7 +370,8 @@
     "filesize_kb": 177.2,
     "cover_url": "downloads/covers/cover_022.jpg",
     "year": 1925,
-    "synopsis": "F. Scott Fitzgerald's lyrical portrait of the Jazz Age, tragic love, and Jay Gatsby's unattainable dream."
+    "synopsis": "F. Scott Fitzgerald's lyrical portrait of the Jazz Age, tragic love, and Jay Gatsby's unattainable dream.",
+    "is_golden_100": true
   },
   {
     "id": 23,
@@ -365,7 +387,8 @@
     "filesize_kb": 264.6,
     "cover_url": "downloads/covers/cover_023.jpg",
     "year": null,
-    "synopsis": "A celebrated French masterpiece in adventure, mystery & sci-fi by Gaston Leroux."
+    "synopsis": "A celebrated French masterpiece in adventure, mystery & sci-fi by Gaston Leroux.",
+    "is_golden_100": true
   },
   {
     "id": 24,
@@ -381,7 +404,8 @@
     "filesize_kb": 346.0,
     "cover_url": "downloads/covers/cover_024.jpg",
     "year": null,
-    "synopsis": "A celebrated French masterpiece in adventure, mystery & sci-fi by Gaston Leroux."
+    "synopsis": "A celebrated French masterpiece in adventure, mystery & sci-fi by Gaston Leroux.",
+    "is_golden_100": true
   },
   {
     "id": 25,
@@ -397,7 +421,8 @@
     "filesize_kb": 286.0,
     "cover_url": "downloads/covers/cover_025.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in modernist literature by F. Scott Fitzgerald."
+    "synopsis": "A celebrated English masterpiece in modernist literature by F. Scott Fitzgerald.",
+    "is_golden_100": true
   },
   {
     "id": 26,
@@ -413,7 +438,8 @@
     "filesize_kb": 364.0,
     "cover_url": "downloads/covers/cover_026.jpg",
     "year": null,
-    "synopsis": "A celebrated French masterpiece in adventure, mystery & sci-fi by Eugène Sue."
+    "synopsis": "A celebrated French masterpiece in adventure, mystery & sci-fi by Eugène Sue.",
+    "is_golden_100": true
   },
   {
     "id": 27,
@@ -429,7 +455,8 @@
     "filesize_kb": 806.2,
     "cover_url": "downloads/covers/cover_027.jpg",
     "year": null,
-    "synopsis": "A celebrated French masterpiece in adventure, mystery & sci-fi by Eugène Sue."
+    "synopsis": "A celebrated French masterpiece in adventure, mystery & sci-fi by Eugène Sue.",
+    "is_golden_100": true
   },
   {
     "id": 28,
@@ -445,7 +472,8 @@
     "filesize_kb": 182.6,
     "cover_url": "downloads/covers/cover_028.jpg",
     "year": null,
-    "synopsis": "A celebrated French masterpiece in adventure, mystery & sci-fi by comtesse de Sophie Ségur."
+    "synopsis": "A celebrated French masterpiece in adventure, mystery & sci-fi by comtesse de Sophie Ségur.",
+    "is_golden_100": true
   },
   {
     "id": 29,
@@ -461,7 +489,8 @@
     "filesize_kb": 289.9,
     "cover_url": "downloads/covers/cover_029.jpg",
     "year": null,
-    "synopsis": "A celebrated French masterpiece in adventure, mystery & sci-fi by Paul Féval."
+    "synopsis": "A celebrated French masterpiece in adventure, mystery & sci-fi by Paul Féval.",
+    "is_golden_100": true
   },
   {
     "id": 30,
@@ -477,7 +506,8 @@
     "filesize_kb": 227.9,
     "cover_url": "downloads/covers/cover_030.jpg",
     "year": null,
-    "synopsis": "A celebrated French masterpiece in adventure, mystery & sci-fi by aîné J.-H. Rosny."
+    "synopsis": "A celebrated French masterpiece in adventure, mystery & sci-fi by aîné J.-H. Rosny.",
+    "is_golden_100": false
   },
   {
     "id": 31,
@@ -493,7 +523,8 @@
     "filesize_kb": 503.5,
     "cover_url": "downloads/covers/cover_031.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in social satire by Sinclair Lewis."
+    "synopsis": "A celebrated English masterpiece in social satire by Sinclair Lewis.",
+    "is_golden_100": true
   },
   {
     "id": 32,
@@ -509,7 +540,8 @@
     "filesize_kb": 404.0,
     "cover_url": "downloads/covers/cover_032.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in social satire by Sinclair Lewis."
+    "synopsis": "A celebrated English masterpiece in social satire by Sinclair Lewis.",
+    "is_golden_100": true
   },
   {
     "id": 33,
@@ -525,7 +557,8 @@
     "filesize_kb": 339.2,
     "cover_url": "downloads/covers/cover_033.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in adventure by Mark Twain."
+    "synopsis": "A celebrated English masterpiece in adventure by Mark Twain.",
+    "is_golden_100": true
   },
   {
     "id": 34,
@@ -541,7 +574,8 @@
     "filesize_kb": 541.8,
     "cover_url": "downloads/covers/cover_034.jpg",
     "year": null,
-    "synopsis": "Un chef-d'œuvre classique de la littérature française par George Sand."
+    "synopsis": "Un chef-d'œuvre classique de la littérature française par George Sand.",
+    "is_golden_100": true
   },
   {
     "id": 35,
@@ -557,7 +591,8 @@
     "filesize_kb": 314.7,
     "cover_url": "downloads/covers/cover_035.jpg",
     "year": null,
-    "synopsis": "A celebrated French masterpiece in decadence by J. Barbey d'Aurevilly."
+    "synopsis": "A celebrated French masterpiece in decadence by J. Barbey d'Aurevilly.",
+    "is_golden_100": false
   },
   {
     "id": 36,
@@ -573,7 +608,8 @@
     "filesize_kb": 1789.7,
     "cover_url": "downloads/covers/cover_036.jpg",
     "year": 1862,
-    "synopsis": "Un chef-d'œuvre classique de la littérature française par Victor Hugo."
+    "synopsis": "Un chef-d'œuvre classique de la littérature française par Victor Hugo.",
+    "is_golden_100": true
   },
   {
     "id": 37,
@@ -589,7 +625,8 @@
     "filesize_kb": 568.3,
     "cover_url": "downloads/covers/cover_037.jpg",
     "year": 1831,
-    "synopsis": "Un chef-d'œuvre classique de la littérature française par Victor Hugo."
+    "synopsis": "Un chef-d'œuvre classique de la littérature française par Victor Hugo.",
+    "is_golden_100": true
   },
   {
     "id": 38,
@@ -605,7 +642,8 @@
     "filesize_kb": 381.0,
     "cover_url": "downloads/covers/cover_038.jpg",
     "year": null,
-    "synopsis": "A celebrated French masterpiece in realism, naturalism & social drama by Victor Hugo."
+    "synopsis": "A celebrated French masterpiece in realism, naturalism & social drama by Victor Hugo.",
+    "is_golden_100": false
   },
   {
     "id": 39,
@@ -621,13 +659,14 @@
     "filesize_kb": 583.9,
     "cover_url": "downloads/covers/cover_039.jpg",
     "year": null,
-    "synopsis": "A celebrated French masterpiece in realism, naturalism & social drama by Victor Hugo."
+    "synopsis": "A celebrated French masterpiece in realism, naturalism & social drama by Victor Hugo.",
+    "is_golden_100": false
   },
   {
     "id": 40,
     "title": "Germinie Lacerteux",
     "author": "Edmond de Goncourt",
-    "language": "English",
+    "language": "French",
     "category": "Naturalist Novel",
     "format": "EPUB / MOBI",
     "primary_source": "Ebooksgratuits / NosLivres",
@@ -637,7 +676,8 @@
     "filesize_kb": 266.6,
     "cover_url": "downloads/covers/cover_040.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in naturalist novel by Edmond de Goncourt."
+    "synopsis": "A celebrated English masterpiece in naturalist novel by Edmond de Goncourt.",
+    "is_golden_100": true
   },
   {
     "id": 41,
@@ -653,7 +693,8 @@
     "filesize_kb": 163.8,
     "cover_url": "downloads/covers/cover_041.jpg",
     "year": null,
-    "synopsis": "A celebrated French masterpiece in realism, naturalism & social drama by Victor Hugo."
+    "synopsis": "A celebrated French masterpiece in realism, naturalism & social drama by Victor Hugo.",
+    "is_golden_100": false
   },
   {
     "id": 42,
@@ -669,7 +710,8 @@
     "filesize_kb": 410.3,
     "cover_url": "downloads/covers/cover_042.jpg",
     "year": 1857,
-    "synopsis": "Un chef-d'œuvre classique de la littérature française par Gustave Flaubert."
+    "synopsis": "Un chef-d'œuvre classique de la littérature française par Gustave Flaubert.",
+    "is_golden_100": true
   },
   {
     "id": 43,
@@ -685,7 +727,8 @@
     "filesize_kb": 282.0,
     "cover_url": "downloads/covers/cover_043.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in adventure by Mark Twain."
+    "synopsis": "A celebrated English masterpiece in adventure by Mark Twain.",
+    "is_golden_100": true
   },
   {
     "id": 44,
@@ -701,7 +744,8 @@
     "filesize_kb": 329.4,
     "cover_url": "downloads/covers/cover_044.jpg",
     "year": null,
-    "synopsis": "Un chef-d'œuvre classique de la littérature française par Gustave Flaubert."
+    "synopsis": "Un chef-d'œuvre classique de la littérature française par Gustave Flaubert.",
+    "is_golden_100": true
   },
   {
     "id": 45,
@@ -717,7 +761,8 @@
     "filesize_kb": 404.5,
     "cover_url": "downloads/covers/cover_045.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in satire by Mark Twain."
+    "synopsis": "A celebrated English masterpiece in satire by Mark Twain.",
+    "is_golden_100": true
   },
   {
     "id": 46,
@@ -733,7 +778,8 @@
     "filesize_kb": 474.2,
     "cover_url": "downloads/covers/cover_046.jpg",
     "year": 1885,
-    "synopsis": "Un chef-d'œuvre classique de la littérature française par Émile Zola."
+    "synopsis": "Un chef-d'œuvre classique de la littérature française par Émile Zola.",
+    "is_golden_100": true
   },
   {
     "id": 47,
@@ -749,7 +795,8 @@
     "filesize_kb": 462.4,
     "cover_url": "downloads/covers/cover_047.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in historical fiction by Nathaniel Hawthorne."
+    "synopsis": "A celebrated English masterpiece in historical fiction by Nathaniel Hawthorne.",
+    "is_golden_100": true
   },
   {
     "id": 48,
@@ -765,7 +812,8 @@
     "filesize_kb": 416.8,
     "cover_url": "downloads/covers/cover_048.jpg",
     "year": null,
-    "synopsis": "Un chef-d'œuvre classique de la littérature française par Émile Zola."
+    "synopsis": "Un chef-d'œuvre classique de la littérature française par Émile Zola.",
+    "is_golden_100": true
   },
   {
     "id": 49,
@@ -781,7 +829,8 @@
     "filesize_kb": 181.5,
     "cover_url": "downloads/covers/cover_049.jpg",
     "year": null,
-    "synopsis": "A celebrated French masterpiece in mystery by Gaston Leroux."
+    "synopsis": "A celebrated French masterpiece in mystery by Gaston Leroux.",
+    "is_golden_100": false
   },
   {
     "id": 50,
@@ -797,7 +846,8 @@
     "filesize_kb": 431.9,
     "cover_url": "downloads/covers/cover_050.jpg",
     "year": null,
-    "synopsis": "A celebrated French masterpiece in realism, naturalism & social drama by Émile Zola."
+    "synopsis": "A celebrated French masterpiece in realism, naturalism & social drama by Émile Zola.",
+    "is_golden_100": true
   },
   {
     "id": 51,
@@ -813,7 +863,8 @@
     "filesize_kb": 91.8,
     "cover_url": "downloads/covers/cover_051.jpg",
     "year": null,
-    "synopsis": "Un chef-d'œuvre classique de la littérature française par Voltaire."
+    "synopsis": "Un chef-d'œuvre classique de la littérature française par Voltaire.",
+    "is_golden_100": true
   },
   {
     "id": 52,
@@ -829,7 +880,8 @@
     "filesize_kb": 255.4,
     "cover_url": "downloads/covers/cover_052.jpg",
     "year": null,
-    "synopsis": "Un chef-d'œuvre classique de la littérature française par Émile Zola."
+    "synopsis": "Un chef-d'œuvre classique de la littérature française par Émile Zola.",
+    "is_golden_100": true
   },
   {
     "id": 53,
@@ -845,7 +897,8 @@
     "filesize_kb": 391.7,
     "cover_url": "downloads/covers/cover_053.jpg",
     "year": null,
-    "synopsis": "A celebrated French masterpiece in realism, naturalism & social drama by Émile Zola."
+    "synopsis": "A celebrated French masterpiece in realism, naturalism & social drama by Émile Zola.",
+    "is_golden_100": false
   },
   {
     "id": 54,
@@ -861,7 +914,8 @@
     "filesize_kb": 342.0,
     "cover_url": "downloads/covers/cover_054.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in gothic romance by Nathaniel Hawthorne."
+    "synopsis": "A celebrated English masterpiece in gothic romance by Nathaniel Hawthorne.",
+    "is_golden_100": false
   },
   {
     "id": 55,
@@ -877,7 +931,8 @@
     "filesize_kb": 279.1,
     "cover_url": "downloads/covers/cover_055.jpg",
     "year": null,
-    "synopsis": "A celebrated French masterpiece in symbolist romance by Alain-Fournier."
+    "synopsis": "A celebrated French masterpiece in symbolist romance by Alain-Fournier.",
+    "is_golden_100": false
   },
   {
     "id": 56,
@@ -893,7 +948,8 @@
     "filesize_kb": 230.7,
     "cover_url": "downloads/covers/cover_056.jpg",
     "year": null,
-    "synopsis": "Un chef-d'œuvre classique de la littérature française par Honoré de Balzac."
+    "synopsis": "Un chef-d'œuvre classique de la littérature française par Honoré de Balzac.",
+    "is_golden_100": true
   },
   {
     "id": 57,
@@ -909,7 +965,8 @@
     "filesize_kb": 667.3,
     "cover_url": "downloads/covers/cover_057.jpg",
     "year": null,
-    "synopsis": "Un chef-d'œuvre classique de la littérature française par Honoré de Balzac."
+    "synopsis": "Un chef-d'œuvre classique de la littérature française par Honoré de Balzac.",
+    "is_golden_100": true
   },
   {
     "id": 58,
@@ -925,7 +982,8 @@
     "filesize_kb": 348.5,
     "cover_url": "downloads/covers/cover_058.jpg",
     "year": null,
-    "synopsis": "A celebrated French masterpiece in wwi literature by Henri Barbusse."
+    "synopsis": "A celebrated French masterpiece in wwi literature by Henri Barbusse.",
+    "is_golden_100": false
   },
   {
     "id": 59,
@@ -941,7 +999,8 @@
     "filesize_kb": 246.2,
     "cover_url": "downloads/covers/cover_059.jpg",
     "year": null,
-    "synopsis": "A celebrated French masterpiece in historical realism by Anatole France."
+    "synopsis": "A celebrated French masterpiece in historical realism by Anatole France.",
+    "is_golden_100": false
   },
   {
     "id": 60,
@@ -957,7 +1016,8 @@
     "filesize_kb": 183.8,
     "cover_url": "downloads/covers/cover_060.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in satire by Jonathan Swift."
+    "synopsis": "A celebrated English masterpiece in satire by Jonathan Swift.",
+    "is_golden_100": true
   },
   {
     "id": 61,
@@ -973,7 +1033,8 @@
     "filesize_kb": 235.7,
     "cover_url": "downloads/covers/cover_061.jpg",
     "year": null,
-    "synopsis": "Un chef-d'œuvre classique de la littérature française par Anatole France."
+    "synopsis": "Un chef-d'œuvre classique de la littérature française par Anatole France.",
+    "is_golden_100": false
   },
   {
     "id": 62,
@@ -989,7 +1050,8 @@
     "filesize_kb": 526.9,
     "cover_url": "downloads/covers/cover_062.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in comic novel by Laurence Sterne."
+    "synopsis": "A celebrated English masterpiece in comic novel by Laurence Sterne.",
+    "is_golden_100": false
   },
   {
     "id": 63,
@@ -1005,7 +1067,8 @@
     "filesize_kb": 324.7,
     "cover_url": "downloads/covers/cover_063.jpg",
     "year": null,
-    "synopsis": "Un chef-d'œuvre classique de la littérature française par Guy de Maupassant."
+    "synopsis": "Un chef-d'œuvre classique de la littérature française par Guy de Maupassant.",
+    "is_golden_100": true
   },
   {
     "id": 64,
@@ -1021,7 +1084,8 @@
     "filesize_kb": 173.1,
     "cover_url": "downloads/covers/cover_064.jpg",
     "year": null,
-    "synopsis": "Un chef-d'œuvre classique de la littérature française par Guy de Maupassant."
+    "synopsis": "Un chef-d'œuvre classique de la littérature française par Guy de Maupassant.",
+    "is_golden_100": true
   },
   {
     "id": 65,
@@ -1037,7 +1101,8 @@
     "filesize_kb": 159.5,
     "cover_url": "downloads/covers/cover_065.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in modernist fiction by Joseph Conrad."
+    "synopsis": "A celebrated English masterpiece in modernist fiction by Joseph Conrad.",
+    "is_golden_100": true
   },
   {
     "id": 66,
@@ -1053,7 +1118,8 @@
     "filesize_kb": 325.9,
     "cover_url": "downloads/covers/cover_066.jpg",
     "year": null,
-    "synopsis": "Un chef-d'œuvre classique de la littérature française par Guy de Maupassant."
+    "synopsis": "Un chef-d'œuvre classique de la littérature française par Guy de Maupassant.",
+    "is_golden_100": true
   },
   {
     "id": 67,
@@ -1069,7 +1135,8 @@
     "filesize_kb": 185.1,
     "cover_url": "downloads/covers/cover_067.jpg",
     "year": null,
-    "synopsis": "Un chef-d'œuvre classique de la littérature française par Anatole France."
+    "synopsis": "Un chef-d'œuvre classique de la littérature française par Anatole France.",
+    "is_golden_100": false
   },
   {
     "id": 68,
@@ -1085,7 +1152,8 @@
     "filesize_kb": 543.0,
     "cover_url": "downloads/covers/cover_068.jpg",
     "year": null,
-    "synopsis": "Un chef-d'œuvre classique de la littérature française par Stendhal."
+    "synopsis": "Un chef-d'œuvre classique de la littérature française par Stendhal.",
+    "is_golden_100": true
   },
   {
     "id": 69,
@@ -1101,7 +1169,8 @@
     "filesize_kb": 123.7,
     "cover_url": "downloads/covers/cover_069.jpg",
     "year": null,
-    "synopsis": "Un chef-d'œuvre classique de la littérature française par Prosper Mérimée."
+    "synopsis": "Un chef-d'œuvre classique de la littérature française par Prosper Mérimée.",
+    "is_golden_100": true
   },
   {
     "id": 70,
@@ -1117,7 +1186,8 @@
     "filesize_kb": 183.2,
     "cover_url": "downloads/covers/cover_070.jpg",
     "year": null,
-    "synopsis": "Un chef-d'œuvre classique de la littérature française par Prosper Mérimée."
+    "synopsis": "Un chef-d'œuvre classique de la littérature française par Prosper Mérimée.",
+    "is_golden_100": true
   },
   {
     "id": 71,
@@ -1133,7 +1203,8 @@
     "filesize_kb": 76.0,
     "cover_url": "downloads/covers/cover_071.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in realism, naturalism & social drama by Oscar Wilde."
+    "synopsis": "A celebrated English masterpiece in realism, naturalism & social drama by Oscar Wilde.",
+    "is_golden_100": false
   },
   {
     "id": 72,
@@ -1149,7 +1220,8 @@
     "filesize_kb": 74.0,
     "cover_url": "downloads/covers/cover_072.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in realism, naturalism & social drama by Anonymous."
+    "synopsis": "A celebrated English masterpiece in realism, naturalism & social drama by Anonymous.",
+    "is_golden_100": false
   },
   {
     "id": 73,
@@ -1165,7 +1237,8 @@
     "filesize_kb": 70.7,
     "cover_url": "downloads/covers/cover_073.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in gothic fiction by Thomas Jefferson."
+    "synopsis": "A celebrated English masterpiece in gothic fiction by Thomas Jefferson.",
+    "is_golden_100": false
   },
   {
     "id": 74,
@@ -1181,7 +1254,8 @@
     "filesize_kb": 131.8,
     "cover_url": "downloads/covers/cover_074.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in realism, naturalism & social drama by A. B. Paterson."
+    "synopsis": "A celebrated English masterpiece in realism, naturalism & social drama by A. B. Paterson.",
+    "is_golden_100": false
   },
   {
     "id": 75,
@@ -1197,7 +1271,8 @@
     "filesize_kb": 189.3,
     "cover_url": "downloads/covers/cover_075.jpg",
     "year": null,
-    "synopsis": "A celebrated French masterpiece in realism, naturalism & social drama by Alphonse Daudet."
+    "synopsis": "A celebrated French masterpiece in realism, naturalism & social drama by Alphonse Daudet.",
+    "is_golden_100": false
   },
   {
     "id": 76,
@@ -1213,7 +1288,8 @@
     "filesize_kb": 276.1,
     "cover_url": "downloads/covers/cover_076.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in political thriller by Joseph Conrad."
+    "synopsis": "A celebrated English masterpiece in political thriller by Joseph Conrad.",
+    "is_golden_100": false
   },
   {
     "id": 77,
@@ -1229,7 +1305,8 @@
     "filesize_kb": 121.3,
     "cover_url": "downloads/covers/cover_077.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in comedy by Robert W. Service."
+    "synopsis": "A celebrated English masterpiece in comedy by Robert W. Service.",
+    "is_golden_100": false
   },
   {
     "id": 78,
@@ -1245,7 +1322,8 @@
     "filesize_kb": 254.1,
     "cover_url": "downloads/covers/cover_078.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in modernist literature by Virginia Woolf."
+    "synopsis": "A celebrated English masterpiece in modernist literature by Virginia Woolf.",
+    "is_golden_100": false
   },
   {
     "id": 79,
@@ -1261,7 +1339,8 @@
     "filesize_kb": 185.6,
     "cover_url": "downloads/covers/cover_079.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in realism, naturalism & social drama by Edith Wharton."
+    "synopsis": "A celebrated English masterpiece in realism, naturalism & social drama by Edith Wharton.",
+    "is_golden_100": false
   },
   {
     "id": 80,
@@ -1277,7 +1356,8 @@
     "filesize_kb": 144.9,
     "cover_url": "downloads/covers/cover_080.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in realism, naturalism & social drama by Michael Husted."
+    "synopsis": "A celebrated English masterpiece in realism, naturalism & social drama by Michael Husted.",
+    "is_golden_100": false
   },
   {
     "id": 81,
@@ -1293,7 +1373,8 @@
     "filesize_kb": 190.2,
     "cover_url": "downloads/covers/cover_081.jpg",
     "year": null,
-    "synopsis": "A celebrated French masterpiece in philosophy, satire & drama by Voltaire."
+    "synopsis": "A celebrated French masterpiece in philosophy, satire & drama by Voltaire.",
+    "is_golden_100": true
   },
   {
     "id": 82,
@@ -1309,7 +1390,8 @@
     "filesize_kb": 157.8,
     "cover_url": "downloads/covers/cover_082.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in philosophy, satire & drama by A. B. Paterson."
+    "synopsis": "A celebrated English masterpiece in philosophy, satire & drama by A. B. Paterson.",
+    "is_golden_100": false
   },
   {
     "id": 83,
@@ -1325,7 +1407,8 @@
     "filesize_kb": 229.3,
     "cover_url": "downloads/covers/cover_083.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in short stories by James Joyce."
+    "synopsis": "A celebrated English masterpiece in short stories by James Joyce.",
+    "is_golden_100": true
   },
   {
     "id": 84,
@@ -1341,7 +1424,8 @@
     "filesize_kb": 225.9,
     "cover_url": "downloads/covers/cover_084.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in philosophy, satire & drama by Jerome K. Jerome."
+    "synopsis": "A celebrated English masterpiece in philosophy, satire & drama by Jerome K. Jerome.",
+    "is_golden_100": false
   },
   {
     "id": 85,
@@ -1357,7 +1441,8 @@
     "filesize_kb": 196.8,
     "cover_url": "downloads/covers/cover_085.jpg",
     "year": null,
-    "synopsis": "Un chef-d'œuvre classique de la littérature française par Pierre Loti."
+    "synopsis": "Un chef-d'œuvre classique de la littérature française par Pierre Loti.",
+    "is_golden_100": false
   },
   {
     "id": 86,
@@ -1373,7 +1458,8 @@
     "filesize_kb": 254.0,
     "cover_url": "downloads/covers/cover_086.jpg",
     "year": null,
-    "synopsis": "A celebrated French masterpiece in philosophy, satire & drama by Denis Diderot."
+    "synopsis": "A celebrated French masterpiece in philosophy, satire & drama by Denis Diderot.",
+    "is_golden_100": false
   },
   {
     "id": 87,
@@ -1389,7 +1475,8 @@
     "filesize_kb": 144.2,
     "cover_url": "downloads/covers/cover_087.jpg",
     "year": null,
-    "synopsis": "A celebrated French masterpiece in philosophy, satire & drama by Denis Diderot."
+    "synopsis": "A celebrated French masterpiece in philosophy, satire & drama by Denis Diderot.",
+    "is_golden_100": false
   },
   {
     "id": 88,
@@ -1405,13 +1492,14 @@
     "filesize_kb": 452.2,
     "cover_url": "downloads/covers/cover_088.jpg",
     "year": null,
-    "synopsis": "A celebrated French masterpiece in philosophy, satire & drama by Choderlos de Laclos."
+    "synopsis": "A celebrated French masterpiece in philosophy, satire & drama by Choderlos de Laclos.",
+    "is_golden_100": false
   },
   {
     "id": 89,
     "title": "Manon Lescaut",
     "author": "abbé Prévost",
-    "language": "English",
+    "language": "French",
     "category": "Philosophy, Satire & Drama",
     "format": "EPUB / MOBI",
     "primary_source": "Ebooksgratuits / NosLivres",
@@ -1421,13 +1509,14 @@
     "filesize_kb": 210.1,
     "cover_url": "downloads/covers/cover_089.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in philosophy, satire & drama by abbé Prévost."
+    "synopsis": "A celebrated English masterpiece in philosophy, satire & drama by abbé Prévost.",
+    "is_golden_100": true
   },
   {
     "id": 90,
-    "title": "The Princess of Cleves",
+    "title": "La Princesse de Clèves",
     "author": "Madame de La Fayette",
-    "language": "English",
+    "language": "French",
     "category": "Philosophy, Satire & Drama",
     "format": "EPUB / MOBI",
     "primary_source": "Ebooksgratuits / NosLivres",
@@ -1437,7 +1526,8 @@
     "filesize_kb": 187.3,
     "cover_url": "downloads/covers/cover_090.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in philosophy, satire & drama by Madame de La Fayette."
+    "synopsis": "A celebrated English masterpiece in philosophy, satire & drama by Madame de La Fayette.",
+    "is_golden_100": true
   },
   {
     "id": 91,
@@ -1453,7 +1543,8 @@
     "filesize_kb": 147.6,
     "cover_url": "downloads/covers/cover_091.jpg",
     "year": null,
-    "synopsis": "A celebrated French masterpiece in philosophy, satire & drama by Jean-Jacques Rousseau."
+    "synopsis": "A celebrated French masterpiece in philosophy, satire & drama by Jean-Jacques Rousseau.",
+    "is_golden_100": true
   },
   {
     "id": 92,
@@ -1469,7 +1560,8 @@
     "filesize_kb": 306.1,
     "cover_url": "downloads/covers/cover_092.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in modernist literature by James Joyce."
+    "synopsis": "A celebrated English masterpiece in modernist literature by James Joyce.",
+    "is_golden_100": false
   },
   {
     "id": 93,
@@ -1485,7 +1577,8 @@
     "filesize_kb": 200.5,
     "cover_url": "downloads/covers/cover_093.jpg",
     "year": null,
-    "synopsis": "Un chef-d'œuvre classique de la littérature française par Pierre Loti."
+    "synopsis": "Un chef-d'œuvre classique de la littérature française par Pierre Loti.",
+    "is_golden_100": false
   },
   {
     "id": 94,
@@ -1501,7 +1594,8 @@
     "filesize_kb": 225.0,
     "cover_url": "downloads/covers/cover_094.jpg",
     "year": null,
-    "synopsis": "A celebrated French masterpiece in philosophy, satire & drama by baron de Charles de Secondat Montesquieu."
+    "synopsis": "A celebrated French masterpiece in philosophy, satire & drama by baron de Charles de Secondat Montesquieu.",
+    "is_golden_100": false
   },
   {
     "id": 95,
@@ -1517,7 +1611,8 @@
     "filesize_kb": 388.8,
     "cover_url": "downloads/covers/cover_095.jpg",
     "year": null,
-    "synopsis": "A celebrated French masterpiece in philosophy, satire & drama by baron de Charles de Secondat Montesquieu."
+    "synopsis": "A celebrated French masterpiece in philosophy, satire & drama by baron de Charles de Secondat Montesquieu.",
+    "is_golden_100": false
   },
   {
     "id": 96,
@@ -1533,7 +1628,8 @@
     "filesize_kb": 327.4,
     "cover_url": "downloads/covers/cover_096.jpg",
     "year": null,
-    "synopsis": "A celebrated French masterpiece in philosophy, satire & drama by René Descartes."
+    "synopsis": "A celebrated French masterpiece in philosophy, satire & drama by René Descartes.",
+    "is_golden_100": false
   },
   {
     "id": 97,
@@ -1549,7 +1645,8 @@
     "filesize_kb": 133.6,
     "cover_url": "downloads/covers/cover_097.jpg",
     "year": 1865,
-    "synopsis": "Lewis Carroll's whimsical fantasy journey down the rabbit hole into a surreal wonderland."
+    "synopsis": "Lewis Carroll's whimsical fantasy journey down the rabbit hole into a surreal wonderland.",
+    "is_golden_100": true
   },
   {
     "id": 98,
@@ -1565,7 +1662,8 @@
     "filesize_kb": 913.9,
     "cover_url": "downloads/covers/cover_098.jpg",
     "year": null,
-    "synopsis": "A celebrated French masterpiece in philosophy, satire & drama by Michel de Montaigne."
+    "synopsis": "A celebrated French masterpiece in philosophy, satire & drama by Michel de Montaigne.",
+    "is_golden_100": false
   },
   {
     "id": 99,
@@ -1581,7 +1679,8 @@
     "filesize_kb": 898.3,
     "cover_url": "downloads/covers/cover_099.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in philosophy, satire & drama by François Rabelais."
+    "synopsis": "A celebrated English masterpiece in philosophy, satire & drama by François Rabelais.",
+    "is_golden_100": false
   },
   {
     "id": 100,
@@ -1597,7 +1696,8 @@
     "filesize_kb": 143.2,
     "cover_url": "downloads/covers/cover_100.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in philosophy, satire & drama by Edith Wharton."
+    "synopsis": "A celebrated English masterpiece in philosophy, satire & drama by Edith Wharton.",
+    "is_golden_100": false
   },
   {
     "id": 101,
@@ -1613,7 +1713,8 @@
     "filesize_kb": 519.9,
     "cover_url": "downloads/covers/cover_101.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in roman-fleuve by Romain Rolland."
+    "synopsis": "A celebrated English masterpiece in roman-fleuve by Romain Rolland.",
+    "is_golden_100": false
   },
   {
     "id": 102,
@@ -1629,7 +1730,8 @@
     "filesize_kb": 105.7,
     "cover_url": "downloads/covers/cover_102.jpg",
     "year": null,
-    "synopsis": "A celebrated French masterpiece in avant-garde theater by Alfred Jarry."
+    "synopsis": "A celebrated French masterpiece in avant-garde theater by Alfred Jarry.",
+    "is_golden_100": false
   },
   {
     "id": 103,
@@ -1645,7 +1747,8 @@
     "filesize_kb": 143.3,
     "cover_url": "downloads/covers/cover_103.jpg",
     "year": null,
-    "synopsis": "A celebrated French masterpiece in 20th century drama by Raymond Radiguet."
+    "synopsis": "A celebrated French masterpiece in 20th century drama by Raymond Radiguet.",
+    "is_golden_100": false
   },
   {
     "id": 104,
@@ -1661,7 +1764,8 @@
     "filesize_kb": 181.8,
     "cover_url": "downloads/covers/cover_104.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in philosophy, satire & drama by Bernardin de Saint-Pierre."
+    "synopsis": "A celebrated English masterpiece in philosophy, satire & drama by Bernardin de Saint-Pierre.",
+    "is_golden_100": false
   },
   {
     "id": 105,
@@ -1677,7 +1781,8 @@
     "filesize_kb": 119.4,
     "cover_url": "downloads/covers/cover_105.jpg",
     "year": null,
-    "synopsis": "A celebrated French masterpiece in philosophy, satire & drama by Xavier de Maistre."
+    "synopsis": "A celebrated French masterpiece in philosophy, satire & drama by Xavier de Maistre.",
+    "is_golden_100": false
   },
   {
     "id": 106,
@@ -1693,7 +1798,8 @@
     "filesize_kb": 138.0,
     "cover_url": "downloads/covers/cover_106.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in urban realism by Charles-Louis Philippe."
+    "synopsis": "A celebrated English masterpiece in urban realism by Charles-Louis Philippe.",
+    "is_golden_100": false
   },
   {
     "id": 107,
@@ -1709,7 +1815,8 @@
     "filesize_kb": 109.1,
     "cover_url": "downloads/covers/cover_107.jpg",
     "year": null,
-    "synopsis": "A celebrated French masterpiece in modernist poetry by Guillaume Apollinaire."
+    "synopsis": "A celebrated French masterpiece in modernist poetry by Guillaume Apollinaire.",
+    "is_golden_100": false
   },
   {
     "id": 108,
@@ -1725,7 +1832,8 @@
     "filesize_kb": 140.4,
     "cover_url": "downloads/covers/cover_108.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in children's fantasy by Lewis Carroll."
+    "synopsis": "A celebrated English masterpiece in children's fantasy by Lewis Carroll.",
+    "is_golden_100": false
   },
   {
     "id": 109,
@@ -1741,7 +1849,8 @@
     "filesize_kb": 151.7,
     "cover_url": "downloads/covers/cover_109.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in drama by Bernard Shaw."
+    "synopsis": "A celebrated English masterpiece in drama by Bernard Shaw.",
+    "is_golden_100": false
   },
   {
     "id": 110,
@@ -1757,7 +1866,8 @@
     "filesize_kb": 124.6,
     "cover_url": "downloads/covers/cover_110.jpg",
     "year": null,
-    "synopsis": "A celebrated French masterpiece in philosophy, satire & drama by Molière."
+    "synopsis": "A celebrated French masterpiece in philosophy, satire & drama by Molière.",
+    "is_golden_100": true
   },
   {
     "id": 111,
@@ -1773,7 +1883,8 @@
     "filesize_kb": 135.8,
     "cover_url": "downloads/covers/cover_111.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in drama by Bernard Shaw."
+    "synopsis": "A celebrated English masterpiece in drama by Bernard Shaw.",
+    "is_golden_100": false
   },
   {
     "id": 112,
@@ -1789,7 +1900,8 @@
     "filesize_kb": 164.6,
     "cover_url": "downloads/covers/cover_112.jpg",
     "year": null,
-    "synopsis": "Un chef-d'œuvre classique de la littérature française par Edmond Rostand."
+    "synopsis": "Un chef-d'œuvre classique de la littérature française par Edmond Rostand.",
+    "is_golden_100": true
   },
   {
     "id": 113,
@@ -1805,7 +1917,8 @@
     "filesize_kb": 145.1,
     "cover_url": "downloads/covers/cover_113.jpg",
     "year": null,
-    "synopsis": "A celebrated French masterpiece in realist fiction by Jules Renard."
+    "synopsis": "A celebrated French masterpiece in realist fiction by Jules Renard.",
+    "is_golden_100": false
   },
   {
     "id": 114,
@@ -1821,7 +1934,8 @@
     "filesize_kb": 352.0,
     "cover_url": "downloads/covers/cover_114.jpg",
     "year": null,
-    "synopsis": "A celebrated French masterpiece in social satire by Octave Mirbeau."
+    "synopsis": "A celebrated French masterpiece in social satire by Octave Mirbeau.",
+    "is_golden_100": false
   },
   {
     "id": 115,
@@ -1837,7 +1951,8 @@
     "filesize_kb": 236.2,
     "cover_url": "downloads/covers/cover_115.jpg",
     "year": null,
-    "synopsis": "A celebrated French masterpiece in decadent literature by Octave Mirbeau."
+    "synopsis": "A celebrated French masterpiece in decadent literature by Octave Mirbeau.",
+    "is_golden_100": false
   },
   {
     "id": 116,
@@ -1853,7 +1968,8 @@
     "filesize_kb": 294.4,
     "cover_url": "downloads/covers/cover_116.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in sci-fi / symbolism by Felix Fontaine."
+    "synopsis": "A celebrated English masterpiece in sci-fi / symbolism by Felix Fontaine.",
+    "is_golden_100": false
   },
   {
     "id": 117,
@@ -1869,7 +1985,8 @@
     "filesize_kb": 318.0,
     "cover_url": "downloads/covers/cover_117.jpg",
     "year": null,
-    "synopsis": "A celebrated French masterpiece in symbolist tales by comte de Auguste Villiers de L'Isle-Adam."
+    "synopsis": "A celebrated French masterpiece in symbolist tales by comte de Auguste Villiers de L'Isle-Adam.",
+    "is_golden_100": false
   },
   {
     "id": 118,
@@ -1885,7 +2002,8 @@
     "filesize_kb": 576.6,
     "cover_url": "downloads/covers/cover_118.jpg",
     "year": null,
-    "synopsis": "A celebrated French masterpiece in swashbuckler romance by Théophile Gautier."
+    "synopsis": "A celebrated French masterpiece in swashbuckler romance by Théophile Gautier.",
+    "is_golden_100": false
   },
   {
     "id": 119,
@@ -1901,7 +2019,8 @@
     "filesize_kb": 508.2,
     "cover_url": "downloads/covers/cover_119.jpg",
     "year": null,
-    "synopsis": "A celebrated French masterpiece in romanticism by Gérard de Nerval."
+    "synopsis": "A celebrated French masterpiece in romanticism by Gérard de Nerval.",
+    "is_golden_100": false
   },
   {
     "id": 120,
@@ -1917,7 +2036,8 @@
     "filesize_kb": 140.8,
     "cover_url": "downloads/covers/cover_120.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in philosophy, satire & drama by Pierre Augustin Caron de Beaumarchais."
+    "synopsis": "A celebrated English masterpiece in philosophy, satire & drama by Pierre Augustin Caron de Beaumarchais.",
+    "is_golden_100": false
   },
   {
     "id": 121,
@@ -1933,7 +2053,8 @@
     "filesize_kb": 205.0,
     "cover_url": "downloads/covers/cover_121.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in tragedy by William Shakespeare."
+    "synopsis": "A celebrated English masterpiece in tragedy by William Shakespeare.",
+    "is_golden_100": true
   },
   {
     "id": 122,
@@ -1949,7 +2070,8 @@
     "filesize_kb": 120.2,
     "cover_url": "downloads/covers/cover_122.jpg",
     "year": null,
-    "synopsis": "A celebrated French masterpiece in prose poetry by Aloysius Bertrand."
+    "synopsis": "A celebrated French masterpiece in prose poetry by Aloysius Bertrand.",
+    "is_golden_100": false
   },
   {
     "id": 123,
@@ -1965,7 +2087,8 @@
     "filesize_kb": 267.9,
     "cover_url": "downloads/covers/cover_123.jpg",
     "year": null,
-    "synopsis": "A celebrated French masterpiece in surrealist poetry by comte de Lautréamont."
+    "synopsis": "A celebrated French masterpiece in surrealist poetry by comte de Lautréamont.",
+    "is_golden_100": false
   },
   {
     "id": 124,
@@ -1981,7 +2104,8 @@
     "filesize_kb": 104.9,
     "cover_url": "downloads/covers/cover_124.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in autobiography by Edwin Arlington Robinson."
+    "synopsis": "A celebrated English masterpiece in autobiography by Edwin Arlington Robinson.",
+    "is_golden_100": false
   },
   {
     "id": 125,
@@ -1997,7 +2121,8 @@
     "filesize_kb": 157.7,
     "cover_url": "downloads/covers/cover_125.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in philosophical fiction by Jack London."
+    "synopsis": "A celebrated English masterpiece in philosophical fiction by Jack London.",
+    "is_golden_100": false
   },
   {
     "id": 126,
@@ -2013,7 +2138,8 @@
     "filesize_kb": 141.3,
     "cover_url": "downloads/covers/cover_126.jpg",
     "year": null,
-    "synopsis": "A celebrated French masterpiece in poetry, gothic & early 20th century by Charles Baudelaire."
+    "synopsis": "A celebrated French masterpiece in poetry, gothic & early 20th century by Charles Baudelaire.",
+    "is_golden_100": true
   },
   {
     "id": 127,
@@ -2029,7 +2155,8 @@
     "filesize_kb": 194.5,
     "cover_url": "downloads/covers/cover_127.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in tragedy by William Shakespeare."
+    "synopsis": "A celebrated English masterpiece in tragedy by William Shakespeare.",
+    "is_golden_100": true
   },
   {
     "id": 128,
@@ -2045,7 +2172,8 @@
     "filesize_kb": 197.5,
     "cover_url": "downloads/covers/cover_128.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in tragedy by William Shakespeare."
+    "synopsis": "A celebrated English masterpiece in tragedy by William Shakespeare.",
+    "is_golden_100": true
   },
   {
     "id": 129,
@@ -2061,7 +2189,8 @@
     "filesize_kb": 95.5,
     "cover_url": "downloads/covers/cover_129.jpg",
     "year": null,
-    "synopsis": "A celebrated French masterpiece in poetry, gothic & early 20th century by Arthur Rimbaud."
+    "synopsis": "A celebrated French masterpiece in poetry, gothic & early 20th century by Arthur Rimbaud.",
+    "is_golden_100": false
   },
   {
     "id": 130,
@@ -2077,7 +2206,8 @@
     "filesize_kb": 204.0,
     "cover_url": "downloads/covers/cover_130.jpg",
     "year": null,
-    "synopsis": "A celebrated French masterpiece in symbolist poetry by Paul Verlaine."
+    "synopsis": "A celebrated French masterpiece in symbolist poetry by Paul Verlaine.",
+    "is_golden_100": false
   },
   {
     "id": 131,
@@ -2093,7 +2223,8 @@
     "filesize_kb": 104.7,
     "cover_url": "downloads/covers/cover_131.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in symbolist poetry by Stephen Vincent Benét."
+    "synopsis": "A celebrated English masterpiece in symbolist poetry by Stephen Vincent Benét.",
+    "is_golden_100": false
   },
   {
     "id": 132,
@@ -2109,7 +2240,8 @@
     "filesize_kb": 344.3,
     "cover_url": "downloads/covers/cover_132.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in philosophical satire by Emile Gaboriau."
+    "synopsis": "A celebrated English masterpiece in philosophical satire by Emile Gaboriau.",
+    "is_golden_100": false
   },
   {
     "id": 133,
@@ -2125,7 +2257,8 @@
     "filesize_kb": 97.1,
     "cover_url": "downloads/covers/cover_133.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in epistolary novel by Joseph Rodman Drake."
+    "synopsis": "A celebrated English masterpiece in epistolary novel by Joseph Rodman Drake.",
+    "is_golden_100": false
   },
   {
     "id": 134,
@@ -2141,7 +2274,8 @@
     "filesize_kb": 170.1,
     "cover_url": "downloads/covers/cover_134.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in comedy by William Shakespeare."
+    "synopsis": "A celebrated English masterpiece in comedy by William Shakespeare.",
+    "is_golden_100": false
   },
   {
     "id": 135,
@@ -2157,7 +2291,8 @@
     "filesize_kb": 125.5,
     "cover_url": "downloads/covers/cover_135.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in classic novel by Robert W. Service."
+    "synopsis": "A celebrated English masterpiece in classic novel by Robert W. Service.",
+    "is_golden_100": false
   },
   {
     "id": 136,
@@ -2173,7 +2308,8 @@
     "filesize_kb": 212.9,
     "cover_url": "downloads/covers/cover_136.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in classic novel by J. Frank Dobie."
+    "synopsis": "A celebrated English masterpiece in classic novel by J. Frank Dobie.",
+    "is_golden_100": false
   },
   {
     "id": 137,
@@ -2189,7 +2325,8 @@
     "filesize_kb": 325.3,
     "cover_url": "downloads/covers/cover_137.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in autobiographical prose by L. M. Montgomery."
+    "synopsis": "A celebrated English masterpiece in autobiographical prose by L. M. Montgomery.",
+    "is_golden_100": false
   },
   {
     "id": 138,
@@ -2205,7 +2342,8 @@
     "filesize_kb": 216.7,
     "cover_url": "downloads/covers/cover_138.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in epistolary satire by Jack London."
+    "synopsis": "A celebrated English masterpiece in epistolary satire by Jack London.",
+    "is_golden_100": false
   },
   {
     "id": 139,
@@ -2221,7 +2359,8 @@
     "filesize_kb": 120.6,
     "cover_url": "downloads/covers/cover_139.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in political philosophy by Anonymous."
+    "synopsis": "A celebrated English masterpiece in political philosophy by Anonymous.",
+    "is_golden_100": false
   },
   {
     "id": 140,
@@ -2237,7 +2376,8 @@
     "filesize_kb": 235.4,
     "cover_url": "downloads/covers/cover_140.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in renaissance essays by Eliot Gregory."
+    "synopsis": "A celebrated English masterpiece in renaissance essays by Eliot Gregory.",
+    "is_golden_100": false
   },
   {
     "id": 141,
@@ -2253,7 +2393,8 @@
     "filesize_kb": 388.6,
     "cover_url": "downloads/covers/cover_141.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in epic poetry by John Milton."
+    "synopsis": "A celebrated English masterpiece in epic poetry by John Milton.",
+    "is_golden_100": false
   },
   {
     "id": 142,
@@ -2269,7 +2410,8 @@
     "filesize_kb": 124.1,
     "cover_url": "downloads/covers/cover_142.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in romantic novel by Jr. John Fox."
+    "synopsis": "A celebrated English masterpiece in romantic novel by Jr. John Fox.",
+    "is_golden_100": false
   },
   {
     "id": 143,
@@ -2285,7 +2427,8 @@
     "filesize_kb": 177.0,
     "cover_url": "downloads/covers/cover_143.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in poetry, gothic & early 20th century by Frank Norris."
+    "synopsis": "A celebrated English masterpiece in poetry, gothic & early 20th century by Frank Norris.",
+    "is_golden_100": false
   },
   {
     "id": 144,
@@ -2301,7 +2444,8 @@
     "filesize_kb": 125.1,
     "cover_url": "downloads/covers/cover_144.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in philosophical prose by Richard Harding Davis."
+    "synopsis": "A celebrated English masterpiece in philosophical prose by Richard Harding Davis.",
+    "is_golden_100": false
   },
   {
     "id": 145,
@@ -2317,7 +2461,8 @@
     "filesize_kb": 677.8,
     "cover_url": "downloads/covers/cover_145.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in middle english poetry by Geoffrey Chaucer."
+    "synopsis": "A celebrated English masterpiece in middle english poetry by Geoffrey Chaucer.",
+    "is_golden_100": false
   },
   {
     "id": 146,
@@ -2333,7 +2478,8 @@
     "filesize_kb": 249.5,
     "cover_url": "downloads/covers/cover_146.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in classic comedy by George MacDonald."
+    "synopsis": "A celebrated English masterpiece in classic comedy by George MacDonald.",
+    "is_golden_100": false
   },
   {
     "id": 147,
@@ -2349,7 +2495,8 @@
     "filesize_kb": 143.6,
     "cover_url": "downloads/covers/cover_147.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in classic comedy by Edgar A. Guest."
+    "synopsis": "A celebrated English masterpiece in classic comedy by Edgar A. Guest.",
+    "is_golden_100": false
   },
   {
     "id": 148,
@@ -2365,7 +2512,8 @@
     "filesize_kb": 295.9,
     "cover_url": "downloads/covers/cover_148.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in heroic comedy by John Muir."
+    "synopsis": "A celebrated English masterpiece in heroic comedy by John Muir.",
+    "is_golden_100": false
   },
   {
     "id": 149,
@@ -2381,7 +2529,8 @@
     "filesize_kb": 297.4,
     "cover_url": "downloads/covers/cover_149.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in symbolist poetry by Robert Louis Stevenson."
+    "synopsis": "A celebrated English masterpiece in symbolist poetry by Robert Louis Stevenson.",
+    "is_golden_100": false
   },
   {
     "id": 150,
@@ -2397,7 +2546,8 @@
     "filesize_kb": 209.4,
     "cover_url": "downloads/covers/cover_150.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in modernist poetry by Rudyard Kipling."
+    "synopsis": "A celebrated English masterpiece in modernist poetry by Rudyard Kipling.",
+    "is_golden_100": false
   },
   {
     "id": 151,
@@ -2413,7 +2563,8 @@
     "filesize_kb": 171.0,
     "cover_url": "downloads/covers/cover_151.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in symbolist tales by Robert Louis Stevenson."
+    "synopsis": "A celebrated English masterpiece in symbolist tales by Robert Louis Stevenson.",
+    "is_golden_100": false
   },
   {
     "id": 152,
@@ -2429,7 +2580,8 @@
     "filesize_kb": 221.2,
     "cover_url": "downloads/covers/cover_152.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in prose poetry by Mary Roberts Rinehart."
+    "synopsis": "A celebrated English masterpiece in prose poetry by Mary Roberts Rinehart.",
+    "is_golden_100": false
   },
   {
     "id": 153,
@@ -2445,7 +2597,8 @@
     "filesize_kb": 190.4,
     "cover_url": "downloads/covers/cover_153.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in social satire by Thomas Nelson Page."
+    "synopsis": "A celebrated English masterpiece in social satire by Thomas Nelson Page.",
+    "is_golden_100": false
   },
   {
     "id": 154,
@@ -2461,7 +2614,8 @@
     "filesize_kb": 94.2,
     "cover_url": "downloads/covers/cover_154.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in symbolist novel by Richard Harding Davis."
+    "synopsis": "A celebrated English masterpiece in symbolist novel by Richard Harding Davis.",
+    "is_golden_100": false
   },
   {
     "id": 155,
@@ -2477,7 +2631,8 @@
     "filesize_kb": 301.7,
     "cover_url": "downloads/covers/cover_155.jpg",
     "year": null,
-    "synopsis": "A celebrated French masterpiece in poetry, gothic & early 20th century by Louis Pergaud."
+    "synopsis": "A celebrated French masterpiece in poetry, gothic & early 20th century by Louis Pergaud.",
+    "is_golden_100": false
   },
   {
     "id": 156,
@@ -2493,7 +2648,8 @@
     "filesize_kb": 162.0,
     "cover_url": "downloads/covers/cover_156.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in prehistoric adventure by Charles A. Eastman."
+    "synopsis": "A celebrated English masterpiece in prehistoric adventure by Charles A. Eastman.",
+    "is_golden_100": false
   },
   {
     "id": 157,
@@ -2509,7 +2665,8 @@
     "filesize_kb": 95.9,
     "cover_url": "downloads/covers/cover_157.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in historical realism by Sir Walter Alexander Raleigh."
+    "synopsis": "A celebrated English masterpiece in historical realism by Sir Walter Alexander Raleigh.",
+    "is_golden_100": false
   },
   {
     "id": 158,
@@ -2525,7 +2682,8 @@
     "filesize_kb": 150.3,
     "cover_url": "downloads/covers/cover_158.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in modernist literature by Rebecca Harding Davis."
+    "synopsis": "A celebrated English masterpiece in modernist literature by Rebecca Harding Davis.",
+    "is_golden_100": false
   },
   {
     "id": 159,
@@ -2541,7 +2699,8 @@
     "filesize_kb": 109.9,
     "cover_url": "downloads/covers/cover_159.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in avant-garde drama by Zitkala-Sa."
+    "synopsis": "A celebrated English masterpiece in avant-garde drama by Zitkala-Sa.",
+    "is_golden_100": false
   },
   {
     "id": 160,
@@ -2557,7 +2716,8 @@
     "filesize_kb": 200.8,
     "cover_url": "downloads/covers/cover_160.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in 20th century drama by Charles A. Eastman."
+    "synopsis": "A celebrated English masterpiece in 20th century drama by Charles A. Eastman.",
+    "is_golden_100": false
   },
   {
     "id": 161,
@@ -2573,7 +2733,8 @@
     "filesize_kb": 189.0,
     "cover_url": "downloads/covers/cover_161.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in urban realism by Charles A. Eastman."
+    "synopsis": "A celebrated English masterpiece in urban realism by Charles A. Eastman.",
+    "is_golden_100": false
   },
   {
     "id": 162,
@@ -2589,7 +2750,8 @@
     "filesize_kb": 208.2,
     "cover_url": "downloads/covers/cover_162.jpg",
     "year": null,
-    "synopsis": "A celebrated French masterpiece in 20th century literature by André Gide."
+    "synopsis": "A celebrated French masterpiece in 20th century literature by André Gide.",
+    "is_golden_100": false
   },
   {
     "id": 163,
@@ -2605,7 +2767,8 @@
     "filesize_kb": 298.9,
     "cover_url": "downloads/covers/cover_163.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in stoic philosophy by Emperor of Rome Marcus Aurelius."
+    "synopsis": "A celebrated English masterpiece in stoic philosophy by Emperor of Rome Marcus Aurelius.",
+    "is_golden_100": true
   },
   {
     "id": 164,
@@ -2621,7 +2784,8 @@
     "filesize_kb": 304.3,
     "cover_url": "downloads/covers/cover_164.jpg",
     "year": 1892,
-    "synopsis": "Arthur Conan Doyle's iconic collection of twelve classic detective cases solved by Sherlock Holmes and Dr. Watson."
+    "synopsis": "Arthur Conan Doyle's iconic collection of twelve classic detective cases solved by Sherlock Holmes and Dr. Watson.",
+    "is_golden_100": true
   },
   {
     "id": 165,
@@ -2637,7 +2801,8 @@
     "filesize_kb": 284.5,
     "cover_url": "downloads/covers/cover_165.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in detective by Arthur Conan Doyle."
+    "synopsis": "A celebrated English masterpiece in detective by Arthur Conan Doyle.",
+    "is_golden_100": true
   },
   {
     "id": 166,
@@ -2653,7 +2818,8 @@
     "filesize_kb": 332.3,
     "cover_url": "downloads/covers/cover_166.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in detective by Arthur Conan Doyle."
+    "synopsis": "A celebrated English masterpiece in detective by Arthur Conan Doyle.",
+    "is_golden_100": true
   },
   {
     "id": 167,
@@ -2669,7 +2835,8 @@
     "filesize_kb": 222.8,
     "cover_url": "downloads/covers/cover_167.jpg",
     "year": 1902,
-    "synopsis": "Sherlock Holmes investigates a terrifying spectral hound haunting the fog-shrouded Devonshire moors."
+    "synopsis": "Sherlock Holmes investigates a terrifying spectral hound haunting the fog-shrouded Devonshire moors.",
+    "is_golden_100": true
   },
   {
     "id": 168,
@@ -2685,7 +2852,8 @@
     "filesize_kb": 190.0,
     "cover_url": "downloads/covers/cover_168.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in detective by Arthur Conan Doyle."
+    "synopsis": "A celebrated English masterpiece in detective by Arthur Conan Doyle.",
+    "is_golden_100": true
   },
   {
     "id": 169,
@@ -2701,7 +2869,8 @@
     "filesize_kb": 183.1,
     "cover_url": "downloads/covers/cover_169.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in detective by Arthur Conan Doyle."
+    "synopsis": "A celebrated English masterpiece in detective by Arthur Conan Doyle.",
+    "is_golden_100": false
   },
   {
     "id": 170,
@@ -2717,7 +2886,8 @@
     "filesize_kb": 359.9,
     "cover_url": "downloads/covers/cover_170.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in poetry, gothic & early 20th century by Edgar Rice Burroughs."
+    "synopsis": "A celebrated English masterpiece in poetry, gothic & early 20th century by Edgar Rice Burroughs.",
+    "is_golden_100": false
   },
   {
     "id": 171,
@@ -2733,7 +2903,8 @@
     "filesize_kb": 107.7,
     "cover_url": "downloads/covers/cover_171.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in historical adventure by Charles A. Eastman."
+    "synopsis": "A celebrated English masterpiece in historical adventure by Charles A. Eastman.",
+    "is_golden_100": false
   },
   {
     "id": 172,
@@ -2749,7 +2920,8 @@
     "filesize_kb": 93.6,
     "cover_url": "downloads/covers/cover_172.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in swashbuckler by Robert Louis Stevenson."
+    "synopsis": "A celebrated English masterpiece in swashbuckler by Robert Louis Stevenson.",
+    "is_golden_100": false
   },
   {
     "id": 173,
@@ -2765,7 +2937,8 @@
     "filesize_kb": 168.2,
     "cover_url": "downloads/covers/cover_173.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in swashbuckler by Marie L. McLaughlin."
+    "synopsis": "A celebrated English masterpiece in swashbuckler by Marie L. McLaughlin.",
+    "is_golden_100": false
   },
   {
     "id": 174,
@@ -2781,7 +2954,8 @@
     "filesize_kb": 138.0,
     "cover_url": "downloads/covers/cover_174.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in swashbuckler by J. M. Barrie."
+    "synopsis": "A celebrated English masterpiece in swashbuckler by J. M. Barrie.",
+    "is_golden_100": false
   },
   {
     "id": 175,
@@ -2797,7 +2971,8 @@
     "filesize_kb": 255.0,
     "cover_url": "downloads/covers/cover_175.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in historical intrigue by Robert Louis Stevenson."
+    "synopsis": "A celebrated English masterpiece in historical intrigue by Robert Louis Stevenson.",
+    "is_golden_100": false
   },
   {
     "id": 176,
@@ -2813,7 +2988,8 @@
     "filesize_kb": 233.0,
     "cover_url": "downloads/covers/cover_176.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in poetry, gothic & early 20th century by Unknown."
+    "synopsis": "A celebrated English masterpiece in poetry, gothic & early 20th century by Unknown.",
+    "is_golden_100": false
   },
   {
     "id": 177,
@@ -2829,7 +3005,8 @@
     "filesize_kb": 272.2,
     "cover_url": "downloads/covers/cover_177.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in historical intrigue by Willa Cather."
+    "synopsis": "A celebrated English masterpiece in historical intrigue by Willa Cather.",
+    "is_golden_100": false
   },
   {
     "id": 178,
@@ -2845,7 +3022,8 @@
     "filesize_kb": 83.5,
     "cover_url": "downloads/covers/cover_178.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in stoic philosophy by Epictetus."
+    "synopsis": "A celebrated English masterpiece in stoic philosophy by Epictetus.",
+    "is_golden_100": true
   },
   {
     "id": 179,
@@ -2861,7 +3039,8 @@
     "filesize_kb": 696.3,
     "cover_url": "downloads/covers/cover_179.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in philosophy by Plato."
+    "synopsis": "A celebrated English masterpiece in philosophy by Plato.",
+    "is_golden_100": true
   },
   {
     "id": 180,
@@ -2877,7 +3056,8 @@
     "filesize_kb": 220.3,
     "cover_url": "downloads/covers/cover_180.jpg",
     "year": -500,
-    "synopsis": "Sun Tzu's classic ancient military treatise on strategy, tactics, and conflict resolution."
+    "synopsis": "Sun Tzu's classic ancient military treatise on strategy, tactics, and conflict resolution.",
+    "is_golden_100": false
   },
   {
     "id": 181,
@@ -2893,7 +3073,8 @@
     "filesize_kb": 339.4,
     "cover_url": "downloads/covers/cover_181.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in gothic, mystery & adventure by Hesiod."
+    "synopsis": "A celebrated English masterpiece in gothic, mystery & adventure by Hesiod.",
+    "is_golden_100": false
   },
   {
     "id": 182,
@@ -2909,7 +3090,8 @@
     "filesize_kb": 398.0,
     "cover_url": "downloads/covers/cover_182.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in gothic, mystery & adventure by Gene Stratton-Porter."
+    "synopsis": "A celebrated English masterpiece in gothic, mystery & adventure by Gene Stratton-Porter.",
+    "is_golden_100": false
   },
   {
     "id": 183,
@@ -2925,7 +3107,8 @@
     "filesize_kb": 305.7,
     "cover_url": "downloads/covers/cover_183.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in gothic, mystery & adventure by Edna Ferber."
+    "synopsis": "A celebrated English masterpiece in gothic, mystery & adventure by Edna Ferber.",
+    "is_golden_100": false
   },
   {
     "id": 184,
@@ -2941,7 +3124,8 @@
     "filesize_kb": 139.2,
     "cover_url": "downloads/covers/cover_184.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in gothic, mystery & adventure by John McCrae."
+    "synopsis": "A celebrated English masterpiece in gothic, mystery & adventure by John McCrae.",
+    "is_golden_100": false
   },
   {
     "id": 185,
@@ -2957,7 +3141,8 @@
     "filesize_kb": 180.1,
     "cover_url": "downloads/covers/cover_185.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in gothic, mystery & adventure by Edna Ferber."
+    "synopsis": "A celebrated English masterpiece in gothic, mystery & adventure by Edna Ferber.",
+    "is_golden_100": false
   },
   {
     "id": 186,
@@ -2973,7 +3158,8 @@
     "filesize_kb": 275.9,
     "cover_url": "downloads/covers/cover_186.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in gothic, mystery & adventure by Anna Howard Shaw."
+    "synopsis": "A celebrated English masterpiece in gothic, mystery & adventure by Anna Howard Shaw.",
+    "is_golden_100": false
   },
   {
     "id": 187,
@@ -2989,7 +3175,8 @@
     "filesize_kb": 423.1,
     "cover_url": "downloads/covers/cover_187.jpg",
     "year": 1897,
-    "synopsis": "Bram Stoker's foundational gothic vampire horror masterpiece set between Transylvania and Victorian England."
+    "synopsis": "Bram Stoker's foundational gothic vampire horror masterpiece set between Transylvania and Victorian England.",
+    "is_golden_100": true
   },
   {
     "id": 188,
@@ -3005,7 +3192,8 @@
     "filesize_kb": 348.0,
     "cover_url": "downloads/covers/cover_188.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in gothic, mystery & adventure by Mary Wollstonecraft Shelley."
+    "synopsis": "A celebrated English masterpiece in gothic, mystery & adventure by Mary Wollstonecraft Shelley.",
+    "is_golden_100": true
   },
   {
     "id": 189,
@@ -3021,7 +3209,8 @@
     "filesize_kb": 267.5,
     "cover_url": "downloads/covers/cover_189.jpg",
     "year": 1883,
-    "synopsis": "Jim Hawkins sets sail on the Hispaniola in search of buried pirate treasure, facing Long John Silver."
+    "synopsis": "Jim Hawkins sets sail on the Hispaniola in search of buried pirate treasure, facing Long John Silver.",
+    "is_golden_100": true
   },
   {
     "id": 190,
@@ -3037,7 +3226,8 @@
     "filesize_kb": 139.1,
     "cover_url": "downloads/covers/cover_190.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in gothic, mystery & adventure by Robert Louis Stevenson."
+    "synopsis": "A celebrated English masterpiece in gothic, mystery & adventure by Robert Louis Stevenson.",
+    "is_golden_100": true
   },
   {
     "id": 191,
@@ -3053,7 +3243,8 @@
     "filesize_kb": 255.7,
     "cover_url": "downloads/covers/cover_191.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in gothic, mystery & adventure by Robert Louis Stevenson."
+    "synopsis": "A celebrated English masterpiece in gothic, mystery & adventure by Robert Louis Stevenson.",
+    "is_golden_100": false
   },
   {
     "id": 192,
@@ -3069,7 +3260,8 @@
     "filesize_kb": 710.4,
     "cover_url": "downloads/covers/cover_192.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in gothic, mystery & adventure by Herman Melville."
+    "synopsis": "A celebrated English masterpiece in gothic, mystery & adventure by Herman Melville.",
+    "is_golden_100": true
   },
   {
     "id": 193,
@@ -3085,7 +3277,8 @@
     "filesize_kb": 105.5,
     "cover_url": "downloads/covers/cover_193.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in gothic, mystery & adventure by Herman Melville."
+    "synopsis": "A celebrated English masterpiece in gothic, mystery & adventure by Herman Melville.",
+    "is_golden_100": false
   },
   {
     "id": 194,
@@ -3101,7 +3294,8 @@
     "filesize_kb": 158.7,
     "cover_url": "downloads/covers/cover_194.jpg",
     "year": 1895,
-    "synopsis": "H.G. Wells introduces time travel as an inventor travels to the year 802,701 AD to meet the Eloi and Morlocks."
+    "synopsis": "H.G. Wells introduces time travel as an inventor travels to the year 802,701 AD to meet the Eloi and Morlocks.",
+    "is_golden_100": true
   },
   {
     "id": 195,
@@ -3117,7 +3311,8 @@
     "filesize_kb": 236.4,
     "cover_url": "downloads/covers/cover_195.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in gothic, mystery & adventure by H. G. Wells."
+    "synopsis": "A celebrated English masterpiece in gothic, mystery & adventure by H. G. Wells.",
+    "is_golden_100": true
   },
   {
     "id": 196,
@@ -3133,7 +3328,8 @@
     "filesize_kb": 210.3,
     "cover_url": "downloads/covers/cover_196.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in gothic, mystery & adventure by H. G. Wells."
+    "synopsis": "A celebrated English masterpiece in gothic, mystery & adventure by H. G. Wells.",
+    "is_golden_100": true
   },
   {
     "id": 197,
@@ -3149,7 +3345,8 @@
     "filesize_kb": 195.9,
     "cover_url": "downloads/covers/cover_197.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in gothic, mystery & adventure by H. G. Wells."
+    "synopsis": "A celebrated English masterpiece in gothic, mystery & adventure by H. G. Wells.",
+    "is_golden_100": false
   },
   {
     "id": 198,
@@ -3165,7 +3362,8 @@
     "filesize_kb": 319.1,
     "cover_url": "downloads/covers/cover_198.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in gothic, mystery & adventure by Daniel Defoe."
+    "synopsis": "A celebrated English masterpiece in gothic, mystery & adventure by Daniel Defoe.",
+    "is_golden_100": true
   },
   {
     "id": 199,
@@ -3181,7 +3379,8 @@
     "filesize_kb": 11.4,
     "cover_url": null,
     "year": null,
-    "synopsis": "A celebrated English masterpiece in gothic, mystery & adventure by Daniel Defoe."
+    "synopsis": "A celebrated English masterpiece in gothic, mystery & adventure by Daniel Defoe.",
+    "is_golden_100": false
   },
   {
     "id": 200,
@@ -3197,7 +3396,8 @@
     "filesize_kb": 152.5,
     "cover_url": "downloads/covers/cover_200.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in gothic, mystery & adventure by Jack London."
+    "synopsis": "A celebrated English masterpiece in gothic, mystery & adventure by Jack London.",
+    "is_golden_100": false
   },
   {
     "id": 201,
@@ -3213,7 +3413,8 @@
     "filesize_kb": 235.9,
     "cover_url": "downloads/covers/cover_201.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in gothic, mystery & adventure by Jack London."
+    "synopsis": "A celebrated English masterpiece in gothic, mystery & adventure by Jack London.",
+    "is_golden_100": false
   },
   {
     "id": 202,
@@ -3229,7 +3430,8 @@
     "filesize_kb": 357.5,
     "cover_url": "downloads/covers/cover_202.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in gothic, mystery & adventure by Jack London."
+    "synopsis": "A celebrated English masterpiece in gothic, mystery & adventure by Jack London.",
+    "is_golden_100": false
   },
   {
     "id": 203,
@@ -3245,7 +3447,8 @@
     "filesize_kb": 437.8,
     "cover_url": "downloads/covers/cover_203.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in gothic, mystery & adventure by Jack London."
+    "synopsis": "A celebrated English masterpiece in gothic, mystery & adventure by Jack London.",
+    "is_golden_100": false
   },
   {
     "id": 204,
@@ -3261,7 +3464,8 @@
     "filesize_kb": 212.1,
     "cover_url": "downloads/covers/cover_204.jpg",
     "year": 1532,
-    "synopsis": "Niccolò Machiavelli's realistic political treatise on leadership, power, and statecraft."
+    "synopsis": "Niccolò Machiavelli's realistic political treatise on leadership, power, and statecraft.",
+    "is_golden_100": false
   },
   {
     "id": 205,
@@ -3277,7 +3481,8 @@
     "filesize_kb": 699.1,
     "cover_url": "downloads/covers/cover_205.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in gothic, mystery & adventure by Wilkie Collins."
+    "synopsis": "A celebrated English masterpiece in gothic, mystery & adventure by Wilkie Collins.",
+    "is_golden_100": false
   },
   {
     "id": 206,
@@ -3293,7 +3498,8 @@
     "filesize_kb": 541.0,
     "cover_url": "downloads/covers/cover_206.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in gothic, mystery & adventure by Wilkie Collins."
+    "synopsis": "A celebrated English masterpiece in gothic, mystery & adventure by Wilkie Collins.",
+    "is_golden_100": false
   },
   {
     "id": 207,
@@ -3309,7 +3515,8 @@
     "filesize_kb": 251.6,
     "cover_url": "downloads/covers/cover_207.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in gothic, mystery & adventure by G. K. Chesterton."
+    "synopsis": "A celebrated English masterpiece in gothic, mystery & adventure by G. K. Chesterton.",
+    "is_golden_100": false
   },
   {
     "id": 208,
@@ -3325,7 +3532,8 @@
     "filesize_kb": 191.8,
     "cover_url": "downloads/covers/cover_208.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in gothic, mystery & adventure by G. K. Chesterton."
+    "synopsis": "A celebrated English masterpiece in gothic, mystery & adventure by G. K. Chesterton.",
+    "is_golden_100": false
   },
   {
     "id": 209,
@@ -3341,7 +3549,8 @@
     "filesize_kb": 282.2,
     "cover_url": "downloads/covers/cover_209.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in gothic, mystery & adventure by H. Rider Haggard."
+    "synopsis": "A celebrated English masterpiece in gothic, mystery & adventure by H. Rider Haggard.",
+    "is_golden_100": false
   },
   {
     "id": 210,
@@ -3357,7 +3566,8 @@
     "filesize_kb": 345.9,
     "cover_url": "downloads/covers/cover_210.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in gothic, mystery & adventure by H. Rider Haggard."
+    "synopsis": "A celebrated English masterpiece in gothic, mystery & adventure by H. Rider Haggard.",
+    "is_golden_100": false
   },
   {
     "id": 211,
@@ -3373,7 +3583,8 @@
     "filesize_kb": 146.5,
     "cover_url": "downloads/covers/cover_211.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in gothic, mystery & adventure by Joseph Sheridan Le Fanu."
+    "synopsis": "A celebrated English masterpiece in gothic, mystery & adventure by Joseph Sheridan Le Fanu.",
+    "is_golden_100": false
   },
   {
     "id": 212,
@@ -3389,7 +3600,8 @@
     "filesize_kb": 164.0,
     "cover_url": "downloads/covers/cover_212.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in gothic, mystery & adventure by Horace Walpole."
+    "synopsis": "A celebrated English masterpiece in gothic, mystery & adventure by Horace Walpole.",
+    "is_golden_100": false
   },
   {
     "id": 213,
@@ -3405,7 +3617,8 @@
     "filesize_kb": 771.0,
     "cover_url": "downloads/covers/cover_213.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in gothic, mystery & adventure by Ann Ward Radcliffe."
+    "synopsis": "A celebrated English masterpiece in gothic, mystery & adventure by Ann Ward Radcliffe.",
+    "is_golden_100": false
   },
   {
     "id": 214,
@@ -3421,7 +3634,8 @@
     "filesize_kb": 286.2,
     "cover_url": "downloads/covers/cover_214.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in gothic, mystery & adventure by Edgar Rice Burroughs."
+    "synopsis": "A celebrated English masterpiece in gothic, mystery & adventure by Edgar Rice Burroughs.",
+    "is_golden_100": false
   },
   {
     "id": 215,
@@ -3437,7 +3651,8 @@
     "filesize_kb": 244.0,
     "cover_url": "downloads/covers/cover_215.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in gothic, mystery & adventure by Edgar Rice Burroughs."
+    "synopsis": "A celebrated English masterpiece in gothic, mystery & adventure by Edgar Rice Burroughs.",
+    "is_golden_100": false
   },
   {
     "id": 216,
@@ -3453,7 +3668,8 @@
     "filesize_kb": 545.5,
     "cover_url": "downloads/covers/cover_216.jpg",
     "year": 1813,
-    "synopsis": "Jane Austen's timeless romantic comedy of manners, wit, and misunderstanding between Elizabeth Bennet and Mr. Darcy."
+    "synopsis": "Jane Austen's timeless romantic comedy of manners, wit, and misunderstanding between Elizabeth Bennet and Mr. Darcy.",
+    "is_golden_100": true
   },
   {
     "id": 217,
@@ -3469,7 +3685,8 @@
     "filesize_kb": 411.2,
     "cover_url": "downloads/covers/cover_217.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by Jane Austen."
+    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by Jane Austen.",
+    "is_golden_100": true
   },
   {
     "id": 218,
@@ -3485,7 +3702,8 @@
     "filesize_kb": 464.6,
     "cover_url": "downloads/covers/cover_218.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by Jane Austen."
+    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by Jane Austen.",
+    "is_golden_100": true
   },
   {
     "id": 219,
@@ -3501,7 +3719,8 @@
     "filesize_kb": 466.3,
     "cover_url": "downloads/covers/cover_219.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by Jane Austen."
+    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by Jane Austen.",
+    "is_golden_100": false
   },
   {
     "id": 220,
@@ -3517,7 +3736,8 @@
     "filesize_kb": 322.5,
     "cover_url": "downloads/covers/cover_220.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by Jane Austen."
+    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by Jane Austen.",
+    "is_golden_100": false
   },
   {
     "id": 221,
@@ -3533,7 +3753,8 @@
     "filesize_kb": 279.8,
     "cover_url": "downloads/covers/cover_221.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by Jane Austen."
+    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by Jane Austen.",
+    "is_golden_100": false
   },
   {
     "id": 222,
@@ -3549,7 +3770,8 @@
     "filesize_kb": 593.3,
     "cover_url": "downloads/covers/cover_222.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by Charlotte Brontë."
+    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by Charlotte Brontë.",
+    "is_golden_100": true
   },
   {
     "id": 223,
@@ -3565,7 +3787,8 @@
     "filesize_kb": 579.2,
     "cover_url": "downloads/covers/cover_223.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by Charlotte Brontë."
+    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by Charlotte Brontë.",
+    "is_golden_100": false
   },
   {
     "id": 224,
@@ -3581,7 +3804,8 @@
     "filesize_kb": 424.8,
     "cover_url": "downloads/covers/cover_224.jpg",
     "year": 1847,
-    "synopsis": "Emily Brontë's intense, tempestuous tale of passion and revenge on the wild Yorkshire moors."
+    "synopsis": "Emily Brontë's intense, tempestuous tale of passion and revenge on the wild Yorkshire moors.",
+    "is_golden_100": true
   },
   {
     "id": 225,
@@ -3597,7 +3821,8 @@
     "filesize_kb": 519.8,
     "cover_url": "downloads/covers/cover_225.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by Anne Brontë."
+    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by Anne Brontë.",
+    "is_golden_100": false
   },
   {
     "id": 226,
@@ -3613,7 +3838,8 @@
     "filesize_kb": 541.5,
     "cover_url": "downloads/covers/cover_226.jpg",
     "year": 1861,
-    "synopsis": "Charles Dickens' story of orphan Pip, his mysterious benefactor, the eccentric Miss Havisham, and Estella."
+    "synopsis": "Charles Dickens' story of orphan Pip, his mysterious benefactor, the eccentric Miss Havisham, and Estella.",
+    "is_golden_100": true
   },
   {
     "id": 227,
@@ -3629,7 +3855,8 @@
     "filesize_kb": 476.1,
     "cover_url": "downloads/covers/cover_227.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by Charles Dickens."
+    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by Charles Dickens.",
+    "is_golden_100": true
   },
   {
     "id": 228,
@@ -3645,7 +3872,8 @@
     "filesize_kb": 949.9,
     "cover_url": "downloads/covers/cover_228.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by Charles Dickens."
+    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by Charles Dickens.",
+    "is_golden_100": true
   },
   {
     "id": 229,
@@ -3661,7 +3889,8 @@
     "filesize_kb": 195.9,
     "cover_url": "downloads/covers/cover_229.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by Charles Dickens."
+    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by Charles Dickens.",
+    "is_golden_100": true
   },
   {
     "id": 230,
@@ -3677,7 +3906,8 @@
     "filesize_kb": 978.7,
     "cover_url": "downloads/covers/cover_230.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by Charles Dickens."
+    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by Charles Dickens.",
+    "is_golden_100": false
   },
   {
     "id": 231,
@@ -3693,7 +3923,8 @@
     "filesize_kb": 144.5,
     "cover_url": "downloads/covers/cover_231.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by Charles Dickens."
+    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by Charles Dickens.",
+    "is_golden_100": false
   },
   {
     "id": 232,
@@ -3709,7 +3940,8 @@
     "filesize_kb": 864.9,
     "cover_url": "downloads/covers/cover_232.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by Charles Dickens."
+    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by Charles Dickens.",
+    "is_golden_100": false
   },
   {
     "id": 233,
@@ -3725,7 +3957,8 @@
     "filesize_kb": 884.8,
     "cover_url": "downloads/covers/cover_233.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by George Eliot."
+    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by George Eliot.",
+    "is_golden_100": false
   },
   {
     "id": 234,
@@ -3741,7 +3974,8 @@
     "filesize_kb": 256.6,
     "cover_url": "downloads/covers/cover_234.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by George Eliot."
+    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by George Eliot.",
+    "is_golden_100": false
   },
   {
     "id": 235,
@@ -3757,7 +3991,8 @@
     "filesize_kb": 665.1,
     "cover_url": "downloads/covers/cover_235.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by George Eliot."
+    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by George Eliot.",
+    "is_golden_100": false
   },
   {
     "id": 236,
@@ -3773,7 +4008,8 @@
     "filesize_kb": 479.0,
     "cover_url": "downloads/covers/cover_236.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by Thomas Hardy."
+    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by Thomas Hardy.",
+    "is_golden_100": false
   },
   {
     "id": 237,
@@ -3789,7 +4025,8 @@
     "filesize_kb": 463.7,
     "cover_url": "downloads/covers/cover_237.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by Thomas Hardy."
+    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by Thomas Hardy.",
+    "is_golden_100": false
   },
   {
     "id": 238,
@@ -3805,7 +4042,8 @@
     "filesize_kb": 466.0,
     "cover_url": "downloads/covers/cover_238.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by Thomas Hardy."
+    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by Thomas Hardy.",
+    "is_golden_100": false
   },
   {
     "id": 239,
@@ -3821,7 +4059,8 @@
     "filesize_kb": 813.3,
     "cover_url": "downloads/covers/cover_239.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by William Makepeace Thackeray."
+    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by William Makepeace Thackeray.",
+    "is_golden_100": false
   },
   {
     "id": 240,
@@ -3837,7 +4076,8 @@
     "filesize_kb": 509.8,
     "cover_url": "downloads/covers/cover_240.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by Elizabeth Cleghorn Gaskell."
+    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by Elizabeth Cleghorn Gaskell.",
+    "is_golden_100": false
   },
   {
     "id": 241,
@@ -3853,7 +4093,8 @@
     "filesize_kb": 240.8,
     "cover_url": "downloads/covers/cover_241.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by Elizabeth Cleghorn Gaskell."
+    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by Elizabeth Cleghorn Gaskell.",
+    "is_golden_100": false
   },
   {
     "id": 242,
@@ -3869,7 +4110,8 @@
     "filesize_kb": 545.4,
     "cover_url": "downloads/covers/cover_242.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by Louisa May Alcott."
+    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by Louisa May Alcott.",
+    "is_golden_100": false
   },
   {
     "id": 243,
@@ -3885,7 +4127,8 @@
     "filesize_kb": 323.0,
     "cover_url": "downloads/covers/cover_243.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by L. M. Montgomery."
+    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by L. M. Montgomery.",
+    "is_golden_100": false
   },
   {
     "id": 244,
@@ -3901,7 +4144,8 @@
     "filesize_kb": 265.1,
     "cover_url": "downloads/covers/cover_244.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by Frances Hodgson Burnett."
+    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by Frances Hodgson Burnett.",
+    "is_golden_100": false
   },
   {
     "id": 245,
@@ -3917,7 +4161,8 @@
     "filesize_kb": 218.0,
     "cover_url": "downloads/covers/cover_245.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by Frances Hodgson Burnett."
+    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by Frances Hodgson Burnett.",
+    "is_golden_100": false
   },
   {
     "id": 246,
@@ -3933,7 +4178,8 @@
     "filesize_kb": 11.1,
     "cover_url": null,
     "year": null,
-    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by Edith Wharton."
+    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by Edith Wharton.",
+    "is_golden_100": true
   },
   {
     "id": 247,
@@ -3949,7 +4195,8 @@
     "filesize_kb": 429.3,
     "cover_url": "downloads/covers/cover_247.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by Edith Wharton."
+    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by Edith Wharton.",
+    "is_golden_100": true
   },
   {
     "id": 248,
@@ -3965,7 +4212,8 @@
     "filesize_kb": 254.4,
     "cover_url": "downloads/covers/cover_248.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by Edith Wharton."
+    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by Edith Wharton.",
+    "is_golden_100": true
   },
   {
     "id": 249,
@@ -3981,7 +4229,8 @@
     "filesize_kb": 350.7,
     "cover_url": "downloads/covers/cover_249.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by Henry James."
+    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by Henry James.",
+    "is_golden_100": false
   },
   {
     "id": 250,
@@ -3997,7 +4246,8 @@
     "filesize_kb": 179.7,
     "cover_url": "downloads/covers/cover_250.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by Henry James."
+    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by Henry James.",
+    "is_golden_100": true
   },
   {
     "id": 251,
@@ -4013,7 +4263,8 @@
     "filesize_kb": 123.4,
     "cover_url": "downloads/covers/cover_251.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by Henry James."
+    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by Henry James.",
+    "is_golden_100": false
   },
   {
     "id": 252,
@@ -4029,7 +4280,8 @@
     "filesize_kb": 12.5,
     "cover_url": null,
     "year": null,
-    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by Anthony Trollope."
+    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by Anthony Trollope.",
+    "is_golden_100": false
   },
   {
     "id": 253,
@@ -4045,7 +4297,8 @@
     "filesize_kb": 248.5,
     "cover_url": "downloads/covers/cover_253.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by E. M. Forster."
+    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by E. M. Forster.",
+    "is_golden_100": false
   },
   {
     "id": 254,
@@ -4061,7 +4314,8 @@
     "filesize_kb": 364.4,
     "cover_url": "downloads/covers/cover_254.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by E. M. Forster."
+    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by E. M. Forster.",
+    "is_golden_100": false
   },
   {
     "id": 255,
@@ -4077,7 +4331,8 @@
     "filesize_kb": 229.4,
     "cover_url": "downloads/covers/cover_255.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by Kate Chopin."
+    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by Kate Chopin.",
+    "is_golden_100": false
   },
   {
     "id": 256,
@@ -4093,7 +4348,8 @@
     "filesize_kb": 294.3,
     "cover_url": "downloads/covers/cover_256.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by Willa Cather."
+    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by Willa Cather.",
+    "is_golden_100": false
   },
   {
     "id": 257,
@@ -4109,7 +4365,8 @@
     "filesize_kb": 744.0,
     "cover_url": "downloads/covers/cover_257.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by W. Somerset Maugham."
+    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by W. Somerset Maugham.",
+    "is_golden_100": false
   },
   {
     "id": 258,
@@ -4125,7 +4382,8 @@
     "filesize_kb": 296.8,
     "cover_url": "downloads/covers/cover_258.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by W. Somerset Maugham."
+    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by W. Somerset Maugham.",
+    "is_golden_100": false
   },
   {
     "id": 259,
@@ -4141,7 +4399,8 @@
     "filesize_kb": 114.3,
     "cover_url": "downloads/covers/cover_259.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by Arthur Conan Doyle."
+    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by Arthur Conan Doyle.",
+    "is_golden_100": false
   },
   {
     "id": 260,
@@ -4157,7 +4416,8 @@
     "filesize_kb": 163.4,
     "cover_url": "downloads/covers/cover_260.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by Arthur Conan Doyle."
+    "synopsis": "A celebrated English masterpiece in romance, society & victorian realism by Arthur Conan Doyle.",
+    "is_golden_100": false
   },
   {
     "id": 261,
@@ -4173,7 +4433,8 @@
     "filesize_kb": 118.6,
     "cover_url": "downloads/covers/cover_261.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by Richard Harding Davis."
+    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by Richard Harding Davis.",
+    "is_golden_100": false
   },
   {
     "id": 262,
@@ -4189,7 +4450,8 @@
     "filesize_kb": 131.5,
     "cover_url": "downloads/covers/cover_262.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by William Morris."
+    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by William Morris.",
+    "is_golden_100": false
   },
   {
     "id": 263,
@@ -4205,7 +4467,8 @@
     "filesize_kb": 292.6,
     "cover_url": "downloads/covers/cover_263.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by Frances Jenkins Olcott."
+    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by Frances Jenkins Olcott.",
+    "is_golden_100": false
   },
   {
     "id": 264,
@@ -4221,7 +4484,8 @@
     "filesize_kb": 440.4,
     "cover_url": "downloads/covers/cover_264.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by P.-J. Proudhon."
+    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by P.-J. Proudhon.",
+    "is_golden_100": false
   },
   {
     "id": 265,
@@ -4237,7 +4501,8 @@
     "filesize_kb": 243.1,
     "cover_url": "downloads/covers/cover_265.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by Eleanor H. Porter."
+    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by Eleanor H. Porter.",
+    "is_golden_100": false
   },
   {
     "id": 266,
@@ -4253,7 +4518,8 @@
     "filesize_kb": 337.4,
     "cover_url": "downloads/covers/cover_266.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by Eleanor H. Porter."
+    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by Eleanor H. Porter.",
+    "is_golden_100": false
   },
   {
     "id": 267,
@@ -4269,7 +4535,8 @@
     "filesize_kb": 170.7,
     "cover_url": "downloads/covers/cover_267.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by Edgar Rice Burroughs."
+    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by Edgar Rice Burroughs.",
+    "is_golden_100": false
   },
   {
     "id": 268,
@@ -4285,7 +4552,8 @@
     "filesize_kb": 154.1,
     "cover_url": "downloads/covers/cover_268.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by Mary Austin."
+    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by Mary Austin.",
+    "is_golden_100": false
   },
   {
     "id": 269,
@@ -4301,7 +4569,8 @@
     "filesize_kb": 304.3,
     "cover_url": "downloads/covers/cover_269.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by Edgar Rice Burroughs."
+    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by Edgar Rice Burroughs.",
+    "is_golden_100": false
   },
   {
     "id": 270,
@@ -4317,7 +4586,8 @@
     "filesize_kb": 172.4,
     "cover_url": "downloads/covers/cover_270.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by Sarah Orne Jewett."
+    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by Sarah Orne Jewett.",
+    "is_golden_100": false
   },
   {
     "id": 271,
@@ -4333,7 +4603,8 @@
     "filesize_kb": 168.8,
     "cover_url": "downloads/covers/cover_271.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by Russell H. Conwell."
+    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by Russell H. Conwell.",
+    "is_golden_100": false
   },
   {
     "id": 272,
@@ -4349,7 +4620,8 @@
     "filesize_kb": 523.6,
     "cover_url": "downloads/covers/cover_272.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by Mary Roberts Rinehart."
+    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by Mary Roberts Rinehart.",
+    "is_golden_100": false
   },
   {
     "id": 273,
@@ -4365,7 +4637,8 @@
     "filesize_kb": 170.8,
     "cover_url": "downloads/covers/cover_273.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by Henry B. Wheatley."
+    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by Henry B. Wheatley.",
+    "is_golden_100": false
   },
   {
     "id": 274,
@@ -4381,7 +4654,8 @@
     "filesize_kb": 371.9,
     "cover_url": "downloads/covers/cover_274.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by Joseph Conrad."
+    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by Joseph Conrad.",
+    "is_golden_100": true
   },
   {
     "id": 275,
@@ -4397,7 +4671,8 @@
     "filesize_kb": 231.2,
     "cover_url": "downloads/covers/cover_275.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by Edgar Rice Burroughs."
+    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by Edgar Rice Burroughs.",
+    "is_golden_100": false
   },
   {
     "id": 276,
@@ -4413,7 +4688,8 @@
     "filesize_kb": 336.3,
     "cover_url": "downloads/covers/cover_276.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by Daniel Defoe."
+    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by Daniel Defoe.",
+    "is_golden_100": false
   },
   {
     "id": 277,
@@ -4429,7 +4705,8 @@
     "filesize_kb": 85.0,
     "cover_url": "downloads/covers/cover_277.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in modernist literature by Ambrose Bierce."
+    "synopsis": "A celebrated English masterpiece in modernist literature by Ambrose Bierce.",
+    "is_golden_100": false
   },
   {
     "id": 278,
@@ -4445,7 +4722,8 @@
     "filesize_kb": 859.7,
     "cover_url": "downloads/covers/cover_278.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by Lodovico Ariosto."
+    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by Lodovico Ariosto.",
+    "is_golden_100": false
   },
   {
     "id": 279,
@@ -4461,7 +4739,8 @@
     "filesize_kb": 147.2,
     "cover_url": "downloads/covers/cover_279.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by Ambrose Bierce."
+    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by Ambrose Bierce.",
+    "is_golden_100": false
   },
   {
     "id": 280,
@@ -4477,7 +4756,8 @@
     "filesize_kb": 88.9,
     "cover_url": "downloads/covers/cover_280.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by Nettie Garmer Barker."
+    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by Nettie Garmer Barker.",
+    "is_golden_100": false
   },
   {
     "id": 281,
@@ -4493,7 +4773,8 @@
     "filesize_kb": 182.9,
     "cover_url": "downloads/covers/cover_281.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by Edward Stratemeyer."
+    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by Edward Stratemeyer.",
+    "is_golden_100": false
   },
   {
     "id": 282,
@@ -4509,7 +4790,8 @@
     "filesize_kb": 184.4,
     "cover_url": "downloads/covers/cover_282.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by Edward Stratemeyer."
+    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by Edward Stratemeyer.",
+    "is_golden_100": false
   },
   {
     "id": 283,
@@ -4525,7 +4807,8 @@
     "filesize_kb": 221.9,
     "cover_url": "downloads/covers/cover_283.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by Robert Louis Stevenson."
+    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by Robert Louis Stevenson.",
+    "is_golden_100": false
   },
   {
     "id": 284,
@@ -4541,7 +4824,8 @@
     "filesize_kb": 269.9,
     "cover_url": "downloads/covers/cover_284.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by Robert Louis Stevenson."
+    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by Robert Louis Stevenson.",
+    "is_golden_100": false
   },
   {
     "id": 285,
@@ -4557,7 +4841,8 @@
     "filesize_kb": 269.3,
     "cover_url": "downloads/covers/cover_285.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by Daniel Defoe."
+    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by Daniel Defoe.",
+    "is_golden_100": false
   },
   {
     "id": 286,
@@ -4573,7 +4858,8 @@
     "filesize_kb": 178.8,
     "cover_url": "downloads/covers/cover_286.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by William Shakespeare."
+    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by William Shakespeare.",
+    "is_golden_100": true
   },
   {
     "id": 287,
@@ -4589,7 +4875,8 @@
     "filesize_kb": 184.6,
     "cover_url": "downloads/covers/cover_287.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by Robert Louis Stevenson."
+    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by Robert Louis Stevenson.",
+    "is_golden_100": false
   },
   {
     "id": 288,
@@ -4605,7 +4892,8 @@
     "filesize_kb": 233.4,
     "cover_url": "downloads/covers/cover_288.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by Eliot Gregory."
+    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by Eliot Gregory.",
+    "is_golden_100": false
   },
   {
     "id": 289,
@@ -4621,7 +4909,8 @@
     "filesize_kb": 177.3,
     "cover_url": "downloads/covers/cover_289.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by William Shakespeare."
+    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by William Shakespeare.",
+    "is_golden_100": false
   },
   {
     "id": 290,
@@ -4637,7 +4926,8 @@
     "filesize_kb": 395.1,
     "cover_url": "downloads/covers/cover_290.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by Joanot Martorell."
+    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by Joanot Martorell.",
+    "is_golden_100": false
   },
   {
     "id": 291,
@@ -4653,7 +4943,8 @@
     "filesize_kb": 197.7,
     "cover_url": "downloads/covers/cover_291.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by Robert Louis Stevenson."
+    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by Robert Louis Stevenson.",
+    "is_golden_100": false
   },
   {
     "id": 292,
@@ -4669,7 +4960,8 @@
     "filesize_kb": 121.3,
     "cover_url": "downloads/covers/cover_292.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by Robert Louis Stevenson."
+    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by Robert Louis Stevenson.",
+    "is_golden_100": false
   },
   {
     "id": 293,
@@ -4685,7 +4977,8 @@
     "filesize_kb": 119.7,
     "cover_url": "downloads/covers/cover_293.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by Oliver Goldsmith."
+    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by Oliver Goldsmith.",
+    "is_golden_100": false
   },
   {
     "id": 294,
@@ -4701,7 +4994,8 @@
     "filesize_kb": 187.3,
     "cover_url": "downloads/covers/cover_294.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by Zane Grey."
+    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by Zane Grey.",
+    "is_golden_100": false
   },
   {
     "id": 295,
@@ -4717,7 +5011,8 @@
     "filesize_kb": 283.4,
     "cover_url": "downloads/covers/cover_295.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by Frances Hodgson Burnett."
+    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by Frances Hodgson Burnett.",
+    "is_golden_100": false
   },
   {
     "id": 296,
@@ -4733,7 +5028,8 @@
     "filesize_kb": 187.9,
     "cover_url": "downloads/covers/cover_296.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by Robert Louis Stevenson."
+    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by Robert Louis Stevenson.",
+    "is_golden_100": false
   },
   {
     "id": 297,
@@ -4749,7 +5045,8 @@
     "filesize_kb": 166.1,
     "cover_url": "downloads/covers/cover_297.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by Saint Thomas More."
+    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by Saint Thomas More.",
+    "is_golden_100": false
   },
   {
     "id": 298,
@@ -4765,7 +5062,8 @@
     "filesize_kb": 197.7,
     "cover_url": "downloads/covers/cover_298.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by John Locke."
+    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by John Locke.",
+    "is_golden_100": false
   },
   {
     "id": 299,
@@ -4781,7 +5079,8 @@
     "filesize_kb": 947.2,
     "cover_url": "downloads/covers/cover_299.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by Adam Smith."
+    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by Adam Smith.",
+    "is_golden_100": false
   },
   {
     "id": 300,
@@ -4797,6 +5096,7 @@
     "filesize_kb": 415.1,
     "cover_url": "downloads/covers/cover_300.jpg",
     "year": null,
-    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by Charles Darwin."
+    "synopsis": "A celebrated English masterpiece in satire, modernism, drama & philosophy by Charles Darwin.",
+    "is_golden_100": false
   }
 ]

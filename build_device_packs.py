@@ -20,26 +20,28 @@ for d in [X3_X4_DIR, KINDLE_DIR, MASTER_DIR]:
 def sanitize(s):
     return re.sub(r'[\\/*?:"<>|]', "", s).strip()
 
-def categorize_folder(lang, cat):
+def categorize_folder(lang, cat, is_golden=False):
     cat_lower = cat.lower()
+    prefix = '01_Golden_100_Essentials' if is_golden else '02_Extended_Master_Vault'
+    
     if lang == 'French':
         if 'adventure' in cat_lower or 'mystery' in cat_lower or 'sci-fi' in cat_lower or 'policier' in cat_lower:
-            return '01_French_Classics/01_Aventure_Mystere_et_Roman_Policier'
+            return f'{prefix}/01_French_Classics/01_Aventure_et_Mystere'
         elif 'realism' in cat_lower or 'naturalism' in cat_lower or 'drama' in cat_lower or 'roman' in cat_lower:
-            return '01_French_Classics/02_Realisme_et_Grands_Romans'
+            return f'{prefix}/01_French_Classics/02_Realisme_et_Grands_Romans'
         elif 'philosophy' in cat_lower or 'satire' in cat_lower or 'essais' in cat_lower:
-            return '01_French_Classics/03_Philosophie_et_Satire'
+            return f'{prefix}/01_French_Classics/03_Philosophie_et_Satire'
         else:
-            return '01_French_Classics/04_Poesie_Theatre_et_Contes'
+            return f'{prefix}/01_French_Classics/04_Poesie_Theatre_et_Contes'
     else:
         if 'gothic' in cat_lower or 'mystery' in cat_lower or 'adventure' in cat_lower or 'detective' in cat_lower:
-            return '02_English_Classics/01_Gothic_and_Adventure'
+            return f'{prefix}/02_English_Classics/01_Gothic_and_Adventure'
         elif 'romance' in cat_lower or 'victorian' in cat_lower or 'society' in cat_lower or 'realism' in cat_lower:
-            return '02_English_Classics/02_Victorian_Realism_and_Romance'
+            return f'{prefix}/02_English_Classics/02_Victorian_Realism_and_Romance'
         elif 'philosophy' in cat_lower or 'thought' in cat_lower or 'essay' in cat_lower:
-            return '02_English_Classics/03_Philosophy_and_Thought'
+            return f'{prefix}/02_English_Classics/03_Philosophy_and_Thought'
         else:
-            return '02_English_Classics/04_Modernism_and_Drama'
+            return f'{prefix}/02_English_Classics/04_Modernism_and_Drama'
 
 def zip_folder(folder_path, output_zip_path):
     print(f"Creating zip archive: {os.path.basename(output_zip_path)}...")
@@ -85,7 +87,8 @@ def build_packs():
         clean_a = sanitize(author)[:30]
 
         # 1. X3 & X4 Eink Reader Pack
-        subfolder = categorize_folder(lang, cat)
+        is_golden = b.get('is_golden_100', False)
+        subfolder = categorize_folder(lang, cat, is_golden)
         x3_x4_target_dir = os.path.join(X3_X4_DIR, subfolder)
         os.makedirs(x3_x4_target_dir, exist_ok=True)
         
