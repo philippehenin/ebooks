@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentTheme = localStorage.getItem('athena_theme') || 'dark';
 
     let currentFilters = {
-        tier: 'golden',        // 'golden' (100) or 'all' (1000)
+        tier: 'all',           // Default to 'all' so 1,000 books load on initial screen!
         search: '',
         language: 'all',
         category: 'all',
