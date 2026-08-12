@@ -9,13 +9,14 @@ Usage:
     python3 cli.py [command]
 
 Commands:
-    all        - Run end-to-end pipeline (build, download, verify, docs, packs)
-    build      - Generate & update catalog.json (1,000 books across 3 categories)
-    download   - Fetch/format verified EPUB files into downloads/
-    verify     - Execute pre-release quality integrity audit
-    packs      - Build device archives (Xteink X3/X4 CrossPoint, Kindle AZW3, Master)
-    docs       - Regenerate CATALOG.md markdown documentation
-    status     - Display current catalog & device pack metrics
+    all               - Run end-to-end pipeline (build, download, clean-text, verify, docs, packs)
+    build             - Generate & update catalog.json (1,000 books across 3 categories)
+    download          - Fetch/format verified EPUB files into downloads/
+    clean-text        - Strip non-literary Gutenberg disclaimers, headers, footers & ads
+    verify            - Execute pre-release quality integrity audit
+    packs             - Build device archives (Xteink X3/X4 CrossPoint, Kindle AZW3, Master)
+    docs              - Regenerate CATALOG.md markdown documentation
+    status            - Display current catalog & device pack metrics
 """
 
 import sys
@@ -83,6 +84,8 @@ def main():
         run_step("Build Catalog Dataset", "build_catalog_dataset.py")
     elif arg == 'download':
         run_step("Download & Format EPUBs", "download_catalog_epubs.py")
+    elif arg == 'clean-text':
+        run_step("Strip Ebook Boilerplates & Disclaimers", "strip_ebook_boilerplates.py")
     elif arg == 'verify':
         run_step("Verify Library Integrity", "verify_library.py")
     elif arg == 'packs':
@@ -106,12 +109,14 @@ def main():
     elif arg == 'all':
         run_step("Build Catalog Dataset", "build_catalog_dataset.py")
         run_step("Download & Format EPUBs", "download_catalog_epubs.py")
+        run_step("Strip Ebook Boilerplates & Disclaimers", "strip_ebook_boilerplates.py")
         run_step("Verify Library Integrity", "verify_library.py")
         run_step("Generate Markdown Documentation", "generate_markdown_catalog.py")
         run_step("Build Device Packs", "build_device_packs.py")
-        print_status()
     else:
-        print(f"Unknown command: '{arg}'. Run 'python3 cli.py --help' for available commands.")
+        print(f"Unknown command: '{arg}'")
+        print(__doc__)
+        sys.exit(1)
 
 if __name__ == '__main__':
     main()

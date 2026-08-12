@@ -5,6 +5,17 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
+    // Register PWA Service Worker for Offline Reading Support
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('./sw.js').then(reg => {
+                console.log('[Athena PWA] ServiceWorker registered successfully:', reg.scope);
+            }).catch(err => {
+                console.log('[Athena PWA] ServiceWorker registration notice:', err);
+            });
+        });
+    }
+
     // Storage Safety Helpers for restricted origins / GitHub Pages iframe environments
     function safeGetStorage(key, fallback) {
         try {
