@@ -4,7 +4,7 @@
 [![Golden 100](https://img.shields.io/badge/Golden_100-50_FR_%7C_50_EN-amber.svg)](#-master-literary-catalog---1000-curated-drm-free-ebooks)
 [![Categories](https://img.shields.io/badge/Categories-FR_%7C_EN_%7C_World_in_FR-orange.svg)](#-master-literary-catalog---1000-curated-drm-free-ebooks)
 
-A complete, curated catalog of **1,000 DRM-free classic ebooks** structured across **3 Core Categories**: French Classics (400), English Classics (400), and World Masterpieces in French Translation (200), featuring **The Golden 100 Essentials (50 FR / 50 EN)** for Onyx Boox X4 and Kindle devices.
+A complete, curated catalog of **1,000 DRM-free classic ebooks** structured across **3 Core Categories**: French Classics (400), English Classics (400), and World Masterpieces in French Translation (200), featuring **The Golden 100 Essentials (50 FR / 50 EN)** for Xteink X3/X4 (CrossPoint Firmware) and Kindle devices.
 
 ---
 
@@ -15,7 +15,7 @@ A complete, curated catalog of **1,000 DRM-free classic ebooks** structured acro
 - **French Classics 🇫🇷**: 400
 - **English Classics 🇬🇧**: 400
 - **World Masterpieces in French Translation 🌐**: 200
-- **Formats Available**: Native `.AZW3` (Kindle 10th Gen) & Clean `.EPUB` (Kobo, Onyx Boox X4, Meebook, PocketBook)
+- **Formats Available**: Native `.AZW3` (Kindle 10th Gen) & Clean `.EPUB` (Xteink X3/X4 CrossPoint, Kobo, PocketBook)
 
 ---
 

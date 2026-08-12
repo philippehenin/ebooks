@@ -6,7 +6,7 @@
 [![QA Certified](https://img.shields.io/badge/QA_Audit-100%25_Authentic-3b82f6.svg?style=for-the-badge&logo=shield)](scripts/semantic_checker.py)
 [![License](https://img.shields.io/badge/License-Public_Domain-8b5cf6.svg?style=for-the-badge)](LICENSE)
 
-A premier open-source collection of **1,000 DRM-free public domain ebooks**, pre-formatted and optimized for **Onyx Boox X3/X4 E-ink Readers**, **Amazon Kindle 10th Gen** (`.MOBI` & `.EPUB`), and web e-readers.
+A premier open-source collection of **1,000 DRM-free public domain ebooks**, pre-formatted and optimized for **Xteink X3 / X4 E-ink Readers (CrossPoint Firmware)**, **Amazon Kindle 10th Gen** (`.MOBI` & `.EPUB`), and web e-readers.
 
 👉 **[🌐 Launch Live Web Application](https://philippehenin.github.io/ebooks/)**
 
@@ -17,10 +17,10 @@ A premier open-source collection of **1,000 DRM-free public domain ebooks**, pre
 ### 🌐 1. Web Application (No Install Needed)
 Open **[philippehenin.github.io/ebooks](https://philippehenin.github.io/ebooks/)** in any browser for instant search (<kbd>/</kbd>), reading roadmaps, recommendation wizard, and Dark/Light modes (<kbd>Shift</kbd>+<kbd>D</kbd>).
 
-### 📱 2. Onyx Boox X3 / X4 E-ink Setup (USB)
+### 📱 2. Xteink X3 / X4 E-ink Setup (CrossPoint Firmware)
 1. Download or extract `device_packs/X3_X4_Eink_Reader_Pack.zip`.
-2. Connect your Onyx Boox X4 via USB-C and select **"Transfer Files (MTP)"**.
-3. Copy book folders into `Internal Storage/Books/`. Structured in 10-book folders for zero screen scrolling lag!
+2. Insert your MicroSD card into your PC or connect your X3/X4 via USB / Wi-Fi Web interface.
+3. Copy book folders directly into the `/books/` directory (or SD card root). CrossPoint Reader automatically builds index and cover cache in `.crosspoint/` on reboot/refresh!
 
 ### 📖 3. Amazon Kindle 10th Gen Setup (USB & Send-to-Kindle)
 - **USB Direct Transfer**: Copy `.mobi` files from `device_packs/Kindle_10th_Gen_Pack/USB_Direct_Transfer_documents` into your Kindle's `documents/` folder.

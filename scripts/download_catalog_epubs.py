@@ -19,6 +19,8 @@ import random
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
+sys.stdout.reconfigure(encoding='utf-8')
+
 DOWNLOAD_DIR = os.path.join(os.getcwd(), 'downloads')
 os.makedirs(DOWNLOAD_DIR, exist_ok=True)
 
@@ -78,10 +80,10 @@ def generate_fallback_full_epub(book_id, title, author, lang, cat, year, filenam
   </navMap>
 </ncx>"""
 
-    style_css = """body { font-family: Georgia, serif; line-height: 1.8; padding: 5%; color: #111; max-width: 800px; margin: 0 auto; }
-h1 { font-family: 'Cinzel', serif; text-align: center; margin-bottom: 0.5em; color: #1e1b4b; }
-h2 { text-align: center; font-style: italic; color: #4338ca; margin-bottom: 2em; }
-p { text-indent: 1.5em; margin-bottom: 1em; font-size: 1.1em; text-align: justify; }"""
+    style_css = """body { font-family: Georgia, serif; line-height: 1.8; padding: 4%; color: #111; max-width: 800px; margin: 0 auto; -webkit-hyphens: auto; hyphens: auto; text-align: justify; }
+h1 { font-family: 'Cinzel', serif; text-align: center; margin-top: 1.5em; margin-bottom: 0.5em; color: #1e1b4b; page-break-before: always; }
+h2 { text-align: center; font-style: italic; color: #4338ca; margin-bottom: 1.5em; }
+p { text-indent: 1.5em; margin-bottom: 1em; font-size: 1.1em; line-height: 1.7; widows: 2; orphans: 2; }"""
 
     chapters = {}
     is_fr = ('French' in lang)

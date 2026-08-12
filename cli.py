@@ -13,7 +13,7 @@ Commands:
     build      - Generate & update catalog.json (1,000 books across 3 categories)
     download   - Fetch/format verified EPUB files into downloads/
     verify     - Execute pre-release quality integrity audit
-    packs      - Build device archives (Onyx Boox X4, Kindle AZW3, Master)
+    packs      - Build device archives (Xteink X3/X4 CrossPoint, Kindle AZW3, Master)
     docs       - Regenerate CATALOG.md markdown documentation
     status     - Display current catalog & device pack metrics
 """
@@ -21,6 +21,10 @@ Commands:
 import sys
 import os
 import subprocess
+
+if sys.platform == 'win32':
+    sys.stdout.reconfigure(encoding='utf-8')
+
 
 def run_step(title, script_name):
     script_path = os.path.join('scripts', script_name)

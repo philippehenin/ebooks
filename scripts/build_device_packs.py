@@ -150,20 +150,27 @@ OPTION 2: USB DIRECT CABLE TRANSFER
         f.write(kindle_guide)
 
     x3_x4_guide = """========================================================================
-X3 & X4 E-INK READER PACK SETUP GUIDE (Onyx Boox / Kobo / Meebook / PocketBook)
+X3 & X4 E-INK READER PACK SETUP GUIDE (CrossPoint Firmware / ESP32 E-Reader)
 ========================================================================
 
-The ebooks in this pack are structured into clean, categorized directories:
-- 01_French_Classics (Aventure, Realisme, Poesie)
-- 02_English_Classics (Gothic, Victorian, Philosophy)
+The ebooks in this pack are structured into 2 main tiers and 3 core categories:
+1. 01_Golden_100_Essentials (50 French Classics, 50 English Classics)
+2. 02_Extended_Master_Vault (Full 1,000-book collection):
+   ├── 01_French_Classics (400 native French masterpieces)
+   ├── 02_English_Classics (400 native English masterpieces)
+   └── 03_World_Masterpieces_in_French (200 foreign classics translated to French)
 
-HOW TO TRANSFER TO YOUR X3 / X4 E-INK READER:
+HOW TO TRANSFER TO YOUR X3 / X4 E-INK READER (CROSSPOINT FIRMWARE):
 ------------------------------------------------------------------------
-1. Connect your X3 or X4 E-ink Reader to your computer via USB.
-2. Copy the "01_French_Classics" and "02_English_Classics" folders into
-   your reader's "Books" or "Documents" storage directory.
-3. Safely disconnect your reader and open your device's library app
-   (e.g., NeoReader, KOReader, PocketBook Reader, or Kobo Library).
+1. MICROSD / USB TRANSFER: Copy the "01_Golden_100_Essentials" and/or
+   "02_Extended_Master_Vault" folders into the "/books/" folder on your SD card.
+   CrossPoint Reader will automatically build layout cache & covers under ".crosspoint/".
+2. WI-FI WEB TRANSFER: Enable Wi-Fi on your X3/X4, open the Web Transfer tool,
+   and drag-and-drop .epub files via your web browser to the device IP address.
+3. CALIBRE INTEGRATION:
+   - Plugin: Install CrossPoint Calibre plugin (Preferences ➔ Plugins ➔ Load from file)
+     and connect via "File Transfer ➔ Connect to Calibre Wireless" on device.
+   - OPDS Server: Start Calibre Content Server and connect X3/X4 via OPDS Browser.
 ========================================================================
 """
     with open(os.path.join(X3_X4_DIR, 'EINK_READER_SETUP_GUIDE.txt'), 'w', encoding='utf-8') as f:

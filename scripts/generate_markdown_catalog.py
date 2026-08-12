@@ -19,7 +19,7 @@ md_content.append("[![Collection](https://img.shields.io/badge/Catalog-1,000_Cla
 md_content.append("[![Golden 100](https://img.shields.io/badge/Golden_100-50_FR_%7C_50_EN-amber.svg)](#-master-literary-catalog---1000-curated-drm-free-ebooks)")
 md_content.append("[![Categories](https://img.shields.io/badge/Categories-FR_%7C_EN_%7C_World_in_FR-orange.svg)](#-master-literary-catalog---1000-curated-drm-free-ebooks)\n")
 
-md_content.append("A complete, curated catalog of **1,000 DRM-free classic ebooks** structured across **3 Core Categories**: French Classics (400), English Classics (400), and World Masterpieces in French Translation (200), featuring **The Golden 100 Essentials (50 FR / 50 EN)** for Onyx Boox X4 and Kindle devices.\n")
+md_content.append("A complete, curated catalog of **1,000 DRM-free classic ebooks** structured across **3 Core Categories**: French Classics (400), English Classics (400), and World Masterpieces in French Translation (200), featuring **The Golden 100 Essentials (50 FR / 50 EN)** for Xteink X3/X4 (CrossPoint Firmware) and Kindle devices.\n")
 md_content.append("---\n")
 
 md_content.append("## 📊 Collection Overview\n")
@@ -28,7 +28,7 @@ md_content.append(f"- **🌟 Golden 100 Essentials**: {len(golden_books)} (50 Fr
 md_content.append(f"- **French Classics 🇫🇷**: {len(french_books)}")
 md_content.append(f"- **English Classics 🇬🇧**: {len(english_books)}")
 md_content.append(f"- **World Masterpieces in French Translation 🌐**: {len(world_french_books)}")
-md_content.append("- **Formats Available**: Native `.AZW3` (Kindle 10th Gen) & Clean `.EPUB` (Kobo, Onyx Boox X4, Meebook, PocketBook)\n")
+md_content.append("- **Formats Available**: Native `.AZW3` (Kindle 10th Gen) & Clean `.EPUB` (Xteink X3/X4 CrossPoint, Kobo, PocketBook)\n")
 md_content.append("---\n")
 
 md_content.append(f"## 🇫🇷 Category 1: French Classics ({len(french_books)} Titles)\n")

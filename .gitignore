@@ -19,4 +19,10 @@ tmp/
 download_summary.json
 node_modules/
 package-lock.json
+<<<<<<< HEAD
 device_packs/*/
+=======
+device_packs/
+*.zip
+downloads/
+>>>>>>> 21d69a6 (feat: multi-threaded QA engine, in-browser reader, E-ink typography, CI/CD workflow & fast language audit)
