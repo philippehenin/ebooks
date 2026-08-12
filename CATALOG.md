@@ -47,46 +47,46 @@ A complete, curated catalog of **1,000 DRM-free classic ebooks** structured acro
 | 0027 | 🌟 Golden | **Le juif errant - Tome II** | Eugène Sue | Adventure, Mystery & Sci-Fi | Classic | `EPUB / MOBI` |
 | 0028 | 🌟 Golden | **François le Bossu** | comtesse de Sophie Ségur | Adventure, Mystery & Sci-Fi | Classic | `EPUB / MOBI` |
 | 0029 | 🌟 Golden | **Maman Léo / Les Habits Noirs Tome V** | Paul Féval | Adventure, Mystery & Sci-Fi | Classic | `EPUB / MOBI` |
-| 0030 | 📚 Vault | **La Guerre du Feu: Roman des âges farouches** | aîné J.-H. Rosny | Adventure, Mystery & Sci-Fi | Classic | `EPUB / MOBI` |
+| 0030 | 🌟 Golden | **La Guerre du Feu: Roman des âges farouches** | aîné J.-H. Rosny | Adventure, Mystery & Sci-Fi | Classic | `EPUB / MOBI` |
 | 0034 | 🌟 Golden | **Indiana** | George Sand | Romanticism | Classic | `EPUB / MOBI` |
-| 0035 | 📚 Vault | **Les diaboliques** | J. Barbey d'Aurevilly | Decadence | Classic | `EPUB / MOBI` |
+| 0035 | 🌟 Golden | **Les diaboliques** | J. Barbey d'Aurevilly | Decadence | Classic | `EPUB / MOBI` |
 | 0036 | 🌟 Golden | **Les Misérables** | Victor Hugo | Realism, Naturalism & Social Drama | 1862 | `EPUB / MOBI` |
 | 0037 | 🌟 Golden | **Notre-Dame de Paris** | Victor Hugo | Realism, Naturalism & Social Drama | 1831 | `EPUB / MOBI` |
-| 0038 | 📚 Vault | **Quatrevingt-Treize** | Victor Hugo | Realism, Naturalism & Social Drama | Classic | `EPUB / MOBI` |
-| 0039 | 📚 Vault | **L'homme Qui Rit** | Victor Hugo | Realism, Naturalism & Social Drama | Classic | `EPUB / MOBI` |
+| 0038 | 🌟 Golden | **Quatrevingt-Treize** | Victor Hugo | Realism, Naturalism & Social Drama | Classic | `EPUB / MOBI` |
+| 0039 | 🌟 Golden | **L'homme Qui Rit** | Victor Hugo | Realism, Naturalism & Social Drama | Classic | `EPUB / MOBI` |
 | 0040 | 🌟 Golden | **Germinie Lacerteux** | Edmond de Goncourt | Naturalist Novel | Classic | `EPUB / MOBI` |
-| 0041 | 📚 Vault | **Le Dernier Jour d'un Condamné** | Victor Hugo | Realism, Naturalism & Social Drama | Classic | `EPUB / MOBI` |
+| 0041 | 🌟 Golden | **Le Dernier Jour d'un Condamné** | Victor Hugo | Realism, Naturalism & Social Drama | Classic | `EPUB / MOBI` |
 | 0042 | 🌟 Golden | **Madame Bovary** | Gustave Flaubert | Realism, Naturalism & Social Drama | 1857 | `EPUB / MOBI` |
 | 0044 | 🌟 Golden | **Salammbô** | Gustave Flaubert | Realism, Naturalism & Social Drama | Classic | `EPUB / MOBI` |
 | 0046 | 🌟 Golden | **Germinal** | Émile Zola | Realism, Naturalism & Social Drama | 1885 | `EPUB / MOBI` |
 | 0048 | 🌟 Golden | **L'Assommoir** | Émile Zola | Realism, Naturalism & Social Drama | Classic | `EPUB / MOBI` |
-| 0049 | 📚 Vault | **Le fauteuil hanté** | Gaston Leroux | Mystery | Classic | `EPUB / MOBI` |
+| 0049 | 🌟 Golden | **Le fauteuil hanté** | Gaston Leroux | Mystery | Classic | `EPUB / MOBI` |
 | 0050 | 🌟 Golden | **Nana** | Émile Zola | Realism, Naturalism & Social Drama | Classic | `EPUB / MOBI` |
 | 0051 | 🌟 Golden | **Micromégas** | Voltaire | Philosophical Fiction | Classic | `EPUB / MOBI` |
 | 0052 | 🌟 Golden | **Thérèse Raquin** | Émile Zola | Realism, Naturalism & Social Drama | Classic | `EPUB / MOBI` |
-| 0053 | 📚 Vault | **L'Œuvre** | Émile Zola | Realism, Naturalism & Social Drama | Classic | `EPUB / MOBI` |
-| 0055 | 📚 Vault | **Le Grand Meaulnes** | Alain-Fournier | Symbolist Romance | Classic | `EPUB / MOBI` |
+| 0053 | 🌟 Golden | **L'Œuvre** | Émile Zola | Realism, Naturalism & Social Drama | Classic | `EPUB / MOBI` |
+| 0055 | 🌟 Golden | **Le Grand Meaulnes** | Alain-Fournier | Symbolist Romance | Classic | `EPUB / MOBI` |
 | 0056 | 🌟 Golden | **Eugénie Grandet** | Honoré de Balzac | Realism, Naturalism & Social Drama | Classic | `EPUB / MOBI` |
 | 0057 | 🌟 Golden | **Illusions perdues** | Honoré de Balzac | Realism, Naturalism & Social Drama | Classic | `EPUB / MOBI` |
-| 0058 | 📚 Vault | **Le feu (Journal d'une Escouade)** | Henri Barbusse | WWI Literature | Classic | `EPUB / MOBI` |
-| 0059 | 📚 Vault | **Les Dieux ont soif** | Anatole France | Historical Realism | Classic | `EPUB / MOBI` |
-| 0061 | 📚 Vault | **Le Crime de Sylvestre Bonnard** | Anatole France | Realism | Classic | `EPUB / MOBI` |
+| 0058 | 🌟 Golden | **Le feu (Journal d'une Escouade)** | Henri Barbusse | WWI Literature | Classic | `EPUB / MOBI` |
+| 0059 | 🌟 Golden | **Les Dieux ont soif** | Anatole France | Historical Realism | Classic | `EPUB / MOBI` |
+| 0061 | 🌟 Golden | **Le Crime de Sylvestre Bonnard** | Anatole France | Realism | Classic | `EPUB / MOBI` |
 | 0063 | 🌟 Golden | **Une vie** | Guy de Maupassant | Realism, Naturalism & Social Drama | Classic | `EPUB / MOBI` |
 | 0064 | 🌟 Golden | **Pierre et Jean** | Guy de Maupassant | Realism, Naturalism & Social Drama | Classic | `EPUB / MOBI` |
-| 0066 | 🌟 Golden | **Boule de suif et autres contes** | Guy de Maupassant | Realism, Naturalism & Social Drama | Classic | `EPUB / MOBI` |
+| 0066 | 📚 Vault | **Boule de suif et autres contes** | Guy de Maupassant | Realism, Naturalism & Social Drama | Classic | `EPUB / MOBI` |
 | 0067 | 📚 Vault | **Thaïs** | Anatole France | Historical Novel | Classic | `EPUB / MOBI` |
-| 0068 | 🌟 Golden | **La Chartreuse de Parme** | Stendhal | Realism, Naturalism & Social Drama | Classic | `EPUB / MOBI` |
-| 0069 | 🌟 Golden | **Carmen** | Prosper Mérimée | Realism, Naturalism & Social Drama | Classic | `EPUB / MOBI` |
-| 0070 | 🌟 Golden | **Colomba** | Prosper Mérimée | Realism, Naturalism & Social Drama | Classic | `EPUB / MOBI` |
+| 0068 | 📚 Vault | **La Chartreuse de Parme** | Stendhal | Realism, Naturalism & Social Drama | Classic | `EPUB / MOBI` |
+| 0069 | 📚 Vault | **Carmen** | Prosper Mérimée | Realism, Naturalism & Social Drama | Classic | `EPUB / MOBI` |
+| 0070 | 📚 Vault | **Colomba** | Prosper Mérimée | Realism, Naturalism & Social Drama | Classic | `EPUB / MOBI` |
 | 0075 | 📚 Vault | **Lettres de mon moulin** | Alphonse Daudet | Realism, Naturalism & Social Drama | Classic | `EPUB / MOBI` |
-| 0081 | 🌟 Golden | **Candide, ou l'optimisme** | Voltaire | Philosophy, Satire & Drama | Classic | `EPUB / MOBI` |
+| 0081 | 📚 Vault | **Candide, ou l'optimisme** | Voltaire | Philosophy, Satire & Drama | Classic | `EPUB / MOBI` |
 | 0085 | 📚 Vault | **Ramuntcho** | Pierre Loti | Regional Fiction | Classic | `EPUB / MOBI` |
 | 0086 | 📚 Vault | **La religieuse** | Denis Diderot | Philosophy, Satire & Drama | Classic | `EPUB / MOBI` |
 | 0087 | 📚 Vault | **Le neveu de Rameau** | Denis Diderot | Philosophy, Satire & Drama | Classic | `EPUB / MOBI` |
 | 0088 | 📚 Vault | **Les liaisons dangereuses / Lettres recueillies dans une Société et publiées pour l'instruction de quelques autres** | Choderlos de Laclos | Philosophy, Satire & Drama | Classic | `EPUB / MOBI` |
-| 0089 | 🌟 Golden | **Manon Lescaut** | abbé Prévost | Philosophy, Satire & Drama | Classic | `EPUB / MOBI` |
-| 0090 | 🌟 Golden | **La Princesse de Clèves** | Madame de La Fayette | Philosophy, Satire & Drama | Classic | `EPUB / MOBI` |
-| 0091 | 🌟 Golden | **Les Rêveries du Promeneur Solitaire / Ouvrage faisant suite aux Confessions** | Jean-Jacques Rousseau | Philosophy, Satire & Drama | Classic | `EPUB / MOBI` |
+| 0089 | 📚 Vault | **Manon Lescaut** | abbé Prévost | Philosophy, Satire & Drama | Classic | `EPUB / MOBI` |
+| 0090 | 📚 Vault | **La Princesse de Clèves** | Madame de La Fayette | Philosophy, Satire & Drama | Classic | `EPUB / MOBI` |
+| 0091 | 📚 Vault | **Les Rêveries du Promeneur Solitaire / Ouvrage faisant suite aux Confessions** | Jean-Jacques Rousseau | Philosophy, Satire & Drama | Classic | `EPUB / MOBI` |
 | 0093 | 📚 Vault | **Madame Chrysanthème** | Pierre Loti | Exotic Travel Fiction | Classic | `EPUB / MOBI` |
 | 0094 | 📚 Vault | **Lettres persanes, tome I** | baron de Charles de Secondat Montesquieu | Philosophy, Satire & Drama | Classic | `EPUB / MOBI` |
 | 0095 | 📚 Vault | **Esprit des lois / livres I à V, précédés d'une introduction de l'éditeur** | baron de Charles de Secondat Montesquieu | Philosophy, Satire & Drama | Classic | `EPUB / MOBI` |
@@ -96,8 +96,8 @@ A complete, curated catalog of **1,000 DRM-free classic ebooks** structured acro
 | 0103 | 📚 Vault | **Le Diable au Corps: Roman** | Raymond Radiguet | 20th Century Drama | Classic | `EPUB / MOBI` |
 | 0105 | 📚 Vault | **Voyage autour de ma chambre** | Xavier de Maistre | Philosophy, Satire & Drama | Classic | `EPUB / MOBI` |
 | 0107 | 📚 Vault | **Alcools** | Guillaume Apollinaire | Modernist Poetry | Classic | `EPUB / MOBI` |
-| 0110 | 🌟 Golden | **L'Avare** | Molière | Philosophy, Satire & Drama | Classic | `EPUB / MOBI` |
-| 0112 | 🌟 Golden | **Cyrano de Bergerac** | Edmond Rostand | Heroic Comedy | Classic | `EPUB / MOBI` |
+| 0110 | 📚 Vault | **L'Avare** | Molière | Philosophy, Satire & Drama | Classic | `EPUB / MOBI` |
+| 0112 | 📚 Vault | **Cyrano de Bergerac** | Edmond Rostand | Heroic Comedy | Classic | `EPUB / MOBI` |
 | 0113 | 📚 Vault | **Poil de Carotte** | Jules Renard | Realist Fiction | Classic | `EPUB / MOBI` |
 | 0114 | 📚 Vault | **Le Journal d'une Femme de Chambre** | Octave Mirbeau | Social Satire | Classic | `EPUB / MOBI` |
 | 0115 | 📚 Vault | **Le jardin des supplices** | Octave Mirbeau | Decadent Literature | Classic | `EPUB / MOBI` |
@@ -106,7 +106,7 @@ A complete, curated catalog of **1,000 DRM-free classic ebooks** structured acro
 | 0119 | 📚 Vault | **Le rêve et la vie - Les filles du feu - La bohème galante** | Gérard de Nerval | Romanticism | Classic | `EPUB / MOBI` |
 | 0122 | 📚 Vault | **Gaspard de la nuit: Fantaisies à la manière de Rembrandt et de Callot** | Aloysius Bertrand | Prose Poetry | Classic | `EPUB / MOBI` |
 | 0123 | 📚 Vault | **Les Chants de Maldoror** | comte de Lautréamont | Surrealist Poetry | Classic | `EPUB / MOBI` |
-| 0126 | 🌟 Golden | **Les Fleurs du Mal** | Charles Baudelaire | Poetry, Gothic & Early 20th Century | Classic | `EPUB / MOBI` |
+| 0126 | 📚 Vault | **Les Fleurs du Mal** | Charles Baudelaire | Poetry, Gothic & Early 20th Century | Classic | `EPUB / MOBI` |
 | 0129 | 📚 Vault | **Une saison en enfer** | Arthur Rimbaud | Poetry, Gothic & Early 20th Century | Classic | `EPUB / MOBI` |
 | 0130 | 📚 Vault | **Œuvres complètes - Volume 1 / Poèmes Saturniens, Fêtes Galantes, Bonne chanson, Romances sans paroles, Sagesse, Jadis et naguère** | Paul Verlaine | Symbolist Poetry | Classic | `EPUB / MOBI` |
 | 0155 | 📚 Vault | **La Guerre des Boutons: Roman de ma douzième année** | Louis Pergaud | Poetry, Gothic & Early 20th Century | Classic | `EPUB / MOBI` |
@@ -441,45 +441,45 @@ A complete, curated catalog of **1,000 DRM-free classic ebooks** structured acro
 | 0043 | 🌟 Golden | **The Adventures of Tom Sawyer, Complete** | Mark Twain | Adventure | Classic | `EPUB / MOBI` |
 | 0045 | 🌟 Golden | **A Connecticut Yankee in King Arthur's Court** | Mark Twain | Satire | Classic | `EPUB / MOBI` |
 | 0047 | 🌟 Golden | **The Scarlet Letter** | Nathaniel Hawthorne | Historical Fiction | Classic | `EPUB / MOBI` |
-| 0054 | 📚 Vault | **The House of the Seven Gables** | Nathaniel Hawthorne | Gothic Romance | Classic | `EPUB / MOBI` |
+| 0054 | 🌟 Golden | **The House of the Seven Gables** | Nathaniel Hawthorne | Gothic Romance | Classic | `EPUB / MOBI` |
 | 0060 | 🌟 Golden | **Gulliver's Travels into Several Remote Regions of the World** | Jonathan Swift | Satire | Classic | `EPUB / MOBI` |
-| 0062 | 📚 Vault | **The life and opinions of Tristram Shandy, gentleman** | Laurence Sterne | Comic Novel | Classic | `EPUB / MOBI` |
+| 0062 | 🌟 Golden | **The life and opinions of Tristram Shandy, gentleman** | Laurence Sterne | Comic Novel | Classic | `EPUB / MOBI` |
 | 0065 | 🌟 Golden | **Heart of Darkness** | Joseph Conrad | Modernist Fiction | Classic | `EPUB / MOBI` |
-| 0071 | 📚 Vault | **The Ballad of Reading Gaol** | Oscar Wilde | Realism, Naturalism & Social Drama | Classic | `EPUB / MOBI` |
-| 0072 | 📚 Vault | **HomeBrew HomePages Put YOU on the World Wide Web** | Anonymous | Realism, Naturalism & Social Drama | Classic | `EPUB / MOBI` |
-| 0073 | 📚 Vault | **United States Declaration of Independence** | Thomas Jefferson | Gothic Fiction | Classic | `EPUB / MOBI` |
-| 0074 | 📚 Vault | **Rio Grande's Last Race, and Other Verses** | A. B. Paterson | Realism, Naturalism & Social Drama | Classic | `EPUB / MOBI` |
-| 0076 | 📚 Vault | **The Secret Agent: A Simple Tale** | Joseph Conrad | Political Thriller | Classic | `EPUB / MOBI` |
-| 0077 | 📚 Vault | **Rhymes of a Rolling Stone** | Robert W. Service | Comedy | Classic | `EPUB / MOBI` |
-| 0078 | 📚 Vault | **Mrs. Dalloway** | Virginia Woolf | Modernist Literature | Classic | `EPUB / MOBI` |
-| 0079 | 📚 Vault | **The Early Short Fiction of Edith Wharton — Part 2** | Edith Wharton | Realism, Naturalism & Social Drama | Classic | `EPUB / MOBI` |
-| 0080 | 📚 Vault | **The Fibonacci Number Series** | Michael Husted | Realism, Naturalism & Social Drama | Classic | `EPUB / MOBI` |
-| 0082 | 📚 Vault | **Three Elephant Power, and Other Stories** | A. B. Paterson | Philosophy, Satire & Drama | Classic | `EPUB / MOBI` |
+| 0071 | 🌟 Golden | **The Ballad of Reading Gaol** | Oscar Wilde | Realism, Naturalism & Social Drama | Classic | `EPUB / MOBI` |
+| 0072 | 🌟 Golden | **HomeBrew HomePages Put YOU on the World Wide Web** | Anonymous | Realism, Naturalism & Social Drama | Classic | `EPUB / MOBI` |
+| 0073 | 🌟 Golden | **United States Declaration of Independence** | Thomas Jefferson | Gothic Fiction | Classic | `EPUB / MOBI` |
+| 0074 | 🌟 Golden | **Rio Grande's Last Race, and Other Verses** | A. B. Paterson | Realism, Naturalism & Social Drama | Classic | `EPUB / MOBI` |
+| 0076 | 🌟 Golden | **The Secret Agent: A Simple Tale** | Joseph Conrad | Political Thriller | Classic | `EPUB / MOBI` |
+| 0077 | 🌟 Golden | **Rhymes of a Rolling Stone** | Robert W. Service | Comedy | Classic | `EPUB / MOBI` |
+| 0078 | 🌟 Golden | **Mrs. Dalloway** | Virginia Woolf | Modernist Literature | Classic | `EPUB / MOBI` |
+| 0079 | 🌟 Golden | **The Early Short Fiction of Edith Wharton — Part 2** | Edith Wharton | Realism, Naturalism & Social Drama | Classic | `EPUB / MOBI` |
+| 0080 | 🌟 Golden | **The Fibonacci Number Series** | Michael Husted | Realism, Naturalism & Social Drama | Classic | `EPUB / MOBI` |
+| 0082 | 🌟 Golden | **Three Elephant Power, and Other Stories** | A. B. Paterson | Philosophy, Satire & Drama | Classic | `EPUB / MOBI` |
 | 0083 | 🌟 Golden | **Dubliners** | James Joyce | Short Stories | Classic | `EPUB / MOBI` |
-| 0084 | 📚 Vault | **Three men in a boat (to say nothing of the dog)** | Jerome K. Jerome | Philosophy, Satire & Drama | Classic | `EPUB / MOBI` |
-| 0092 | 📚 Vault | **A Portrait of the Artist as a Young Man** | James Joyce | Modernist Literature | Classic | `EPUB / MOBI` |
+| 0084 | 🌟 Golden | **Three men in a boat (to say nothing of the dog)** | Jerome K. Jerome | Philosophy, Satire & Drama | Classic | `EPUB / MOBI` |
+| 0092 | 🌟 Golden | **A Portrait of the Artist as a Young Man** | James Joyce | Modernist Literature | Classic | `EPUB / MOBI` |
 | 0097 | 🌟 Golden | **Alice's Adventures in Wonderland** | Lewis Carroll | Children's Fantasy | 1865 | `EPUB / MOBI` |
-| 0099 | 📚 Vault | **Gargantua and Pantagruel** | François Rabelais | Philosophy, Satire & Drama | Classic | `EPUB / MOBI` |
-| 0100 | 📚 Vault | **Bunner Sisters** | Edith Wharton | Philosophy, Satire & Drama | Classic | `EPUB / MOBI` |
-| 0101 | 📚 Vault | **Jean-Christophe Journey's End** | Romain Rolland | Roman-fleuve | Classic | `EPUB / MOBI` |
-| 0104 | 📚 Vault | **Paul and Virginia** | Bernardin de Saint-Pierre | Philosophy, Satire & Drama | Classic | `EPUB / MOBI` |
-| 0106 | 📚 Vault | **Bübü vom Montparnasse / Ein Roman mit zwanzig Holzschnitten von Frans Masereel** | Charles-Louis Philippe | Urban Realism | Classic | `EPUB / MOBI` |
-| 0108 | 📚 Vault | **Through the Looking-Glass** | Lewis Carroll | Children's Fantasy | Classic | `EPUB / MOBI` |
-| 0109 | 📚 Vault | **Pygmalion** | Bernard Shaw | Drama | Classic | `EPUB / MOBI` |
-| 0111 | 📚 Vault | **Arms and the Man** | Bernard Shaw | Drama | Classic | `EPUB / MOBI` |
-| 0116 | 📚 Vault | **The Golden Wheel Dream-book and Fortune-teller / Being the most complete work on fortune-telling and interpreting dreams ever printed, containing an alphabetical list of dreams, with their interpretation, and the lucky numbers they signify. Also explaining how to tell fortunes by the mysterious golden wheel, with cards, dice, and dominoes. How to tell future events by the lines of the hands, by moles on the body, by the face, nails of the fingers, hair and shape of the head. How to find where to dig for water, coal, and all kinds of metals, by means of the celebrated divining or luck rod. How to tell the temper and disposition of anybody, how to tell fortunes with tea leaves and coffee grounds, signs of the Moon's age, lucky and unlucky days, together with charms to make your sweetheart love you, and to make a lover pop the question, with twenty ways of telling fortunes on New Year's eve, and a complete language and signification of the flowers.** | Felix Fontaine | Sci-Fi / Symbolism | Classic | `EPUB / MOBI` |
-| 0120 | 📚 Vault | **The Follies of a Day; or, The Marriage of Figaro / A comedy, as it is now performing at the Theatre-Royal, Covent-Garden. From the French of M. de Beaumarchais** | Pierre Augustin Caron de Beaumarchais | Philosophy, Satire & Drama | Classic | `EPUB / MOBI` |
+| 0099 | 🌟 Golden | **Gargantua and Pantagruel** | François Rabelais | Philosophy, Satire & Drama | Classic | `EPUB / MOBI` |
+| 0100 | 🌟 Golden | **Bunner Sisters** | Edith Wharton | Philosophy, Satire & Drama | Classic | `EPUB / MOBI` |
+| 0101 | 🌟 Golden | **Jean-Christophe Journey's End** | Romain Rolland | Roman-fleuve | Classic | `EPUB / MOBI` |
+| 0104 | 🌟 Golden | **Paul and Virginia** | Bernardin de Saint-Pierre | Philosophy, Satire & Drama | Classic | `EPUB / MOBI` |
+| 0106 | 🌟 Golden | **Bübü vom Montparnasse / Ein Roman mit zwanzig Holzschnitten von Frans Masereel** | Charles-Louis Philippe | Urban Realism | Classic | `EPUB / MOBI` |
+| 0108 | 🌟 Golden | **Through the Looking-Glass** | Lewis Carroll | Children's Fantasy | Classic | `EPUB / MOBI` |
+| 0109 | 🌟 Golden | **Pygmalion** | Bernard Shaw | Drama | Classic | `EPUB / MOBI` |
+| 0111 | 🌟 Golden | **Arms and the Man** | Bernard Shaw | Drama | Classic | `EPUB / MOBI` |
+| 0116 | 🌟 Golden | **The Golden Wheel Dream-book and Fortune-teller / Being the most complete work on fortune-telling and interpreting dreams ever printed, containing an alphabetical list of dreams, with their interpretation, and the lucky numbers they signify. Also explaining how to tell fortunes by the mysterious golden wheel, with cards, dice, and dominoes. How to tell future events by the lines of the hands, by moles on the body, by the face, nails of the fingers, hair and shape of the head. How to find where to dig for water, coal, and all kinds of metals, by means of the celebrated divining or luck rod. How to tell the temper and disposition of anybody, how to tell fortunes with tea leaves and coffee grounds, signs of the Moon's age, lucky and unlucky days, together with charms to make your sweetheart love you, and to make a lover pop the question, with twenty ways of telling fortunes on New Year's eve, and a complete language and signification of the flowers.** | Felix Fontaine | Sci-Fi / Symbolism | Classic | `EPUB / MOBI` |
+| 0120 | 🌟 Golden | **The Follies of a Day; or, The Marriage of Figaro / A comedy, as it is now performing at the Theatre-Royal, Covent-Garden. From the French of M. de Beaumarchais** | Pierre Augustin Caron de Beaumarchais | Philosophy, Satire & Drama | Classic | `EPUB / MOBI` |
 | 0121 | 🌟 Golden | **Hamlet** | William Shakespeare | Tragedy | Classic | `EPUB / MOBI` |
-| 0124 | 📚 Vault | **Children of the Night** | Edwin Arlington Robinson | Autobiography | Classic | `EPUB / MOBI` |
-| 0125 | 📚 Vault | **Before Adam** | Jack London | Philosophical Fiction | Classic | `EPUB / MOBI` |
+| 0124 | 🌟 Golden | **Children of the Night** | Edwin Arlington Robinson | Autobiography | Classic | `EPUB / MOBI` |
+| 0125 | 🌟 Golden | **Before Adam** | Jack London | Philosophical Fiction | Classic | `EPUB / MOBI` |
 | 0127 | 🌟 Golden | **Romeo and Juliet** | William Shakespeare | Tragedy | Classic | `EPUB / MOBI` |
 | 0128 | 🌟 Golden | **Othello** | William Shakespeare | Tragedy | Classic | `EPUB / MOBI` |
-| 0131 | 📚 Vault | **Young Adventure: A Book of Poems** | Stephen Vincent Benét | Symbolist Poetry | Classic | `EPUB / MOBI` |
-| 0132 | 📚 Vault | **The Count's Millions** | Emile Gaboriau | Philosophical Satire | Classic | `EPUB / MOBI` |
-| 0133 | 📚 Vault | **The Culprit Fay, and Other Poems** | Joseph Rodman Drake | Epistolary Novel | Classic | `EPUB / MOBI` |
-| 0134 | 📚 Vault | **The Tempest** | William Shakespeare | Comedy | Classic | `EPUB / MOBI` |
-| 0135 | 📚 Vault | **Rhymes of a Red Cross Man** | Robert W. Service | Classic Novel | Classic | `EPUB / MOBI` |
-| 0136 | 📚 Vault | **Guide to Life and Literature of the Southwest, with a Few Observations** | J. Frank Dobie | Classic Novel | Classic | `EPUB / MOBI` |
+| 0131 | 🌟 Golden | **Young Adventure: A Book of Poems** | Stephen Vincent Benét | Symbolist Poetry | Classic | `EPUB / MOBI` |
+| 0132 | 🌟 Golden | **The Count's Millions** | Emile Gaboriau | Philosophical Satire | Classic | `EPUB / MOBI` |
+| 0133 | 🌟 Golden | **The Culprit Fay, and Other Poems** | Joseph Rodman Drake | Epistolary Novel | Classic | `EPUB / MOBI` |
+| 0134 | 🌟 Golden | **The Tempest** | William Shakespeare | Comedy | Classic | `EPUB / MOBI` |
+| 0135 | 🌟 Golden | **Rhymes of a Red Cross Man** | Robert W. Service | Classic Novel | Classic | `EPUB / MOBI` |
+| 0136 | 🌟 Golden | **Guide to Life and Literature of the Southwest, with a Few Observations** | J. Frank Dobie | Classic Novel | Classic | `EPUB / MOBI` |
 | 0137 | 📚 Vault | **The Golden Road** | L. M. Montgomery | Autobiographical Prose | Classic | `EPUB / MOBI` |
 | 0138 | 📚 Vault | **John Barleycorn** | Jack London | Epistolary Satire | Classic | `EPUB / MOBI` |
 | 0139 | 📚 Vault | **Vida De Lazarillo De Tormes Y De Sus Fortunas Y Adversidades** | Anonymous | Political Philosophy | Classic | `EPUB / MOBI` |
@@ -504,12 +504,12 @@ A complete, curated catalog of **1,000 DRM-free classic ebooks** structured acro
 | 0159 | 📚 Vault | **Old Indian Legends** | Zitkala-Sa | Avant-garde Drama | Classic | `EPUB / MOBI` |
 | 0160 | 📚 Vault | **Indian Boyhood** | Charles A. Eastman | 20th Century Drama | Classic | `EPUB / MOBI` |
 | 0161 | 📚 Vault | **Old Indian Days** | Charles A. Eastman | Urban Realism | Classic | `EPUB / MOBI` |
-| 0163 | 🌟 Golden | **Meditations** | Emperor of Rome Marcus Aurelius | Stoic Philosophy | Classic | `EPUB / MOBI` |
-| 0164 | 🌟 Golden | **The Adventures of Sherlock Holmes** | Arthur Conan Doyle | Detective | 1892 | `EPUB / MOBI` |
-| 0165 | 🌟 Golden | **The Memoirs of Sherlock Holmes** | Arthur Conan Doyle | Detective | Classic | `EPUB / MOBI` |
-| 0166 | 🌟 Golden | **The Return of Sherlock Holmes** | Arthur Conan Doyle | Detective | Classic | `EPUB / MOBI` |
-| 0167 | 🌟 Golden | **The Hound of the Baskervilles** | Arthur Conan Doyle | Detective | 1902 | `EPUB / MOBI` |
-| 0168 | 🌟 Golden | **A Study in Scarlet** | Arthur Conan Doyle | Detective | Classic | `EPUB / MOBI` |
+| 0163 | 📚 Vault | **Meditations** | Emperor of Rome Marcus Aurelius | Stoic Philosophy | Classic | `EPUB / MOBI` |
+| 0164 | 📚 Vault | **The Adventures of Sherlock Holmes** | Arthur Conan Doyle | Detective | 1892 | `EPUB / MOBI` |
+| 0165 | 📚 Vault | **The Memoirs of Sherlock Holmes** | Arthur Conan Doyle | Detective | Classic | `EPUB / MOBI` |
+| 0166 | 📚 Vault | **The Return of Sherlock Holmes** | Arthur Conan Doyle | Detective | Classic | `EPUB / MOBI` |
+| 0167 | 📚 Vault | **The Hound of the Baskervilles** | Arthur Conan Doyle | Detective | 1902 | `EPUB / MOBI` |
+| 0168 | 📚 Vault | **A Study in Scarlet** | Arthur Conan Doyle | Detective | Classic | `EPUB / MOBI` |
 | 0169 | 📚 Vault | **The Sign of the Four** | Arthur Conan Doyle | Detective | Classic | `EPUB / MOBI` |
 | 0170 | 📚 Vault | **The Mucker** | Edgar Rice Burroughs | Poetry, Gothic & Early 20th Century | Classic | `EPUB / MOBI` |
 | 0171 | 📚 Vault | **The Soul of the Indian: An Interpretation** | Charles A. Eastman | Historical Adventure | Classic | `EPUB / MOBI` |
@@ -519,8 +519,8 @@ A complete, curated catalog of **1,000 DRM-free classic ebooks** structured acro
 | 0175 | 📚 Vault | **The Merry Men, and Other Tales and Fables** | Robert Louis Stevenson | Historical Intrigue | Classic | `EPUB / MOBI` |
 | 0176 | 📚 Vault | **The Saga of Grettir the Strong: Grettir's Saga** | Unknown | Poetry, Gothic & Early 20th Century | Classic | `EPUB / MOBI` |
 | 0177 | 📚 Vault | **The Troll Garden, and Selected Stories** | Willa Cather | Historical Intrigue | Classic | `EPUB / MOBI` |
-| 0178 | 🌟 Golden | **The Enchiridion** | Epictetus | Stoic Philosophy | Classic | `EPUB / MOBI` |
-| 0179 | 🌟 Golden | **The Republic of Plato** | Plato | Philosophy | Classic | `EPUB / MOBI` |
+| 0178 | 📚 Vault | **The Enchiridion** | Epictetus | Stoic Philosophy | Classic | `EPUB / MOBI` |
+| 0179 | 📚 Vault | **The Republic of Plato** | Plato | Philosophy | Classic | `EPUB / MOBI` |
 | 0180 | 📚 Vault | **The Art of War** | active 6th century B.C. Sunzi | Military Strategy | -500 | `EPUB / MOBI` |
 | 0181 | 📚 Vault | **Hesiod, the Homeric Hymns, and Homerica** | Hesiod | Gothic, Mystery & Adventure | Classic | `EPUB / AZW3` |
 | 0182 | 📚 Vault | **The Harvester** | Gene Stratton-Porter | Gothic, Mystery & Adventure | Classic | `EPUB / AZW3` |
@@ -528,18 +528,18 @@ A complete, curated catalog of **1,000 DRM-free classic ebooks** structured acro
 | 0184 | 📚 Vault | **In Flanders Fields, and Other Poems** | John McCrae | Gothic, Mystery & Adventure | Classic | `EPUB / AZW3` |
 | 0185 | 📚 Vault | **Buttered Side Down: Stories** | Edna Ferber | Gothic, Mystery & Adventure | Classic | `EPUB / AZW3` |
 | 0186 | 📚 Vault | **The Story of a Pioneer** | Anna Howard Shaw | Gothic, Mystery & Adventure | Classic | `EPUB / AZW3` |
-| 0187 | 🌟 Golden | **Dracula** | Bram Stoker | Gothic, Mystery & Adventure | 1897 | `EPUB / AZW3` |
-| 0188 | 🌟 Golden | **Frankenstein; or, the modern prometheus** | Mary Wollstonecraft Shelley | Gothic, Mystery & Adventure | Classic | `EPUB / AZW3` |
-| 0189 | 🌟 Golden | **Treasure Island** | Robert Louis Stevenson | Gothic, Mystery & Adventure | 1883 | `EPUB / AZW3` |
-| 0190 | 🌟 Golden | **The strange case of Dr. Jekyll and Mr. Hyde** | Robert Louis Stevenson | Gothic, Mystery & Adventure | Classic | `EPUB / AZW3` |
+| 0187 | 📚 Vault | **Dracula** | Bram Stoker | Gothic, Mystery & Adventure | 1897 | `EPUB / AZW3` |
+| 0188 | 📚 Vault | **Frankenstein; or, the modern prometheus** | Mary Wollstonecraft Shelley | Gothic, Mystery & Adventure | Classic | `EPUB / AZW3` |
+| 0189 | 📚 Vault | **Treasure Island** | Robert Louis Stevenson | Gothic, Mystery & Adventure | 1883 | `EPUB / AZW3` |
+| 0190 | 📚 Vault | **The strange case of Dr. Jekyll and Mr. Hyde** | Robert Louis Stevenson | Gothic, Mystery & Adventure | Classic | `EPUB / AZW3` |
 | 0191 | 📚 Vault | **Kidnapped** | Robert Louis Stevenson | Gothic, Mystery & Adventure | Classic | `EPUB / AZW3` |
-| 0192 | 🌟 Golden | **Moby Dick; Or, The Whale** | Herman Melville | Gothic, Mystery & Adventure | Classic | `EPUB / AZW3` |
+| 0192 | 📚 Vault | **Moby Dick; Or, The Whale** | Herman Melville | Gothic, Mystery & Adventure | Classic | `EPUB / AZW3` |
 | 0193 | 📚 Vault | **Bartleby, the Scrivener: A Story of Wall-Street** | Herman Melville | Gothic, Mystery & Adventure | Classic | `EPUB / AZW3` |
-| 0194 | 🌟 Golden | **The Time Machine** | H. G. Wells | Gothic, Mystery & Adventure | 1895 | `EPUB / AZW3` |
-| 0195 | 🌟 Golden | **The war of the worlds** | H. G. Wells | Gothic, Mystery & Adventure | Classic | `EPUB / AZW3` |
-| 0196 | 🌟 Golden | **The Invisible Man: A Grotesque Romance** | H. G. Wells | Gothic, Mystery & Adventure | Classic | `EPUB / AZW3` |
+| 0194 | 📚 Vault | **The Time Machine** | H. G. Wells | Gothic, Mystery & Adventure | 1895 | `EPUB / AZW3` |
+| 0195 | 📚 Vault | **The war of the worlds** | H. G. Wells | Gothic, Mystery & Adventure | Classic | `EPUB / AZW3` |
+| 0196 | 📚 Vault | **The Invisible Man: A Grotesque Romance** | H. G. Wells | Gothic, Mystery & Adventure | Classic | `EPUB / AZW3` |
 | 0197 | 📚 Vault | **The island of Doctor Moreau** | H. G. Wells | Gothic, Mystery & Adventure | Classic | `EPUB / AZW3` |
-| 0198 | 🌟 Golden | **The Life and Adventures of Robinson Crusoe** | Daniel Defoe | Gothic, Mystery & Adventure | Classic | `EPUB / AZW3` |
+| 0198 | 📚 Vault | **The Life and Adventures of Robinson Crusoe** | Daniel Defoe | Gothic, Mystery & Adventure | Classic | `EPUB / AZW3` |
 | 0199 | 📚 Vault | **The Fortunes and Misfortunes of the Famous Moll Flanders** | Daniel Defoe | Gothic, Mystery & Adventure | Classic | `EPUB / AZW3` |
 | 0200 | 📚 Vault | **The call of the wild** | Jack London | Gothic, Mystery & Adventure | Classic | `EPUB / AZW3` |
 | 0201 | 📚 Vault | **White Fang** | Jack London | Gothic, Mystery & Adventure | Classic | `EPUB / AZW3` |
@@ -557,20 +557,20 @@ A complete, curated catalog of **1,000 DRM-free classic ebooks** structured acro
 | 0213 | 📚 Vault | **The Mysteries of Udolpho** | Ann Ward Radcliffe | Gothic, Mystery & Adventure | Classic | `EPUB / AZW3` |
 | 0214 | 📚 Vault | **Tarzan of the Apes** | Edgar Rice Burroughs | Gothic, Mystery & Adventure | Classic | `EPUB / AZW3` |
 | 0215 | 📚 Vault | **A princess of Mars** | Edgar Rice Burroughs | Gothic, Mystery & Adventure | Classic | `EPUB / AZW3` |
-| 0216 | 🌟 Golden | **Pride and Prejudice** | Jane Austen | Romance, Society & Victorian Realism | 1813 | `EPUB / AZW3` |
-| 0217 | 🌟 Golden | **Sense and Sensibility** | Jane Austen | Romance, Society & Victorian Realism | Classic | `EPUB / AZW3` |
-| 0218 | 🌟 Golden | **Emma** | Jane Austen | Romance, Society & Victorian Realism | Classic | `EPUB / AZW3` |
+| 0216 | 📚 Vault | **Pride and Prejudice** | Jane Austen | Romance, Society & Victorian Realism | 1813 | `EPUB / AZW3` |
+| 0217 | 📚 Vault | **Sense and Sensibility** | Jane Austen | Romance, Society & Victorian Realism | Classic | `EPUB / AZW3` |
+| 0218 | 📚 Vault | **Emma** | Jane Austen | Romance, Society & Victorian Realism | Classic | `EPUB / AZW3` |
 | 0219 | 📚 Vault | **Mansfield Park** | Jane Austen | Romance, Society & Victorian Realism | Classic | `EPUB / AZW3` |
 | 0220 | 📚 Vault | **Persuasion** | Jane Austen | Romance, Society & Victorian Realism | Classic | `EPUB / AZW3` |
 | 0221 | 📚 Vault | **Northanger Abbey** | Jane Austen | Romance, Society & Victorian Realism | Classic | `EPUB / AZW3` |
-| 0222 | 🌟 Golden | **Jane Eyre: An Autobiography** | Charlotte Brontë | Romance, Society & Victorian Realism | Classic | `EPUB / AZW3` |
+| 0222 | 📚 Vault | **Jane Eyre: An Autobiography** | Charlotte Brontë | Romance, Society & Victorian Realism | Classic | `EPUB / AZW3` |
 | 0223 | 📚 Vault | **Villette** | Charlotte Brontë | Romance, Society & Victorian Realism | Classic | `EPUB / AZW3` |
-| 0224 | 🌟 Golden | **Wuthering Heights** | Emily Brontë | Romance, Society & Victorian Realism | 1847 | `EPUB / AZW3` |
+| 0224 | 📚 Vault | **Wuthering Heights** | Emily Brontë | Romance, Society & Victorian Realism | 1847 | `EPUB / AZW3` |
 | 0225 | 📚 Vault | **The Tenant of Wildfell Hall** | Anne Brontë | Romance, Society & Victorian Realism | Classic | `EPUB / AZW3` |
-| 0226 | 🌟 Golden | **Great Expectations** | Charles Dickens | Romance, Society & Victorian Realism | 1861 | `EPUB / AZW3` |
-| 0227 | 🌟 Golden | **A Tale of Two Cities** | Charles Dickens | Romance, Society & Victorian Realism | Classic | `EPUB / AZW3` |
-| 0228 | 🌟 Golden | **David Copperfield** | Charles Dickens | Romance, Society & Victorian Realism | Classic | `EPUB / AZW3` |
-| 0229 | 🌟 Golden | **Oliver Twist, Vol. 2 (of 3)** | Charles Dickens | Romance, Society & Victorian Realism | Classic | `EPUB / AZW3` |
+| 0226 | 📚 Vault | **Great Expectations** | Charles Dickens | Romance, Society & Victorian Realism | 1861 | `EPUB / AZW3` |
+| 0227 | 📚 Vault | **A Tale of Two Cities** | Charles Dickens | Romance, Society & Victorian Realism | Classic | `EPUB / AZW3` |
+| 0228 | 📚 Vault | **David Copperfield** | Charles Dickens | Romance, Society & Victorian Realism | Classic | `EPUB / AZW3` |
+| 0229 | 📚 Vault | **Oliver Twist, Vol. 2 (of 3)** | Charles Dickens | Romance, Society & Victorian Realism | Classic | `EPUB / AZW3` |
 | 0230 | 📚 Vault | **Bleak House** | Charles Dickens | Romance, Society & Victorian Realism | Classic | `EPUB / AZW3` |
 | 0231 | 📚 Vault | **A Christmas Carol in Prose; Being a Ghost Story of Christmas** | Charles Dickens | Romance, Society & Victorian Realism | Classic | `EPUB / AZW3` |
 | 0232 | 📚 Vault | **Nicholas Nickleby** | Charles Dickens | Romance, Society & Victorian Realism | Classic | `EPUB / AZW3` |
@@ -587,11 +587,11 @@ A complete, curated catalog of **1,000 DRM-free classic ebooks** structured acro
 | 0243 | 📚 Vault | **Anne of Green Gables** | L. M. Montgomery | Romance, Society & Victorian Realism | Classic | `EPUB / AZW3` |
 | 0244 | 📚 Vault | **The Secret Garden** | Frances Hodgson Burnett | Romance, Society & Victorian Realism | Classic | `EPUB / AZW3` |
 | 0245 | 📚 Vault | **A Little Princess / Being the whole story of Sara Crewe now told for the first time** | Frances Hodgson Burnett | Romance, Society & Victorian Realism | Classic | `EPUB / AZW3` |
-| 0246 | 🌟 Golden | **Age of Innocence** | Edith Wharton | Romance, Society & Victorian Realism | Classic | `EPUB / AZW3` |
-| 0247 | 🌟 Golden | **The House of Mirth** | Edith Wharton | Romance, Society & Victorian Realism | Classic | `EPUB / AZW3` |
-| 0248 | 🌟 Golden | **Ethan Frome** | Edith Wharton | Romance, Society & Victorian Realism | Classic | `EPUB / AZW3` |
+| 0246 | 📚 Vault | **Age of Innocence** | Edith Wharton | Romance, Society & Victorian Realism | Classic | `EPUB / AZW3` |
+| 0247 | 📚 Vault | **The House of Mirth** | Edith Wharton | Romance, Society & Victorian Realism | Classic | `EPUB / AZW3` |
+| 0248 | 📚 Vault | **Ethan Frome** | Edith Wharton | Romance, Society & Victorian Realism | Classic | `EPUB / AZW3` |
 | 0249 | 📚 Vault | **The Portrait of a Lady — Volume 1** | Henry James | Romance, Society & Victorian Realism | Classic | `EPUB / AZW3` |
-| 0250 | 🌟 Golden | **The Turn of the Screw** | Henry James | Romance, Society & Victorian Realism | Classic | `EPUB / AZW3` |
+| 0250 | 📚 Vault | **The Turn of the Screw** | Henry James | Romance, Society & Victorian Realism | Classic | `EPUB / AZW3` |
 | 0251 | 📚 Vault | **Daisy Miller: A Study** | Henry James | Romance, Society & Victorian Realism | Classic | `EPUB / AZW3` |
 | 0252 | 📚 Vault | **Barchester Towers** | Anthony Trollope | Romance, Society & Victorian Realism | Classic | `EPUB / AZW3` |
 | 0253 | 📚 Vault | **A Room with a View** | E. M. Forster | Romance, Society & Victorian Realism | Classic | `EPUB / AZW3` |
@@ -615,7 +615,7 @@ A complete, curated catalog of **1,000 DRM-free classic ebooks** structured acro
 | 0271 | 📚 Vault | **Acres of Diamonds: Our Every-day Opportunities** | Russell H. Conwell | Satire, Modernism, Drama & Philosophy | Classic | `EPUB / AZW3` |
 | 0272 | 📚 Vault | **Bab: A Sub-Deb** | Mary Roberts Rinehart | Satire, Modernism, Drama & Philosophy | Classic | `EPUB / AZW3` |
 | 0273 | 📚 Vault | **Literary Blunders: A Chapter in the "History of Human Error"** | Henry B. Wheatley | Satire, Modernism, Drama & Philosophy | Classic | `EPUB / AZW3` |
-| 0274 | 🌟 Golden | **Lord Jim** | Joseph Conrad | Satire, Modernism, Drama & Philosophy | Classic | `EPUB / AZW3` |
+| 0274 | 📚 Vault | **Lord Jim** | Joseph Conrad | Satire, Modernism, Drama & Philosophy | Classic | `EPUB / AZW3` |
 | 0275 | 📚 Vault | **The outlaw of Torn** | Edgar Rice Burroughs | Satire, Modernism, Drama & Philosophy | Classic | `EPUB / AZW3` |
 | 0276 | 📚 Vault | **The Fortunes and Misfortunes of the Famous Moll Flanders** | Daniel Defoe | Satire, Modernism, Drama & Philosophy | Classic | `EPUB / AZW3` |
 | 0277 | 📚 Vault | **An Occurrence at Owl Creek Bridge** | Ambrose Bierce | Modernist Literature | Classic | `EPUB / AZW3` |
@@ -627,7 +627,7 @@ A complete, curated catalog of **1,000 DRM-free classic ebooks** structured acro
 | 0283 | 📚 Vault | **Prince Otto, a Romance** | Robert Louis Stevenson | Satire, Modernism, Drama & Philosophy | Classic | `EPUB / AZW3` |
 | 0284 | 📚 Vault | **Lay Morals, and Other Papers** | Robert Louis Stevenson | Satire, Modernism, Drama & Philosophy | Classic | `EPUB / AZW3` |
 | 0285 | 📚 Vault | **A Journal of the Plague Year / Being Observations or Memorials of the Most Remarkable Occurrences, as Well Public as Private, Which Happened in London During the Last Great Visitation in 1665. Written by a Citizen Who Continued All the While in London** | Daniel Defoe | Satire, Modernism, Drama & Philosophy | Classic | `EPUB / AZW3` |
-| 0286 | 🌟 Golden | **Macbeth** | William Shakespeare | Satire, Modernism, Drama & Philosophy | Classic | `EPUB / AZW3` |
+| 0286 | 📚 Vault | **Macbeth** | William Shakespeare | Satire, Modernism, Drama & Philosophy | Classic | `EPUB / AZW3` |
 | 0287 | 📚 Vault | **Weir of Hermiston: An Unfinished Romance** | Robert Louis Stevenson | Satire, Modernism, Drama & Philosophy | Classic | `EPUB / AZW3` |
 | 0288 | 📚 Vault | **Worldly Ways &amp; Byways** | Eliot Gregory | Satire, Modernism, Drama & Philosophy | Classic | `EPUB / AZW3` |
 | 0289 | 📚 Vault | **The Tempest** | William Shakespeare | Satire, Modernism, Drama & Philosophy | Classic | `EPUB / AZW3` |
