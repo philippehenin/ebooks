@@ -92,6 +92,8 @@ def main():
         run_step("Build Device Packs", "build_device_packs.py")
     elif arg == 'crosspoint':
         run_step("Build CrossPoint X4 Pack", "build_crosspoint_pack.py")
+    elif arg == 'opds':
+        run_step("Generate OPDS Wireless Feed", "generate_opds_feed.py")
     elif arg == 'docs':
         run_step("Generate Markdown Documentation", "generate_markdown_catalog.py")
     elif arg == 'status':

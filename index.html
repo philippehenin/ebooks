@@ -642,7 +642,10 @@
                             <h2>⭐ My Saved Reading Queue</h2>
                             <p>Your bookmarked titles stored locally for quick offline access and export.</p>
                         </div>
-                        <button id="btn-clear-saved" class="clear-saved-btn">Clear All</button>
+                        <div class="saved-actions-group">
+                            <button id="btn-export-saved-zip" class="action-btn primary" style="padding: 8px 16px; font-size: 0.9rem;">📦 Export Custom ZIP Bundle</button>
+                            <button id="btn-clear-saved" class="clear-saved-btn">Clear All</button>
+                        </div>
                     </div>
                 </div>
 
@@ -716,6 +719,9 @@
                             <a id="modal-source-btn" href="#" target="_blank" class="action-btn secondary">
                                 <span>🌐 Source</span>
                             </a>
+                            <button id="modal-kindle-btn" class="action-btn secondary">
+                                <span>📧 Send to Kindle</span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -741,6 +747,7 @@
                         <span id="reader-font-size-label">18px</span>
                         <button id="btn-reader-font-inc" class="reader-btn" title="Increase font size">A+</button>
                         <button id="btn-reader-theme" class="reader-btn" title="Cycle Theme (Dark / Parchment / Sepia)">🎨 <span id="reader-theme-name">Dark</span></button>
+                        <button id="btn-reader-tts" class="reader-btn tts-btn" title="Listen to Chapter Narration (Text-To-Speech)">🎧 <span id="tts-label">Listen</span></button>
                         <button id="reader-modal-close" class="modal-close-btn">&times;</button>
                     </div>
                 </header>

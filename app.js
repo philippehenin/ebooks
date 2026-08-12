@@ -745,6 +745,19 @@ document.addEventListener('DOMContentLoaded', () => {
         modalCoverContainer.innerHTML = generateVintageCoverHTML(book);
         modalVibeTags.innerHTML = book.vibe_tags.map(t => `<span class="vibe-tag-pill">${escapeHTML(t)}</span>`).join('');
 
+        const modalKindleBtn = document.getElementById('modal-kindle-btn');
+        if (modalKindleBtn) {
+            modalKindleBtn.onclick = () => {
+                const kindleEmail = prompt('Enter your Send-to-Kindle email address (e.g. username@kindle.com):', safeGetStorage('athena_kindle_email', ''));
+                if (kindleEmail) {
+                    safeSetStorage('athena_kindle_email', kindleEmail);
+                    const subject = encodeURIComponent('Convert');
+                    const body = encodeURIComponent(`Send to Kindle delivery for "${book.title}" by ${book.author}.\n\nPlease attach the EPUB file from your downloads: ${book.filepath}`);
+                    window.location.href = `mailto:${kindleEmail}?subject=${subject}&body=${body}`;
+                }
+            };
+        }
+
         modal.style.display = 'flex';
     }
 
@@ -788,6 +801,41 @@ document.addEventListener('DOMContentLoaded', () => {
         savedGrid.className = 'grid-view';
         savedGrid.innerHTML = savedBooks.map(b => createBookCardHTML(b)).join('');
         attachCardClickHandlers();
+    }
+
+    const btnExportSaved = document.getElementById('btn-export-saved-zip');
+    if (btnExportSaved) {
+        btnExportSaved.addEventListener('click', async () => {
+            const savedBooks = booksData.filter(b => savedBookIds.includes(b.id));
+            if (savedBooks.length === 0) {
+                alert('Your saved queue is empty! Bookmark some books first.');
+                return;
+            }
+            if (!window.JSZip) {
+                alert('Zip library loading, please try again.');
+                return;
+            }
+            btnExportSaved.textContent = '⏳ Packaging ZIP...';
+            const zip = new window.JSZip();
+            for (let book of savedBooks) {
+                try {
+                    const res = await fetch(book.filepath);
+                    if (res.ok) {
+                        const blob = await res.blob();
+                        const fileName = book.filepath.split('/').pop() || `${book.id}_book.epub`;
+                        zip.file(fileName, blob);
+                    }
+                } catch (e) {
+                    console.warn('Custom export bundle notice:', e);
+                }
+            }
+            const content = await zip.generateAsync({ type: 'blob' });
+            const link = document.createElement('a');
+            link.href = URL.createObjectURL(content);
+            link.download = `Athena_Custom_Selection_${savedBooks.length}_Books.zip`;
+            link.click();
+            btnExportSaved.textContent = '📦 Export Custom ZIP Bundle';
+        });
     }
 
     function setupRoadmapClicks() {
@@ -1051,6 +1099,45 @@ document.addEventListener('DOMContentLoaded', () => {
                 const themeLabel = document.getElementById('reader-theme-name');
                 if (themeLabel) themeLabel.textContent = readerThemes[readerThemeIndex];
                 updateReaderStyle();
+            });
+        }
+
+        const btnTts = document.getElementById('btn-reader-tts');
+        const ttsLabel = document.getElementById('tts-label');
+        let isSpeaking = false;
+
+        function stopTts() {
+            if ('speechSynthesis' in window) {
+                window.speechSynthesis.cancel();
+            }
+            isSpeaking = false;
+            if (ttsLabel) ttsLabel.textContent = 'Listen';
+            if (btnTts) btnTts.classList.remove('speaking');
+        }
+
+        if (btnTts && 'speechSynthesis' in window) {
+            btnTts.addEventListener('click', () => {
+                if (isSpeaking) {
+                    stopTts();
+                } else {
+                    const contentArea = document.getElementById('reader-chapter-content');
+                    if (!contentArea) return;
+                    const plainText = contentArea.innerText.strip ? contentArea.innerText.trim() : contentArea.innerText;
+                    if (!plainText) return;
+
+                    const utterance = new SpeechSynthesisUtterance(plainText.slice(0, 3000));
+                    const isFr = currentReaderBook && currentReaderBook.language && currentReaderBook.language.includes('French');
+                    utterance.lang = isFr ? 'fr-FR' : 'en-US';
+
+                    utterance.onend = () => stopTts();
+                    utterance.onerror = () => stopTts();
+
+                    window.speechSynthesis.cancel();
+                    window.speechSynthesis.speak(utterance);
+                    isSpeaking = true;
+                    if (ttsLabel) ttsLabel.textContent = 'Stop';
+                    btnTts.classList.add('speaking');
+                }
             });
         }
 
